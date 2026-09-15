@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Didi's K-point</title>
+<meta name="description" content="A drama journal — Korean and Chinese series, scored five ways and written up one at a time.">
+<meta property="og:title" content="Didi's K-point">
+<meta property="og:description" content="A drama journal — Korean and Chinese series, scored five ways and written up one at a time.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FF2D6F'/><text y='.9em' x='14' font-size='78' font-family='Georgia,serif' fill='%231A1222'>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Oswald:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="mast-in">
+    <h1 class="logo">DIDI'S<em>K&middot;POINT</em></h1>
+    <div class="mast-meta">
+      A drama journal<br>
+      <b id="mastRange">—</b> &middot; <b id="mastCount">0</b> titles
+    </div>
+    <div class="mast-actions">
+      <button class="btn" id="addBtn" type="button">+ Add a show</button>
+      <button class="btn" id="editToggle" type="button" aria-pressed="false">✎ Edit mode</button>
+      <button class="btn ghost" id="ghBtn" type="button">GitHub</button>
+    </div>
+  </div>
+</header>
+
+<nav class="tabsbar"><div class="tabs" id="tabs"></div></nav>
+
+<div class="band"><div class="band-in" id="statBand"></div></div>
+
+<div class="controls" id="controls">
+  <div class="controls-in">
+    <label class="search">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="2"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="2"/></svg>
+      <input id="q" type="search" placeholder="Search titles, genres, networks, write-ups…" autocomplete="off">
+    </label>
+    <div class="chips" id="statusChips"></div>
+    <select class="sel" id="yearSel" aria-label="Filter by release year"></select>
+    <select class="sel" id="watchedSel" aria-label="Filter by when you watched it"></select>
+    <select class="sel" id="bandSel" aria-label="Filter by your score"></select>
+    <select class="sel" id="countrySel" aria-label="Filter by country"></select>
+    <select class="sel" id="genreSel" aria-label="Filter by genre"></select>
+    <select class="sel" id="netSel" aria-label="Filter by platform"></select>
+    <select class="sel" id="sortSel" aria-label="Sort">
+      <option value="year">Newest first</option>
+      <option value="yearAsc">Oldest first</option>
+      <option value="watched">Recently watched</option>
+      <option value="mine">My score ↓</option>
+      <option value="imdb">IMDb score ↓</option>
+      <option value="over">Loved more than IMDb</option>
+      <option value="under">Loved less than IMDb</option>
+      <option value="c0">Best plot</option>
+      <option value="c1">Best sequence</option>
+      <option value="c2">Best characters</option>
+      <option value="c3">Best chemistry</option>
+      <option value="c4">Biggest impact</option>
+      <option value="az">A → Z</option>
+    </select>
+  </div>
+</div>
+
+<div class="count" id="countLine"></div>
+<main class="grid" id="grid" aria-live="polite"></main>
+<section class="page hidden" id="page" aria-live="polite"></section>
+
+<footer class="foot">
+  <div class="foot-in">
+    <span><b>Didi's K-point</b> — kept by hand, one drama at a time.</span>
+    <span class="mono" id="footStat"></span>
+  </div>
+</footer>
+
+<!-- article -->
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-label="Article"></div>
+
+<!-- github panel -->
+<div class="sheet" id="ghSheet" role="dialog" aria-modal="true" aria-label="GitHub connection">
+  <div class="sheet-card">
+    <div class="sec-h"><h2>Save straight to GitHub</h2><div class="rule"></div>
+      <button class="x big" id="ghClose" type="button" aria-label="Close">×</button></div>
+    <p class="fine">Your token is kept in this browser only — it never goes into the repo and nobody else can read it. Make a <b>fine-grained</b> token scoped to just this repository, with <b>Contents: Read and write</b>.</p>
+    <div class="fgrid">
+      <label class="field"><span class="label">GitHub username</span>
+        <input id="ghOwner" placeholder="shahd" autocomplete="off"></label>
+      <label class="field"><span class="label">Repository</span>
+        <input id="ghRepo" placeholder="didis-k-point" autocomplete="off"></label>
+      <label class="field"><span class="label">Branch</span>
+        <input id="ghBranch" placeholder="main" autocomplete="off"></label>
+      <label class="field"><span class="label">Token</span>
+        <input id="ghToken" type="password" placeholder="github_pat_…" autocomplete="off"></label>
+    </div>
+    <div class="row" style="margin-top:18px">
+      <button class="btn solid" id="ghSave" type="button">Connect</button>
+      <button class="btn ghost" id="ghForget" type="button">Forget token</button>
+      <a class="btn ghost" id="ghTokenLink" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Make a token →</a>
+    </div>
+    <p class="fine" id="ghStatus"></p>
+  </div>
+</div>
+
+<div class="savebar" id="saveBar">
+  <span class="mono" id="saveCount">0 unsaved changes</span>
+  <button class="btn solid" id="saveBtn" type="button">Save to GitHub</button>
+  <button class="btn ghost" id="discardBtn" type="button">Discard</button>
+</div>
+
+<div class="toast" id="toast"></div>
+<div class="dropveil" id="dropveil"><span>Drop to add a picture</span></div>
+
+<script src="app.js"></script>
+</body>
+</html>
