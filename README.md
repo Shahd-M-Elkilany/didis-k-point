@@ -3,7 +3,7 @@
 A drama journal. Every Korean and Chinese series, scored five ways — plot, sequence,
 characters, chemistry, impact on me — with room for a write-up, stills and a trailer.
 
-Live at **https://YOUR-USERNAME.github.io/didis-k-point/**
+Live at **https://Shahd-M-Elkilany.github.io/didis-k-point/**
 
 ---
 
