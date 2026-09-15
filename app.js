@@ -2,6 +2,8 @@
    Didi's K-point
    Data lives in data.json. Edits are held in memory, kept in this
    browser as a draft, and committed to GitHub when you hit Save.
+   Pictures you add wait in IndexedDB until that commit, so closing
+   the tab before saving doesn't lose them.
    ═══════════════════════════════════════════════════════════════ */
 
 const CRITERIA = [["plot","Plot"],["sequence","Sequence"],["characters","Characters"],
@@ -34,9 +36,12 @@ const INK_PAIRS = [
 ];
 const DRAFT_KEY = "kpoint.draft";
 const GH_KEY    = "kpoint.gh";
+const TRASH_KEY = "kpoint.trash";
 
 let DATA = { name:"Didi's K-point", shows:[] };
-let pending = Object.create(null);
+let pending = Object.create(null);     // path -> {blob, url, done}
+let trash = [];                        // repo files to delete on the next save
+const broken = new Set();              // paths that failed to load
 let dirty = false, editMode = false, openId = null, view = "library";
 let rankSort = {key:"avg", dir:-1};
 let gh = { owner:"", repo:"", branch:"main", token:"" };
@@ -72,12 +77,74 @@ function watchLabel(w){
   const [y,m] = String(w).split("-");
   return m ? MONTHS[parseInt(m,10)-1]+" "+y : y;
 }
-function mediaSrc(p){ return (p && pending[p]) ? pending[p].url : p; }
 function needsWriteUp(s){ return (s.status==="W") && myScore(s)!=null && !(s.review||"").trim(); }
+
+/* A picture resolves to the blob you just added, or the file in the
+   repo — and to nothing at all once we know that file isn't there,
+   so the page falls back to its drawn cover instead of a broken icon. */
+function mediaSrc(p){
+  if (!p) return null;
+  if (pending[p]) return pending[p].url;
+  return broken.has(p) ? null : p;
+}
+let failTimer = null;
+function imgFail(path){
+  if (!path || broken.has(path)) return;
+  broken.add(path);
+  clearTimeout(failTimer);
+  failTimer = setTimeout(()=>{
+    renderView();
+    if (openId) renderReader();
+    toast(broken.size===1
+      ? "A picture is missing — it was added but never saved. Add it again."
+      : broken.size+" pictures are missing — they were added but never saved.");
+  }, 90);
+}
+function imgTag(path, cls, alt){
+  const src = mediaSrc(path);
+  if (!src) return "";
+  return `<img${cls?` class="${cls}"`:""} src="${esc(src)}" alt="${esc(alt||"")}"
+    loading="lazy" onerror="imgFail('${esc(path)}')">`;
+}
+
+/* ── picture drawer (IndexedDB) ─────────────────────────────── */
+function idb(){
+  return new Promise((res,rej)=>{
+    const rq = indexedDB.open("kpoint", 1);
+    rq.onupgradeneeded = ()=>{
+      if (!rq.result.objectStoreNames.contains("pending")) rq.result.createObjectStore("pending");
+    };
+    rq.onsuccess = ()=>res(rq.result);
+    rq.onerror   = ()=>rej(rq.error);
+  });
+}
+async function idbPut(k,v){
+  try { const d = await idb(); d.transaction("pending","readwrite").objectStore("pending").put(v,k); } catch(e){}
+}
+async function idbDel(k){
+  try { const d = await idb(); d.transaction("pending","readwrite").objectStore("pending").delete(k); } catch(e){}
+}
+async function idbAll(){
+  try {
+    const d  = await idb();
+    const st = d.transaction("pending","readonly").objectStore("pending");
+    const keys = st.getAllKeys(), vals = st.getAll();
+    return await new Promise(res=>{
+      st.transaction.oncomplete = ()=>{
+        const out = {};
+        (keys.result||[]).forEach((k,i)=>{ const v=(vals.result||[])[i]; if (v) out[k]=v; });
+        res(out);
+      };
+      st.transaction.onerror = ()=>res({});
+    });
+  } catch(e){ return {}; }
+}
 
 /* ── boot ───────────────────────────────────────────────────── */
 (async function boot(){
   try { gh = Object.assign(gh, JSON.parse(localStorage.getItem(GH_KEY)||"{}")); } catch(e){}
+  try { trash = JSON.parse(localStorage.getItem(TRASH_KEY)||"[]") || []; } catch(e){ trash = []; }
+
   let live = null;
   try {
     const r = await fetch("data.json?v="+Date.now(), {cache:"no-store"});
@@ -92,6 +159,15 @@ function needsWriteUp(s){ return (s.status==="W") && myScore(s)!=null && !(s.rev
     setTimeout(()=>toast("Unsaved changes from last time were restored"), 400);
   }
   if (!DATA.shows) DATA.shows = [];
+
+  const stored = await idbAll();
+  Object.keys(stored).forEach(k=>{
+    try { pending[k] = { blob:stored[k], url:URL.createObjectURL(stored[k]) }; } catch(e){}
+  });
+  if (Object.keys(stored).length){
+    dirty = true;
+    setTimeout(()=>toast(Object.keys(stored).length+" picture(s) still waiting to be saved"), 900);
+  }
 
   wireChrome();
   renderTabs(); renderChrome();
@@ -121,11 +197,16 @@ function markDirty(){
   try { localStorage.setItem(DRAFT_KEY, JSON.stringify(DATA)); } catch(e){}
   updateSaveBar();
 }
+function unsavedPics(){ return Object.keys(pending).filter(p=>!pending[p].done).length; }
 function updateSaveBar(){
-  $("#saveBar").classList.toggle("on", dirty);
-  const n = Object.keys(pending).length;
+  $("#saveBar").classList.toggle("on", dirty || trash.length>0);
+  const n = unsavedPics(), d = trash.length;
+  const extra = [
+    n ? n+" picture"+(n>1?"s":"")+" waiting" : "",
+    d ? d+" to remove" : ""
+  ].filter(Boolean).join(" · ");
   $("#saveCount").textContent = gh.token
-    ? "Unsaved" + (n ? " · "+n+" new picture"+(n>1?"s":"") : "")
+    ? "Unsaved" + (extra ? " · "+extra : "")
     : "Unsaved — connect GitHub to publish";
 }
 
@@ -267,9 +348,8 @@ function coverHTML(s){
   const ms = myScore(s);
   const poster = mediaSrc(s.poster);
   return `<div class="cover" style="color:${poster?"var(--paper)":fg}">
-    ${poster
-      ? `<img src="${esc(poster)}" alt="" loading="lazy">`
-      : `<div class="slab" style="background:${bg};background-image:linear-gradient(118deg, ${accent} 0 34%, transparent 34%)"></div>`}
+    <div class="slab" style="background:${bg};background-image:linear-gradient(118deg, ${accent} 0 34%, transparent 34%)"></div>
+    ${imgTag(s.poster,"","")}
     <div class="dots"></div>
     <span class="yr"${poster?' style="background:var(--ink);color:var(--paper);border-color:var(--ink)"':""}>${s.year||"TBA"}</span>
     <span class="stamp" style="background:${st.color};color:${st.on}">${st.name}</span>
@@ -289,7 +369,8 @@ function cardHTML(s){
   return `<div class="card" data-id="${esc(s.id)}" tabindex="0" role="button">
     <div class="quick">
       <button type="button" data-cycle="${esc(s.id)}" title="Change status">${st.name}</button>
-      <button type="button" data-setposter="${esc(s.id)}" title="Set the poster">Poster</button>
+      <button type="button" data-setposter="${esc(s.id)}" title="${s.poster?"Replace the poster":"Set the poster"}">Poster</button>
+      ${s.poster?`<button type="button" data-clearposter="${esc(s.id)}" title="Remove the poster">✕</button>`:""}
     </div>
     ${coverHTML(s)}
     <div class="c-meta">
@@ -436,13 +517,11 @@ function renderNumbers(){
   const best = scored.slice().sort((a,b)=>myScore(b)-myScore(a))[0];
   const worst = scored.slice().sort((a,b)=>myScore(a)-myScore(b))[0];
 
-  // average by release year
   const byYear = {};
   scored.forEach(s=>{ if(s.year){ (byYear[s.year]=byYear[s.year]||[]).push(myScore(s)); }});
   const yearRows = Object.keys(byYear).sort().map(y=>({
     k:y, v:Math.round(byYear[y].reduce((a,b)=>a+b,0)/byYear[y].length*100)/100 }));
 
-  // genres: finished vs collected
   const gW={}, gL={};
   all.forEach(s=>genresOf(s).forEach(g=>{
     if (s.status==="W") gW[g]=(gW[g]||0)+1;
@@ -453,13 +532,11 @@ function renderNumbers(){
     .sort((a,b)=>b.t-a.t).slice(0,10);
   const gMax = Math.max(...topGenres.map(x=>x.t),1);
 
-  // platforms
   const nets = {};
   watched.forEach(s=>netsOf(s).forEach(n=>nets[n]=(nets[n]||0)+1));
   const netRows = Object.entries(nets).sort((a,b)=>b[1]-a[1]).slice(0,10)
     .map(([k,v])=>({k, v, c:"var(--blue)"}));
 
-  // the five marks
   const full = all.filter(s=>Array.isArray(s.scores) && s.scores.filter(n=>typeof n==="number").length===5);
   const critRows = CRITERIA.map(([k,n],i)=>{
     const vals = full.map(s=>s.scores[i]).filter(v=>typeof v==="number");
@@ -467,11 +544,9 @@ function renderNumbers(){
             c:"var(--violet)"};
   });
 
-  // me vs the crowd
   const gaps = all.filter(s=>gapOf(s)!=null).sort((a,b)=>gapOf(b)-gapOf(a));
   const over = gaps.slice(0,5), under = gaps.slice(-5).reverse();
 
-  // countries
   const cc = {};
   all.forEach(s=>{ const k = s.country||"untagged"; cc[k]=(cc[k]||0)+1; });
 
@@ -624,9 +699,17 @@ function articleHTML(s){
       <div class="r-facts">${facts.map(f=>`<span class="fact">${esc(f)}</span>`).join("")}</div>
     </article>`;
 
+  const posterBroken = !!s.poster && !poster;
   const posterBlock = poster
-    ? `<img class="r-poster" src="${esc(poster)}" alt="${esc(s.title)} poster">`
-    : `<div class="drop editonly" id="posterDrop" style="margin-top:26px">Add a poster — click, or drag one in</div>`;
+    ? `${imgTag(s.poster,"r-poster",s.title+" poster")}
+       <div class="row editonly" style="margin-top:12px">
+         <button class="btn ghost" id="posterSwap" type="button">Replace poster</button>
+         <button class="btn ghost" id="posterRm" type="button">✕ Remove poster</button>
+       </div>`
+    : `${posterBroken?`<p class="noyet" style="margin-top:26px">The poster for this one is missing — it was added but never saved to GitHub.</p>`:""}
+       <div class="drop editonly" id="posterDrop" style="margin-top:${posterBroken?14:26}px">Add a poster — click, or drag one in</div>
+       ${posterBroken?`<div class="row editonly" style="margin-top:10px">
+         <button class="btn ghost" id="posterRm" type="button">✕ Clear the dead link</button></div>`:""}`;
 
   const details = `
     <section class="sec editonly">
@@ -694,16 +777,27 @@ function articleHTML(s){
       }</div>
     </section>`;
 
-  const gal = (s.gallery||[]);
+  const gallery = (s.gallery||[]);
+  const anyStill = gallery.some(g=>mediaSrc(g.src)) || (editMode && gallery.length);
   const galBlock = `
     <section class="sec">
       <div class="sec-h"><h2>Stills</h2><div class="rule"></div></div>
-      ${gal.length?`<div class="gal">${gal.map((g,i)=>`<figure>
-        <img src="${esc(mediaSrc(g.src))}" alt="${esc(g.caption||s.title)}" loading="lazy">
-        <button class="x" type="button" data-rmimg="${i}" aria-label="Remove picture">×</button>
-        <figcaption data-edit="gallery.${i}.caption" data-empty="Caption">${esc(g.caption||"")}</figcaption>
-      </figure>`).join("")}</div>`:(!editMode?`<p class="noyet">No stills yet.</p>`:"")}
+      ${anyStill?`<div class="gal">${gallery.map((g,i)=>{
+        const src = mediaSrc(g.src);
+        if (!src && !editMode) return "";
+        return `<figure>
+          ${src ? imgTag(g.src,"",g.caption||s.title)
+                : `<div style="aspect-ratio:4/3;border:2px dashed var(--ink);background:var(--paper-2);
+                     display:grid;place-items:center;text-align:center;padding:10px;
+                     font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:.12em;
+                     text-transform:uppercase;color:var(--ink-soft)">Missing —<br>remove it</div>`}
+          <button class="x" type="button" data-rmimg="${i}" aria-label="Remove this picture"
+            title="Remove this picture">×</button>
+          <figcaption data-edit="gallery.${i}.caption" data-empty="Caption">${esc(g.caption||"")}</figcaption>
+        </figure>`;
+      }).join("")}</div>`:(!editMode?`<p class="noyet">No stills yet.</p>`:"")}
       <div class="drop editonly" id="galDrop" style="margin-top:14px">Add pictures — click, drag them in, or just paste</div>
+      ${editMode&&gallery.length?`<p class="label" style="margin-top:10px">The ✕ on a picture removes it.</p>`:""}
     </section>`;
 
   const vids = (s.videos||[]);
@@ -726,7 +820,7 @@ function articleHTML(s){
     </section>`;
 
   const body = (lay==="poster")
-    ? `<div class="posterwrap">${poster?`<img class="r-poster" src="${esc(poster)}" alt="">`:""}${hero}</div>
+    ? `<div class="posterwrap">${poster?imgTag(s.poster,"r-poster",""):""}${hero}</div>
        <div class="after-poster">${poster?"":posterBlock}${details}${scores}${reviewBlock}${galBlock}${vidBlock}</div>`
     : (lay==="quick")
     ? `${hero}${details}${scores}${reviewBlock}${vidBlock}${galBlock}`
@@ -817,9 +911,17 @@ function wireArticle(s){
   on("#clearScores","click",()=>{ delete s.scores; delete s.myRate; markDirty(); renderReader(); });
 
   on("#posterDrop","click",()=>pickFiles("image/*",false,f=>addPoster(s,f[0])));
+  on("#posterSwap","click",()=>pickFiles("image/*",false,f=>addPoster(s,f[0])));
+  on("#posterRm","click",()=>removePoster(s));
   on("#galDrop","click",()=>pickFiles("image/*",true,f=>addGallery(s,[...f])));
   $$("[data-rmimg]").forEach(b=>b.addEventListener("click",()=>{
-    s.gallery.splice(+b.dataset.rmimg,1); markDirty(); renderReader();
+    const i = +b.dataset.rmimg;
+    const gone = (s.gallery||[])[i];
+    if (gone) forgetImage(gone.src);
+    s.gallery.splice(i,1);
+    if (!s.gallery.length) delete s.gallery;
+    markDirty(); renderReader();
+    toast("Picture removed — hit Save to publish that");
   }));
   $$("[data-rmvid]").forEach(b=>b.addEventListener("click",()=>{
     s.videos.splice(+b.dataset.rmvid,1); markDirty(); renderReader();
@@ -841,7 +943,7 @@ function wireArticle(s){
       e.preventDefault();
       const files = [...(e.dataTransfer.files||[])].filter(f=>f.type.startsWith("image/"));
       if (!files.length) return;
-      if (!s.poster) { addPoster(s, files[0]); if (files.length>1) addGallery(s, files.slice(1)); }
+      if (!mediaSrc(s.poster)) { addPoster(s, files[0]); if (files.length>1) addGallery(s, files.slice(1)); }
       else addGallery(s, files);
     });
   }
@@ -870,7 +972,35 @@ function queueImage(showId, file){
   const ext = (file.name.split(".").pop()||"jpg").toLowerCase().replace(/[^a-z0-9]/g,"") || "jpg";
   const path = "images/"+showId+"-"+Date.now()+"-"+Math.random().toString(36).slice(2,6)+"."+ext;
   pending[path] = { blob:file, url:URL.createObjectURL(file) };
+  broken.delete(path);
+  idbPut(path, file);
   return path;
+}
+function saveTrash(){ try { localStorage.setItem(TRASH_KEY, JSON.stringify(trash)); } catch(e){} }
+
+/* Drop a picture. If it was only waiting to be uploaded it just goes
+   away; if it's already a file in the repo it's queued for deletion
+   there on your next save, so the repo doesn't fill up with orphans. */
+function forgetImage(path){
+  if (!path) return;
+  const wasPending = !!pending[path];
+  const wasCommitted = wasPending ? pending[path].done : true;
+  if (wasPending){
+    try { URL.revokeObjectURL(pending[path].url); } catch(e){}
+    delete pending[path];
+    if (!wasCommitted) idbDel(path);
+  }
+  broken.delete(path);
+  if (wasCommitted && /^images\//.test(path) && !trash.includes(path)){
+    trash.push(path); saveTrash();
+  }
+}
+function removePoster(s){
+  forgetImage(s.poster);
+  delete s.poster;
+  markDirty();
+  if (openId) renderReader(); else renderView();
+  toast("Poster removed — hit Save to publish that");
 }
 function tooBig(file){
   if (file.size > 20*1024*1024){ toast("That picture is over 20 MB — too big for GitHub"); return true; }
@@ -878,6 +1008,7 @@ function tooBig(file){
 }
 function addPoster(s, file){
   if (!file || tooBig(file)) return;
+  forgetImage(s.poster);
   s.poster = queueImage(s.id, file); markDirty(); renderReader();
 }
 function addGallery(s, files){
@@ -893,9 +1024,9 @@ document.addEventListener("paste", e=>{
   e.preventDefault();
   const s = get(openId);
   const files = items.map(i=>i.getAsFile()).filter(Boolean);
-  if (!s.poster && files.length) addPoster(s, files[0]);
+  if (!mediaSrc(s.poster) && files.length) addPoster(s, files[0]);
   else addGallery(s, files);
-  toast("Picture added");
+  toast("Picture added — hit Save to publish it");
 });
 
 /* ── wiring ─────────────────────────────────────────────────── */
@@ -932,10 +1063,17 @@ function wireChrome(){
       const s = get(cyc.dataset.cycle);
       s.status = ORDER[(ORDER.indexOf(s.status)+1)%ORDER.length];
       markDirty(); renderChrome(); renderView(); return; }
+    const cp = e.target.closest("[data-clearposter]");
+    if (cp){ e.stopPropagation(); removePoster(get(cp.dataset.clearposter)); return; }
     const sp = e.target.closest("[data-setposter]");
     if (sp){ e.stopPropagation();
       const s = get(sp.dataset.setposter);
-      pickFiles("image/*",false,f=>{ if(!tooBig(f[0])){ s.poster = queueImage(s.id,f[0]); markDirty(); renderView(); }});
+      pickFiles("image/*",false,f=>{
+        if (tooBig(f[0])) return;
+        forgetImage(s.poster);
+        s.poster = queueImage(s.id,f[0]); markDirty(); renderView();
+        toast("Poster set — hit Save to publish it");
+      });
       return; }
     const card = e.target.closest("[data-id]");
     if (card) go("show/"+card.dataset.id);
@@ -965,7 +1103,9 @@ function wireChrome(){
     const f = [...(e.dataTransfer.files||[])].find(x=>x.type.startsWith("image/"));
     if (!f || tooBig(f)) return;
     const s = get(card.dataset.id);
-    s.poster = queueImage(s.id, f); markDirty(); renderView(); toast("Poster set for "+s.title);
+    forgetImage(s.poster);
+    s.poster = queueImage(s.id, f); markDirty(); renderView();
+    toast("Poster set for "+s.title+" — hit Save to publish it");
   };
   ["#grid","#page"].forEach(sel=>{
     $(sel).addEventListener("dragover", dragOver);
@@ -1016,13 +1156,22 @@ function wireChrome(){
     updateSaveBar();
   });
   $("#saveBtn").addEventListener("click", saveAll);
-  $("#discardBtn").addEventListener("click", ()=>{
+  $("#discardBtn").addEventListener("click", async ()=>{
     if (!confirm("Throw away every unsaved change and reload from GitHub?")) return;
-    localStorage.removeItem(DRAFT_KEY); dirty=false; location.reload();
+    localStorage.removeItem(DRAFT_KEY);
+    localStorage.removeItem(TRASH_KEY);
+    for (const p of Object.keys(pending)) await idbDel(p);
+    trash = []; dirty = false; location.reload();
   });
 }
 
 /* ── GitHub ─────────────────────────────────────────────────── */
+function repoSlug(name){
+  return name.trim().replace(/[^A-Za-z0-9._-]+/g,"-").replace(/^-+|-+$/g,"");
+}
+function onGithubPages(){
+  return /\.github\.io$/i.test(location.hostname) || location.hostname==="localhost";
+}
 function openGh(){
   $("#ghOwner").value = gh.owner || "";
   $("#ghRepo").value  = gh.repo  || "";
@@ -1032,12 +1181,6 @@ function openGh(){
     ? "Connected as "+gh.owner+"/"+gh.repo+". Leave the token blank to keep the one already saved."
     : "Not connected yet.";
   $("#ghSheet").classList.add("on");
-}
-function repoSlug(name){
-  return name.trim().replace(/[^A-Za-z0-9._-]+/g,"-").replace(/^-+|-+$/g,"");
-}
-function onGithubPages(){
-  return /\.github\.io$/i.test(location.hostname) || location.hostname==="localhost";
 }
 async function connectGh(){
   const owner = $("#ghOwner").value.trim();
@@ -1056,10 +1199,10 @@ async function connectGh(){
     return;
   }
   say("Checking…");
-  const probe = {owner, repo, branch, token};
   let r;
   try {
-    r = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {headers: ghHeaders(probe)});
+    r = await fetch(`https://api.github.com/repos/${owner}/${repo}`,
+                    {headers: ghHeaders({owner,repo,branch,token})});
   } catch(err){
     say(onGithubPages()
       ? "Couldn't reach GitHub. Check your internet connection and try again."
@@ -1079,7 +1222,7 @@ async function connectGh(){
       : "GitHub said "+r.status+".");
     return;
   }
-  gh = probe;
+  gh = {owner, repo, branch, token};
   localStorage.setItem(GH_KEY, JSON.stringify(gh));
   say("Connected. Your changes can publish now.");
   updateSaveBar();
@@ -1097,7 +1240,7 @@ function b64text(str){
 function b64blob(blob){
   return new Promise((res,rej)=>{
     const fr = new FileReader();
-    fr.onload = ()=>res(String(fr.result).split(",")[1]);
+    fr.onload  = ()=>res(String(fr.result).split(",")[1]);
     fr.onerror = rej;
     fr.readAsDataURL(blob);
   });
@@ -1119,27 +1262,54 @@ async function putFile(path, contentB64, message){
   }
   return r.json();
 }
+async function deleteFile(path){
+  const head = await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}?ref=${gh.branch}`,
+    {headers: ghHeaders(), cache:"no-store"});
+  if (!head.ok) return;                       // already gone, nothing to do
+  const sha = (await head.json()).sha;
+  await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}`, {
+    method:"DELETE", headers: Object.assign({"Content-Type":"application/json"}, ghHeaders()),
+    body: JSON.stringify({ message:"Remove "+path, sha, branch:gh.branch })
+  });
+}
 async function saveAll(){
-  if (!dirty) return toast("Nothing to save");
+  if (!dirty && !trash.length) return toast("Nothing to save");
   if (!gh.token){ openGh(); return; }
   const btn = $("#saveBtn");
   btn.disabled = true; btn.textContent = "Saving…";
   try {
-    const paths = Object.keys(pending);
-    for (let i=0;i<paths.length;i++){
-      btn.textContent = `Picture ${i+1}/${paths.length}…`;
-      await putFile(paths[i], await b64blob(pending[paths[i]].blob), "Add "+paths[i]);
+    const todo = Object.keys(pending).filter(p=>!pending[p].done);
+    for (let i=0;i<todo.length;i++){
+      btn.textContent = `Picture ${i+1}/${todo.length}…`;
+      await putFile(todo[i], await b64blob(pending[todo[i]].blob), "Add "+todo[i]);
+      pending[todo[i]].done = true;   // keep showing the local copy until you reload
+      await idbDel(todo[i]);          // it no longer needs to wait in the drawer
     }
-    paths.forEach(p=>{ URL.revokeObjectURL(pending[p].url); delete pending[p]; });
 
     btn.textContent = "Saving…";
     DATA.updated = new Date().toISOString().slice(0,10);
     await putFile("data.json", b64text(JSON.stringify(DATA,null,1)+"\n"), "Update the journal");
 
+    // Only once data.json no longer points at them: clear out removed pictures.
+    const used = new Set();
+    DATA.shows.forEach(x=>{
+      if (x.poster) used.add(x.poster);
+      (x.gallery||[]).forEach(g=>used.add(g.src));
+    });
+    const bin = trash.filter(p=>!used.has(p));
+    for (let i=0;i<bin.length;i++){
+      btn.textContent = `Tidying ${i+1}/${bin.length}…`;
+      try { await deleteFile(bin[i]); } catch(e){}
+    }
+    trash = trash.filter(p=>used.has(p));
+    saveTrash();
+
     dirty = false;
     localStorage.removeItem(DRAFT_KEY);
     updateSaveBar();
-    toast("Published — the site updates in about a minute");
+    toast(todo.length
+      ? "Published — pictures take about a minute to show up for everyone else"
+      : "Published — the site updates in about a minute");
     renderChrome(); renderView();
     if (openId) renderReader();
   } catch(err){
