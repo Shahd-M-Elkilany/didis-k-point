@@ -8,12 +8,15 @@
    renderReader, renderView, queueImage, toast). Nothing here touches
    app.js itself.
 
-   Keys live in this browser only. They are never written to the repo.
+   Keys live in this browser only. They are never written to the repo —
+   the repo is public, and a key in a public repo is a key anyone can
+   spend. To move to another device, use the setup code instead.
    ═══════════════════════════════════════════════════════════════ */
 (function(){
 "use strict";
 
 const KEYS_KEY = "kpoint.keys";
+const GH_KEY   = "kpoint.gh";
 const TMDB = "https://api.themoviedb.org/3";
 const IMG  = "https://image.tmdb.org/t/p/w500";
 const DEFAULT_MODEL = "gemini-2.0-flash";
@@ -21,6 +24,16 @@ const DEFAULT_MODEL = "gemini-2.0-flash";
 let keys = { tmdb:"", omdb:"", gemini:"", model:DEFAULT_MODEL };
 try { keys = Object.assign(keys, JSON.parse(localStorage.getItem(KEYS_KEY)||"{}")); } catch(e){}
 function saveKeys(){ try { localStorage.setItem(KEYS_KEY, JSON.stringify(keys)); } catch(e){} }
+
+/* Ask the browser to treat this site's storage as persistent, so your
+   keys and any waiting pictures don't get evicted when space is tight. */
+(async function(){
+  try {
+    if (navigator.storage && navigator.storage.persist){
+      if (!(await navigator.storage.persisted())) await navigator.storage.persist();
+    }
+  } catch(e){}
+})();
 
 const CC = { KR:"KR", CN:"CN", TW:"CN", HK:"CN", JP:"JP" };
 const sleep = ms => new Promise(r=>setTimeout(r,ms));
@@ -50,6 +63,17 @@ st.textContent = `
   padding:4px 9px;border:2px solid var(--ink);margin-bottom:12px}
 .summary{border-left:4px solid var(--ink);padding-left:16px;font-style:italic;
   color:var(--ink-soft);max-width:65ch}
+.conn{display:grid;gap:8px;margin:16px 0}
+.connrow{display:flex;align-items:center;gap:12px;border:2px solid var(--ink);
+  background:var(--paper-2);padding:10px 14px;flex-wrap:wrap}
+.connrow .dot{width:12px;height:12px;flex:none;border:2px solid var(--ink)}
+.connrow .on{background:var(--grass)} .connrow .off{background:var(--paper-3)}
+.connrow b{font-family:"Oswald",sans-serif;font-weight:500;font-size:13px;letter-spacing:.04em}
+.connrow span{font-size:13px;color:var(--ink-soft)}
+.connrow button{margin-left:auto}
+.codebox{width:100%;border:2px solid var(--ink);background:var(--paper-2);padding:10px;
+  font-family:"DM Mono",monospace;font-size:11px;min-height:80px;resize:vertical;
+  word-break:break-all}
 `;
 document.head.appendChild(st);
 
@@ -69,43 +93,146 @@ function sheet(id, inner){
 }
 function close(id){ const e = document.getElementById(id); if (e) e.classList.remove("on"); }
 
-/* ── settings ───────────────────────────────────────────────── */
-function openKeys(){
+/* ── the setup code: all your keys as one string ────────────── */
+function b64enc(str){
+  const bytes = new TextEncoder().encode(str);
+  let bin = ""; bytes.forEach(b=>bin += String.fromCharCode(b));
+  return btoa(bin);
+}
+function b64dec(b64){
+  const bin = atob(b64.replace(/\s+/g,""));
+  const bytes = Uint8Array.from(bin, c=>c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+function readGh(){ try { return JSON.parse(localStorage.getItem(GH_KEY)||"{}"); } catch(e){ return {}; } }
+function makeCode(){
+  return b64enc(JSON.stringify({ v:1, keys, gh:readGh() }));
+}
+function useCode(code){
+  const o = JSON.parse(b64dec(code));
+  if (!o || o.v!==1) throw new Error("That doesn't look like a K-point setup code.");
+  if (o.keys) { keys = Object.assign(keys, o.keys); saveKeys(); }
+  if (o.gh && o.gh.token){
+    localStorage.setItem(GH_KEY, JSON.stringify(o.gh));
+    try { gh = Object.assign(gh||{}, o.gh); updateSaveBar(); } catch(e){}
+  }
+  return o;
+}
+
+/* ── the research desk ──────────────────────────────────────── */
+function connected(){
+  const g = readGh();
+  return [
+    ["TMDB", "Posters, summaries, episodes, trailers", !!keys.tmdb, "https://www.themoviedb.org/settings/api"],
+    ["OMDb", "IMDb ratings", !!keys.omdb, "https://www.omdbapi.com/apikey.aspx"],
+    ["Gemini", "Drafting write-ups", !!keys.gemini, "https://aistudio.google.com/apikey"],
+    ["GitHub", g.owner&&g.repo ? "Publishing to "+g.owner+"/"+g.repo : "Publishing your changes", !!g.token, null]
+  ];
+}
+function allSet(){ return connected().every(r=>r[2]); }
+
+function openKeys(edit){
+  const rows = connected();
   const el = sheet("keysSheet", `
     <div class="sec-h"><h2>The research desk</h2><div class="rule"></div>
       <button class="x big" data-x type="button" aria-label="Close">×</button></div>
-    <p class="fine">Three keys, each free to get. They're kept in this browser only —
-    never in the repo, never visible to anyone you share the site with. You can fill in
-    just the first one and still get most of this working.</p>
-    <div class="fgrid" style="margin-top:16px">
-      <label class="field"><span class="label">TMDB key — posters, summaries, episodes, trailers</span>
-        <input id="kTmdb" type="password" value="${esc2(keys.tmdb)}" placeholder="required" autocomplete="off"></label>
-      <label class="field"><span class="label">OMDb key — IMDb ratings only</span>
-        <input id="kOmdb" type="password" value="${esc2(keys.omdb)}" placeholder="optional" autocomplete="off"></label>
-      <label class="field"><span class="label">Gemini key — drafting write-ups</span>
-        <input id="kGem" type="password" value="${esc2(keys.gemini)}" placeholder="optional" autocomplete="off"></label>
-      <label class="field"><span class="label">Gemini model</span>
-        <input id="kModel" value="${esc2(keys.model||DEFAULT_MODEL)}" autocomplete="off"></label>
+    <p class="fine">${allSet()
+      ? "You're set up on this browser. Nothing here needs touching again unless a key expires."
+      : "Fill in TMDB and most of this works. The other three are optional."}</p>
+
+    <div class="conn">${rows.map(([n,what,ok,link])=>`
+      <div class="connrow">
+        <span class="dot ${ok?"on":"off"}"></span>
+        <b>${n}</b><span>${ok?"connected":"not set"} · ${esc2(what)}</span>
+        ${!ok&&link?`<a class="btn ghost" href="${link}" target="_blank" rel="noopener noreferrer">Get a key →</a>`:""}
+      </div>`).join("")}</div>
+
+    <div class="row">
+      <button class="btn ${allSet()?"ghost":"solid"}" data-edit type="button">
+        ${allSet()?"Change a key":"Enter keys"}</button>
+      <button class="btn ghost" data-move type="button">Move to another device</button>
     </div>
-    <div class="row" style="margin-top:18px">
-      <button class="btn solid" data-save type="button">Save keys</button>
-      <a class="btn ghost" href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener noreferrer">Get TMDB key →</a>
-      <a class="btn ghost" href="https://www.omdbapi.com/apikey.aspx" target="_blank" rel="noopener noreferrer">Get OMDb key →</a>
-      <a class="btn ghost" href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">Get Gemini key →</a>
+
+    <div id="editArea" class="${edit?"":"hidden"}">
+      <div class="fgrid" style="margin-top:20px">
+        <label class="field"><span class="label">TMDB key</span>
+          <input id="kTmdb" type="password" value="${esc2(keys.tmdb)}" autocomplete="off"></label>
+        <label class="field"><span class="label">OMDb key</span>
+          <input id="kOmdb" type="password" value="${esc2(keys.omdb)}" autocomplete="off"></label>
+        <label class="field"><span class="label">Gemini key</span>
+          <input id="kGem" type="password" value="${esc2(keys.gemini)}" autocomplete="off"></label>
+        <label class="field"><span class="label">Gemini model</span>
+          <input id="kModel" value="${esc2(keys.model||DEFAULT_MODEL)}" autocomplete="off"></label>
+      </div>
+      <div class="row" style="margin-top:14px">
+        <button class="btn solid" data-save type="button">Save keys</button>
+      </div>
+      <p class="fine" style="margin-top:10px">If Gemini answers "model not found", the model name has
+      moved on — put the current one in and save again.</p>
     </div>
-    <p class="fine" id="kStatus" style="margin-top:14px"></p>
-    <p class="fine" style="margin-top:6px">If Gemini answers with a "model not found" error, the model
-    name has moved on — put the current one in the box above and save again.</p>`);
-  el.querySelector("[data-x]").onclick = ()=>close("keysSheet");
-  el.querySelector("[data-save]").onclick = ()=>{
-    keys.tmdb = el.querySelector("#kTmdb").value.trim();
-    keys.omdb = el.querySelector("#kOmdb").value.trim();
-    keys.gemini = el.querySelector("#kGem").value.trim();
-    keys.model = el.querySelector("#kModel").value.trim() || DEFAULT_MODEL;
-    saveKeys();
-    el.querySelector("#kStatus").textContent = "Saved in this browser.";
-    toast("Keys saved");
+
+    <div id="moveArea" class="hidden">
+      <div class="sec-h" style="margin-top:24px"><h2>Move to another device</h2><div class="rule"></div></div>
+      <p class="fine">This code holds every key above, including your GitHub token. Copy it into your
+      password manager, then paste it on your phone or another browser and you'll never type a key
+      twice. <b>Treat it exactly like a password</b> — anyone who has it can publish to your repo
+      and spend on your API accounts.</p>
+      <div class="row" style="margin-top:14px">
+        <button class="btn solid" data-copy type="button">Copy my setup code</button>
+        <button class="btn ghost" data-show type="button">Show it</button>
+      </div>
+      <textarea class="codebox hidden" id="codeOut" readonly></textarea>
+      <div class="sec-h" style="margin-top:24px"><h2>Or paste one in</h2><div class="rule"></div></div>
+      <textarea class="codebox" id="codeIn" placeholder="Paste a setup code from your other device"></textarea>
+      <div class="row" style="margin-top:12px">
+        <button class="btn solid" data-use type="button">Use this code</button>
+      </div>
+      <p class="fine" id="moveStatus" style="margin-top:10px"></p>
+    </div>
+
+    <p class="fine" id="kStatus" style="margin-top:16px"></p>`);
+
+  const q = s => el.querySelector(s);
+  q("[data-x]").onclick = ()=>close("keysSheet");
+  q("[data-edit]").onclick = ()=>q("#editArea").classList.toggle("hidden");
+  q("[data-move]").onclick = ()=>q("#moveArea").classList.toggle("hidden");
+
+  q("[data-save]").onclick = ()=>{
+    keys.tmdb = q("#kTmdb").value.trim();
+    keys.omdb = q("#kOmdb").value.trim();
+    keys.gemini = q("#kGem").value.trim();
+    keys.model = q("#kModel").value.trim() || DEFAULT_MODEL;
+    saveKeys(); refreshDesk();
+    toast("Saved on this browser — you won't be asked again here");
+    openKeys(false);
   };
+  q("[data-show]").onclick = ()=>{
+    const t = q("#codeOut"); t.value = makeCode(); t.classList.remove("hidden"); t.select();
+  };
+  q("[data-copy]").onclick = async ()=>{
+    const code = makeCode();
+    try { await navigator.clipboard.writeText(code); q("#moveStatus").textContent = "Copied. Paste it somewhere safe."; }
+    catch(e){
+      const t = q("#codeOut"); t.value = code; t.classList.remove("hidden"); t.select();
+      q("#moveStatus").textContent = "Couldn't reach the clipboard — select the text above and copy it.";
+    }
+  };
+  q("[data-use]").onclick = ()=>{
+    const v = q("#codeIn").value.trim();
+    if (!v) return;
+    try {
+      useCode(v);
+      refreshDesk();
+      q("#moveStatus").textContent = "Done. Every key is set on this browser now.";
+      toast("Setup restored");
+      setTimeout(()=>openKeys(false), 600);
+    } catch(err){ q("#moveStatus").textContent = err.message; }
+  };
+}
+function refreshDesk(){
+  const b = document.getElementById("deskBtn");
+  if (b) b.textContent = allSet() ? "⚡ Research desk ✓"
+       : keys.tmdb ? "⚡ Research desk" : "⚡ Set up research desk";
 }
 
 /* ── TMDB ───────────────────────────────────────────────────── */
@@ -120,16 +247,14 @@ async function tmdb(path, params){
   return r.json();
 }
 async function searchCandidates(s){
-  const q = s.title.replace(/\s*\d+\s*&\s*\d+\s*$/,"").trim();   // "Bitch X Rich 1 & 2"
+  const q = s.title.replace(/\s*\d+\s*&\s*\d+\s*$/,"").trim();
   let out = [];
-  try {
-    const tv = await tmdb("/search/tv", {query:q, include_adult:"false"});
-    out = (tv.results||[]).map(x=>({
-      kind:"tv", id:x.id, title:x.name, original:x.original_name,
-      year:(x.first_air_date||"").slice(0,4), overview:x.overview,
-      poster:x.poster_path, countries:x.origin_country||[]
-    }));
-  } catch(e){ throw e; }
+  const tv = await tmdb("/search/tv", {query:q, include_adult:"false"});
+  out = (tv.results||[]).map(x=>({
+    kind:"tv", id:x.id, title:x.name, original:x.original_name,
+    year:(x.first_air_date||"").slice(0,4), overview:x.overview,
+    poster:x.poster_path, countries:x.origin_country||[]
+  }));
   if (!out.length){
     const mv = await tmdb("/search/movie", {query:q, include_adult:"false"});
     out = (mv.results||[]).map(x=>({
@@ -199,8 +324,7 @@ async function grabPoster(s, url){
 }
 
 /* ── applying ───────────────────────────────────────────────── */
-async function apply(s, d, opts){
-  const o = opts||{};
+async function apply(s, d){
   const touched = [];
   s.tmdbId = d.tmdbId;
   if (d.summary && !s.summary){ s.summary = d.summary; touched.push("summary"); }
@@ -227,7 +351,6 @@ async function apply(s, d, opts){
   return touched;
 }
 
-/* ── one show ───────────────────────────────────────────────── */
 async function fetchOne(s, interactive){
   const cands = await searchCandidates(s);
   const verdict = judge(s, cands);
@@ -267,7 +390,7 @@ function reviewOne(s, cands, why){
       ${queue.length?`<button class="btn ghost" data-stop type="button">Stop reviewing</button>`:""}
     </div>`);
 
-  el.querySelector("[data-x]").onclick = ()=>{ close("pickSheet"); };
+  el.querySelector("[data-x]").onclick = ()=>close("pickSheet");
   el.querySelector("[data-skip]").onclick = ()=>{ close("pickSheet"); nextInQueue(); };
   const stop = el.querySelector("[data-stop]");
   if (stop) stop.onclick = ()=>{ queue = []; close("pickSheet"); toast("Review stopped"); };
@@ -285,7 +408,7 @@ function reviewOne(s, cands, why){
 }
 function nextInQueue(){
   const next = queue.shift();
-  if (!next) { if (typeof renderView==="function") renderView(); return; }
+  if (!next){ renderChrome(); renderView(); return; }
   reviewOne(next.show, next.cands, next.why);
 }
 
@@ -294,7 +417,7 @@ function missingBits(s){
   return !s.summary || !s.poster || !s.episodes || !(s.videos||[]).length || !s.network || !s.country;
 }
 function openBatch(){
-  if (!keys.tmdb) return openKeys();
+  if (!keys.tmdb) return openKeys(true);
   const all = DATA.shows;
   const todo = all.filter(missingBits);
   const el = sheet("batchSheet", `
@@ -346,12 +469,11 @@ async function runBatch(list, el){
       say("no", `✕ ${esc2(s.title)} — ${esc2(String(err.message).slice(0,70))}`);
       if (/key/i.test(err.message)) break;
     }
-    await sleep(220);                        // stay well inside TMDB's rate limit
+    await sleep(220);
   }
   txt.textContent = `Done · ${filled} filled in, ${asked} need you, ${failed} failed`;
   renderChrome(); renderView();
   if (queue.length){
-    el.insertAdjacentHTML("beforeend","");
     const go = document.createElement("button");
     go.className = "btn solid"; go.type = "button";
     go.textContent = `Review the ${queue.length} I couldn't call →`;
@@ -439,13 +561,13 @@ function fmtDate(d){
 function decorate(){
   const s = get(openId); if (!s) return;
   const bar = document.querySelector("#reader .r-bar-in"); if (!bar) return;
+  const anchor = bar.querySelector(".label");
 
-  // toolbar buttons
   if (!document.getElementById("fetchOne")){
     const b = document.createElement("button");
     b.className = "btn"; b.id = "fetchOne"; b.type = "button"; b.textContent = "⚡ Fetch details";
     b.onclick = async ()=>{
-      if (!keys.tmdb) return openKeys();
+      if (!keys.tmdb) return openKeys(true);
       b.disabled = true; b.textContent = "Looking…";
       try {
         const r = await fetchOne(s, true);
@@ -456,7 +578,7 @@ function decorate(){
       } catch(err){ toast(String(err.message).slice(0,140)); }
       b.disabled = false; b.textContent = "⚡ Fetch details";
     };
-    bar.insertBefore(b, bar.querySelector(".label"));
+    bar.insertBefore(b, anchor);
   }
   if (keys.gemini && !document.getElementById("draftBtn")){
     const d = document.createElement("button");
@@ -466,10 +588,9 @@ function decorate(){
           !confirm("You've already written something here. Replace it with a fresh draft?")) return;
       draftFor(s, d);
     };
-    bar.insertBefore(d, bar.querySelector(".label"));
+    bar.insertBefore(d, anchor);
   }
 
-  // extra facts
   const facts = document.querySelector("#reader .r-facts");
   if (facts && !facts.dataset.extra){
     facts.dataset.extra = "1";
@@ -480,7 +601,6 @@ function decorate(){
     add.forEach(t=>facts.insertAdjacentHTML("beforeend",`<span class="fact">${esc2(t)}</span>`));
   }
 
-  // the synopsis, kept separate from her own words
   const heads = [...document.querySelectorAll("#reader .sec-h h2")];
   const writeUp = heads.find(h=>h.textContent.trim()==="The write-up");
   if (s.summary && writeUp && !document.getElementById("summarySec")){
@@ -492,7 +612,6 @@ function decorate(){
     writeUp.closest(".sec").before(sec);
   }
 
-  // mark an unedited AI draft for what it is
   if (s.reviewDraft && writeUp && !document.getElementById("draftFlag")){
     const f = document.createElement("div");
     f.className = "draftflag"; f.id = "draftFlag";
@@ -505,13 +624,27 @@ function decorate(){
     prose.addEventListener("input", ()=>{
       if (s.reviewDraft){ delete s.reviewDraft; markDirty();
         const f = document.getElementById("draftFlag"); if (f) f.remove(); }
-    }, {once:false});
+    });
   }
 }
 
 /* wrap renderReader so the article picks all this up every time */
 const _renderReader = renderReader;
 renderReader = function(){ _renderReader.apply(this, arguments); try { decorate(); } catch(e){} };
+
+/* the GitHub panel blanks your token on purpose — say so, so it doesn't
+   read as "it forgot" */
+if (typeof openGh === "function"){
+  const _openGh = openGh;
+  openGh = function(){
+    _openGh.apply(this, arguments);
+    const t = document.getElementById("ghToken");
+    if (t){
+      const saved = !!(readGh().token);
+      t.placeholder = saved ? "Saved — leave blank to keep it" : "github_pat_…";
+    }
+  };
+}
 
 /* masthead buttons */
 const actions = document.querySelector(".mast-actions");
@@ -520,10 +653,9 @@ if (actions){
   a.className = "btn"; a.type = "button"; a.textContent = "⚡ Fill in details";
   a.onclick = openBatch;
   const b = document.createElement("button");
-  b.className = "btn ghost"; b.type = "button"; b.textContent = "Keys";
-  b.onclick = openKeys;
+  b.className = "btn ghost"; b.id = "deskBtn"; b.type = "button";
+  b.onclick = ()=>openKeys(!keys.tmdb);
   actions.appendChild(a); actions.appendChild(b);
+  refreshDesk();
 }
-
-window.imgFail = window.imgFail || function(){};
 })();
