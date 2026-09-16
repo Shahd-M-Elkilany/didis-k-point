@@ -3448,7 +3448,49 @@
    "network": "JTBC",
    "genres": "Comedy, Drama",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 255086,
+   "summary": "In search of purpose, opportunity and independence, four rural women start an adult products business in 1992 — embarking on a journey of self-discovery.",
+   "episodes": 12,
+   "firstAir": "2024-10-12",
+   "lastAir": "2024-11-17",
+   "cast": [
+    "Kim So-yeon",
+    "Yeon Woo-jin",
+    "Kim Sung-ryung",
+    "Kim Sun-young",
+    "Lee Se-hee",
+    "Kim Won-hae"
+   ],
+   "roles": [
+    "Han Jeong-suk",
+    "Kim Do-hyeon",
+    "Oh Geum-hui",
+    "Seo Yeong-bok",
+    "Lee Ju-ri",
+    "Choi Won-bong"
+   ],
+   "crew": [
+    {
+     "name": "Choi Bo-rim",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Jun-seo",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Jo Woong",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/a-virtuous-business-1789602977252-3wgp.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=H8t37Uv5xnk",
+     "title": "Official Clip [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "brewing-love",
@@ -6314,6 +6356,21 @@
    "p": "/6d1j13WsqUV39yfY8QB6MUbycV9.jpg"
   },
   "Jung Su-jin": {},
-  "Shon Seung-ae": {}
+  "Shon Seung-ae": {},
+  "Yeon Woo-jin": {
+   "p": "/oGOpjHfwifYd3hVohVFbxmA7Aoe.jpg"
+  },
+  "Kim Sung-ryung": {
+   "p": "/sPB8ySlzfJWNedISwugRWEBABIY.jpg"
+  },
+  "Kim Sun-young": {
+   "p": "/9aFsdy8tAZkoP33qG8CH6y3lafP.jpg"
+  },
+  "Lee Se-hee": {
+   "p": "/qpItJBOITbf2Z9URBdwA90diJSo.jpg"
+  },
+  "Choi Bo-rim": {},
+  "Park Jun-seo": {},
+  "Jo Woong": {}
  }
 }
