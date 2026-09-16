@@ -8,29 +8,48 @@
 <meta property="og:title" content="Didi's K-point">
 <meta property="og:description" content="A drama journal — Korean and Chinese series, scored five ways and written up one at a time.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FF2D6F'/><text y='.9em' x='14' font-size='78' font-family='Georgia,serif' fill='%231A1222'>K</text></svg>">
+<meta name="theme-color" content="#3A1020">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%233A1020'/><text y='.82em' x='11' font-size='72' font-family='Georgia,serif' fill='%23C9963F'>K</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Oswald:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&family=Jost:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="chrome.css">
 </head>
 <body>
 
+<!-- motifs used across the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="crest" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <path d="M32 6c-9 8-9 20 0 26 9-6 9-18 0-26z"/><path d="M32 32v26"/>
+      <path d="M32 40c-7-6-16-6-22-1 5 7 15 9 22 5z"/>
+      <path d="M32 40c7-6 16-6 22-1-5 7-15 9-22 5z"/>
+    </g>
+    <circle cx="32" cy="20" r="3.4" fill="currentColor"/>
+  </symbol>
+  <symbol id="sprig" viewBox="0 0 64 34">
+    <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M6 17h52"/></g>
+    <g fill="currentColor" opacity=".85">
+      <path d="M18 17c0-5 4-8 9-8-1 5-4 8-9 8z"/><path d="M18 17c0 5 4 8 9 8-1-5-4-8-9-8z"/>
+      <path d="M46 17c0-5-4-8-9-8 1 5 4 8 9 8z"/><path d="M46 17c0 5-4 8-9 8 1-5 4-8 9-8z"/>
+    </g>
+    <circle cx="32" cy="17" r="4.4" fill="currentColor"/>
+  </symbol>
+</svg>
+
 <header class="masthead">
+  <div class="mast-tex"></div>
   <div class="mast-in">
-    <h1 class="logo">DIDI'S<em>K&middot;POINT</em></h1>
-    <div class="mast-meta">
-      A drama journal<br>
-      <b id="mastRange">&mdash;</b> &middot; <b id="mastCount">0</b> titles
-    </div>
+    <svg class="crest" viewBox="0 0 64 64" aria-hidden="true"><use href="#crest"/></svg>
+    <h1 class="logo">DIDI'S K&middot;POINT<em>a drama journal</em></h1>
+    <div class="rule-g"></div>
+    <div class="mast-meta"><b id="mastRange">&mdash;</b> &middot; <b id="mastCount">0</b> titles</div>
     <div class="mast-corner">
       <button class="studiobtn" id="studioBtn" type="button" aria-haspopup="dialog">
         <span class="sdot" id="studioDot"></span>Studio
       </button>
     </div>
-    <!-- Author tools are staged here and moved into the Studio panel on load.
-         Add-ons append here too, so they end up in Studio automatically. -->
     <div class="mast-actions" id="studioStage">
       <button class="btn" id="editToggle" type="button" aria-pressed="false">&#9998; Edit mode</button>
       <button class="btn" id="addBtn" type="button">+ Add a show</button>
@@ -46,7 +65,7 @@
 <div class="controls" id="controls">
   <div class="controls-in">
     <label class="search">
-      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="2"></circle><path d="M11 11l4 4" stroke="currentColor" stroke-width="2"></path></svg>
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6"></circle><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.6"></path></svg>
       <input id="q" type="search" placeholder="Search titles, genres, write-ups…" autocomplete="off">
     </label>
     <button class="btn" id="filterBtn" type="button" aria-haspopup="dialog">
@@ -76,6 +95,7 @@
 <section class="page hidden" id="page" aria-live="polite"></section>
 
 <footer class="foot">
+  <div class="marbled"></div>
   <div class="foot-in">
     <span><b>Didi's K-point</b> — kept by hand, one drama at a time.</span>
     <span class="mono" id="footStat"></span>
@@ -89,12 +109,10 @@
   <div class="sheet-card">
     <div class="sec-h"><h2>Filters</h2><div class="rule"></div>
       <button class="x big" id="filterClose" type="button" aria-label="Close">×</button></div>
-
     <div class="fgroup">
       <span class="label">Where you're at with it</span>
       <div class="chips" id="statusChips"></div>
     </div>
-
     <div class="fgroup">
       <span class="label">When</span>
       <div class="selrow">
@@ -102,7 +120,6 @@
         <select class="sel wide" id="watchedSel" aria-label="Filter by when you watched it"></select>
       </div>
     </div>
-
     <div class="fgroup">
       <span class="label">What it is</span>
       <div class="selrow">
@@ -111,14 +128,12 @@
         <select class="sel wide" id="countrySel" aria-label="Filter by country"></select>
       </div>
     </div>
-
     <div class="fgroup">
       <span class="label">How you rated it</span>
       <div class="selrow">
         <select class="sel wide" id="bandSel" aria-label="Filter by your score"></select>
       </div>
     </div>
-
     <div class="row" style="margin-top:22px">
       <button class="btn solid" id="filterDone" type="button">Show results</button>
       <button class="btn ghost" id="filterClear" type="button">Clear everything</button>

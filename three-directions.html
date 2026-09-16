@@ -1,0 +1,337 @@
+<title>Three Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&family=Jost:wght@300;400;500;600&family=Marcellus&display=swap">
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0B0A0E;color:#EDE6DC;font-family:"Jost",system-ui,sans-serif}
+h1,h2,h3{margin:0;text-wrap:balance}
+button{font:inherit;color:inherit;cursor:pointer}
+img{max-width:100%}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.grain{position:absolute;inset:0;pointer-events:none;z-index:5;opacity:.08;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+.tex{position:absolute;inset:0;pointer-events:none;background:var(--pc,#fff);opacity:var(--po,.2);
+  -webkit-mask-image:var(--pm);mask-image:var(--pm);
+  -webkit-mask-size:var(--ps,90px);mask-size:var(--ps,90px)}
+
+:root{
+  --p-leopard:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88'%3E%3Cg fill='%23000'%3E%3Cpath d='M14 12c7-4 14 0 13 6s-9 9-14 5-4-8 1-11z'/%3E%3Cpath d='M52 6c6-3 12 1 11 6s-8 8-12 4-3-8 1-10z'/%3E%3Cpath d='M30 40c7-4 15 0 14 6s-9 9-15 5-4-8 1-11z'/%3E%3Cpath d='M68 34c6-3 13 1 12 6s-9 8-13 4-3-8 1-10z'/%3E%3Cpath d='M8 60c6-3 13 1 12 6s-9 8-13 4-3-8 1-10z'/%3E%3Cpath d='M48 68c7-4 15 0 14 6s-9 9-15 5-4-8 1-11z'/%3E%3Cpath d='M78 66c5-2 10 1 9 5s-7 6-10 3-2-7 1-8z'/%3E%3C/g%3E%3C/svg%3E");
+  --p-fern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M20 110C20 60 34 30 56 12'/%3E%3Cpath d='M22 92c-8-5-11-14-10-22'/%3E%3Cpath d='M26 74c-7-6-9-15-7-22'/%3E%3Cpath d='M33 57c-6-7-7-16-4-22'/%3E%3Cpath d='M43 41c-5-8-4-16 0-22'/%3E%3Cpath d='M24 92c9-3 14-11 15-20'/%3E%3Cpath d='M28 74c9-4 13-12 13-21'/%3E%3Cpath d='M35 57c9-5 12-13 11-22'/%3E%3Cpath d='M100 8c0 50-14 80-36 98'/%3E%3Cpath d='M98 26c8 5 11 14 10 22'/%3E%3Cpath d='M94 44c7 6 9 15 7 22'/%3E%3Cpath d='M87 61c6 7 7 16 4 22'/%3E%3C/g%3E%3C/svg%3E");
+  --p-glassgrid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='120'%3E%3Cg fill='none' stroke='%23000' stroke-width='2'%3E%3Cpath d='M36 0v120M0 60h72'/%3E%3Cpath d='M0 0l36 60L0 120M72 0L36 60l36 60'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ═══ page chrome ═══ */
+.top{padding:36px 22px 30px;max-width:980px;margin:0 auto}
+.top .eyebrow{text-transform:uppercase;letter-spacing:.3em;font-size:10.5px;color:#C08E2E}
+.top h1{font-family:"Cormorant Garamond",serif;font-size:clamp(30px,6vw,50px);font-weight:600;
+  line-height:1.05;margin:12px 0}
+.top p{color:#A79C92;font-size:16px;line-height:1.65;max-width:64ch;margin:0}
+.rule{height:1px;background:#2C2832;max-width:980px;margin:0 auto}
+
+.dirhead{max-width:980px;margin:0 auto;padding:44px 22px 20px;display:flex;gap:16px;
+  align-items:baseline;flex-wrap:wrap}
+.dirhead .num{font-family:"Cormorant Garamond",serif;font-size:44px;color:#C08E2E;line-height:1}
+.dirhead h2{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600}
+.dirhead .note{flex:1 1 320px;color:#A79C92;font-size:15px;line-height:1.6}
+.swatchline{display:flex;gap:6px;margin-top:10px}
+.swatchline span{width:26px;height:26px;border-radius:50%;box-shadow:0 0 0 1px #ffffff2e}
+
+.demo{position:relative;overflow:hidden}
+.demo-in{position:relative;z-index:2;max-width:980px;margin:0 auto;padding:0 22px 36px}
+.row{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));margin-top:22px}
+
+/* ══════════════════════════════════════════════════════════════
+   ONE — CATHEDRAL ELECTRIC  (stained glass)
+   ══════════════════════════════════════════════════════════ */
+.d1{background:#0A0912;border-top:1px solid #2C2832}
+.d1 .lead{position:absolute;inset:0;z-index:1;opacity:.5;
+  background:
+    repeating-linear-gradient(64deg,#000 0 3px,transparent 3px 96px),
+    repeating-linear-gradient(-64deg,#000 0 3px,transparent 3px 96px)}
+.d1 .mast{position:relative;text-align:center;padding:44px 20px 34px;
+  background:radial-gradient(120% 90% at 50% 0%,#2B1B6B 0%,#0A0912 72%)}
+.d1 .wm{font-family:"Abril Fatface",serif;font-size:clamp(38px,8.5vw,72px);line-height:.95;
+  color:#FFE9A8;letter-spacing:-.01em;
+  text-shadow:0 0 22px #FFC53D80, 0 0 60px #E0378E4d}
+.d1 .wm em{display:block;font-style:normal;font-size:.5em;color:#7FE8FF;letter-spacing:.06em;
+  text-shadow:0 0 18px #24D3FF80}
+.d1 .sub{margin-top:14px;text-transform:uppercase;letter-spacing:.3em;font-size:10px;color:#9A8FD6}
+.d1 .tabs{display:flex;gap:3px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.d1 .tab{padding:8px 14px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  border:1px solid #ffffff1f;background:#ffffff0a;color:#C9C0E8}
+.d1 .tab.on{background:#E0378E;border-color:#E0378E;color:#fff;box-shadow:0 0 18px #E0378E80}
+.d1 .pane{position:relative;aspect-ratio:3/4;overflow:hidden;
+  background:radial-gradient(90% 70% at 30% 18%,#ffffff54 0%,transparent 55%),var(--g);
+  box-shadow:inset 0 0 0 3px #07060C, inset 0 0 26px #00000080, 0 0 24px var(--glow);
+  display:grid;place-items:center}
+.d1 .pane::after{content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(90deg,#00000030 0 1px,transparent 1px 14px)}
+.d1 .pane b{position:relative;z-index:2;font-family:"Abril Fatface",serif;font-size:19px;
+  color:#fff;text-align:center;padding:0 12px;line-height:1.1;
+  text-shadow:0 2px 10px #000000b3}
+.d1 .cap{margin-top:9px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8E85AE}
+.d1 .art{margin-top:30px;padding:30px 26px;position:relative;
+  background:linear-gradient(160deg,#1B1147,#0D0A20);
+  box-shadow:inset 0 0 0 3px #07060C, inset 0 0 0 4px #FFC53D40}
+.d1 .art h3{font-family:"Abril Fatface",serif;font-size:clamp(26px,5.5vw,42px);color:#FFE9A8;
+  text-shadow:0 0 20px #FFC53D66}
+.d1 .art p{font-family:"Cormorant Garamond",serif;font-size:19px;line-height:1.75;color:#D8D0EC;
+  max-width:60ch;margin:14px 0 0}
+
+/* ══════════════════════════════════════════════════════════════
+   TWO — LEOPARD & SILK
+   ══════════════════════════════════════════════════════════ */
+.d2{background:#160D14;border-top:1px solid #2C2832}
+.d2 .mast{position:relative;overflow:hidden;text-align:center;padding:46px 20px 36px;
+  background:linear-gradient(140deg,#3E1226,#160D14 60%)}
+.d2 .mast .tex{--pm:var(--p-leopard);--ps:88px;--pc:#C9963F;--po:.3}
+.d2 .wm{position:relative;z-index:2;font-family:"Cinzel",serif;font-weight:800;
+  font-size:clamp(28px,6.6vw,54px);letter-spacing:.09em;color:#F3E2C0;line-height:1.1}
+.d2 .wm em{display:block;font-style:normal;font-weight:400;font-size:.46em;letter-spacing:.34em;
+  color:#E0658A;margin-top:10px}
+.d2 .sub{position:relative;z-index:2;margin-top:16px;text-transform:uppercase;letter-spacing:.32em;
+  font-size:10px;color:#B79C86}
+.d2 .goldrule{height:2px;background:linear-gradient(90deg,transparent,#C9963F,transparent);
+  margin:22px auto 0;max-width:280px}
+.d2 .tabs{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:24px;
+  position:relative;z-index:2}
+.d2 .tab{padding:0 0 6px;border:0;background:none;font-size:10.5px;letter-spacing:.24em;
+  text-transform:uppercase;color:#9A8474;border-bottom:1px solid transparent}
+.d2 .tab.on{color:#F3E2C0;border-bottom-color:#C9963F}
+.d2 .silk{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--g);
+  box-shadow:0 10px 26px #00000073}
+.d2 .silk .tex{--pm:var(--p-leopard);--ps:72px;--pc:var(--pc2);--po:.42}
+.d2 .silk::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(115deg,#ffffff3d 0 18%,transparent 34%,#00000038 68%,#ffffff21 100%)}
+.d2 .silk .frame{position:absolute;inset:11px;border:1px solid #C9963F99;z-index:3}
+.d2 .silk b{position:absolute;z-index:4;left:0;right:0;bottom:22px;text-align:center;
+  font-family:"Cinzel",serif;font-weight:600;font-size:14px;letter-spacing:.1em;color:#fff;
+  padding:0 14px;text-shadow:0 2px 8px #000000a6}
+.d2 .cap{margin-top:9px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9A8474}
+.d2 .art{margin-top:30px;padding:32px 28px;background:#1E1119;border:1px solid #C9963F59;
+  position:relative}
+.d2 .art .tex{--pm:var(--p-leopard);--ps:88px;--pc:#C9963F;--po:.09}
+.d2 .art h3{position:relative;z-index:2;font-family:"Cinzel",serif;font-weight:800;
+  font-size:clamp(24px,5vw,38px);letter-spacing:.06em;color:#F3E2C0}
+.d2 .art p{position:relative;z-index:2;font-family:"Cormorant Garamond",serif;font-size:19px;
+  line-height:1.8;color:#CFBCA8;max-width:60ch;margin:14px 0 0}
+
+/* ══════════════════════════════════════════════════════════════
+   THREE — THE CONSERVATORY
+   ══════════════════════════════════════════════════════════ */
+.d3{background:#0E2C22;border-top:1px solid #2C2832}
+.d3 .mast{position:relative;overflow:hidden;text-align:center;padding:44px 20px 34px;
+  background:linear-gradient(180deg,#14402F,#0E2C22)}
+.d3 .mast .tex{--pm:var(--p-glassgrid);--ps:72px 120px;--pc:#9FD3B5;--po:.16}
+.d3 .mast .fern{position:absolute;bottom:-20px;width:190px;opacity:.22;color:#9FD3B5}
+.d3 .mast .fl{left:-30px;transform:scaleX(-1)} .d3 .mast .fr{right:-30px}
+.d3 .wm{position:relative;z-index:2;font-family:"Marcellus",serif;
+  font-size:clamp(34px,7.6vw,62px);color:#F6EFE0;letter-spacing:.02em;line-height:1.05}
+.d3 .wm em{display:block;font-style:italic;font-family:"Cormorant Garamond",serif;
+  font-size:.52em;color:#E9A07C;letter-spacing:.04em;margin-top:6px}
+.d3 .sub{position:relative;z-index:2;margin-top:14px;text-transform:uppercase;letter-spacing:.3em;
+  font-size:10px;color:#8FB9A2}
+.d3 .tabs{display:flex;gap:4px;justify-content:center;flex-wrap:wrap;margin-top:22px;
+  position:relative;z-index:2}
+.d3 .tab{padding:8px 15px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  border:1px solid #B08C4E66;background:transparent;color:#B9CFC1;border-radius:2px}
+.d3 .tab.on{background:#E9A07C;border-color:#E9A07C;color:#14402F}
+.d3 .spec{position:relative;background:#F6EFE0;padding:14px 14px 16px;
+  box-shadow:0 8px 20px #00000059;border:1px solid #D9C9A8}
+.d3 .spec .win{position:relative;aspect-ratio:1/1;background:var(--g);overflow:hidden;
+  border:1px solid #00000021}
+.d3 .spec .win .tex{--pm:var(--p-fern);--ps:120px;--pc:var(--pc2);--po:.55}
+.d3 .spec .pin{position:absolute;top:-6px;left:50%;transform:translateX(-50%);width:12px;
+  height:12px;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,#F0D79A,#8E6C2A);
+  box-shadow:0 2px 5px #00000073;z-index:3}
+.d3 .spec b{display:block;margin-top:11px;font-family:"Marcellus",serif;font-size:14.5px;
+  color:#1B2E24;line-height:1.2}
+.d3 .spec .acc{display:flex;justify-content:space-between;margin-top:5px;
+  font-family:"DM Mono",monospace;font-size:10px;color:#7E7156}
+.d3 .art{margin-top:30px;padding:30px 28px;background:#F6EFE0;color:#1B2E24;
+  border:1px solid #D9C9A8;box-shadow:0 10px 26px #00000047;position:relative;overflow:hidden}
+.d3 .art .tex{--pm:var(--p-fern);--ps:120px;--pc:#14402F;--po:.09}
+.d3 .art h3{position:relative;z-index:2;font-family:"Marcellus",serif;
+  font-size:clamp(26px,5.4vw,42px);color:#14402F}
+.d3 .art .lat{position:relative;z-index:2;font-family:"Cormorant Garamond",serif;font-style:italic;
+  color:#8E6C2A;font-size:16px;margin-top:4px}
+.d3 .art p{position:relative;z-index:2;font-family:"Cormorant Garamond",serif;font-size:19px;
+  line-height:1.8;color:#3B4A41;max-width:60ch;margin:14px 0 0}
+
+.foot{max-width:980px;margin:0 auto;padding:40px 22px 60px;color:#A79C92;font-size:15px;
+  line-height:1.7;border-top:1px solid #2C2832}
+.foot b{color:#EDE6DC}
+@media (max-width:560px){
+  .row{grid-template-columns:repeat(auto-fill,minmax(132px,1fr))}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="fernbig" viewBox="0 0 120 120">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M20 118C20 62 36 30 60 8"/>
+      <path d="M23 96c-9-6-12-16-11-25"/><path d="M28 76c-8-7-10-17-8-25"/>
+      <path d="M36 57c-7-8-8-18-5-25"/><path d="M47 39c-6-9-5-18 0-25"/>
+      <path d="M25 96c10-4 15-13 16-22"/><path d="M31 76c10-5 14-14 14-23"/>
+      <path d="M39 57c10-6 13-15 12-24"/><path d="M50 39c9-7 11-16 9-24"/>
+    </g>
+  </symbol>
+</svg>
+
+<div class="top">
+  <div class="eyebrow">Three directions &middot; pick one, or tell me what to cross</div>
+  <h1>Your brief has more than one world in it</h1>
+  <p>Glass, animal print, botanicals, old paper, saturated colour — I collapsed them all into one
+  ceramic idea twice and it wasn't right. So here they are pulled apart instead. Each of these is a
+  different spine with the others as accents. None is a variation on the last two.</p>
+</div>
+<div class="rule"></div>
+
+<!-- ONE -->
+<div class="dirhead">
+  <span class="num">I</span>
+  <div>
+    <h2>Cathedral Electric</h2>
+    <div class="swatchline">
+      <span style="background:#E0378E"></span><span style="background:#24D3FF"></span>
+      <span style="background:#FFC53D"></span><span style="background:#7B2FF7"></span>
+      <span style="background:#00C98D"></span><span style="background:#0A0912"></span>
+    </div>
+  </div>
+  <p class="note">Stained glass as the spine. Black leading, jewel panes lit from behind, colour that
+  glows rather than sits. This is the "polished electric" half of what you said, taken seriously —
+  saturation at full strength on near-black, with gold light bleeding off the type.
+  Botanicals appear as leaded flower panels; texture comes from glass, not print.</p>
+</div>
+<div class="demo d1">
+  <div class="lead"></div><div class="grain"></div>
+  <div class="mast">
+    <h2 class="wm">DIDI'S<em>K &middot; P O I N T</em></h2>
+    <div class="sub">A drama journal &middot; 253 titles</div>
+    <div class="tabs"><button class="tab on">Library</button><button class="tab">Diary</button>
+      <button class="tab">Ranking</button><button class="tab">Numbers</button>
+      <button class="tab">Next up</button></div>
+  </div>
+  <div class="demo-in">
+    <div class="row">
+      <div><div class="pane" style="--g:linear-gradient(150deg,#E0378E,#7B2FF7);--glow:#E0378E4d"><b>Mr. Plankton</b></div><div class="cap">4.5 · Netflix</div></div>
+      <div><div class="pane" style="--g:linear-gradient(150deg,#24D3FF,#0B6FD1);--glow:#24D3FF40"><b>Eve</b></div><div class="cap">4.2 · tvN</div></div>
+      <div><div class="pane" style="--g:linear-gradient(150deg,#00C98D,#0A6B57);--glow:#00C98D40"><b>Buried Hearts</b></div><div class="cap">4.3 · SBS</div></div>
+      <div><div class="pane" style="--g:linear-gradient(150deg,#FFC53D,#E2601A);--glow:#FFC53D40"><b>Lovely Runner</b></div><div class="cap">4.6 · tvN</div></div>
+    </div>
+    <div class="art">
+      <h3>Mr. Plankton</h3>
+      <p>The article panel is a window: leaded edge, gold hairline, colour pooling behind the words.
+      Scores become bars of lit glass. Your posters sit inside the leading like a painted pane.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TWO -->
+<div class="dirhead">
+  <span class="num">II</span>
+  <div>
+    <h2>Leopard &amp; Silk</h2>
+    <div class="swatchline">
+      <span style="background:#C9963F"></span><span style="background:#3E1226"></span>
+      <span style="background:#E0658A"></span><span style="background:#1E6B52"></span>
+      <span style="background:#2F4C9B"></span><span style="background:#F3E2C0"></span>
+    </div>
+  </div>
+  <p class="note">Animal print as the spine, treated like a fashion house rather than a novelty.
+  Leopard in gold on oxblood, silk sheen across every cover, engraved Roman caps, hairline gold
+  rules. The most grown-up and the most glamorous of the three. Botanicals show up as embroidery;
+  vintage comes from the typography, not from paper.</p>
+</div>
+<div class="demo d2">
+  <div class="grain"></div>
+  <div class="mast">
+    <div class="tex"></div>
+    <h2 class="wm">DIDI'S<em>K-POINT</em></h2>
+    <div class="sub">A drama journal &middot; 253 titles</div>
+    <div class="goldrule"></div>
+    <div class="tabs"><button class="tab on">Library</button><button class="tab">Diary</button>
+      <button class="tab">Ranking</button><button class="tab">Numbers</button>
+      <button class="tab">Next up</button></div>
+  </div>
+  <div class="demo-in">
+    <div class="row">
+      <div><div class="silk" style="--g:linear-gradient(150deg,#7C1230,#3E1226);--pc2:#E8B54A"><div class="tex"></div><span class="frame"></span><b>Mr. Plankton</b></div><div class="cap">4.5 · Netflix</div></div>
+      <div><div class="silk" style="--g:linear-gradient(150deg,#1E6B52,#0F3529);--pc2:#F0C97A"><div class="tex"></div><span class="frame"></span><b>Eve</b></div><div class="cap">4.2 · tvN</div></div>
+      <div><div class="silk" style="--g:linear-gradient(150deg,#2F4C9B,#17264F);--pc2:#E8B54A"><div class="tex"></div><span class="frame"></span><b>Buried Hearts</b></div><div class="cap">4.3 · SBS</div></div>
+      <div><div class="silk" style="--g:linear-gradient(150deg,#C9963F,#7A5316);--pc2:#3E1226"><div class="tex"></div><span class="frame"></span><b>Lovely Runner</b></div><div class="cap">4.6 · tvN</div></div>
+    </div>
+    <div class="art">
+      <div class="tex"></div>
+      <h3>MR. PLANKTON</h3>
+      <p>Cinzel is cut from Roman inscriptional letters, which is why this reads as a house rather
+      than a blog. Scores become thin gold bars. Print stays at low opacity behind the text so it
+      never competes with reading.</p>
+    </div>
+  </div>
+</div>
+
+<!-- THREE -->
+<div class="dirhead">
+  <span class="num">III</span>
+  <div>
+    <h2>The Conservatory</h2>
+    <div class="swatchline">
+      <span style="background:#0E2C22"></span><span style="background:#E9A07C"></span>
+      <span style="background:#B08C4E"></span><span style="background:#F6EFE0"></span>
+      <span style="background:#9FD3B5"></span><span style="background:#8C2F45"></span>
+    </div>
+  </div>
+  <p class="note">Plants as the spine — a Victorian glasshouse and the herbarium inside it. Deep
+  green walls, brass glazing bars, and every show pinned to a cream specimen card like a pressed
+  flower, with its own accession number. This one leans hardest into the greens and plants you said
+  you love, and it's the most genuinely old-feeling of the three.</p>
+</div>
+<div class="demo d3">
+  <div class="grain"></div>
+  <div class="mast">
+    <div class="tex"></div>
+    <svg class="fern fl" viewBox="0 0 120 120"><use href="#fernbig"/></svg>
+    <svg class="fern fr" viewBox="0 0 120 120"><use href="#fernbig"/></svg>
+    <h2 class="wm">Didi's K&middot;point<em>a drama herbarium</em></h2>
+    <div class="sub">2010&ndash;2026 &middot; 253 specimens</div>
+    <div class="tabs"><button class="tab on">Library</button><button class="tab">Diary</button>
+      <button class="tab">Ranking</button><button class="tab">Numbers</button>
+      <button class="tab">Next up</button></div>
+  </div>
+  <div class="demo-in">
+    <div class="row">
+      <div class="spec"><span class="pin"></span>
+        <div class="win" style="--g:#8C2F45;--pc2:#F0C9A8"><div class="tex"></div></div>
+        <b>Mr. Plankton</b><div class="acc"><span>KR · 2024</span><span>4.5</span></div></div>
+      <div class="spec"><span class="pin"></span>
+        <div class="win" style="--g:#1E6B52;--pc2:#E9DFBF"><div class="tex"></div></div>
+        <b>Eve</b><div class="acc"><span>KR · 2022</span><span>4.2</span></div></div>
+      <div class="spec"><span class="pin"></span>
+        <div class="win" style="--g:#2F4C9B;--pc2:#BFD9EC"><div class="tex"></div></div>
+        <b>Buried Hearts</b><div class="acc"><span>KR · 2025</span><span>4.3</span></div></div>
+      <div class="spec"><span class="pin"></span>
+        <div class="win" style="--g:#E9A07C;--pc2:#14402F"><div class="tex"></div></div>
+        <b>Lovely Runner</b><div class="acc"><span>KR · 2024</span><span>4.6</span></div></div>
+    </div>
+    <div class="art">
+      <div class="tex"></div>
+      <h3>Mr. Plankton</h3>
+      <div class="lat">Netflix · 2024 · ten episodes · collected November</div>
+      <p>The article is a mounted sheet: cream board, brass pins at the corners, a printed label
+      carrying the facts. Your five scores read as a specimen's measurements. It's the calmest to
+      read in and the easiest to fill with photographs.</p>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  <p><b>Tell me which number</b> — or which parts of which. "I want the glass panes from one with
+  the greens from three" is a perfectly good answer, and probably a better page than any of them on
+  its own. Once you pick, I'll build it out properly across every page and swap it into the live
+  site.</p>
+</div>
