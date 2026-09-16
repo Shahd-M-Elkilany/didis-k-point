@@ -24,6 +24,10 @@ const VIEWS = [["library","The library"],["diary","The diary"],["ranking","The r
                ["numbers","The numbers"],["next","Next up"]];
 const BANDS = [["45","4.5 and up"],["4","4 to 4.5"],["35","3.5 to 4"],
                ["3","3 to 3.5"],["lt3","Under 3"],["none","Not scored"]];
+const SORTS = {year:"Newest first",yearAsc:"Oldest first",watched:"Recently watched",
+  mine:"My score",imdb:"IMDb score",over:"Loved more than IMDb",under:"Loved less than IMDb",
+  c0:"Best plot",c1:"Best sequence",c2:"Best characters",c3:"Best chemistry",
+  c4:"Biggest impact",az:"A to Z"};
 const INK_PAIRS = [
   ["var(--pink)","var(--on-pink)","var(--yellow)"],
   ["var(--blue)","var(--on-blue)","var(--pink)"],
@@ -38,7 +42,7 @@ const DRAFT_KEY = "kpoint.draft";
 const GH_KEY    = "kpoint.gh";
 const TRASH_KEY = "kpoint.trash";
 
-let DATA = { name:"Didi's K-point", shows:[] };
+let DATA = { name:"Didi's K-point", shows:[], scratch:[] };
 let pending = Object.create(null);     // path -> {blob, url, done}
 let trash = [];                        // repo files to delete on the next save
 const broken = new Set();              // paths that failed to load
@@ -79,9 +83,6 @@ function watchLabel(w){
 }
 function needsWriteUp(s){ return (s.status==="W") && myScore(s)!=null && !(s.review||"").trim(); }
 
-/* A picture resolves to the blob you just added, or the file in the
-   repo — and to nothing at all once we know that file isn't there,
-   so the page falls back to its drawn cover instead of a broken icon. */
 function mediaSrc(p){
   if (!p) return null;
   if (pending[p]) return pending[p].url;
@@ -159,6 +160,13 @@ async function idbAll(){
     setTimeout(()=>toast("Unsaved changes from last time were restored"), 400);
   }
   if (!DATA.shows) DATA.shows = [];
+  if (!Array.isArray(DATA.scratch)) DATA.scratch = [];
+
+  try {
+    if (navigator.storage && navigator.storage.persist){
+      if (!(await navigator.storage.persisted())) await navigator.storage.persist();
+    }
+  } catch(e){}
 
   const stored = await idbAll();
   Object.keys(stored).forEach(k=>{
@@ -174,6 +182,7 @@ async function idbAll(){
   window.addEventListener("hashchange", route);
   route();
   updateSaveBar();
+  setTimeout(moveTools, 60);      // after add-ons have staged their buttons
 })();
 
 /* ── routing ────────────────────────────────────────────────── */
@@ -197,9 +206,11 @@ function markDirty(){
   try { localStorage.setItem(DRAFT_KEY, JSON.stringify(DATA)); } catch(e){}
   updateSaveBar();
 }
+function saveTrash(){ try { localStorage.setItem(TRASH_KEY, JSON.stringify(trash)); } catch(e){} }
 function unsavedPics(){ return Object.keys(pending).filter(p=>!pending[p].done).length; }
 function updateSaveBar(){
-  $("#saveBar").classList.toggle("on", dirty || trash.length>0);
+  const pendingWork = dirty || trash.length>0;
+  $("#saveBar").classList.toggle("on", pendingWork);
   const n = unsavedPics(), d = trash.length;
   const extra = [
     n ? n+" picture"+(n>1?"s":"")+" waiting" : "",
@@ -208,7 +219,26 @@ function updateSaveBar(){
   $("#saveCount").textContent = gh.token
     ? "Unsaved" + (extra ? " · "+extra : "")
     : "Unsaved — connect GitHub to publish";
+
+  const btn = $("#studioBtn"), line = $("#studioState");
+  if (btn) btn.classList.toggle("dirty", pendingWork);
+  if (line) line.textContent = pendingWork
+    ? "You have unsaved changes" + (extra ? " — "+extra+"." : ".")
+    : "Everything published.";
 }
+
+/* ── studio ─────────────────────────────────────────────────── */
+function moveTools(){
+  const stage = $("#studioStage"), into = $("#studioTools");
+  if (!stage || !into) return;
+  while (stage.firstChild) into.appendChild(stage.firstChild);
+  const save = document.createElement("button");
+  save.className = "btn solid"; save.type = "button"; save.textContent = "Save to GitHub";
+  save.onclick = ()=>{ closeSheet("studioSheet"); saveAll(); };
+  into.appendChild(save);
+}
+function openSheet(id){ const e=$("#"+id); if(e) e.classList.add("on"); }
+function closeSheet(id){ const e=$("#"+id); if(e) e.classList.remove("on"); }
 
 /* ── tabs + chrome ──────────────────────────────────────────── */
 function renderTabs(){
@@ -273,6 +303,43 @@ function fill(sel, allLabel, pairs){
   if (prev && [...el.options].some(o=>o.value===prev)) el.value = prev;
 }
 
+/* ── which filters are on, and how to switch one off ────────── */
+function labelOf(sel, val){
+  const el = $(sel); if (!el) return val;
+  const o = [...el.options].find(x=>x.value===val);
+  return o ? o.textContent.replace(/^　·\s*/,"") : val;
+}
+function activeFilters(){
+  const out = [];
+  if (state.status!=="all") out.push({ k:"status", label:STATUS[state.status].name,
+    off:()=>{ state.status="all";
+      $$("#statusChips .chip[data-st]").forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.st==="all"))); }});
+  if (state.todo) out.push({ k:"todo", label:"Needs a write-up",
+    off:()=>{ state.todo=false; $("#todoChip").setAttribute("aria-pressed","false"); }});
+  [["year","#yearSel"],["watched","#watchedSel"],["genre","#genreSel"],
+   ["net","#netSel"],["country","#countrySel"],["band","#bandSel"]].forEach(([k,sel])=>{
+    if (state[k]!=="all") out.push({ k, label:labelOf(sel,state[k]),
+      off:()=>{ state[k]="all"; const e=$(sel); if(e) e.value="all"; }});
+  });
+  if (state.q.trim()) out.push({ k:"q", label:'"'+state.q.trim()+'"',
+    off:()=>{ state.q=""; $("#q").value=""; }});
+  return out;
+}
+function renderPills(){
+  const act = activeFilters();
+  const n = act.filter(a=>a.k!=="q").length;
+  const badge = $("#filterCount");
+  badge.textContent = n; badge.hidden = n===0;
+  $("#pills").innerHTML = act.map((a,i)=>
+    `<button class="pill" type="button" data-pill="${i}"><b>${esc(a.label)}</b><i>×</i></button>`).join("")
+    + (act.length>1 ? `<button class="pill clearall" type="button" data-clearall>Clear all</button>` : "");
+  $$("#pills [data-pill]").forEach(b=>b.onclick = ()=>{
+    act[+b.dataset.pill].off(); renderView();
+  });
+  const ca = $("#pills [data-clearall]");
+  if (ca) ca.onclick = clearFilters;
+}
+
 /* ── filtering ──────────────────────────────────────────────── */
 function inBand(s){
   const m = myScore(s);
@@ -305,7 +372,7 @@ function visible(base){
       else if (!w || !w.startsWith(state.watched)) return false;
     }
     if (q){
-      const hay = [s.title,s.network,s.genres,s.review,s.comment].join(" ").toLowerCase();
+      const hay = [s.title,s.network,s.genres,s.review,s.comment,s.summary].join(" ").toLowerCase();
       if (!hay.includes(q)) return false;
     }
     return true;
@@ -327,6 +394,15 @@ function visible(base){
   };
   return list.sort(by[state.sort]||by.year);
 }
+function clearFilters(){
+  Object.assign(state,{q:"",status:"all",genre:"all",net:"all",year:"all",
+                       watched:"all",country:"all",band:"all",todo:false});
+  $("#q").value="";
+  ["#genreSel","#netSel","#yearSel","#watchedSel","#countrySel","#bandSel"].forEach(s=>{ if($(s)) $(s).value="all"; });
+  $$("#statusChips .chip").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.st==="all")));
+  const t = $("#todoChip"); if (t) t.setAttribute("aria-pressed","false");
+  renderView();
+}
 
 /* ── views ──────────────────────────────────────────────────── */
 function renderView(){
@@ -335,6 +411,7 @@ function renderView(){
   $("#countLine").classList.toggle("hidden", !lib);
   $("#grid").classList.toggle("hidden", view!=="library");
   $("#page").classList.toggle("hidden", view==="library");
+  if (lib) renderPills(); else $("#pills").innerHTML = "";
   if (view==="library") renderGrid();
   else if (view==="next") renderNext();
   else if (view==="diary") renderDiary();
@@ -362,6 +439,7 @@ function cardHTML(s){
   if (s.country) bits.push(countryName(s.country));
   if (s.network) bits.push(esc(s.network));
   if (s.imdb) bits.push("IMDb "+s.imdb);
+  if (s.episodes) bits.push(s.episodes+" eps");
   if (s.watched) bits.push("watched "+esc(watchLabel(s.watched)));
   if (s.progress) bits.push(esc(s.progress));
   if ((s.review||"").trim()) bits.push("✎ written up");
@@ -381,21 +459,9 @@ function cardHTML(s){
 function renderGrid(){
   const list = visible(), total = DATA.shows.length;
   $("#countLine").innerHTML =
-    `<span class="big">${list.length}</span><span class="label">of ${total} titles shown</span>` +
-    (list.length!==total ? `<button class="btn ghost" id="clearF" type="button">Clear filters</button>` : "");
-  const cf = $("#clearF");
-  if (cf) cf.onclick = clearFilters;
+    `<span class="big">${list.length}</span><span class="label">of ${total} titles shown</span>`;
   $("#grid").innerHTML = list.length ? list.map(cardHTML).join("")
     : `<p class="empty">Nothing matches that. Try clearing a filter.</p>`;
-}
-function clearFilters(){
-  Object.assign(state,{q:"",status:"all",genre:"all",net:"all",year:"all",
-                       watched:"all",country:"all",band:"all",todo:false});
-  $("#q").value="";
-  ["#genreSel","#netSel","#yearSel","#watchedSel","#countrySel","#bandSel"].forEach(s=>{ if($(s)) $(s).value="all"; });
-  $$("#statusChips .chip").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.st==="all")));
-  $("#todoChip").setAttribute("aria-pressed","false");
-  renderView();
 }
 
 /* ── the diary ──────────────────────────────────────────────── */
@@ -631,15 +697,14 @@ function renderNumbers(){
     </section>`;
 }
 
-/* ── next up ────────────────────────────────────────────────── */
+/* ── next up, with your own shortlist on top ────────────────── */
 function renderNext(){
   const base = DATA.shows.filter(s=>s.status==="L");
   const list = visible(base);
+  const scratch = DATA.scratch || [];
   $("#countLine").innerHTML =
     `<span class="big">${list.length}</span><span class="label">on the watchlist</span>
-     <button class="btn solid" id="shuffle" type="button">🎲 Pick one for me</button>` +
-    (list.length!==base.length?`<button class="btn ghost" id="clearF" type="button">Clear filters</button>`:"");
-  const cf = $("#clearF"); if (cf) cf.onclick = clearFilters;
+     <button class="btn solid" id="shuffle" type="button">🎲 Pick one for me</button>`;
   const sh = $("#shuffle");
   if (sh) sh.onclick = ()=>{
     if (!list.length) return toast("Nothing left to pick from");
@@ -647,13 +712,79 @@ function renderNext(){
     toast("Tonight: "+pick.title);
     go("show/"+pick.id);
   };
+
   $("#page").innerHTML = `
     <div class="pagehead">
       <h2 class="pagetitle">Next up</h2>
       <p class="fine">${base.length} shows you've lined up and not started. Narrow it with the filters
       above, or let the dice decide.</p>
     </div>
+
+    <div class="shortlist">
+      <div class="sec-h"><h2>Your shortlist</h2><div class="rule"></div>
+        <span class="label">${scratch.length||"nothing"} jotted down</span></div>
+      <p class="fine">Anything you've heard about and don't want to forget. This is just a list of
+      names — nothing here has to exist in the library.</p>
+      ${scratch.length ? `<ol class="slist">${scratch.map((t,i)=>`
+        <li>
+          <span class="n">${i+1}</span>
+          <span class="t" data-sc="${i}" contenteditable="true" spellcheck="false">${esc(t)}</span>
+          <button class="mv" type="button" data-up="${i}" title="Move up" ${i===0?"disabled":""}>↑</button>
+          <button class="mv" type="button" data-down="${i}" title="Move down" ${i===scratch.length-1?"disabled":""}>↓</button>
+          <button class="promote" type="button" data-prom="${i}" title="Make it a real entry">To library</button>
+          <button class="x" type="button" data-rmsc="${i}" aria-label="Remove">×</button>
+        </li>`).join("")}</ol>`
+      : `<p class="shortempty">Nothing on it yet.</p>`}
+      <div class="addshort">
+        <input id="scIn" placeholder="A title you keep meaning to watch">
+        <button class="btn" id="scAdd" type="button">Add</button>
+      </div>
+    </div>
+
+    <div class="sec-h" style="margin-top:38px"><h2>Everything on the watchlist</h2><div class="rule"></div></div>
     <div class="grid flat">${list.length?list.map(cardHTML).join(""):`<p class="empty">Nothing matches.</p>`}</div>`;
+
+  const addSc = ()=>{
+    const box = $("#scIn"), v = (box.value||"").trim();
+    if (!v) return;
+    DATA.scratch = (DATA.scratch||[]).concat([v]);
+    markDirty(); renderNext();
+    const nb = $("#scIn"); if (nb) nb.focus();
+  };
+  const ab = $("#scAdd"); if (ab) ab.onclick = addSc;
+  const ib = $("#scIn");
+  if (ib) ib.addEventListener("keydown", e=>{ if (e.key==="Enter"){ e.preventDefault(); addSc(); }});
+
+  $$("#page [data-rmsc]").forEach(b=>b.onclick = ()=>{
+    DATA.scratch.splice(+b.dataset.rmsc,1); markDirty(); renderNext();
+  });
+  $$("#page [data-up]").forEach(b=>b.onclick = ()=>{
+    const i = +b.dataset.up; if (i<1) return;
+    const a = DATA.scratch;
+    [a[i-1],a[i]] = [a[i],a[i-1]]; markDirty(); renderNext();
+  });
+  $$("#page [data-down]").forEach(b=>b.onclick = ()=>{
+    const i = +b.dataset.down, a = DATA.scratch;
+    if (i>=a.length-1) return;
+    [a[i+1],a[i]] = [a[i],a[i+1]]; markDirty(); renderNext();
+  });
+  $$("#page [data-sc]").forEach(el=>{
+    el.addEventListener("input", ()=>{
+      DATA.scratch[+el.dataset.sc] = el.innerText.trim(); markDirty();
+    });
+    el.addEventListener("keydown", e=>{ if (e.key==="Enter"){ e.preventDefault(); el.blur(); }});
+  });
+  $$("#page [data-prom]").forEach(b=>b.onclick = ()=>{
+    const i = +b.dataset.prom, title = DATA.scratch[i];
+    if (!title) return;
+    let id = slugify(title), n = 1;
+    while (get(id)) { n++; id = slugify(title)+"-"+n; }
+    DATA.shows.unshift({ id, title, status:"L" });
+    DATA.scratch.splice(i,1);
+    markDirty(); renderChrome();
+    toast(title+" added to the library");
+    go("show/"+id);
+  });
 }
 
 /* ── article ────────────────────────────────────────────────── */
@@ -706,8 +837,8 @@ function articleHTML(s){
          <button class="btn ghost" id="posterSwap" type="button">Replace poster</button>
          <button class="btn ghost" id="posterRm" type="button">✕ Remove poster</button>
        </div>`
-    : `${posterBroken?`<p class="noyet" style="margin-top:26px">The poster for this one is missing — it was added but never saved to GitHub.</p>`:""}
-       <div class="drop editonly" id="posterDrop" style="margin-top:${posterBroken?14:26}px">Add a poster — click, or drag one in</div>
+    : `${posterBroken?`<p class="noyet editonly" style="margin-top:26px">The poster for this one is missing — it was added but never saved to GitHub. Clear it below, then drop a new one in.</p>`:""}
+       <div class="drop editonly" id="posterDrop" style="margin-top:26px">Add a poster — click, or drag one in</div>
        ${posterBroken?`<div class="row editonly" style="margin-top:10px">
          <button class="btn ghost" id="posterRm" type="button">✕ Clear the dead link</button></div>`:""}`;
 
@@ -797,7 +928,7 @@ function articleHTML(s){
         </figure>`;
       }).join("")}</div>`:(!editMode?`<p class="noyet">No stills yet.</p>`:"")}
       <div class="drop editonly" id="galDrop" style="margin-top:14px">Add pictures — click, drag them in, or just paste</div>
-      ${editMode&&gallery.length?`<p class="label" style="margin-top:10px">The ✕ on a picture removes it.</p>`:""}
+      ${gallery.length?`<p class="label editonly" style="margin-top:10px">The ✕ on a picture removes it.</p>`:""}
     </section>`;
 
   const vids = (s.videos||[]);
@@ -976,11 +1107,6 @@ function queueImage(showId, file){
   idbPut(path, file);
   return path;
 }
-function saveTrash(){ try { localStorage.setItem(TRASH_KEY, JSON.stringify(trash)); } catch(e){} }
-
-/* Drop a picture. If it was only waiting to be uploaded it just goes
-   away; if it's already a file in the repo it's queued for deletion
-   there on your next save, so the repo doesn't fill up with orphans. */
 function forgetImage(path){
   if (!path) return;
   const wasPending = !!pending[path];
@@ -1033,8 +1159,13 @@ document.addEventListener("paste", e=>{
 function setEdit(v){
   editMode = v;
   document.body.classList.toggle("editing", v);
-  $("#editToggle").setAttribute("aria-pressed", String(v));
-  $("#editToggle").textContent = v ? "✓ Editing" : "✎ Edit mode";
+  const t = $("#editToggle");
+  if (t){ t.setAttribute("aria-pressed", String(v)); t.textContent = v ? "✓ Editing" : "✎ Edit mode"; }
+}
+function typingInField(){
+  const a = document.activeElement;
+  return a && (a.tagName==="INPUT" || a.tagName==="TEXTAREA" || a.tagName==="SELECT"
+            || a.isContentEditable);
 }
 function wireChrome(){
   $("#tabs").addEventListener("click", e=>{
@@ -1042,9 +1173,20 @@ function wireChrome(){
   });
   $("#editToggle").addEventListener("click", ()=>{
     setEdit(!editMode);
+    closeSheet("studioSheet");
     if (editMode && !gh.token) toast("Connect GitHub when you're ready to publish");
-    if (openId) renderReader();
+    if (openId) renderReader(); else renderView();
   });
+
+  // studio + filters
+  $("#studioBtn").addEventListener("click", ()=>openSheet("studioSheet"));
+  $("#studioClose").addEventListener("click", ()=>closeSheet("studioSheet"));
+  $("#studioSheet").addEventListener("click", e=>{ if (e.target===$("#studioSheet")) closeSheet("studioSheet"); });
+  $("#filterBtn").addEventListener("click", ()=>openSheet("filterSheet"));
+  $("#filterClose").addEventListener("click", ()=>closeSheet("filterSheet"));
+  $("#filterDone").addEventListener("click", ()=>closeSheet("filterSheet"));
+  $("#filterClear").addEventListener("click", clearFilters);
+  $("#filterSheet").addEventListener("click", e=>{ if (e.target===$("#filterSheet")) closeSheet("filterSheet"); });
 
   document.addEventListener("click", e=>{
     const o = e.target.closest("[data-open]");
@@ -1130,6 +1272,7 @@ function wireChrome(){
   Object.keys(sel).forEach(k=>{ const el=$(k); if(el) el.addEventListener("change", e=>{ state[sel[k]]=e.target.value; renderView(); }); });
 
   $("#addBtn").addEventListener("click", ()=>{
+    closeSheet("studioSheet");
     const t = prompt("What's it called?"); if (!t || !t.trim()) return;
     let id = slugify(t), n = 1;
     while (get(id)) { n++; id = slugify(t)+"-"+n; }
@@ -1139,16 +1282,25 @@ function wireChrome(){
 
   document.addEventListener("keydown", e=>{
     if (e.key==="Escape"){
-      if ($("#ghSheet").classList.contains("on")) $("#ghSheet").classList.remove("on");
+      if ($("#filterSheet").classList.contains("on")) closeSheet("filterSheet");
+      else if ($("#studioSheet").classList.contains("on")) closeSheet("studioSheet");
+      else if ($("#ghSheet").classList.contains("on")) closeSheet("ghSheet");
       else if (openId) closeShow();
+      return;
     }
-    if ((e.metaKey||e.ctrlKey) && e.key==="s"){ e.preventDefault(); saveAll(); }
+    if ((e.metaKey||e.ctrlKey) && e.key==="s"){ e.preventDefault(); saveAll(); return; }
+    if ((e.key==="e"||e.key==="E") && !e.metaKey && !e.ctrlKey && !e.altKey && !typingInField()){
+      e.preventDefault();
+      setEdit(!editMode);
+      if (openId) renderReader(); else renderView();
+      toast(editMode ? "Edit mode on" : "Edit mode off");
+    }
   });
   window.addEventListener("beforeunload", e=>{ if (dirty){ e.preventDefault(); e.returnValue=""; }});
 
-  $("#ghBtn").addEventListener("click", openGh);
-  $("#ghClose").addEventListener("click", ()=>$("#ghSheet").classList.remove("on"));
-  $("#ghSheet").addEventListener("click", e=>{ if (e.target===$("#ghSheet")) $("#ghSheet").classList.remove("on"); });
+  $("#ghBtn").addEventListener("click", ()=>{ closeSheet("studioSheet"); openGh(); });
+  $("#ghClose").addEventListener("click", ()=>closeSheet("ghSheet"));
+  $("#ghSheet").addEventListener("click", e=>{ if (e.target===$("#ghSheet")) closeSheet("ghSheet"); });
   $("#ghSave").addEventListener("click", connectGh);
   $("#ghForget").addEventListener("click", ()=>{
     gh.token=""; localStorage.removeItem(GH_KEY);
@@ -1177,10 +1329,11 @@ function openGh(){
   $("#ghRepo").value  = gh.repo  || "";
   $("#ghBranch").value= gh.branch|| "main";
   $("#ghToken").value = "";
+  $("#ghToken").placeholder = gh.token ? "Saved — leave blank to keep it" : "github_pat_…";
   $("#ghStatus").textContent = gh.token
-    ? "Connected as "+gh.owner+"/"+gh.repo+". Leave the token blank to keep the one already saved."
+    ? "Connected as "+gh.owner+"/"+gh.repo+"."
     : "Not connected yet.";
-  $("#ghSheet").classList.add("on");
+  openSheet("ghSheet");
 }
 async function connectGh(){
   const owner = $("#ghOwner").value.trim();
@@ -1208,14 +1361,12 @@ async function connectGh(){
       ? "Couldn't reach GitHub. Check your internet connection and try again."
       : `This page can't talk to GitHub — the request was blocked before it left the browser.
          Saving only works on your live <b>github.io</b> site, not on a preview or a file
-         opened from your computer. Everything else on this page works fine here.`);
+         opened from your computer.`);
     return;
   }
   if (!r.ok){
     say(r.status===404
-        ? `No repository called <b>${esc(owner)}/${esc(repo)}</b> that this token can see.
-           Check the spelling, and that the token lists this repository under
-           <b>Only select repositories</b>.`
+        ? `No repository called <b>${esc(owner)}/${esc(repo)}</b> that this token can see.`
       : r.status===401 ? "That token was rejected. It may have expired — make a new one."
       : r.status===403 ? `The token reached GitHub but isn't allowed in. It needs
            <b>Contents: Read and write</b> on this repository.`
@@ -1265,7 +1416,7 @@ async function putFile(path, contentB64, message){
 async function deleteFile(path){
   const head = await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}?ref=${gh.branch}`,
     {headers: ghHeaders(), cache:"no-store"});
-  if (!head.ok) return;                       // already gone, nothing to do
+  if (!head.ok) return;
   const sha = (await head.json()).sha;
   await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}`, {
     method:"DELETE", headers: Object.assign({"Content-Type":"application/json"}, ghHeaders()),
@@ -1282,15 +1433,14 @@ async function saveAll(){
     for (let i=0;i<todo.length;i++){
       btn.textContent = `Picture ${i+1}/${todo.length}…`;
       await putFile(todo[i], await b64blob(pending[todo[i]].blob), "Add "+todo[i]);
-      pending[todo[i]].done = true;   // keep showing the local copy until you reload
-      await idbDel(todo[i]);          // it no longer needs to wait in the drawer
+      pending[todo[i]].done = true;
+      await idbDel(todo[i]);
     }
 
     btn.textContent = "Saving…";
     DATA.updated = new Date().toISOString().slice(0,10);
     await putFile("data.json", b64text(JSON.stringify(DATA,null,1)+"\n"), "Update the journal");
 
-    // Only once data.json no longer points at them: clear out removed pictures.
     const used = new Set();
     DATA.shows.forEach(x=>{
       if (x.poster) used.add(x.poster);

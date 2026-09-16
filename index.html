@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Oswald:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="chrome.css">
 </head>
 <body>
 
@@ -21,11 +22,18 @@
     <h1 class="logo">DIDI'S<em>K&middot;POINT</em></h1>
     <div class="mast-meta">
       A drama journal<br>
-      <b id="mastRange">—</b> &middot; <b id="mastCount">0</b> titles
+      <b id="mastRange">&mdash;</b> &middot; <b id="mastCount">0</b> titles
     </div>
-    <div class="mast-actions">
+    <div class="mast-corner">
+      <button class="studiobtn" id="studioBtn" type="button" aria-haspopup="dialog">
+        <span class="sdot" id="studioDot"></span>Studio
+      </button>
+    </div>
+    <!-- Author tools are staged here and moved into the Studio panel on load.
+         Add-ons append here too, so they end up in Studio automatically. -->
+    <div class="mast-actions" id="studioStage">
+      <button class="btn" id="editToggle" type="button" aria-pressed="false">&#9998; Edit mode</button>
       <button class="btn" id="addBtn" type="button">+ Add a show</button>
-      <button class="btn" id="editToggle" type="button" aria-pressed="false">✎ Edit mode</button>
       <button class="btn ghost" id="ghBtn" type="button">GitHub</button>
     </div>
   </div>
@@ -38,16 +46,12 @@
 <div class="controls" id="controls">
   <div class="controls-in">
     <label class="search">
-      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="2"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="2"/></svg>
-      <input id="q" type="search" placeholder="Search titles, genres, networks, write-ups…" autocomplete="off">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="2"></circle><path d="M11 11l4 4" stroke="currentColor" stroke-width="2"></path></svg>
+      <input id="q" type="search" placeholder="Search titles, genres, write-ups…" autocomplete="off">
     </label>
-    <div class="chips" id="statusChips"></div>
-    <select class="sel" id="yearSel" aria-label="Filter by release year"></select>
-    <select class="sel" id="watchedSel" aria-label="Filter by when you watched it"></select>
-    <select class="sel" id="bandSel" aria-label="Filter by your score"></select>
-    <select class="sel" id="countrySel" aria-label="Filter by country"></select>
-    <select class="sel" id="genreSel" aria-label="Filter by genre"></select>
-    <select class="sel" id="netSel" aria-label="Filter by platform"></select>
+    <button class="btn" id="filterBtn" type="button" aria-haspopup="dialog">
+      Filters<span class="fcount" id="filterCount" hidden>0</span>
+    </button>
     <select class="sel" id="sortSel" aria-label="Sort">
       <option value="year">Newest first</option>
       <option value="yearAsc">Oldest first</option>
@@ -64,6 +68,7 @@
       <option value="az">A → Z</option>
     </select>
   </div>
+  <div class="pills" id="pills"></div>
 </div>
 
 <div class="count" id="countLine"></div>
@@ -77,10 +82,63 @@
   </div>
 </footer>
 
-<!-- article -->
 <div class="reader" id="reader" role="dialog" aria-modal="true" aria-label="Article"></div>
 
-<!-- github panel -->
+<!-- filters -->
+<div class="sheet" id="filterSheet" role="dialog" aria-modal="true" aria-label="Filters">
+  <div class="sheet-card">
+    <div class="sec-h"><h2>Filters</h2><div class="rule"></div>
+      <button class="x big" id="filterClose" type="button" aria-label="Close">×</button></div>
+
+    <div class="fgroup">
+      <span class="label">Where you're at with it</span>
+      <div class="chips" id="statusChips"></div>
+    </div>
+
+    <div class="fgroup">
+      <span class="label">When</span>
+      <div class="selrow">
+        <select class="sel wide" id="yearSel" aria-label="Filter by release year"></select>
+        <select class="sel wide" id="watchedSel" aria-label="Filter by when you watched it"></select>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <span class="label">What it is</span>
+      <div class="selrow">
+        <select class="sel wide" id="genreSel" aria-label="Filter by genre"></select>
+        <select class="sel wide" id="netSel" aria-label="Filter by platform"></select>
+        <select class="sel wide" id="countrySel" aria-label="Filter by country"></select>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <span class="label">How you rated it</span>
+      <div class="selrow">
+        <select class="sel wide" id="bandSel" aria-label="Filter by your score"></select>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:22px">
+      <button class="btn solid" id="filterDone" type="button">Show results</button>
+      <button class="btn ghost" id="filterClear" type="button">Clear everything</button>
+    </div>
+  </div>
+</div>
+
+<!-- studio -->
+<div class="sheet" id="studioSheet" role="dialog" aria-modal="true" aria-label="Studio">
+  <div class="sheet-card">
+    <div class="sec-h"><h2>Studio</h2><div class="rule"></div>
+      <button class="x big" id="studioClose" type="button" aria-label="Close">×</button></div>
+    <p class="fine" id="studioState">Everything published.</p>
+    <div class="studiotools" id="studioTools"></div>
+    <p class="fine" style="margin-top:18px">Edit mode turns the whole page editable — click any
+    title, paragraph or score bar and type. Press <b>E</b> to toggle it from anywhere.</p>
+  </div>
+</div>
+
+<!-- github -->
 <div class="sheet" id="ghSheet" role="dialog" aria-modal="true" aria-label="GitHub connection">
   <div class="sheet-card">
     <div class="sec-h"><h2>Save straight to GitHub</h2><div class="rule"></div>
@@ -115,7 +173,7 @@
 <div class="dropveil" id="dropveil"><span>Drop to add a picture</span></div>
 
 <script src="app.js"></script>
-  <script src="app.js"></script>
 <script src="enrich.js"></script>
+<script src="playlists.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Didi's K-point — the chrome
+   Loads after style.css. Quietens the control bar down to three
+   things, moves the author tools into Studio, and adds the shortlist.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── masthead: author tools out of sight ────────────────────── */
+.mast-actions{display:none!important}          /* staging only — moved into Studio */
+.mast-corner{margin-left:auto;padding-bottom:6px}
+.studiobtn{display:inline-flex;align-items:center;gap:9px;
+  font-family:"Oswald",Impact,sans-serif;text-transform:uppercase;letter-spacing:.16em;
+  font-size:11px;font-weight:500;padding:10px 15px;cursor:pointer;
+  background:transparent;color:var(--ink-soft);border:1px solid var(--hair)}
+.studiobtn:hover{color:var(--ink);border-color:var(--ink);background:var(--paper)}
+.sdot{width:8px;height:8px;background:var(--ink-soft);border-radius:50%;flex:none}
+.studiobtn.dirty{color:var(--ink);border-color:var(--ink)}
+.studiobtn.dirty .sdot{background:var(--pink);
+  box-shadow:0 0 0 4px color-mix(in srgb, var(--pink) 25%, transparent)}
+@media (prefers-reduced-motion:no-preference){
+  .studiobtn.dirty .sdot{animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+}
+.studiotools{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.studiotools .btn{margin:0}
+
+/* ── control bar: search · filters · sort ───────────────────── */
+.controls-in{gap:10px}
+.controls-in .search{flex:1 1 260px}
+#filterBtn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.fcount{display:inline-grid;place-items:center;min-width:19px;height:19px;padding:0 5px;
+  background:var(--pink);color:var(--on-pink);font-family:"DM Mono",monospace;
+  font-size:11px;line-height:1;border:1.5px solid var(--ink)}
+.fcount[hidden]{display:none}
+
+/* active filters, shown as something you can flick off */
+.pills{max-width:var(--w);margin:0 auto;padding:0 20px 12px;display:flex;gap:7px;flex-wrap:wrap}
+.pills:empty{display:none}
+.pill{display:inline-flex;align-items:center;gap:8px;font-family:"Oswald",sans-serif;
+  text-transform:uppercase;letter-spacing:.09em;font-size:10.5px;padding:5px 7px 5px 11px;
+  border:2px solid var(--ink);background:var(--paper);cursor:pointer;white-space:nowrap}
+.pill:hover{background:var(--paper-3)}
+.pill b{font-weight:500}
+.pill i{font-style:normal;opacity:.55;font-size:13px;line-height:1}
+.pill.clearall{background:var(--ink);color:var(--paper);padding-right:11px}
+
+/* ── filter panel ───────────────────────────────────────────── */
+.fgroup{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.fgroup:first-of-type{margin-top:18px}
+.selrow{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+select.sel.wide{max-width:none;width:100%;padding:10px 12px;font-size:11px}
+#filterSheet .chips{gap:7px}
+#filterSheet .chip{padding:8px 12px}
+
+/* ── the shortlist ──────────────────────────────────────────── */
+.shortlist{border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);
+  background:var(--paper-2);padding:20px;margin-top:22px}
+.slist{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.slist li{display:flex;align-items:center;gap:12px;background:var(--paper);
+  border:2px solid var(--ink);padding:10px 12px}
+.slist .n{font-family:"Alfa Slab One",Georgia,serif;font-size:15px;line-height:1;
+  color:var(--pink);flex:none;min-width:18px}
+.slist .t{flex:1;min-width:0;font-family:"Oswald",sans-serif;font-size:14px;
+  overflow-wrap:anywhere}
+.slist .t[contenteditable="true"]:focus{outline:2px solid var(--pink);outline-offset:3px}
+.slist .mv{background:none;border:0;cursor:pointer;color:var(--ink-soft);font-size:15px;
+  line-height:1;padding:2px 4px}
+.slist .mv:hover{color:var(--ink)}
+.slist .x{width:22px;height:22px;font-size:13px}
+.slist .promote{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.1em;
+  font-size:9.5px;border:1.5px solid var(--hair);background:transparent;color:var(--ink-soft);
+  padding:4px 7px;cursor:pointer;white-space:nowrap}
+.slist .promote:hover{border-color:var(--ink);color:var(--ink)}
+.addshort{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.addshort input{flex:1 1 240px;min-width:0;border:2px solid var(--ink);
+  background:var(--paper);padding:9px 11px}
+.shortempty{color:var(--ink-soft);font-style:italic;margin:14px 0 0}
+
+@media (max-width:560px){
+  .mast-corner{margin-left:0;width:100%}
+  .studiobtn{width:100%;justify-content:center}
+  .controls-in{gap:8px}
+  .controls-in .search{flex:1 1 100%}
+  #filterBtn{flex:1 1 auto}
+  .controls-in .sel{flex:1 1 auto;max-width:none}
+}
