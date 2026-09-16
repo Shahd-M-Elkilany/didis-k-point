@@ -299,7 +299,6 @@ async function tmdb(path, params){
       ? "TMDB is having a wobble (error "+lastStatus+"). It's their end — try again shortly."
       : "Couldn't reach TMDB. Check your connection.");
 }
-}
 async function searchCandidates(s){
   const q = s.title.replace(/\s*\d+\s*&\s*\d+\s*$/,"").trim();
   const film = (typeof isFilm==="function") && isFilm(s);
