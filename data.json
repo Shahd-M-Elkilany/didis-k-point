@@ -16,7 +16,46 @@
    "title": "Overdo",
    "status": "L",
    "year": 2026,
-   "country": "CN"
+   "country": "CN",
+   "tmdbId": 289139,
+   "summary": "In Republican Shanghai, Murong Qingyi, a warlord’s son swapped at birth, endures years of torment. His life changes when Ren Susu saves him, but tragedy strikes her family because of it. Years later, love sparks between them, but Ren Susu fakes her death to save another, leaving Qingyi heartbroken. Three years on, she returns as his future sister-in-law. Love, hate, betrayal, and old wounds resurface. As war looms, the two must defy fate together, but can love survive a nation’s fall?",
+   "episodes": 33,
+   "firstAir": "2026-07-19",
+   "lastAir": "2026-08-05",
+   "network": "iQiyi, Tencent Video",
+   "cast": [
+    "Zhang Linghe",
+    "Wang Churan",
+    "Fu Xinbo",
+    "Xu Zhenxuan",
+    "Wang Zisu",
+    "Myolie Wu Hang-Yee"
+   ],
+   "roles": [
+    "Murong Qingyi",
+    "Ren Susu / Fang Mulan",
+    "Murong Qingyu",
+    "Li Boze",
+    "Hai Tangqing",
+    "Cheng Jinzhi"
+   ],
+   "crew": [
+    {
+     "name": "Fei Wo Si Cun",
+     "job": "Novel"
+    },
+    {
+     "name": "Yi Jun",
+     "job": "Director"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/sOh7qrLixexhiWObAKSyh4mAlAR.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=5E0TonOHnY0",
+     "title": "Trailer [Subtitled]"
+    }
+   ]
   },
   {
    "id": "a-bona-fide-killer",
@@ -6067,6 +6106,30 @@
   },
   "Yoon Jong-ho": {
    "p": "/xs3oBxF7VKgBEJoq84meGz0Y3m8.jpg"
+  },
+  "Zhang Linghe": {
+   "p": "/aLJgImwImy1lfOCZTOBkh4T0xt5.jpg"
+  },
+  "Wang Churan": {
+   "p": "/trE6PMD0vgcuvEMog7gRpnWr8TQ.jpg"
+  },
+  "Fu Xinbo": {
+   "p": "/fKLKE5rMpFtTzsIEATAPzuFyTmV.jpg"
+  },
+  "Xu Zhenxuan": {
+   "p": "/3GeK90KDy6VaHEeTbN9e55LCBOp.jpg"
+  },
+  "Wang Zisu": {
+   "p": "/jqzlZ6EHNGBKdRDSek1XEhtexeq.jpg"
+  },
+  "Myolie Wu Hang-Yee": {
+   "p": "/WiF0XzHtSuwFyOS5NkGiYHT7y6.jpg"
+  },
+  "Fei Wo Si Cun": {
+   "p": "/gXI9rEcpRu81zfjnpFBDmQIQkB1.jpg"
+  },
+  "Yi Jun": {
+   "p": "/9FZyG9rus9ECgXQF3ZPGPfRtri8.jpg"
   }
  }
 }
