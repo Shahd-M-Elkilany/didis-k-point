@@ -3277,7 +3277,57 @@
    "network": "JTBC",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 215000,
+   "summary": "Once a convict, Ji-hwan is now a successful, albeit overly cautious CEO, who has yet to experience any of life’s more enjoyable pleasures: namely falling in love. But all that changes when fate brings beloved children’s content creator Eun-ha into his life. The unlikely pair find love most unexpectedly but Eun-ha’s longtime fan, Prosecutor Hyun-woo isn’t ready to let her go without a fight.",
+   "episodes": 16,
+   "firstAir": "2024-06-12",
+   "lastAir": "2024-08-01",
+   "cast": [
+    "Um Tae-goo",
+    "Han Seon-hwa",
+    "Kwon Yul",
+    "Kim Hyun-jin",
+    "Park Jae-chan",
+    "Moon Dong-hyeok"
+   ],
+   "roles": [
+    "Seo Ji-hwan",
+    "Go Eun-ha",
+    "Jang Hyun-woo",
+    "Joo Il-young",
+    "Lee Dong-hee",
+    "Yang Hong-gi"
+   ],
+   "crew": [
+    {
+     "name": "Park Soo-jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Young-hwan",
+     "job": "Director"
+    },
+    {
+     "name": "Park Soo-jung",
+     "job": "Novel"
+    },
+    {
+     "name": "Kim Woo-hyun",
+     "job": "Director"
+    },
+    {
+     "name": "Na Kyung",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/my-sweet-mobster-1789603040453-hsbe.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=zyZX-Jj6eQg",
+     "title": "[Trailer] My Sweet Mobster | Watch FREE on Viu NOW!"
+    }
+   ]
   },
   {
    "id": "tarot",
@@ -6588,6 +6638,24 @@
   },
   "Cho Neung-yeon": {},
   "Kim Hae-won": {},
-  "Yu Jae-hyeok": {}
+  "Yu Jae-hyeok": {},
+  "Han Seon-hwa": {
+   "p": "/daP8g9eByOuJnnKUROrKwAGU1Yp.jpg"
+  },
+  "Kim Hyun-jin": {
+   "p": "/svQuuEv10uqaPxfjUsNmIRqvzS8.jpg"
+  },
+  "Park Jae-chan": {
+   "p": "/vmluPcZ161oBseayZogUL7Dsuym.jpg"
+  },
+  "Moon Dong-hyeok": {
+   "p": "/jvBYQNKI31wre5AjD2m25bNsMzn.jpg"
+  },
+  "Park Soo-jung": {
+   "p": "/rvcCWNCq2px9a0qlKZzqervbnp4.jpg"
+  },
+  "Kim Young-hwan": {},
+  "Kim Woo-hyun": {},
+  "Na Kyung": {}
  }
 }
