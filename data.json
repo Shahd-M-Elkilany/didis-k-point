@@ -5301,13 +5301,41 @@
   },
   {
    "id": "honor",
-   "title": "Honor",
+   "title": "Honour",
    "year": 2026,
    "imdb": 8.3,
    "network": "ENA, Viki",
    "genres": "Legal, Thriller, Political",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 287346,
+   "summary": "There's no statute of limitations on revenge. A mystery thriller about three female lawyers who confront the past head-on, as it returns as a massive scandal.",
+   "episodes": 12,
+   "firstAir": "2026-02-02",
+   "lastAir": "2026-03-10",
+   "cast": [
+    "Lee Na-young",
+    "Jung Eun-chae",
+    "Lee Chung-ah",
+    "Jeon So-young",
+    "Kim Mi-sook",
+    "Lee Hae-young"
+   ],
+   "roles": [
+    "Yoon Ra-young",
+    "Kang Shin-jae",
+    "Hwang Hyeon-jin",
+    "Han Min-seo",
+    "Seng Tae-Im",
+    "Kwon Jung-Hyeon"
+   ],
+   "crew": [
+    {
+     "name": "Park Gun-ho",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/honor-1789601103473-xtw9.jpg"
   },
   {
    "id": "the-judge-returns",
@@ -6188,6 +6216,19 @@
    "p": "/agXysHUmaUdHrEQAZ2ZMvMR5oCU.jpg"
   },
   "Seo Jae-won": {},
-  "Kwon So-ra": {}
+  "Kwon So-ra": {},
+  "Lee Na-young": {
+   "p": "/yZu1uFl9MIlHP8OJb4XxrRtm59G.jpg"
+  },
+  "Lee Chung-ah": {
+   "p": "/jCF77VweJYzkmilO0E7SFPFGbT7.jpg"
+  },
+  "Jeon So-young": {
+   "p": "/b66oPHkDcqdVaXgYR8yf291sfjU.jpg"
+  },
+  "Kim Mi-sook": {
+   "p": "/cRq8LIJTFsMaiIk54aoCscWHtqA.jpg"
+  },
+  "Park Gun-ho": {}
  }
 }
