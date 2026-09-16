@@ -3284,7 +3284,52 @@
    "genres": "Drama, Romance",
    "country": "KR",
    "status": "W",
-   "progress": "stopped at ep 15"
+   "progress": "stopped at ep 15",
+   "tmdbId": 237508,
+   "summary": "A secret and sweet real-life romance between veteran academy instructor Seo Hye-jin and her flirty student Lee Joon-ho, who returns after 10 years and stirs her heart.",
+   "episodes": 16,
+   "firstAir": "2024-05-11",
+   "lastAir": "2024-06-30",
+   "cast": [
+    "Jung Ryeo-won",
+    "Wi Ha-jun",
+    "Kim Jong-tae",
+    "So Joo-yeon",
+    "Kim Jung-young",
+    "Yang Jo-a"
+   ],
+   "roles": [
+    "Seo Hye-jin",
+    "Lee Joon-ho",
+    "Kim Hyun-tak",
+    "Nam Chung-mi",
+    "Woo Seung-hee",
+    "Min Hee-joo"
+   ],
+   "crew": [
+    {
+     "name": "Ahn Pan-seok",
+     "job": "Director"
+    },
+    {
+     "name": "Park Gyeong-hwa",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/midnight-romance-in-hagwon-1789603153263-jxqi.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=8Bx-BboKxaI",
+     "title": "[TRAILER 1] The Midnight Romance in Hagwon"
+    }
+   ],
+   "scores": [
+    4.1,
+    4.1,
+    4.1,
+    4.1,
+    4.1
+   ]
   },
   {
    "id": "the-8-show",
@@ -7043,6 +7088,25 @@
   "Jo Yi-soo": {},
   "Park Jin-pyo": {
    "p": "/5AIebaONbgdmuRq9q5SY9ku9to.jpg"
-  }
+  },
+  "Jung Ryeo-won": {
+   "p": "/lwpxoITReDuadSr5beFZ3xmxuIQ.jpg"
+  },
+  "Kim Jong-tae": {
+   "p": "/vf3R5QU7UCVEr3dOGt3bdFbypzu.jpg"
+  },
+  "So Joo-yeon": {
+   "p": "/2pRaLYEJq673t9CAYaEl8K131qR.jpg"
+  },
+  "Kim Jung-young": {
+   "p": "/sJVUh3dzF1dgItQDPbWsZAsnfzL.jpg"
+  },
+  "Yang Jo-a": {
+   "p": "/1NTJct8f2RkTZunDfzx6xpzb86g.jpg"
+  },
+  "Ahn Pan-seok": {
+   "p": "/5kqfXl3hQj7BxAaDyQBGAAv2ZhG.jpg"
+  },
+  "Park Gyeong-hwa": {}
  }
 }
