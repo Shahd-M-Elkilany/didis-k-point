@@ -3256,7 +3256,57 @@
    "network": "Netflix",
    "genres": "Drama, Comedy, Horror, Suspense, Survival",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 156484,
+   "summary": "Eight individuals trapped in a mysterious 8-story building participate in a tempting but dangerous show where they earn money as time passes.",
+   "episodes": 8,
+   "firstAir": "2024-05-17",
+   "lastAir": "2024-05-17",
+   "cast": [
+    "Ryu Jun-yeol",
+    "Chun Woo-hee",
+    "Park Jeong-min",
+    "Lee Yul-eum",
+    "Park Hae-joon",
+    "Lee Joo-young"
+   ],
+   "roles": [
+    "Jin-soo / 3F",
+    "Se-ra / 8F",
+    "Phillip / 7F",
+    "Yang / 4F",
+    "Tae-seok / 6F",
+    "Chun-ja / 2F"
+   ],
+   "crew": [
+    {
+     "name": "Han Jae-rim",
+     "job": "Creator"
+    },
+    {
+     "name": "Han Jae-rim",
+     "job": "Director"
+    },
+    {
+     "name": "Han Jae-rim",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Dae-seung",
+     "job": "Producer"
+    },
+    {
+     "name": "손기선",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/the-8-show-1789603084557-ap36.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=ZPWGfNU20vQ",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "connection",
@@ -6794,6 +6844,25 @@
   "Nam Ji-eun": {
    "p": "/gdpaCCZ9Lgf7Z96IolsJsbO8BLC.jpg"
   },
-  "Park Geu-ro": {}
+  "Park Geu-ro": {},
+  "Chun Woo-hee": {
+   "p": "/y7ju1TdJWldSwqadHYSxLiyOFxW.jpg"
+  },
+  "Park Jeong-min": {
+   "p": "/o0IKTRpUgNILXzWtskyMJM1NG4j.jpg"
+  },
+  "Lee Yul-eum": {
+   "p": "/f0GTS4kgkFAE2zvvX5BzZjTgw95.jpg"
+  },
+  "Lee Joo-young": {
+   "p": "/hDLNWV75lnH1zC8DYXnaFfIllvI.jpg"
+  },
+  "Han Jae-rim": {
+   "p": "/2Bqr0HvdZZOvEyiAvDsn7ltVute.jpg"
+  },
+  "Kim Dae-seung": {
+   "p": "/qQN5AUIu8zbbEI7HLLGgQLmaVro.jpg"
+  },
+  "손기선": {}
  }
 }
