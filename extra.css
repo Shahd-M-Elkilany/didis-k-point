@@ -1,7 +1,8 @@
 /* ═══════════════════════════════════════════════════════════════════
    Didi's K-point — the additions
-   Ditched status, Didi's Picks, films, the one-score control and the
-   shortlist drop target. Loads last, after style.css and chrome.css.
+   Ditched status, Didi's Picks, films, the one-score control, the
+   shortlist drop target and the drag dock.
+   Loads last, after style.css and chrome.css.
    ═══════════════════════════════════════════════════════════════ */
 :root{
   --ash:#8C7A80;          /* ditched — the colour of walking away */
@@ -11,7 +12,6 @@
 /* ── ditched ────────────────────────────────────────────────── */
 .stat.d{background:linear-gradient(140deg,#6E5A62,#3B2C33)}
 .chip.d[aria-pressed="true"]{background:var(--ash); border-color:var(--ash); color:var(--on-ash)}
-/* a ditched cover is quieter than the rest — it's a show you left */
 .card:has(.stamp[style*="--ash"]) .cover .slab{filter:saturate(.45) brightness(.8)}
 
 /* ── Didi's Picks ───────────────────────────────────────────── */
@@ -51,28 +51,55 @@ body.editing .overallrow{display:flex}
 .growinput{flex:1 1 240px; min-width:0; border:1px solid var(--gold-d);
   background:var(--paper-2); padding:9px 13px; font-family:"Jost",sans-serif; font-size:14px}
 
-/* ── the missing-picture placeholder ────────────────────────── */
+/* ── missing-picture placeholder ────────────────────────────── */
 .missingpic{aspect-ratio:4/3; border:1px dashed var(--gold-d); background:var(--paper-2);
   display:grid; place-items:center; text-align:center; padding:10px;
   font-family:"Jost",sans-serif; font-size:9.5px; letter-spacing:.14em;
   text-transform:uppercase; color:var(--ink-soft)}
 
-/* ── dragging a cover onto the shortlist ────────────────────── */
+/* ═══ dragging a cover ══════════════════════════════════════════
+   The shortlist scrolls away, so a dock comes to you instead.
+   ═══════════════════════════════════════════════════════════ */
 .card{cursor:grab}
 .card:active{cursor:grabbing}
+body.dragging-card .card:not(:active) .cover{opacity:.78}
+
+/* the dock — pinned to the top of the screen while you drag */
+#dragdock{position:fixed; top:0; left:0; right:0; z-index:600;
+  height:0; overflow:hidden; pointer-events:none;
+  display:grid; place-items:center;
+  background:var(--oxblood); color:var(--gold-l);
+  border-bottom:2px solid var(--gold);
+  transition:height .16s ease, background .12s ease}
+body.dragging-card #dragdock{height:74px; pointer-events:auto}
+#dragdock .dd-in{display:flex; align-items:center; gap:14px; padding:0 20px;
+  text-align:center}
+#dragdock .dd-star{width:30px; height:30px; flex:none; display:grid; place-items:center;
+  border-radius:50%; background:var(--gold); color:var(--coal); font-size:15px}
+#dragdock .dd-txt{font-family:"Jost",sans-serif; text-transform:uppercase;
+  letter-spacing:.22em; font-size:11px}
+#dragdock .dd-txt b{color:var(--butter); font-weight:500}
+#dragdock.over{background:var(--gold)}
+#dragdock.over .dd-txt{color:var(--coal)}
+#dragdock.over .dd-txt b{color:var(--coal)}
+#dragdock.over .dd-star{background:var(--coal); color:var(--gold-l); transform:scale(1.12)}
+@media (prefers-reduced-motion:reduce){#dragdock{transition:none}}
+
+/* the shortlist box itself still takes a drop when it's on screen */
 body.dragging-card .shortlist{outline:2px dashed var(--gold); outline-offset:6px}
-.shortlist.dropping{outline:2px solid var(--gold); outline-offset:6px;
-  background:var(--paper-2)}
+.shortlist{position:relative}
+.shortlist.dropping{outline:2px solid var(--gold); outline-offset:6px}
 .shortlist.dropping::after{content:"Drop it on the list";
   position:absolute; inset:0; z-index:5; display:grid; place-items:center;
   background:#fbf4e7d9; font-family:"Jost",sans-serif; text-transform:uppercase;
   letter-spacing:.24em; font-size:11px; color:var(--oxblood)}
 
-/* ── the two pages still to come ────────────────────────────── */
 .page .pagehead .fine b{color:var(--oxblood)}
 
 @media (max-width:560px){
   .overallrow{flex-wrap:wrap; gap:9px}
   .pickstrip .grid.flat{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
   .pickmark{width:22px; height:22px; font-size:11px; top:12px; left:12px}
+  body.dragging-card #dragdock{height:64px}
+  #dragdock .dd-txt{font-size:10px; letter-spacing:.16em}
 }
