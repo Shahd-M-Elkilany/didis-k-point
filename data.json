@@ -3152,7 +3152,57 @@
    "network": "Netflix",
    "genres": "Suspense, Horror, Action",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 208825,
+   "summary": "When unidentified parasites violently take over human hosts and gain power, humanity must rise to combat the growing threat.",
+   "episodes": 6,
+   "firstAir": "2024-04-05",
+   "lastAir": "2024-04-05",
+   "cast": [
+    "Jeon So-nee",
+    "Koo Kyo-hwan",
+    "Lee Jung-hyun",
+    "Kwon Hae-hyo",
+    "Kim In-kwon",
+    "Hwang Dong-hee"
+   ],
+   "roles": [
+    "Jeong Su-in",
+    "Seol Kang-woo",
+    "Choi Jun-kyung",
+    "Kim Chul-min",
+    "Kang Won-seok",
+    "Agent"
+   ],
+   "crew": [
+    {
+     "name": "Yeon Sang-ho",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoomin Hailey Yang",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Jo Eun-hye",
+     "job": "Producer"
+    },
+    {
+     "name": "Byun Seung-min",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Yeon Sang-ho",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/parasyte-the-grey-1789603055069-9ht0.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=maIGHqJB6aQ",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
   },
   {
    "id": "lovely-runner",
@@ -6656,6 +6706,29 @@
   },
   "Kim Young-hwan": {},
   "Kim Woo-hyun": {},
-  "Na Kyung": {}
+  "Na Kyung": {},
+  "Koo Kyo-hwan": {
+   "p": "/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg"
+  },
+  "Lee Jung-hyun": {
+   "p": "/rOm1wgpRGDAyc8YvsWW3A99zmbi.jpg"
+  },
+  "Kwon Hae-hyo": {
+   "p": "/3sCMSQVdY2mqYYq3jj4u9JWRoTt.jpg"
+  },
+  "Kim In-kwon": {
+   "p": "/vMPHVFE0FhItp2uMMgGRYq5z5Bj.jpg"
+  },
+  "Hwang Dong-hee": {
+   "p": "/2NBv9LkThP05PZQWKnNDao0Qq5h.jpg"
+  },
+  "Yeon Sang-ho": {
+   "p": "/dLP1p4AkU1zwJkDboct58Uub9S7.jpg"
+  },
+  "Yoomin Hailey Yang": {},
+  "Jo Eun-hye": {},
+  "Byun Seung-min": {
+   "p": "/nNRZzfolAKyvn7agsUbSvPcG9mq.jpg"
+  }
  }
 }
