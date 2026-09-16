@@ -1,261 +1,6003 @@
 {
-"name": "Didi's K-point",
-"tagline": "A drama journal",
-"updated": "2026-09-15",
-"_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
-"shows": [
-{"id":"playful-kiss","title":"Playful Kiss","year":2010,"imdb":7.1,"network":"MBC","genres":"Comedy, School, Romance","country":"KR","status":"W"},
-{"id":"dream-high","title":"Dream High","year":2011,"imdb":7.6,"network":"KBS","genres":"School, Comedy, Romance","country":"KR","status":"W"},
-{"id":"city-hunter","title":"City Hunter","year":2011,"imdb":8,"network":"SBS","genres":"Suspense, Action, Romance","country":"KR","status":"L"},
-{"id":"dream-high-2","title":"Dream High 2","year":2012,"imdb":7.1,"network":"MBC","genres":"School, Comedy, Romance","country":"KR","status":"W"},
-{"id":"rooftop-prince","title":"Rooftop Prince","year":2012,"imdb":7.7,"network":"SBS","genres":"Comedy, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"to-the-beautiful-you","title":"To the Beautiful You","year":2012,"network":"SBS","genres":"Comedy, School, Romance","country":"KR","status":"W"},
-{"id":"school-2013","title":"School 2013","year":2012,"imdb":7.7,"network":"KBS","genres":"Comedy, Romance, School","country":"KR","status":"W"},
-{"id":"the-masters-sun","title":"The Master's Sun","year":2013,"imdb":8,"network":"SBS","genres":"Comedy, Horror, Fantasy, Romance","country":"KR","status":"W"},
-{"id":"the-heirs","title":"The Heirs","year":2013,"imdb":7.5,"network":"SBS","genres":"Drama, Comedy, Romance, School","country":"KR","status":"W"},
-{"id":"my-love-from-the-star","title":"My Love from the Star","year":2013,"imdb":8.2,"network":"SBS","genres":"Drama, Comedy, Romance, Fantasy","country":"KR","status":"U"},
-{"id":"doctor-stranger","title":"Doctor Stranger","year":2014,"imdb":7.5,"network":"SBS","genres":"Action, Romance, Drama, Medical","country":"KR","status":"U"},
-{"id":"hi-school-love-on","title":"Hi! School: Love On","year":2014,"imdb":7.2,"network":"KBS","genres":"Comedy, Romance, School, Fantasy","country":"KR","status":"W"},
-{"id":"its-okay-thats-love","title":"It's Okay, That's Love","year":2014,"imdb":8.3,"network":"SBS","genres":"Drama, Comedy, Romance","country":"KR","status":"U"},
-{"id":"bad-guys","title":"Bad Guys","year":2014,"imdb":7.7,"network":"OCN","genres":"Suspense, Action","country":"KR","status":"L"},
-{"id":"pinocchio","title":"Pinocchio","year":2014,"imdb":8.1,"network":"SBS","genres":"Suspense, Drama, Comedy, Romance","country":"KR","status":"L"},
-{"id":"healer","title":"Healer","year":2014,"imdb":8.4,"network":"KBS","genres":"Suspense, Drama, Action, Romance, Comedy, Crime","country":"KR","status":"L"},
-{"id":"kill-me-heal-me","title":"Kill Me, Heal Me","year":2015,"imdb":8.3,"network":"MBC","genres":"Drama, Comedy, Romance","country":"KR","status":"L"},
-{"id":"exo-next-door","title":"EXO Next Door","year":2015,"imdb":7,"network":"Naver TV Cast","genres":"Comedy, Romance","country":"KR","status":"W"},
-{"id":"who-are-you-school-2015","title":"Who Are You: School 2015","year":2015,"imdb":7.6,"network":"KBS","genres":"Suspense, Drama, School, Romance","country":"KR","status":"W"},
-{"id":"orange-marmalade","title":"Orange Marmalade","year":2015,"imdb":6.3,"network":"KBS","genres":"Fantasy, Romance","country":"KR","status":"W"},
-{"id":"she-was-pretty","title":"She Was Pretty","year":2015,"imdb":7.6,"network":"MBC","genres":"Comedy, Romance","country":"KR","status":"W"},
-{"id":"reply-1988","title":"Reply 1988","year":2015,"imdb":9,"network":"tvN","genres":"Comedy, Romance, Drama, Family","country":"KR","status":"L"},
-{"id":"high-end-crush","title":"High-End Crush","year":2015,"imdb":7.2,"network":"MBN","genres":"Comedy, Romance","country":"KR","status":"U"},
-{"id":"oh-my-venus","title":"Oh My Venus","year":2015,"imdb":7.7,"network":"KBS","genres":"Comedy, Drama, Romance","country":"KR","status":"L"},
-{"id":"cheese-in-the-trap","title":"Cheese in the Trap","year":2016,"imdb":7.2,"network":"tvN","genres":"Drama, Comedy, Romance","country":"KR","status":"W"},
-{"id":"descendants-of-the-sun","title":"Descendants of the Sun","year":2016,"imdb":8.2,"network":"KBS","genres":"Comedy, Drama, Action, Romance","country":"KR","status":"W"},
-{"id":"another-miss-oh","title":"Another Miss Oh","year":2016,"imdb":7.7,"network":"tvN","genres":"Comedy, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"doctors","title":"Doctors","year":2016,"imdb":7.6,"network":"SBS","genres":"Drama, Comedy, Romance, Medical","country":"KR","status":"S"},
-{"id":"bring-it-on-ghost","title":"Bring It On, Ghost","year":2016,"imdb":7.6,"network":"tvN","genres":"Comedy, Horror, Romance, Fantasy","country":"KR","status":"S"},
-{"id":"w","title":"W","year":2016,"imdb":8,"network":"MBC","genres":"Suspense, Drama, Comedy, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"moon-lovers","title":"Moon Lovers: Scarlet Heart Ryeo","year":2016,"imdb":8.6,"network":"SBS","genres":"Drama, Comedy, Romance, Action, Fantasy, Tragedy","country":"KR","status":"L"},
-{"id":"the-k2","title":"The K2","year":2016,"imdb":7.8,"network":"tvN","genres":"Drama, Romance, Action, Suspense","country":"KR","status":"L"},
-{"id":"weightlifting-fairy","title":"Weightlifting Fairy Kim Bok-joo","year":2016,"imdb":8.3,"network":"MBC","genres":"Comedy, Romance, School","country":"KR","status":"L"},
-{"id":"legend-of-the-blue-sea","title":"The Legend of the Blue Sea","year":2016,"imdb":8.1,"network":"SBS","genres":"Comedy, Drama, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"goblin","title":"Goblin","year":2016,"imdb":8.6,"network":"tvN","genres":"Drama, Comedy, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"hwarang","title":"Hwarang","year":2016,"imdb":8,"network":"KBS","genres":"Drama, Comedy, Action, Romance, Historical","country":"KR","status":"L"},
-{"id":"defendant","title":"Defendant","year":2017,"imdb":8.1,"network":"SBS","genres":"Suspense, Drama, Crime","country":"KR","status":"L"},
-{"id":"strong-woman-do-bong-soon","title":"Strong Woman Do Bong-soon","year":2017,"imdb":8.1,"network":"JTBC","genres":"Suspense, Comedy, Fantasy, Romance","country":"KR","status":"L"},
-{"id":"my-secret-romance","title":"My Secret Romance","year":2017,"imdb":7.1,"network":"OCN","genres":"Comedy, Romance","country":"KR","status":"W"},
-{"id":"suspicious-partner","title":"Suspicious Partner","year":2017,"imdb":7.7,"network":"SBS","genres":"Suspense, Comedy, Romance, Crime","country":"KR","status":"W"},
-{"id":"the-bride-of-habaek","title":"The Bride of Habaek","year":2017,"imdb":6.9,"network":"tvN","genres":"Comedy, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"school-2017","title":"School 2017","year":2017,"imdb":7.5,"network":"KBS","genres":"Suspense, Comedy, School, Romance","country":"KR","status":"W"},
-{"id":"while-you-were-sleeping","title":"While You Were Sleeping","year":2017,"imdb":8.3,"network":"SBS","genres":"Drama, Comedy, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"im-not-a-robot","title":"I'm Not a Robot","year":2017,"imdb":8,"network":"MBC","genres":"Comedy, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"a-korean-odyssey","title":"A Korean Odyssey","year":2017,"imdb":7.9,"network":"tvN","genres":"Comedy, Horror, Fantasy, Romance","country":"KR","status":"W"},
-{"id":"radio-romance","title":"Radio Romance","year":2018,"imdb":6.6,"network":"KBS","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"a-poem-a-day","title":"A Poem a Day","year":2018,"imdb":7,"network":"tvN","genres":"Drama, Romance, Comedy","country":"KR","status":"W"},
-{"id":"secretary-kim","title":"What's Wrong with Secretary Kim","year":2018,"imdb":8,"network":"tvN","genres":"Comedy, Romance","country":"KR","status":"U"},
-{"id":"mr-sunshine","title":"Mr. Sunshine","year":2018,"imdb":8.7,"network":"tvN","genres":"Drama, Romance, Action, Historical","country":"KR","status":"L"},
-{"id":"my-id-is-gangnam-beauty","title":"My ID Is Gangnam Beauty","year":2018,"imdb":7.2,"network":"JTBC","genres":"Drama, Comedy, Romance","country":"KR","status":"W"},
-{"id":"clean-with-passion","title":"Clean with Passion for Now","year":2018,"imdb":7,"network":"JTBC","genres":"Comedy, Romance","country":"KR","status":"S"},
-{"id":"memories-of-the-alhambra","title":"Memories of the Alhambra","year":2018,"imdb":7.7,"network":"tvN","genres":"Suspense, Drama, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"romance-is-a-bonus-book","title":"Romance Is a Bonus Book","year":2019,"imdb":8,"network":"tvN","genres":"Drama, Comedy, Romance","country":"KR","status":"W"},
-{"id":"her-private-life","title":"Her Private Life","year":2019,"imdb":7.6,"network":"tvN","genres":"Drama, Comedy, Romance","country":"KR","status":"U"},
-{"id":"angels-last-mission","title":"Angel's Last Mission: Love","year":2019,"imdb":7.7,"network":"KBS","genres":"Comedy, Drama, Romance, Fantasy","country":"KR","status":"S"},
-{"id":"hotel-del-luna","title":"Hotel del Luna","year":2019,"imdb":8.1,"network":"tvN","genres":"Comedy, Drama, Romance, Fantasy, Action","country":"KR","status":"U"},
-{"id":"love-alarm","title":"Love Alarm","year":2019,"imdb":6.6,"network":"Netflix","genres":"Drama, Comedy, Romance","country":"KR","status":"W"},
-{"id":"strangers-from-hell","title":"Strangers from Hell","year":2019,"imdb":7.8,"network":"OCN","genres":"Suspense, Horror, Crime","country":"KR","status":"L"},
-{"id":"vagabond","title":"Vagabond","year":2019,"imdb":8.1,"network":"SBS","genres":"Suspense, Action, Crime, Drama","country":"KR","status":"L"},
-{"id":"melting-me-softly","title":"Melting Me Softly","year":2019,"imdb":6.9,"network":"tvN","genres":"Suspense, Drama, Comedy, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"extraordinary-you","title":"Extraordinary You","year":2019,"imdb":7.8,"network":"MBC","genres":"Comedy, School, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"crash-landing-on-you","title":"Crash Landing on You","year":2019,"imdb":8.7,"network":"tvN","genres":"Suspense, Comedy, Drama, Romance, Action","country":"KR","status":"W"},
-{"id":"itaewon-class","title":"Itaewon Class","year":2020,"imdb":8.1,"network":"JTBC","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"my-holo-love","title":"My Holo Love","year":2020,"imdb":7.6,"network":"Netflix","genres":"Drama, Romance, Fantasy","country":"KR","status":"W"},
-{"id":"when-the-weather-is-fine","title":"When the Weather Is Fine","year":2020,"imdb":7.7,"network":"JTBC","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"hospital-playlist","title":"Hospital Playlist","year":2020,"imdb":8.7,"network":"tvN","genres":"Drama, Comedy, Romance, Medical","country":"KR","status":"L"},
-{"id":"the-world-of-the-married","title":"The World of the Married","year":2020,"imdb":7.9,"network":"JTBC","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"the-king-eternal-monarch","title":"The King: Eternal Monarch","year":2020,"imdb":8.1,"network":"SBS","genres":"Suspense, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"its-okay-to-not-be-okay","title":"It's Okay to Not Be Okay","year":2020,"imdb":8.6,"network":"tvN","genres":"Drama, Comedy, Romance","country":"KR","status":"S"},
-{"id":"flower-of-evil","title":"Flower of Evil","year":2020,"imdb":8.5,"network":"tvN","genres":"Suspense, Crime, Romance","country":"KR","status":"W"},
-{"id":"tale-of-the-nine-tailed","title":"Tale of the Nine-Tailed","year":2020,"imdb":7.9,"network":"tvN","genres":"Suspense, Fantasy, Romance","country":"KR","status":"W"},
-{"id":"do-do-sol-sol-la-la-sol","title":"Do Do Sol Sol La La Sol","year":2020,"imdb":7.3,"network":"KBS","genres":"Comedy, Drama, Musical, Romance","country":"KR","status":"W"},
-{"id":"start-up","title":"Start-Up","year":2020,"imdb":8,"network":"tvN","genres":"Comedy, Drama, Romance","country":"KR","status":"S"},
-{"id":"the-penthouse","title":"The Penthouse: War in Life","year":2020,"imdb":7.9,"network":"SBS","genres":"Suspense, Drama, Revenge, Crime","country":"KR","status":"W"},
-{"id":"the-uncanny-counter","title":"The Uncanny Counter","year":2020,"imdb":8,"network":"OCN","genres":"Suspense, Action, Fantasy, Crime","country":"KR","status":"W","myRate":4.2},
-{"id":"mr-queen","title":"Mr. Queen","year":2020,"imdb":8.6,"network":"tvN","genres":"Comedy, Romance, Fantasy, Historical","country":"KR","status":"L"},
-{"id":"sweet-home","title":"Sweet Home","year":2020,"imdb":7.2,"network":"Netflix","genres":"Suspense, Horror, Fantasy, Survival, Zombie","country":"KR","status":"W"},
-{"id":"lovestruck-in-the-city","title":"Lovestruck in the City","year":2020,"imdb":7.6,"network":"Kakao TV","genres":"Drama, Romance","country":"KR","status":"W"},
-{"id":"a-love-so-beautiful","title":"A Love So Beautiful","year":2020,"imdb":7.2,"network":"Kakao TV","genres":"Comedy, School, Romance","country":"KR","status":"S"},
-{"id":"luca-the-beginning","title":"L.U.C.A.: The Beginning","year":2021,"imdb":6.5,"network":"tvN","genres":"Suspense, Action, Fantasy","country":"KR","status":"S"},
-{"id":"sisyphus-the-myth","title":"Sisyphus: The Myth","year":2021,"imdb":7,"network":"JTBC","genres":"Drama, Action, Romance, Fantasy","country":"KR","status":"S"},
-{"id":"beyond-evil","title":"Beyond Evil","year":2021,"imdb":8.1,"network":"JTBC","genres":"Drama, Suspense, Psychological","country":"KR","status":"L"},
-{"id":"the-penthouse-2","title":"The Penthouse 2: War in Life","year":2021,"imdb":7.9,"network":"SBS","genres":"Drama, Suspense, Crime, Tragedy","country":"KR","status":"W"},
-{"id":"vincenzo","title":"Vincenzo","year":2021,"imdb":8.4,"network":"tvN","genres":"Comedy, Drama, Suspense, Crime","country":"KR","status":"W"},
-{"id":"mouse","title":"Mouse","year":2021,"imdb":8.6,"network":"tvN","genres":"Suspense, Action, Crime","country":"KR","status":"W"},
-{"id":"navillera","title":"Navillera","year":2021,"imdb":8.7,"network":"tvN","genres":"Drama","country":"KR","status":"L"},
-{"id":"youth-of-may","title":"Youth of May","year":2021,"imdb":8.3,"network":"KBS","genres":"Drama, Romance, Historical","country":"KR","status":"L"},
-{"id":"move-to-heaven","title":"Move to Heaven","year":2021,"imdb":8.5,"network":"Netflix","genres":"Drama","country":"KR","status":"L"},
-{"id":"the-penthouse-3","title":"The Penthouse 3: War in Life","year":2021,"imdb":7.9,"network":"SBS","genres":"Drama, Suspense, Revenge, Crime","country":"KR","status":"L"},
-{"id":"nevertheless","title":"Nevertheless,","year":2021,"imdb":7.1,"network":"JTBC","genres":"Drama, Romance","country":"KR","status":"W"},
-{"id":"the-devil-judge","title":"The Devil Judge","year":2021,"imdb":8.2,"network":"tvN","genres":"Suspense, Drama, Crime","country":"KR","status":"S"},
-{"id":"hometown-cha-cha-cha","title":"Hometown Cha-Cha-Cha","year":2021,"imdb":8.3,"network":"tvN","genres":"Drama, Comedy, Romance","country":"KR","status":"W"},
-{"id":"squid-game","title":"Squid Game","year":2021,"imdb":8,"network":"Netflix","genres":"Suspense, Drama, Survival, Crime","country":"KR","status":"W"},
-{"id":"yumis-cells","title":"Yumi's Cells","year":2021,"imdb":8.1,"network":"tvN","genres":"Comedy, Romance, Drama, Fantasy","country":"KR","status":"S","progress":"ep 5"},
-{"id":"my-name","title":"My Name","year":2021,"imdb":7.8,"network":"Netflix","genres":"Suspense, Revenge, Action, Family, Historical","country":"KR","status":"W"},
-{"id":"happiness","title":"Happiness","year":2021,"imdb":7.7,"network":"tvN","genres":"Suspense, Zombie, Survival, Action","country":"KR","status":"L"},
-{"id":"now-we-are-breaking-up","title":"Now, We Are Breaking Up","year":2021,"imdb":6.4,"network":"SBS","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"school-2021","title":"School 2021","year":2021,"imdb":7.2,"network":"KBS","genres":"Comedy, School, Romance","country":"KR","status":"S"},
-{"id":"our-beloved-summer","title":"Our Beloved Summer","year":2021,"imdb":8.2,"network":"SBS","genres":"Drama, Romance","country":"KR","status":"S"},
-{"id":"bad-and-crazy","title":"Bad and Crazy","year":2021,"imdb":8,"network":"tvN","genres":"Comedy, Action, Fantasy, Psychological","country":"KR","status":"S"},
-{"id":"snowdrop","title":"Snowdrop","year":2021,"imdb":8.1,"network":"JTBC","genres":"Drama, Romance, Tragedy, Historical, Suspense","country":"KR","status":"W"},
-{"id":"doom-at-your-service","title":"Doom at Your Service","year":2021,"network":"tvN","genres":"Drama, Romance, Fantasy","country":"KR","status":"S","progress":"ep 6"},
-{"id":"all-of-us-are-dead","title":"All of Us Are Dead","year":2022,"imdb":7.6,"network":"Netflix","genres":"Suspense, School, Survival, Zombie","country":"KR","status":"U"},
-{"id":"twenty-five-twenty-one","title":"Twenty-Five Twenty-One","year":2022,"imdb":8.6,"network":"tvN","genres":"Drama, Romance, School","country":"KR","status":"W"},
-{"id":"business-proposal","title":"Business Proposal","year":2022,"imdb":8.1,"network":"SBS","genres":"Comedy, Romance","country":"KR","status":"W"},
-{"id":"soundtrack-1","title":"Soundtrack #1","year":2022,"imdb":7.7,"network":"Disney+","genres":"Drama, Musical, Romance","country":"KR","status":"W"},
-{"id":"tomorrow","title":"Tomorrow","year":2022,"imdb":8,"network":"MBC","genres":"Comedy, Fantasy, Action, Drama","country":"KR","status":"U"},
-{"id":"our-blues","title":"Our Blues","year":2022,"imdb":8.6,"network":"tvN","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"my-liberation-notes","title":"My Liberation Notes","year":2022,"imdb":8.2,"network":"JTBC","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"shooting-stars","title":"Shooting Stars","year":2022,"imdb":7.6,"network":"tvN","genres":"Comedy, Romance, Drama","country":"KR","status":"S","progress":"ep 15"},
-{"id":"the-sound-of-magic","title":"The Sound of Magic","year":2022,"imdb":7.5,"network":"Netflix","genres":"Drama, Musical, Fantasy","country":"KR","status":"S"},
-{"id":"alchemy-of-souls","title":"Alchemy of Souls","year":2022,"imdb":8.7,"network":"tvN","genres":"Romance, Drama, Historical, Action","country":"KR","status":"S"},
-{"id":"extraordinary-attorney-woo","title":"Extraordinary Attorney Woo","year":2022,"imdb":8.6,"network":"ENA","genres":"Drama","country":"KR","status":"S"},
-{"id":"big-mouth","title":"Big Mouth","year":2022,"imdb":7.8,"network":"MBC","genres":"Drama, Suspense, Action, Crime","country":"KR","status":"L"},
-{"id":"little-women","title":"Little Women","year":2022,"imdb":7.7,"network":"tvN","genres":"Drama, Action, Suspense","country":"KR","status":"W"},
-{"id":"the-golden-spoon","title":"The Golden Spoon","year":2022,"imdb":7.5,"network":"MBC","genres":"Drama, Fantasy, Suspense, Romance","country":"KR","status":"L"},
-{"id":"cheer-up","title":"Cheer Up","year":2022,"imdb":6.9,"network":"SBS","genres":"Drama, Comedy, School","country":"KR","status":"S"},
-{"id":"weak-hero-class-1","title":"Weak Hero Class 1","year":2022,"imdb":8.4,"network":"Wavve","genres":"Drama, Suspense, Action","country":"KR","status":"L"},
-{"id":"reborn-rich","title":"Reborn Rich","year":2022,"imdb":8,"network":"JTBC","genres":"Drama, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"the-glory","title":"The Glory","year":2022,"imdb":8.2,"network":"Netflix","genres":"Revenge, Suspense, Drama, Romance, Tragedy","country":"KR","status":"W"},
-{"id":"eve","title":"Eve","year":2022,"imdb":7.8,"network":"tvN","genres":"Revenge, Drama, Romance","country":"KR","status":"W","scores":[4.5,4,4.2,4.5,4.3],"watched":"2026-08"},
-{"id":"doctor-cha","title":"Doctor Cha","year":2023,"imdb":7.5,"network":"JTBC","genres":"Comedy, Drama, Medical","country":"KR","status":"L"},
-{"id":"the-good-bad-mother","title":"The Good Bad Mother","year":2023,"imdb":8.4,"network":"JTBC","genres":"Drama, Comedy, Suspense, Family, Tragedy","country":"KR","status":"L"},
-{"id":"tale-of-the-nine-tailed-1938","title":"Tale of the Nine-Tailed 1938","year":2023,"imdb":8.5,"network":"tvN","genres":"Comedy, Suspense, Fantasy, Action","country":"KR","status":"W"},
-{"id":"bloodhounds","title":"Bloodhounds","year":2023,"imdb":8.1,"network":"Netflix","genres":"Drama, Action, Crime, Tragedy","country":"KR","status":"W"},
-{"id":"see-you-in-my-19th-life","title":"See You in My 19th Life","year":2023,"imdb":7.7,"network":"tvN","genres":"Drama, Comedy, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"king-the-land","title":"King the Land","year":2023,"imdb":5.5,"network":"JTBC","genres":"Comedy, Romance","country":"KR","status":"W"},
-{"id":"revenant","title":"Revenant","year":2023,"imdb":7.8,"network":"SBS","genres":"Drama, Horror, Crime, Suspense, Fantasy","country":"KR","status":"W"},
-{"id":"celebrity","title":"Celebrity","year":2023,"imdb":7.4,"network":"Netflix","genres":"Drama, Suspense, Revenge","country":"KR","status":"W"},
-{"id":"the-uncanny-counter-2","title":"The Uncanny Counter 2","year":2023,"imdb":8,"network":"OCN","genres":"Drama, Suspense, Action, Fantasy, Crime","country":"KR","status":"W","myRate":4.2},
-{"id":"my-dearest","title":"My Dearest","year":2023,"imdb":8.9,"network":"MBC","genres":"Drama, Romance, Historical","country":"KR","status":"L"},
-{"id":"moving","title":"Moving","year":2023,"imdb":8.4,"network":"Disney+","genres":"Suspense, Action, Fantasy","country":"KR","status":"L"},
-{"id":"the-killing-vote","title":"The Killing Vote","year":2023,"imdb":7.1,"network":"SBS","genres":"Drama, Suspense","country":"KR","status":"L"},
-{"id":"mask-girl","title":"Mask Girl","year":2023,"imdb":7.3,"network":"Netflix","genres":"Drama, Comedy, Suspense, Horror","country":"KR","status":"S"},
-{"id":"a-time-called-you","title":"A Time Called You","year":2023,"imdb":7.9,"network":"Netflix","genres":"Suspense, Fantasy, Romance, Drama","country":"KR","status":"L"},
-{"id":"the-escape-of-the-seven","title":"The Escape of the Seven","year":2023,"imdb":7.1,"network":"SBS","genres":"Drama, Suspense, Revenge","country":"KR","status":"U"},
-{"id":"twinkling-watermelon","title":"Twinkling Watermelon","year":2023,"imdb":8.9,"network":"tvN","genres":"Comedy, Drama, School, Musical, Romance","country":"KR","status":"L"},
-{"id":"the-worst-of-evil","title":"The Worst of Evil","year":2023,"imdb":8.3,"network":"Disney+","genres":"Drama, Suspense, Action, Crime","country":"KR","status":"L"},
-{"id":"strong-girl-namsoon","title":"Strong Girl Namsoon","year":2023,"imdb":6.6,"network":"JTBC","genres":"Comedy, Romance, Action, Crime, Fantasy","country":"KR","status":"W","myRate":3.3},
-{"id":"high-cookie","title":"High Cookie","year":2023,"imdb":6.4,"network":"U+ Mobile TV","genres":"Drama, Crime, Suspense","country":"KR","status":"U"},
-{"id":"perfect-marriage-revenge","title":"Perfect Marriage Revenge","year":2023,"imdb":7.8,"network":"MBN","genres":"Drama, Revenge, Romance, Fantasy","country":"KR","status":"U"},
-{"id":"daily-dose-of-sunshine","title":"Daily Dose of Sunshine","year":2023,"imdb":8.2,"network":"Netflix","genres":"Drama, Medical, Psychological","country":"KR","status":"W","myRate":4.2},
-{"id":"my-demon","title":"My Demon","year":2023,"imdb":7.7,"network":"SBS","genres":"Drama, Comedy, Suspense, Romance, Fantasy","country":"KR","status":"W","myRate":4.2},
-{"id":"welcome-to-samdal-ri","title":"Welcome to Samdal-ri","year":2023,"imdb":8,"network":"JTBC","genres":"Drama, Comedy, Romance","country":"KR","status":"L"},
-{"id":"night-has-come","title":"Night Has Come","year":2023,"imdb":7.8,"network":"U+ Mobile TV","genres":"Suspense, Revenge, School, Horror, Crime","country":"KR","status":"U"},
-{"id":"deaths-game","title":"Death's Game","year":2023,"imdb":8.5,"network":"tvN","genres":"Drama, Psychological, Fantasy","country":"KR","status":"S"},
-{"id":"like-flowers-in-sand","title":"Like Flowers in Sand","year":2023,"imdb":7.5,"network":"ENA","genres":"Comedy, Romance, Suspense","country":"KR","status":"L"},
-{"id":"gyeongseong-creature","title":"Gyeongseong Creature","year":2023,"imdb":7.4,"network":"Netflix","genres":"Drama, Suspense, Horror, Action, Fantasy, Historical","country":"KR","status":"S"},
-{"id":"marry-my-husband","title":"Marry My Husband","year":2023,"imdb":7.8,"network":"tvN","genres":"Drama, Comedy, Revenge, Romance, Fantasy","country":"KR","status":"W","myRate":4.1},
-{"id":"a-shop-for-killers","title":"A Shop for Killers","year":2023,"imdb":8,"network":"Disney+","genres":"Drama, Revenge, Suspense, Action, Tragedy","country":"KR","status":"W","myRate":4.5},
-{"id":"destined-with-you","title":"Destined with You","year":2023,"imdb":7.6,"network":"JTBC","genres":"Comedy, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"heartbeat","title":"Heartbeat","year":2023,"imdb":7,"network":"KBS","genres":"Fantasy, Romance, Comedy","country":"KR","status":"S"},
-{"id":"flex-x-cop","title":"Flex X Cop","year":2024,"imdb":7.8,"network":"Disney+","genres":"Drama, Comedy, Suspense, Romance, Action","country":"KR","status":"L"},
-{"id":"a-killer-paradox","title":"A Killer Paradox","year":2024,"imdb":7.1,"network":"Netflix","genres":"Comedy, Suspense, Crime","country":"KR","status":"L"},
-{"id":"wonderful-world","title":"Wonderful World","year":2024,"imdb":7.6,"network":"MBC","genres":"Drama, Suspense","country":"KR","status":"L"},
-{"id":"queen-of-tears","title":"Queen of Tears","year":2024,"imdb":8.2,"network":"tvN","genres":"Drama, Romance, Tragedy","country":"KR","status":"W","myRate":4.5},
-{"id":"parasyte-the-grey","title":"Parasyte: The Grey","year":2024,"imdb":7.1,"network":"Netflix","genres":"Suspense, Horror, Action","country":"KR","status":"L"},
-{"id":"lovely-runner","title":"Lovely Runner","year":2024,"imdb":8.6,"network":"tvN","genres":"Comedy, School, Romance, Fantasy","country":"KR","status":"W","myRate":4.6},
-{"id":"the-atypical-family","title":"The Atypical Family","year":2024,"imdb":7.6,"network":"JTBC","genres":"Drama, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"midnight-romance-in-hagwon","title":"The Midnight Romance in Hagwon","year":2024,"imdb":7.3,"network":"tvN","genres":"Drama, Romance","country":"KR","status":"W","progress":"stopped at ep 15"},
-{"id":"the-8-show","title":"The 8 Show","year":2024,"imdb":7.2,"network":"Netflix","genres":"Drama, Comedy, Horror, Suspense, Survival","country":"KR","status":"L"},
-{"id":"connection","title":"Connection","year":2024,"imdb":7.8,"network":"SBS","genres":"Suspense, Action, Crime","country":"KR","status":"L"},
-{"id":"hierarchy","title":"Hierarchy","year":2024,"imdb":6,"network":"Netflix","genres":"Suspense, Drama, School, Romance","country":"KR","status":"S","myRate":2},
-{"id":"my-sweet-mobster","title":"My Sweet Mobster","year":2024,"imdb":7.7,"network":"JTBC","genres":"Drama, Comedy, Romance","country":"KR","status":"L"},
-{"id":"tarot","title":"Tarot","year":2024,"imdb":5.2,"network":"U+ Mobile TV","genres":"Drama, Horror","country":"KR","status":"L"},
-{"id":"serendipitys-embrace","title":"Serendipity's Embrace","year":2024,"imdb":7.3,"network":"tvN","genres":"Comedy, Romance, Drama","country":"KR","status":"L"},
-{"id":"love-next-door","title":"Love Next Door","year":2024,"imdb":7.6,"network":"tvN","genres":"Comedy, Romance","country":"KR","status":"W","myRate":2.6},
-{"id":"the-frog","title":"The Frog","year":2024,"imdb":6.8,"network":"Netflix","genres":"Drama, Suspense, Crime","country":"KR","status":"L"},
-{"id":"no-gain-no-love","title":"No Gain, No Love","year":2024,"imdb":7.6,"network":"tvN","genres":"Comedy, Drama, Romance","country":"KR","status":"W","myRate":2.5},
-{"id":"the-judge-from-hell","title":"The Judge from Hell","year":2024,"imdb":7.8,"network":"KBS","genres":"Crime, Horror, Romance, Fantasy, Drama","country":"KR","status":"W"},
-{"id":"spice-up-our-love","title":"Spice Up Our Love","year":2024,"imdb":6.7,"network":"tvN","genres":"Fantasy, Romance, Drama, Comedy","country":"KR","status":"W","myRate":2.7},
-{"id":"family-by-choice","title":"Family by Choice","year":2024,"imdb":8.3,"network":"JTBC","genres":"Comedy, Drama, School, Romance, Family","country":"KR","status":"W","myRate":3.3},
-{"id":"jeongnyeon","title":"Jeongnyeon: The Star Is Born","year":2024,"imdb":8.2,"network":"tvN","genres":"Drama, Musical, Historical","country":"KR","status":"L"},
-{"id":"a-virtuous-business","title":"A Virtuous Business","year":2024,"imdb":7.3,"network":"JTBC","genres":"Comedy, Drama","country":"KR","status":"L"},
-{"id":"brewing-love","title":"Brewing Love","year":2024,"imdb":7,"network":"ENA","genres":"Comedy, Romance","country":"KR","status":"W","myRate":3.2},
-{"id":"gangnam-b-side","title":"Gangnam B-Side","year":2024,"imdb":7.2,"network":"Disney+","genres":"Suspense, Action, Crime, Drama","country":"KR","status":"W","myRate":4.1},
-{"id":"mr-plankton","title":"Mr. Plankton","year":2024,"imdb":8.1,"network":"Netflix","genres":"Drama, Comedy, Romance, Tragedy","country":"KR","status":"W","scores":[4.4,4.5,4.5,4.7,4.5]},
-{"id":"when-the-phone-rings","title":"When the Phone Rings","year":2024,"imdb":5.7,"network":"MBC","genres":"Drama, Romance, Suspense","country":"KR","status":"W","scores":[4.5,4,4.2,4.5,4.2]},
-{"id":"the-trunk","title":"The Trunk","year":2024,"imdb":7,"network":"Netflix","genres":"Drama, Suspense, Romance, Psychological, Crime","country":"KR","status":"W","scores":[4.2,4,3.7,4,3.7]},
-{"id":"light-shop","title":"Light Shop","year":2024,"imdb":7.8,"network":"Disney+","genres":"Drama, Suspense, Horror, Psychological","country":"KR","status":"L"},
-{"id":"love-scout","title":"Love Scout","year":2025,"imdb":7.9,"network":"SBS","genres":"Comedy, Drama, Romance","country":"KR","status":"L"},
-{"id":"when-the-stars-gossip","title":"When the Stars Gossip","year":2025,"imdb":6.5,"network":"tvN","genres":"Comedy, Romance, Drama","country":"KR","status":"L"},
-{"id":"motel-california","title":"Motel California","year":2025,"imdb":6.6,"network":"MBC","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"study-group","title":"Study Group","year":2025,"imdb":8.3,"network":"tvN","genres":"Drama, Comedy, Suspense, School, Action","country":"KR","status":"W","scores":[4,4.3,4.3,4,4.5]},
-{"id":"the-trauma-code","title":"The Trauma Code: Heroes on Call","year":2025,"imdb":8.4,"network":"Netflix","genres":"Medical, Drama","country":"KR","status":"L"},
-{"id":"newtopia","title":"Newtopia","year":2025,"imdb":6.7,"network":"Coupang Play","genres":"Comedy, Action, Fantasy, Horror","country":"KR","status":"W"},
-{"id":"melo-movie","title":"Melo Movie","year":2025,"imdb":7.5,"network":"Netflix","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"my-dearest-nemesis","title":"My Dearest Nemesis","year":2025,"imdb":7.5,"network":"tvN","genres":"Drama, Comedy, Romance","country":"KR","status":"W","scores":[3,2.7,3.5,3.7,2.7]},
-{"id":"undercover-high-school","title":"Undercover High School","year":2025,"imdb":7.9,"network":"MBC","genres":"Comedy, Action, Suspense, School","country":"KR","status":"W"},
-{"id":"buried-hearts","title":"Buried Hearts","year":2025,"imdb":7.6,"network":"SBS","genres":"Drama, Suspense, Revenge, Crime","country":"KR","status":"W","scores":[4.7,4.9,4,3.7,4.2]},
-{"id":"when-life-gives-you-tangerines","title":"When Life Gives You Tangerines","year":2025,"imdb":9.3,"network":"Netflix","genres":"Drama, Romance, Historical","country":"KR","status":"L"},
-{"id":"the-divorce-insurance","title":"The Divorce Insurance","year":2025,"imdb":6.6,"network":"tvN","genres":"Drama, Comedy, Workplace","country":"KR","status":"L"},
-{"id":"karma","title":"Karma","year":2025,"imdb":7.6,"network":"Netflix","genres":"Drama, Suspense, Crime","country":"KR","status":"L"},
-{"id":"nine-puzzles","title":"Nine Puzzles","year":2025,"imdb":7.7,"network":"Disney+","genres":"Drama, Suspense, Crime","country":"KR","status":"W","scores":[4.7,3.7,3.7,3.5,3.7],"watched":"2026-01","comment":"Downloaded"},
-{"id":"the-nice-guy","title":"The Nice Guy","year":2025,"imdb":6.6,"network":"JTBC","genres":"Romance, Action","country":"KR","status":"L"},
-{"id":"the-defects","title":"The Defects","year":2025,"imdb":7.4,"network":"ENA","genres":"Action, Suspense, Drama","country":"KR","status":"L"},
-{"id":"s-line","title":"S Line","year":2025,"imdb":6.3,"network":"Wavve","genres":"Suspense, Fantasy","country":"KR","status":"W","scores":[4.7,4.2,3.5,3.2,4],"watched":"2026-04"},
-{"id":"bitch-x-rich","title":"Bitch X Rich 1 & 2","year":2025,"imdb":6.6,"network":"Wavve","genres":"Suspense, School, Crime","country":"KR","status":"W","myRate":3.8,"watched":"2026-01"},
-{"id":"squid-game-3","title":"Squid Game Season 3","year":2025,"imdb":8,"network":"Netflix","genres":"Horror, Suspense, Action","country":"KR","status":"L"},
-{"id":"head-over-heels","title":"Head Over Heels","year":2025,"imdb":7.4,"network":"tvN","genres":"Romance, Drama, Fantasy","country":"KR","status":"W","myRate":3.7,"watched":"2026-01"},
-{"id":"first-night-with-the-duke","title":"The First Night with the Duke","year":2025,"imdb":7.1,"network":"KBS","genres":"Romance, Fantasy, Historical, Comedy","country":"KR","status":"W"},
-{"id":"mercy-for-none","title":"Mercy for None","year":2025,"imdb":7.5,"network":"Netflix","genres":"Action, Crime, Drama, Suspense","country":"KR","status":"L"},
-{"id":"good-boy","title":"Good Boy","year":2025,"imdb":7.4,"network":"JTBC","genres":"Action, Comedy, Romance","country":"KR","status":"L"},
-{"id":"our-unwritten-seoul","title":"Our Unwritten Seoul","year":2025,"imdb":7.9,"network":"tvN","genres":"Drama, Romance","country":"KR","status":"L"},
-{"id":"dear-hongrang","title":"Dear Hongrang","year":2025,"imdb":7.6,"network":"Netflix","genres":"Historical, Suspense, Romance","country":"KR","status":"L"},
-{"id":"tastefully-yours","title":"Tastefully Yours","year":2025,"imdb":7.3,"network":"ENA","genres":"Romance, Comedy, Drama","country":"KR","status":"L"},
-{"id":"second-shot-at-love","title":"Second Shot at Love","year":2025,"imdb":6.8,"network":"tvN","genres":"Comedy, Romance","country":"KR","status":"L"},
-{"id":"pump-up-the-healthy-love","title":"Pump Up the Healthy Love","year":2025,"imdb":7,"network":"KBS","genres":"Comedy, Romance","country":"KR","status":"W"},
-{"id":"weak-hero-class-2","title":"Weak Hero Class 2","year":2025,"imdb":8.4,"network":"Netflix","genres":"Action, Suspense, Drama","country":"KR","status":"L"},
-{"id":"hyper-knife","title":"Hyper Knife","year":2025,"imdb":7.3,"network":"Disney+","genres":"Suspense, Crime, Medical","country":"KR","status":"L"},
-{"id":"twelve","title":"Twelve","year":2025,"imdb":5.2,"network":"KBS","genres":"Action, Fantasy, Drama","country":"KR","status":"L"},
-{"id":"bon-appetit-your-majesty","title":"Bon Appétit, Your Majesty","year":2025,"imdb":8.2,"network":"tvN","genres":"Romance, Comedy, Fantasy, Historical, Drama","country":"KR","status":"W"},
-{"id":"the-winning-try","title":"The Winning Try","year":2025,"imdb":7.9,"network":"SBS","genres":"Comedy, School","country":"KR","status":"L"},
-{"id":"law-and-the-city","title":"Law and the City","year":2025,"imdb":6.2,"network":"tvN","genres":"Romance, Drama","country":"KR","status":"L"},
-{"id":"tempest","title":"Tempest","year":2025,"imdb":6.3,"network":"Disney+","genres":"Action, Suspense, Romance","country":"KR","status":"L"},
-{"id":"dear-x","title":"Dear X","year":2025,"imdb":8.4,"network":"tvN","genres":"Suspense, Romance, Crime","country":"KR","status":"W"},
-{"id":"genie-make-a-wish","title":"Genie, Make a Wish","year":2025,"imdb":7.6,"network":"Netflix","genres":"Comedy, Romance, Fantasy","country":"KR","status":"W","scores":[3.7,4,4,4.2,4],"watched":"2026-04"},
-{"id":"the-manipulated","title":"The Manipulated","year":2025,"imdb":8.8,"network":"Disney+","genres":"Action, Thriller, Crime","country":"KR","status":"S","progress":"ep 9"},
-{"id":"dynamite-kiss","title":"Dynamite Kiss","year":2025,"imdb":8.2,"network":"SBS, Netflix","genres":"Romance, Comedy, Workplace","country":"KR","status":"W","myRate":4,"watched":"2026-01"},
-{"id":"the-price-of-confession","title":"The Price of Confession","year":2025,"imdb":8.5,"network":"Netflix","genres":"Suspense, Crime","country":"KR","status":"L"},
-{"id":"typhoon-family","title":"Typhoon Family","year":2025,"imdb":7.9,"network":"tvN, Netflix","genres":"Workplace, Family","country":"KR","status":"L"},
-{"id":"walking-on-thin-ice","title":"Walking on Thin Ice","year":2025,"imdb":7.5,"network":"KBS","genres":"Drama, Suspense","country":"KR","status":"L"},
-{"id":"confidence-queen","title":"Confidence Queen","year":2025,"imdb":8,"network":"Prime Video","genres":"Comedy, Crime","country":"KR","status":"S"},
-{"id":"would-you-marry-me","title":"Would You Marry Me","year":2025,"imdb":8.1,"network":"Prime Video","genres":"Romance, Comedy, Drama","country":"KR","status":"S"},
-{"id":"the-witch","title":"The Witch","year":2025,"imdb":7.4,"network":"Viki","genres":"Suspense, Romance, Fantasy","country":"KR","status":"L"},
-{"id":"the-first-frost","title":"The First Frost","year":2025,"network":"Netflix","genres":"Romance, Drama","country":"CN","status":"W","scores":[3,3.7,3.5,3.5,3]},
-{"id":"pursuit-of-jade","title":"Pursuit of Jade","year":2025,"country":"CN","status":"S"},
-{"id":"speed-and-love","title":"Speed and Love","year":2025,"status":"S","progress":"ep 2"},
-{"id":"can-this-love-be-translated","title":"Can This Love Be Translated?","year":2026,"imdb":8,"network":"Netflix","genres":"Drama, Romance, Comedy","status":"W","scores":[4,4,4,4.2,4],"watched":"2026-02"},
-{"id":"the-art-of-sarah","title":"The Art of Sarah","year":2026,"imdb":8,"network":"Netflix","genres":"Drama, Suspense, Crime","status":"W","scores":[4.2,4.6,4.2,4,4.3],"watched":"2026-02"},
-{"id":"undercover-miss-hong","title":"Undercover Miss Hong","year":2026,"network":"tvN, Netflix","genres":"Workplace, Comedy, Action","country":"KR","status":"W","scores":[3.7,3.5,3.7,4,3.5],"watched":"2026-03"},
-{"id":"boyfriend-on-demand","title":"Boyfriend on Demand","year":2026,"imdb":8,"network":"Netflix","genres":"Comedy, Romance, Fantasy","status":"W","scores":[2.7,3.7,4.3,4.3,4.3],"watched":"2026-03"},
-{"id":"bloodhounds-2","title":"Bloodhounds 2","year":2026,"network":"Netflix","genres":"Action, Suspense","country":"KR","status":"W","scores":[3.7,4,4.2,4.2,3.7],"watched":"2026-04"},
-{"id":"in-your-radiant-season","title":"In Your Radiant Season","year":2026,"status":"W","scores":[4,3.8,4.1,4.2,4],"watched":"2026-04"},
-{"id":"royal-nemesis","title":"Royal Nemesis","year":2026,"network":"Netflix","genres":"Fantasy, Historical, Comedy","status":"W","scores":[4,4,4,4.2,4]},
-{"id":"teach-you-a-lesson","title":"Teach You a Lesson","year":2026,"status":"S","scores":[4,4,4.5,3.5,4.2]},
-{"id":"dream-to-you","title":"Dream to You","year":2026,"genres":"Romance, Comedy, Drama","status":"W","scores":[3.7,3.7,4,4,3.9],"watched":"2026-08"},
-{"id":"the-wonderfools","title":"The Wonderfools","year":2026,"network":"Netflix","genres":"Comedy, Fantasy, Action","status":"W","scores":[3.7,3.7,3.7,3.7,3.7]},
-{"id":"if-wishes-could-kill","title":"If Wishes Could Kill","year":2026,"network":"Netflix","genres":"Horror, School","status":"W","scores":[4,4,4,4,4]},
-{"id":"even-if-this-love-disappears-tonight","title":"Even If This Love Disappears Tonight","year":2026,"network":"Netflix","genres":"Romance, School, Melodrama","status":"W","comment":"Film, not a series"},
-{"id":"spooky-in-love","title":"Spooky in Love","year":2026,"network":"tvN","genres":"Comedy, Romance, Horror","country":"KR","status":"W","scores":[3,3,3.5,3.5,3.2]},
-{"id":"the-early-spring","title":"The Early Spring","year":2026,"status":"W","scores":[3.9,4,4.2,4.6,4.3],"watched":"2026-09"},
-{"id":"my-boss-my-bias","title":"My Boss My Bias","year":2026,"status":"W","scores":[3.7,3.7,4.1,4.2,4]},
-{"id":"spring-fever","title":"Spring Fever","year":2026,"network":"tvN, Prime Video","genres":"Comedy, Romance","country":"KR","status":"S"},
-{"id":"honor","title":"Honor","year":2026,"imdb":8.3,"network":"ENA, Viki","genres":"Legal, Thriller, Political","country":"KR","status":"L"},
-{"id":"the-judge-returns","title":"The Judge Returns","year":2026,"network":"MBC","genres":"Revenge, Fantasy","country":"KR","status":"L"},
-{"id":"the-apartment-job","title":"The Apartment Job","year":2026,"status":"L"},
-{"id":"bloody-flower","title":"Bloody Flower","year":2026,"status":"L"},
-{"id":"sirens-kiss","title":"Siren's Kiss","year":2026,"status":"L"},
-{"id":"phantom-lawyer","title":"Phantom Lawyer","year":2026,"status":"L"},
-{"id":"doctor-shin","title":"Doctor Shin","year":2026,"status":"L"},
-{"id":"climax","title":"Climax","year":2026,"status":"L"},
-{"id":"perfect-crown","title":"Perfect Crown","year":2026,"status":"L"}
-]
+ "name": "Didi's K-point",
+ "tagline": "A drama journal",
+ "updated": "2026-09-16",
+ "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
+ "shows": [
+  {
+   "id": "the-east-palace",
+   "title": "The East Palace",
+   "status": "L",
+   "year": 2026,
+   "country": "KR"
+  },
+  {
+   "id": "overdo",
+   "title": "Overdo",
+   "status": "L",
+   "year": 2026,
+   "country": "CN"
+  },
+  {
+   "id": "a-bona-fide-killer",
+   "title": "A Bona Fide Killer",
+   "status": "L",
+   "year": 2026,
+   "country": "KR"
+  },
+  {
+   "id": "agent-kim",
+   "title": "agent kim",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 296206,
+   "summary": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+   "episodes": 10,
+   "firstAir": "2026-06-26",
+   "lastAir": "2026-07-25",
+   "country": "KR",
+   "network": "SBS",
+   "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=k5IDEniQNEk",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "we-are-all-trying-here",
+   "title": "we are all trying here",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 289424,
+   "summary": "An aspiring director hits rock bottom after 20 years chasing his debut — until he meets an overwhelmed producer who helps him rediscover his self-worth.",
+   "episodes": 12,
+   "firstAir": "2026-04-18",
+   "lastAir": "2026-05-24",
+   "country": "KR",
+   "network": "JTBC",
+   "poster": "images/we-are-all-trying-here-1789523641184-ay3o.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=2W9wOtwEWE8",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "four-hands",
+   "title": "four hands two sonatas",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 305644,
+   "summary": "When two young pianists from completely different worlds meet at an elite music high school, the melodies of their lives become intimately intertwined.",
+   "episodes": 12,
+   "firstAir": "2026-08-29",
+   "lastAir": "2026-09-13",
+   "country": "KR",
+   "network": "tvN",
+   "poster": "https://image.tmdb.org/t/p/w500/a7p6htiJKx68USDAcilJ5rzKAWB.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=KapADxhCvvM",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "a-love-other-than-yours",
+   "title": "a love other than yours",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 314939,
+   "summary": "A realistic, emotionally resonant romance about a couple in their tenth year together whose comfortable relationship is tested by unexpected feelings.",
+   "episodes": 14,
+   "firstAir": "2026-09-12",
+   "lastAir": "2026-09-13",
+   "country": "KR",
+   "network": "KBS2",
+   "poster": "images/a-love-other-than-yours-1789521498780-xscp.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=zp62ID0bbQM",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "playful-kiss",
+   "title": "Playful Kiss",
+   "year": 2010,
+   "imdb": 7.1,
+   "network": "MBC",
+   "genres": "Comedy, School, Romance",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 34408,
+   "summary": "Clumsy high school student Oh Ha-ni falls for the brilliant and aloof Baek Seung-jo, only to have her feelings rejected. When her family home collapses, Ha-ni moves in with her father’s longtime friend, who happens to be Seung-jo’s father, giving her an unexpected chance to win his heart.",
+   "episodes": 17,
+   "firstAir": "2010-09-01",
+   "lastAir": "2010-10-21",
+   "poster": "images/playful-kiss-1789524213255-4fnm.jpg"
+  },
+  {
+   "id": "dream-high",
+   "title": "Dream High",
+   "year": 2011,
+   "imdb": 7.6,
+   "network": "KBS",
+   "genres": "School, Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "city-hunter",
+   "title": "City Hunter",
+   "year": 2011,
+   "imdb": 8,
+   "network": "SBS",
+   "genres": "Suspense, Action, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "dream-high-2",
+   "title": "Dream High 2",
+   "year": 2012,
+   "imdb": 7.1,
+   "network": "MBC",
+   "genres": "School, Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "rooftop-prince",
+   "title": "Rooftop Prince",
+   "year": 2012,
+   "imdb": 7.7,
+   "network": "SBS",
+   "genres": "Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "to-the-beautiful-you",
+   "title": "To the Beautiful You",
+   "year": 2012,
+   "network": "SBS",
+   "genres": "Comedy, School, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "school-2013",
+   "title": "School 2013",
+   "year": 2012,
+   "imdb": 7.7,
+   "network": "KBS",
+   "genres": "Comedy, Romance, School",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "the-masters-sun",
+   "title": "The Master's Sun",
+   "year": 2013,
+   "imdb": 8,
+   "network": "SBS",
+   "genres": "Comedy, Horror, Fantasy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "the-heirs",
+   "title": "The Heirs",
+   "year": 2013,
+   "imdb": 7.5,
+   "network": "SBS",
+   "genres": "Drama, Comedy, Romance, School",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "my-love-from-the-star",
+   "title": "My Love from the Star",
+   "year": 2013,
+   "imdb": 8.2,
+   "network": "SBS",
+   "genres": "Drama, Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "doctor-stranger",
+   "title": "Doctor Stranger",
+   "year": 2014,
+   "imdb": 7.5,
+   "network": "SBS",
+   "genres": "Action, Romance, Drama, Medical",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "hi-school-love-on",
+   "title": "Hi! School: Love On",
+   "year": 2014,
+   "imdb": 7.2,
+   "network": "KBS",
+   "genres": "Comedy, Romance, School, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "its-okay-thats-love",
+   "title": "It's Okay, That's Love",
+   "year": 2014,
+   "imdb": 8.3,
+   "network": "SBS",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "bad-guys",
+   "title": "Bad Guys",
+   "year": 2014,
+   "imdb": 7.7,
+   "network": "OCN",
+   "genres": "Suspense, Action",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "pinocchio",
+   "title": "Pinocchio",
+   "year": 2014,
+   "imdb": 8.1,
+   "network": "SBS",
+   "genres": "Suspense, Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "healer",
+   "title": "Healer",
+   "year": 2014,
+   "imdb": 8.4,
+   "network": "KBS",
+   "genres": "Suspense, Drama, Action, Romance, Comedy, Crime",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 61670,
+   "summary": "A star reporter, a second-rate journalist and a man by the code name \"Healer\" are brought together by a long-buried incident that hides dark truths.",
+   "episodes": 20,
+   "firstAir": "2014-12-08",
+   "lastAir": "2015-02-10",
+   "cast": [
+    "Ji Chang-wook",
+    "Yoo Ji-tae",
+    "Park Min-young",
+    "Park Sang-won",
+    "Do Ji-won",
+    "Woo Hee-jin"
+   ],
+   "roles": [
+    "Seo Jung-hoo",
+    "Kim Moon-ho",
+    "Chae Young-shin  / Oh Ji-an",
+    "Kim Moon-shik",
+    "Choi Myung-hee",
+    "Kang Min-jae"
+   ],
+   "crew": [
+    {
+     "name": "Kim Jin-woo",
+     "job": "Creator"
+    },
+    {
+     "name": "Song Ji-na",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Jung-sub",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/healer-1789598440136-j1lz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=AnjmzZFssmg",
+     "title": "Trailer | Healer | Viu"
+    }
+   ]
+  },
+  {
+   "id": "kill-me-heal-me",
+   "title": "Kill Me, Heal Me",
+   "year": 2015,
+   "imdb": 8.3,
+   "network": "MBC",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "exo-next-door",
+   "title": "EXO Next Door",
+   "year": 2015,
+   "imdb": 7,
+   "network": "Naver TV Cast",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "who-are-you-school-2015",
+   "title": "Who Are You: School 2015",
+   "year": 2015,
+   "imdb": 7.6,
+   "network": "KBS",
+   "genres": "Suspense, Drama, School, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "orange-marmalade",
+   "title": "Orange Marmalade",
+   "year": 2015,
+   "imdb": 6.3,
+   "network": "KBS",
+   "genres": "Fantasy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "she-was-pretty",
+   "title": "She Was Pretty",
+   "year": 2015,
+   "imdb": 7.6,
+   "network": "MBC",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "reply-1988",
+   "title": "Reply 1988",
+   "year": 2015,
+   "imdb": 9,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Drama, Family",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 64010,
+   "summary": "Take a nostalgic trip back to the late 1980s through the lives of five families and their five teenage kids living in a small neighbourhood in Seoul.",
+   "episodes": 20,
+   "firstAir": "2015-11-06",
+   "lastAir": "2016-01-16",
+   "cast": [
+    "Lee Hye-ri",
+    "Ryu Jun-yeol",
+    "Park Bo-gum",
+    "Go Kyung-pyo",
+    "Lee Dong-hwi",
+    "Ryu Hye-young"
+   ],
+   "roles": [
+    "Sung Deok-sun",
+    "Kim Jung-hwan",
+    "Choi Taek",
+    "Sung Sun-woo",
+    "Ryu Dong-ryong",
+    "Sung Bo-ra"
+   ],
+   "crew": [
+    {
+     "name": "Lee Woo-jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Shin Won-ho",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Myung-han",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/655MownSWwplhvVlXERRJ4OSOG2.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=c-EMf3JdxUA",
+     "title": "Reply 1988 | Trailer with Eng Subs"
+    }
+   ]
+  },
+  {
+   "id": "high-end-crush",
+   "title": "High-End Crush",
+   "year": 2015,
+   "imdb": 7.2,
+   "network": "MBN",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "oh-my-venus",
+   "title": "Oh My Venus",
+   "year": 2015,
+   "imdb": 7.7,
+   "network": "KBS",
+   "genres": "Comedy, Drama, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "cheese-in-the-trap",
+   "title": "Cheese in the Trap",
+   "year": 2016,
+   "imdb": 7.2,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "descendants-of-the-sun",
+   "title": "Descendants of the Sun",
+   "year": 2016,
+   "imdb": 8.2,
+   "network": "KBS",
+   "genres": "Comedy, Drama, Action, Romance",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 65143,
+   "summary": "After a chance meeting in a hospital, an ardent soldier falls for a gifted surgeon. Opposing philosophies tear them apart, but fate has other plans.",
+   "episodes": 16,
+   "firstAir": "2016-02-24",
+   "lastAir": "2016-04-14",
+   "cast": [
+    "Song Hye-kyo",
+    "Song Joong-ki",
+    "Kim Ji-won",
+    "Jin Goo",
+    "Onew",
+    "Kang Shin-il"
+   ],
+   "roles": [
+    "Kang Mo-yeon",
+    "Yoo Shi-jin",
+    "Yoon Myung-joo",
+    "Seo Dae-young",
+    "Lee Chi-hoon",
+    "Lieutenant General Yoon"
+   ],
+   "crew": [
+    {
+     "name": "Lee Eung-bok",
+     "job": "Creator"
+    },
+    {
+     "name": "Baek Sang-hoon",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Eun-sook",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Eung-bok",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Won-suk",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/descendants-of-the-sun-1789598446406-btgk.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=wTGwjDqtfzQ",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "another-miss-oh",
+   "title": "Another Miss Oh",
+   "year": 2016,
+   "imdb": 7.7,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "doctors",
+   "title": "Doctors",
+   "year": 2016,
+   "imdb": 7.6,
+   "network": "SBS",
+   "genres": "Drama, Comedy, Romance, Medical",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "bring-it-on-ghost",
+   "title": "Bring It On, Ghost",
+   "year": 2016,
+   "imdb": 7.6,
+   "network": "tvN",
+   "genres": "Comedy, Horror, Romance, Fantasy",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "w",
+   "title": "W",
+   "year": 2016,
+   "imdb": 8,
+   "network": "MBC",
+   "genres": "Suspense, Drama, Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "moon-lovers",
+   "title": "Moon Lovers: Scarlet Heart Ryeo",
+   "year": 2016,
+   "imdb": 8.6,
+   "network": "SBS",
+   "genres": "Drama, Comedy, Romance, Action, Fantasy, Tragedy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-k2",
+   "title": "The K2",
+   "year": 2016,
+   "imdb": 7.8,
+   "network": "tvN",
+   "genres": "Drama, Romance, Action, Suspense",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "weightlifting-fairy",
+   "title": "Weightlifting Fairy Kim Bok-joo",
+   "year": 2016,
+   "imdb": 8.3,
+   "network": "MBC",
+   "genres": "Comedy, Romance, School",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "legend-of-the-blue-sea",
+   "title": "The Legend of the Blue Sea",
+   "year": 2016,
+   "imdb": 8.1,
+   "network": "SBS",
+   "genres": "Comedy, Drama, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "goblin",
+   "title": "Goblin",
+   "year": 2016,
+   "imdb": 8.6,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "hwarang",
+   "title": "Hwarang",
+   "year": 2016,
+   "imdb": 8,
+   "network": "KBS",
+   "genres": "Drama, Comedy, Action, Romance, Historical",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "defendant",
+   "title": "Defendant",
+   "year": 2017,
+   "imdb": 8.1,
+   "network": "SBS",
+   "genres": "Suspense, Drama, Crime",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "strong-woman-do-bong-soon",
+   "title": "Strong Woman Do Bong-soon",
+   "year": 2017,
+   "imdb": 8.1,
+   "network": "JTBC",
+   "genres": "Suspense, Comedy, Fantasy, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "my-secret-romance",
+   "title": "My Secret Romance",
+   "year": 2017,
+   "imdb": 7.1,
+   "network": "OCN",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "suspicious-partner",
+   "title": "Suspicious Partner",
+   "year": 2017,
+   "imdb": 7.7,
+   "network": "SBS",
+   "genres": "Suspense, Comedy, Romance, Crime",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 71349,
+   "summary": "Noh Ji-Wook is a prosecutor in the Central District Prosecutors’ Office who ends up switching professions to a private attorney. He harbors a trauma stemming from an event in his childhood involving his parents and his first love. Eun Bong-Hee, a Taekwondo athlete in her youth, is a prosecutor trainee who has become a murder suspect. Eun Bong-Hee and Noh Ji-Wook both find themselves being the focus of a killer.",
+   "episodes": 40,
+   "firstAir": "2017-05-10",
+   "lastAir": "2017-07-13",
+   "cast": [
+    "Ji Chang-wook",
+    "Nam Ji-hyun",
+    "Choi Tae-joon",
+    "Kwon Na-ra",
+    "Dong Ha",
+    "Kim Ye-won"
+   ],
+   "roles": [
+    "Noh Ji-Wook",
+    "Eun Bong-Hee",
+    "Ji Eun-Hyuk",
+    "Cha Yoo-Jung",
+    "Jung Hyun-Soo",
+    "Na Ji-Hae"
+   ],
+   "crew": [
+    {
+     "name": "Park Seon-ho",
+     "job": "Director"
+    },
+    {
+     "name": "Kwon Ki-young",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Sung Hoon",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/suspicious-partner-1789598454200-8mgq.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=firqRGsdifM",
+     "title": "Love in Trouble (Suspicious Partner) (Trailer w/ Eng Subs)"
+    }
+   ]
+  },
+  {
+   "id": "the-bride-of-habaek",
+   "title": "The Bride of Habaek",
+   "year": 2017,
+   "imdb": 6.9,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "school-2017",
+   "title": "School 2017",
+   "year": 2017,
+   "imdb": 7.5,
+   "network": "KBS",
+   "genres": "Suspense, Comedy, School, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "while-you-were-sleeping",
+   "title": "While You Were Sleeping",
+   "year": 2017,
+   "imdb": 8.3,
+   "network": "SBS",
+   "genres": "Drama, Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "im-not-a-robot",
+   "title": "I'm Not a Robot",
+   "year": 2017,
+   "imdb": 8,
+   "network": "MBC",
+   "genres": "Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "a-korean-odyssey",
+   "title": "A Korean Odyssey",
+   "year": 2017,
+   "imdb": 7.9,
+   "network": "tvN",
+   "genres": "Comedy, Horror, Fantasy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "radio-romance",
+   "title": "Radio Romance",
+   "year": 2018,
+   "imdb": 6.6,
+   "network": "KBS",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "a-poem-a-day",
+   "title": "A Poem a Day",
+   "year": 2018,
+   "imdb": 7,
+   "network": "tvN",
+   "genres": "Drama, Romance, Comedy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "secretary-kim",
+   "title": "What's Wrong with Secretary Kim",
+   "year": 2018,
+   "imdb": 8,
+   "network": "tvN",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "mr-sunshine",
+   "title": "Mr. Sunshine",
+   "year": 2018,
+   "imdb": 8.7,
+   "network": "tvN",
+   "genres": "Drama, Romance, Action, Historical",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "my-id-is-gangnam-beauty",
+   "title": "My ID Is Gangnam Beauty",
+   "year": 2018,
+   "imdb": 7.2,
+   "network": "JTBC",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "clean-with-passion",
+   "title": "Clean with Passion for Now",
+   "year": 2018,
+   "imdb": 7,
+   "network": "JTBC",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "memories-of-the-alhambra",
+   "title": "Memories of the Alhambra",
+   "year": 2018,
+   "imdb": 7.7,
+   "network": "tvN",
+   "genres": "Suspense, Drama, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "romance-is-a-bonus-book",
+   "title": "Romance Is a Bonus Book",
+   "year": 2019,
+   "imdb": 8,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "her-private-life",
+   "title": "Her Private Life",
+   "year": 2019,
+   "imdb": 7.6,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "angels-last-mission",
+   "title": "Angel's Last Mission: Love",
+   "year": 2019,
+   "imdb": 7.7,
+   "network": "KBS",
+   "genres": "Comedy, Drama, Romance, Fantasy",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "hotel-del-luna",
+   "title": "Hotel del Luna",
+   "year": 2019,
+   "imdb": 8.1,
+   "network": "tvN",
+   "genres": "Comedy, Drama, Romance, Fantasy, Action",
+   "country": "KR",
+   "status": "U",
+   "tmdbId": 90447,
+   "summary": "When he's invited to manage a hotel for dead souls, an elite hotelier gets to know the establishment's ancient owner and her strange world.",
+   "episodes": 16,
+   "firstAir": "2019-07-12",
+   "lastAir": "2019-08-31",
+   "cast": [
+    "IU",
+    "Yeo Jin-goo",
+    "Shin Jung-keun",
+    "Bae Hae-sun",
+    "P.O",
+    "Lee Do-hyun"
+   ],
+   "roles": [
+    "Jang Man-wol",
+    "Goo Chan-sung",
+    "Kim Sun-bi",
+    "Choi Seo-hee",
+    "Ji Hyun-joong",
+    "Go Chung-myung"
+   ],
+   "crew": [
+    {
+     "name": "Hong Mi-ran",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Oh Choong-hwan",
+     "job": "Director"
+    },
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Writer"
+    },
+    {
+     "name": "Hong Mi-ran",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/hotel-del-luna-1789598463914-22hu.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=ms8RJVcn_eU",
+     "title": "HOTEL DEL LUNA (IU, YEO JIN GOO) Trailer #3 | Now Open on Viu"
+    }
+   ]
+  },
+  {
+   "id": "love-alarm",
+   "title": "Love Alarm",
+   "year": 2019,
+   "imdb": 6.6,
+   "network": "Netflix",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "strangers-from-hell",
+   "title": "Strangers from Hell",
+   "year": 2019,
+   "imdb": 7.8,
+   "network": "OCN",
+   "genres": "Suspense, Horror, Crime",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "vagabond",
+   "title": "Vagabond",
+   "year": 2019,
+   "imdb": 8.1,
+   "network": "SBS",
+   "genres": "Suspense, Action, Crime, Drama",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 92983,
+   "summary": "Stuntman Cha Dal-geon gets involved in a tragic airplane crash and ends up discovering a national corruption scandal in the process. Go Hae-ri, the oldest daughter of a deceased marine, decides to work for the National Intelligence Service as a secret ops agent in order to support her mom and younger siblings, although all she wanted to do is to become a civil servant.",
+   "episodes": 16,
+   "firstAir": "2019-09-20",
+   "lastAir": "2019-11-23",
+   "cast": [
+    "Lee Seung-gi",
+    "Suzy",
+    "Shin Sung-rok",
+    "Moon Jeong-hee",
+    "Baek Yoon-sik",
+    "Moon Sung-keun"
+   ],
+   "roles": [
+    "Cha Dal-gun",
+    "Go Hae-ri / Elsa",
+    "Gi Tae-woong",
+    "Jessica Lee",
+    "Jung Gook-pyo",
+    "Hong Sun-jo"
+   ],
+   "crew": [
+    {
+     "name": "Jang Yeong-cheol",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo In-sik",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo In-sik",
+     "job": "Director"
+    },
+    {
+     "name": "Jang Young-cheol",
+     "job": "Writer"
+    },
+    {
+     "name": "Jung Gyeong-sun",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/vagabond-1789598465866-5l7h.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=tyhnEHCUtv4",
+     "title": "Vagabond | Official Trailer | Netflix"
+    }
+   ]
+  },
+  {
+   "id": "melting-me-softly",
+   "title": "Melting Me Softly",
+   "year": 2019,
+   "imdb": 6.9,
+   "network": "tvN",
+   "genres": "Suspense, Drama, Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "extraordinary-you",
+   "title": "Extraordinary You",
+   "year": 2019,
+   "imdb": 7.8,
+   "network": "MBC",
+   "genres": "Comedy, School, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "crash-landing-on-you",
+   "title": "Crash Landing on You",
+   "year": 2019,
+   "imdb": 8.7,
+   "network": "tvN",
+   "genres": "Suspense, Comedy, Drama, Romance, Action",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "itaewon-class",
+   "title": "Itaewon Class",
+   "year": 2020,
+   "imdb": 8.1,
+   "network": "JTBC",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 96162,
+   "summary": "In a colorful Seoul neighborhood, an ex-con and his friends fight a mighty foe to make their ambitious dreams for their street bar a reality.",
+   "episodes": 16,
+   "firstAir": "2020-01-31",
+   "lastAir": "2020-03-21",
+   "cast": [
+    "Park Seo-jun",
+    "Kim Da-mi",
+    "Kwon Na-ra",
+    "Yoo Jae-myung",
+    "Ahn Bo-hyun",
+    "Kim Dong-hee"
+   ],
+   "roles": [
+    "Park Sae-ro-yi",
+    "Jo Yi-seo",
+    "Oh Soo-ah",
+    "Jang Dae-hee",
+    "Jang Geun-won",
+    "Jang Geun-soo"
+   ],
+   "crew": [
+    {
+     "name": "Cho Kwang-jin",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Seong-yoon",
+     "job": "Director"
+    },
+    {
+     "name": "Cho Kwang-jin",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Simon Lee",
+     "job": "Producer"
+    },
+    {
+     "name": "Cho Jun-hyeong",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/itaewon-class-1789598468481-cxir.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=NeaHNQJ1kCo",
+     "title": "Itaewon Class | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "my-holo-love",
+   "title": "My Holo Love",
+   "year": 2020,
+   "imdb": 7.6,
+   "network": "Netflix",
+   "genres": "Drama, Romance, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "when-the-weather-is-fine",
+   "title": "When the Weather Is Fine",
+   "year": 2020,
+   "imdb": 7.7,
+   "network": "JTBC",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "hospital-playlist",
+   "title": "Hospital Playlist",
+   "year": 2020,
+   "imdb": 8.7,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance, Medical",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 96102,
+   "summary": "Every day is extraordinary for five doctors and their patients inside a hospital, where birth, death and everything in between coexist.",
+   "episodes": 24,
+   "seasons": 2,
+   "firstAir": "2020-03-12",
+   "lastAir": "2021-09-16",
+   "cast": [
+    "Cho Jung-seok",
+    "Yoo Yeon-seok",
+    "Jung Kyung-ho",
+    "Kim Dae-myung",
+    "Jeon Mi-do",
+    "Shin Hyun-been"
+   ],
+   "roles": [
+    "Lee Ik-jun",
+    "Ahn Jeong-won",
+    "Kim Jun-wan",
+    "Yang Seok-hyeong",
+    "Chae Song-hwa",
+    "Jang Gyeo-ul"
+   ],
+   "crew": [
+    {
+     "name": "Shin Won-ho",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Woo-jung",
+     "job": "Creator"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/8MSjQkH2FrG0t4l84L5HmiSFrS7.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=ulf9PtJjVjc",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "the-world-of-the-married",
+   "title": "The World of the Married",
+   "year": 2020,
+   "imdb": 7.9,
+   "network": "JTBC",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-king-eternal-monarch",
+   "title": "The King: Eternal Monarch",
+   "year": 2020,
+   "imdb": 8.1,
+   "network": "SBS",
+   "genres": "Suspense, Romance, Fantasy",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 93846,
+   "summary": "Korean emperor Lee Gon tries to close the doors to a parallel world which was opened by demons; a detective tries to protect the people and the one she loves.",
+   "episodes": 16,
+   "firstAir": "2020-04-17",
+   "lastAir": "2020-06-12",
+   "cast": [
+    "Lee Min-ho",
+    "Kim Go-eun",
+    "Woo Do-hwan",
+    "Kim Kyung-nam",
+    "Jung Eun-chae",
+    "Lee Jung-jin"
+   ],
+   "roles": [
+    "Lee Gon",
+    "Jung Tae-eul / Luna",
+    "Jo Eun-sup / Jo-young",
+    "Kang Shin-jae",
+    "Goo Seo-ryung / Goo Eun-ah",
+    "Lee Rim"
+   ],
+   "crew": [
+    {
+     "name": "Kim Eun-sook",
+     "job": "Writer"
+    },
+    {
+     "name": "Baek Sang-hoon",
+     "job": "Director"
+    },
+    {
+     "name": "Jung Jee-hyun",
+     "job": "Director"
+    },
+    {
+     "name": "Jinnie Choi",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Yoon Ha-lim",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/the-king-eternal-monarch-1789598471444-vkrz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=N1L1iaFZQ9I",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "its-okay-to-not-be-okay",
+   "title": "It's Okay to Not Be Okay",
+   "year": 2020,
+   "imdb": 8.6,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "flower-of-evil",
+   "title": "Flower of Evil",
+   "year": 2020,
+   "imdb": 8.5,
+   "network": "tvN",
+   "genres": "Suspense, Crime, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "tale-of-the-nine-tailed",
+   "title": "Tale of the Nine-Tailed",
+   "year": 2020,
+   "imdb": 7.9,
+   "network": "tvN",
+   "genres": "Suspense, Fantasy, Romance",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 108284,
+   "summary": "A TV producer discovers a secret supernatural world as she becomes entangled with a former deity who's spent centuries searching for his lost lover.",
+   "episodes": 16,
+   "firstAir": "2020-10-07",
+   "lastAir": "2020-12-03",
+   "cast": [
+    "Lee Dong-wook",
+    "Cho Bo-ah",
+    "Kim Bum",
+    "Kim Yong-ji",
+    "Hwang Hee",
+    "Kim Jung-nan"
+   ],
+   "roles": [
+    "Lee Yeon",
+    "Nam Ji-a",
+    "Lee Rang",
+    "Ki Yu-ri",
+    "Gu Shin-ju",
+    "Taluipa"
+   ],
+   "crew": [
+    {
+     "name": "Han Woo-ri",
+     "job": "Creator"
+    },
+    {
+     "name": "Kang Shin-hyo",
+     "job": "Director"
+    },
+    {
+     "name": "Han Woo-ri",
+     "job": "Writer"
+    },
+    {
+     "name": "Cho Nam-hyung",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Young-kyu",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/tale-of-the-nine-tailed-1789598473495-twpt.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=cSptBDP4ELk",
+     "title": "TALE OF THE NINE TAILED Teaser"
+    }
+   ]
+  },
+  {
+   "id": "do-do-sol-sol-la-la-sol",
+   "title": "Do Do Sol Sol La La Sol",
+   "year": 2020,
+   "imdb": 7.3,
+   "network": "KBS",
+   "genres": "Comedy, Drama, Musical, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "start-up",
+   "title": "Start-Up",
+   "year": 2020,
+   "imdb": 8,
+   "network": "tvN",
+   "genres": "Comedy, Drama, Romance",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "the-penthouse",
+   "title": "The Penthouse: War in Life",
+   "year": 2020,
+   "imdb": 7.9,
+   "network": "SBS",
+   "genres": "Suspense, Drama, Revenge, Crime",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 334382,
+   "episodes": 1,
+   "firstAir": "2020-10-26",
+   "lastAir": "2020-10-26"
+  },
+  {
+   "id": "the-uncanny-counter",
+   "title": "The Uncanny Counter",
+   "year": 2020,
+   "imdb": 8,
+   "network": "OCN",
+   "genres": "Suspense, Action, Fantasy, Crime",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4.2,
+   "tmdbId": 113268,
+   "summary": "A group of supernatural demon hunters known as \"Counters,\" each with unique abilities, disguise themselves as employees of a noodle restaurant, while tracking down evil spirits that terrorize the mortal world.",
+   "episodes": 28,
+   "seasons": 2,
+   "firstAir": "2020-11-28",
+   "lastAir": "2023-09-03",
+   "poster": "images/the-uncanny-counter-1789524130878-g4i7.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=rI55SRM6uhs",
+     "title": "The Uncanny Counter | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "mr-queen",
+   "title": "Mr. Queen",
+   "year": 2020,
+   "imdb": 8.6,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Fantasy, Historical",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "sweet-home",
+   "title": "Sweet Home",
+   "year": 2020,
+   "imdb": 7.2,
+   "network": "Netflix",
+   "genres": "Suspense, Horror, Fantasy, Survival, Zombie",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "lovestruck-in-the-city",
+   "title": "Lovestruck in the City",
+   "year": 2020,
+   "imdb": 7.6,
+   "network": "Kakao TV",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "a-love-so-beautiful",
+   "title": "A Love So Beautiful",
+   "year": 2020,
+   "imdb": 7.2,
+   "network": "Kakao TV",
+   "genres": "Comedy, School, Romance",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "luca-the-beginning",
+   "title": "L.U.C.A.: The Beginning",
+   "year": 2021,
+   "imdb": 6.5,
+   "network": "tvN",
+   "genres": "Suspense, Action, Fantasy",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "sisyphus-the-myth",
+   "title": "Sisyphus: The Myth",
+   "year": 2021,
+   "imdb": 7,
+   "network": "JTBC",
+   "genres": "Drama, Action, Romance, Fantasy",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "beyond-evil",
+   "title": "Beyond Evil",
+   "year": 2021,
+   "imdb": 8.1,
+   "network": "JTBC",
+   "genres": "Drama, Suspense, Psychological",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-penthouse-2",
+   "title": "The Penthouse 2: War in Life",
+   "year": 2021,
+   "imdb": 7.9,
+   "network": "SBS",
+   "genres": "Drama, Suspense, Crime, Tragedy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "vincenzo",
+   "title": "Vincenzo",
+   "year": 2021,
+   "imdb": 8.4,
+   "network": "tvN",
+   "genres": "Comedy, Drama, Suspense, Crime",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 117376,
+   "summary": "During a visit to his motherland, a Korean-Italian Mafia lawyer gives an unrivaled conglomerate a taste of its own medicine  with a side of justice.",
+   "episodes": 20,
+   "firstAir": "2021-02-20",
+   "lastAir": "2021-05-02",
+   "cast": [
+    "Song Joong-ki",
+    "Jeon Yeo-bin",
+    "Ok Taec-yeon",
+    "Kim Yeo-jin",
+    "Kwak Dong-yeon",
+    "Cho Han-chul"
+   ],
+   "roles": [
+    "Vincenzo Cassano / Park Joo-hyung",
+    "Hong Cha-young",
+    "Jang Joon-woo / Jang Han-seok",
+    "Choi Myung-hee",
+    "Jang Han-seo",
+    "Han Seung-hyuk"
+   ],
+   "crew": [
+    {
+     "name": "Ham Seung-hoon",
+     "job": "Producer"
+    },
+    {
+     "name": "Kim Young-kyu",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Lee Jang-Soo",
+     "job": "Producer"
+    },
+    {
+     "name": "Kim Hee-won",
+     "job": "Director"
+    },
+    {
+     "name": "Park Jae-beom",
+     "job": "Screenplay"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/qbkSS1cTjT4DzIwD44bdhTuYgdT.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=S12-4mXCNj4",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "mouse",
+   "title": "Mouse",
+   "year": 2021,
+   "imdb": 8.6,
+   "network": "tvN",
+   "genres": "Suspense, Action, Crime",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 117378,
+   "summary": "A psychopath's ruthless serial murders have left the entire nation gripped by fear and chaos. An honest, justice-seeking rookie police officer and a veteran detective with a tragic past, face off against the killer. After their encounter with the psychopath, their lives change completely.",
+   "episodes": 20,
+   "firstAir": "2021-03-03",
+   "lastAir": "2021-05-19",
+   "poster": "images/mouse-1789522760915-ct98.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=i_K9U3gE9os",
+     "title": "MOUSE trailer | CJ ENM"
+    }
+   ],
+   "scores": [
+    4.7,
+    4.7,
+    4.7,
+    4.2,
+    5
+   ]
+  },
+  {
+   "id": "navillera",
+   "title": "Navillera",
+   "year": 2021,
+   "imdb": 8.7,
+   "network": "tvN",
+   "genres": "Drama",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "youth-of-may",
+   "title": "Youth of May",
+   "year": 2021,
+   "imdb": 8.3,
+   "network": "KBS",
+   "genres": "Drama, Romance, Historical",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 119466,
+   "summary": "A budding love story between a medical student and a nurse takes place in May 1980, during a time of civil unrest and military oppression in Gwangju.",
+   "episodes": 12,
+   "firstAir": "2021-05-03",
+   "lastAir": "2021-06-08",
+   "cast": [
+    "Lee Do-hyun",
+    "Go Min-si",
+    "Lee Sang-yi",
+    "Keum Sae-rok",
+    "Oh Man-seok",
+    "Kim Won-hae"
+   ],
+   "roles": [
+    "Hwang Hee-tae",
+    "Kim Myeong-hee",
+    "Lee Soo-chan",
+    "Lee Soo-ryeon",
+    "Hwang Gi-nam",
+    "Kim Hyeon-cheol"
+   ],
+   "crew": [
+    {
+     "name": "Song Min-yeop",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Kang",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/youth-of-may-1789598483678-u7tp.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=NZPOPMnmBPw",
+     "title": "Youth of May (2021) Official Trailer | K-Drama Trailer | 오월의 청춘 | Lee Do Hyun, Go Min Si"
+    }
+   ]
+  },
+  {
+   "id": "move-to-heaven",
+   "title": "Move to Heaven",
+   "year": 2021,
+   "imdb": 8.5,
+   "network": "Netflix",
+   "genres": "Drama",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-penthouse-3",
+   "title": "The Penthouse 3: War in Life",
+   "year": 2021,
+   "imdb": 7.9,
+   "network": "SBS",
+   "genres": "Drama, Suspense, Revenge, Crime",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "nevertheless",
+   "title": "Nevertheless,",
+   "year": 2021,
+   "imdb": 7.1,
+   "network": "JTBC",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "the-devil-judge",
+   "title": "The Devil Judge",
+   "year": 2021,
+   "imdb": 8.2,
+   "network": "tvN",
+   "genres": "Suspense, Drama, Crime",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 119772,
+   "summary": "The court system is corrupted and old-fashioned. People desire a new system that can satisfy the crowds. However, are the crowds always correct? The drama shows how judges discover the truth about people in court. It centers around a chief judge who doesn’t believe in justice, but only makes judgements that the crowds will be satisfied with. An assistant judge starts to question his motives and tries to find the truth.",
+   "episodes": 16,
+   "firstAir": "2021-07-03",
+   "lastAir": "2021-08-22",
+   "cast": [
+    "Ji Sung",
+    "Kim Min-joung",
+    "Jinyoung",
+    "Park Gyu-young",
+    "Jang Young-nam",
+    "Kim Jae-kyung"
+   ],
+   "roles": [
+    "Kang Yo-han",
+    "Jung Sun-ah",
+    "Kim Ga-on",
+    "Yoon Soo-hyun",
+    "Cha Kyung-hee",
+    "Oh Jin-joo"
+   ],
+   "crew": [
+    {
+     "name": "Moon Yoo-seok",
+     "job": "Creator"
+    },
+    {
+     "name": "Choi Jung-kyu",
+     "job": "Director"
+    },
+    {
+     "name": "Moon Yoo-seok",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Jung Se-rin",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Jang Jung-do",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/the-devil-judge-1789598486285-gmae.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=drLkFfWmpBE",
+     "title": "Trailer | The Devil Judge | Viu - English Subtitles"
+    }
+   ]
+  },
+  {
+   "id": "hometown-cha-cha-cha",
+   "title": "Hometown Cha-Cha-Cha",
+   "year": 2021,
+   "imdb": 8.3,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "squid-game",
+   "title": "Squid Game",
+   "year": 2021,
+   "imdb": 8,
+   "network": "Netflix",
+   "genres": "Suspense, Drama, Survival, Crime",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "yumis-cells",
+   "title": "Yumi's Cells",
+   "year": 2021,
+   "imdb": 8.1,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Drama, Fantasy",
+   "country": "KR",
+   "status": "S",
+   "progress": "ep 5"
+  },
+  {
+   "id": "my-name",
+   "title": "My Name",
+   "year": 2021,
+   "imdb": 7.8,
+   "network": "Netflix",
+   "genres": "Suspense, Revenge, Action, Family, Historical",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 110356,
+   "summary": "Following her father's murder, a revenge-driven woman puts her trust in a powerful crime boss — and enters the police force under his direction.",
+   "episodes": 8,
+   "firstAir": "2021-10-15",
+   "lastAir": "2021-10-15",
+   "cast": [
+    "Han So-hee",
+    "Park Hee-soon",
+    "Ahn Bo-hyun",
+    "Kim Sang-ho",
+    "Lee Hak-ju",
+    "Chang Ryul"
+   ],
+   "roles": [
+    "Yoon Ji-woo / Song Ji-woo / Oh Hye-jin",
+    "Choi Mu-jin",
+    "Jeon Pil-do",
+    "Cha Gi-ho",
+    "Jung Tae-ju",
+    "Do Gang-jae"
+   ],
+   "crew": [
+    {
+     "name": "Kim Ba-da",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Jin-min",
+     "job": "Creator"
+    },
+    {
+     "name": "Yeom Jun-ho",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/my-name-1789598488808-sdqj.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=KFMYo3xax2A",
+     "title": "Official Teaser [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "happiness",
+   "title": "Happiness",
+   "year": 2021,
+   "imdb": 7.7,
+   "network": "tvN",
+   "genres": "Suspense, Zombie, Survival, Action",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "now-we-are-breaking-up",
+   "title": "Now, We Are Breaking Up",
+   "year": 2021,
+   "imdb": 6.4,
+   "network": "SBS",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "school-2021",
+   "title": "School 2021",
+   "year": 2021,
+   "imdb": 7.2,
+   "network": "KBS",
+   "genres": "Comedy, School, Romance",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "our-beloved-summer",
+   "title": "Our Beloved Summer",
+   "year": 2021,
+   "imdb": 8.2,
+   "network": "SBS",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 135897,
+   "summary": "Years after filming a viral documentary in high school, two bickering ex-lovers get pulled back in front of the camera — and into each other's lives.",
+   "episodes": 16,
+   "firstAir": "2021-12-06",
+   "lastAir": "2022-01-25",
+   "cast": [
+    "Choi Woo-shik",
+    "Kim Da-mi",
+    "Kim Sung-cheol",
+    "Roh Jeong-eui",
+    "Ahn Dong-gu",
+    "Jeon Hye-won"
+   ],
+   "roles": [
+    "Choi Woong",
+    "Kook Yeon-su",
+    "Kim Ji-woong",
+    "NJ",
+    "Gu Eun-ho",
+    "Jung Chae-ran"
+   ],
+   "crew": [
+    {
+     "name": "Lee Na-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Na-eun",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Kim Yoon-jin",
+     "job": "Director"
+    },
+    {
+     "name": "Nam Hye-seung",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Han Hye-won",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/our-beloved-summer-1789598491430-opu7.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=p_dDoDQ8u94",
+     "title": "Our Beloved Summer | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "bad-and-crazy",
+   "title": "Bad and Crazy",
+   "year": 2021,
+   "imdb": 8,
+   "network": "tvN",
+   "genres": "Comedy, Action, Fantasy, Psychological",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "snowdrop",
+   "title": "Snowdrop",
+   "year": 2021,
+   "imdb": 8.1,
+   "network": "JTBC",
+   "genres": "Drama, Romance, Tragedy, Historical, Suspense",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "doom-at-your-service",
+   "title": "Doom at Your Service",
+   "year": 2021,
+   "network": "tvN",
+   "genres": "Drama, Romance, Fantasy",
+   "country": "KR",
+   "status": "S",
+   "progress": "ep 6"
+  },
+  {
+   "id": "all-of-us-are-dead",
+   "title": "All of Us Are Dead",
+   "year": 2022,
+   "imdb": 7.6,
+   "network": "Netflix",
+   "genres": "Suspense, School, Survival, Zombie",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "twenty-five-twenty-one",
+   "title": "Twenty-Five Twenty-One",
+   "year": 2022,
+   "imdb": 8.6,
+   "network": "tvN",
+   "genres": "Drama, Romance, School",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "business-proposal",
+   "title": "Business Proposal",
+   "year": 2022,
+   "imdb": 8.1,
+   "network": "SBS",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "soundtrack-1",
+   "title": "Soundtrack #1",
+   "year": 2022,
+   "imdb": 7.7,
+   "network": "Disney+",
+   "genres": "Drama, Musical, Romance",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "tomorrow",
+   "title": "Tomorrow",
+   "year": 2022,
+   "imdb": 8,
+   "network": "MBC",
+   "genres": "Comedy, Fantasy, Action, Drama",
+   "country": "KR",
+   "status": "U",
+   "tmdbId": 136369,
+   "summary": "Made half-human and half-spirit by accident, a young man is employed by a company of grim reapers in the underworld to carry out special missions.",
+   "episodes": 16,
+   "firstAir": "2022-04-01",
+   "lastAir": "2022-05-21",
+   "cast": [
+    "Kim Hee-seon",
+    "Rowoon",
+    "Lee Soo-hyuk",
+    "Yun Ji-on",
+    "Kim Hae-sook",
+    "Moon Seo-Youn"
+   ],
+   "roles": [
+    "Koo Ryeon",
+    "Choi Jun-woong",
+    "Park Joong-gil",
+    "Lim Ryung-gu",
+    "The Jade Emperor",
+    "Jeon Soo-in"
+   ],
+   "crew": [
+    {
+     "name": "Llama",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Tae-yun",
+     "job": "Director"
+    },
+    {
+     "name": "Park Ran",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Yu-Jin",
+     "job": "Writer"
+    },
+    {
+     "name": "Park Ja-Kyung",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/tomorrow-1789598496199-o1yc.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=zhmxDgBxGRk",
+     "title": "Tomorrow | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "our-blues",
+   "title": "Our Blues",
+   "year": 2022,
+   "imdb": 8.6,
+   "network": "tvN",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "my-liberation-notes",
+   "title": "My Liberation Notes",
+   "year": 2022,
+   "imdb": 8.2,
+   "network": "JTBC",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "shooting-stars",
+   "title": "Sh**ting Stars",
+   "year": 2022,
+   "imdb": 7.6,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Drama",
+   "country": "KR",
+   "status": "W",
+   "progress": "ep 15",
+   "scores": [
+    3.4,
+    3.4,
+    3.5,
+    3.5,
+    3.5
+   ],
+   "tmdbId": 136732,
+   "summary": "Female soccer teams comprised of celebrities and non celebrities, working together to battle it out on the soccer field. Most have little soccer experience, but with the coaching from various Korean soccer legends, the team members grow with a fierce passion that leads to inspiring victories and regretful losses. Each team is grouped by certain types i.e. comedians, models, foreigners, actresses, etc. Unpredictable and exciting, the games are filled with fun intensity and emotions on high.",
+   "episodes": 258,
+   "seasons": 2,
+   "firstAir": "2021-06-16",
+   "lastAir": "2026-05-20",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=EBaRPrJgvhE",
+     "title": "[3차 티저 Full]  지라시? 안티?  스캔들 수습? '별'나지만 흥미로운 직장생활 #별똥별 EP.0"
+    }
+   ],
+   "poster": "images/shooting-stars-1789523976745-pum3.jpg",
+   "cast": [
+    "Lee Sung-kyung",
+    "Kim Young-dae",
+    "Yoon Jong-hoon",
+    "Kim Yoon-hye",
+    "Park So-jin",
+    "Lee Jung-shin"
+   ],
+   "roles": [
+    "​Oh Han-byeol",
+    "Gong Tae-seong",
+    "Kang Yu-seong",
+    "Park Ho-yeong",
+    "Cho Gi-ppeum",
+    "Do Su-hyeok"
+   ],
+   "crew": [
+    {
+     "name": "Kim Gyeo-re",
+     "job": "Producer"
+    }
+   ]
+  },
+  {
+   "id": "the-sound-of-magic",
+   "title": "The Sound of Magic",
+   "year": 2022,
+   "imdb": 7.5,
+   "network": "Netflix",
+   "genres": "Drama, Musical, Fantasy",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "alchemy-of-souls",
+   "title": "Alchemy of Souls",
+   "year": 2022,
+   "imdb": 8.7,
+   "network": "tvN",
+   "genres": "Romance, Drama, Historical, Action",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 135157,
+   "summary": "A powerful sorceress in a blind woman's body encounters a man from a prestigious family, who wants her help to change his destiny.",
+   "episodes": 30,
+   "seasons": 2,
+   "firstAir": "2022-06-18",
+   "lastAir": "2023-01-08",
+   "poster": "images/alchemy-of-souls-1789523868013-d2rv.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=50kLmhGpt1s",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "extraordinary-attorney-woo",
+   "title": "Extraordinary Attorney Woo",
+   "year": 2022,
+   "imdb": 8.6,
+   "network": "ENA",
+   "genres": "Drama",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 197067,
+   "summary": "With a genius-level IQ, Woo Young-woo learns to embrace her extraordinary self while forming a tight-knit community of friends and allies.",
+   "episodes": 16,
+   "firstAir": "2022-06-29",
+   "lastAir": "2022-08-18",
+   "poster": "images/extraordinary-attorney-woo-1789523862328-zaai.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=MxeXECe2t-c",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "big-mouth",
+   "title": "Big Mouth",
+   "year": 2022,
+   "imdb": 7.8,
+   "network": "MBC",
+   "genres": "Drama, Suspense, Action, Crime",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "little-women",
+   "title": "Little Women",
+   "year": 2022,
+   "imdb": 7.7,
+   "network": "tvN",
+   "genres": "Drama, Action, Suspense",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 134675,
+   "summary": "Three sisters, who only have each other and never enough money, get entangled in a conspiracy involving the rich and powerful.",
+   "episodes": 12,
+   "firstAir": "2022-09-03",
+   "lastAir": "2022-10-09",
+   "cast": [
+    "Kim Go-eun",
+    "Nam Ji-hyun",
+    "Park Ji-hu",
+    "Wi Ha-jun",
+    "Uhm Ji-won",
+    "Uhm Ki-joon"
+   ],
+   "roles": [
+    "Oh In-joo",
+    "Oh In-kyung",
+    "Oh In-hye",
+    "Choi Do-il",
+    "Won Sang-a",
+    "Park Jae-sang"
+   ],
+   "crew": [
+    {
+     "name": "Chung Seo-kyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Hee-won",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Hee-won",
+     "job": "Director"
+    },
+    {
+     "name": "Louisa May Alcott",
+     "job": "Novel"
+    },
+    {
+     "name": "Chung Seo-kyung",
+     "job": "Screenplay"
+    }
+   ],
+   "poster": "images/little-women-1789598501297-n1p5.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Y52PRIHr-YI",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "the-golden-spoon",
+   "title": "The Golden Spoon",
+   "year": 2022,
+   "imdb": 7.5,
+   "network": "MBC",
+   "genres": "Drama, Fantasy, Suspense, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "cheer-up",
+   "title": "Cheer Up",
+   "year": 2022,
+   "imdb": 6.9,
+   "network": "SBS",
+   "genres": "Drama, Comedy, School",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "weak-hero-class-1",
+   "title": "Weak Hero Class 1",
+   "year": 2022,
+   "imdb": 8.4,
+   "network": "Wavve",
+   "genres": "Drama, Suspense, Action",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "reborn-rich",
+   "title": "Reborn Rich",
+   "year": 2022,
+   "imdb": 8,
+   "network": "JTBC",
+   "genres": "Drama, Romance, Fantasy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-glory",
+   "title": "The Glory",
+   "year": 2022,
+   "imdb": 8.2,
+   "network": "Netflix",
+   "genres": "Revenge, Suspense, Drama, Romance, Tragedy",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 136283,
+   "summary": "Years after surviving horrific abuse in high school, a woman puts an elaborate revenge scheme in motion to make the perpetrators pay for their crimes.",
+   "episodes": 16,
+   "firstAir": "2022-12-30",
+   "lastAir": "2023-03-10",
+   "poster": "images/the-glory-1789522840027-5a9e.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=tqVVrTvrI8U",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "scores": [
+    4.6,
+    4.5,
+    4.5,
+    4.5,
+    4.7
+   ]
+  },
+  {
+   "id": "eve",
+   "title": "Eve",
+   "year": 2022,
+   "imdb": 7.8,
+   "network": "tvN",
+   "genres": "Revenge, Drama, Romance",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    4.5,
+    4,
+    4.2,
+    4.5,
+    4.3
+   ],
+   "watched": "2026-08",
+   "tmdbId": 138251,
+   "summary": "The Republic of Korea is overturned by 2 trillion-won divorce scandal of a chaebol caused by one ordinary woman. It is about getting into the truth of the scandal and the top 1% rich couple who made it. Surprisingly, Lee Ra-el, a nobody who's not rich nor famous has caused the divorce. But Ra-el is a charming and intelligent woman who's mastered art, psychology, and even economics. if she wants to, she can get any kind of man with her looks and brain.",
+   "episodes": 16,
+   "firstAir": "2022-06-01",
+   "lastAir": "2022-07-21",
+   "poster": "images/eve-1789524100829-dfhk.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=CTJ0y2suMtw",
+     "title": "Trailer 1 [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "doctor-cha",
+   "title": "Doctor Cha",
+   "year": 2023,
+   "imdb": 7.5,
+   "network": "JTBC",
+   "genres": "Comedy, Drama, Medical",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-good-bad-mother",
+   "title": "The Good Bad Mother",
+   "year": 2023,
+   "imdb": 8.4,
+   "network": "JTBC",
+   "genres": "Drama, Comedy, Suspense, Family, Tragedy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "tale-of-the-nine-tailed-1938",
+   "title": "Tale of the Nine-Tailed 1938",
+   "year": 2023,
+   "imdb": 8.5,
+   "network": "tvN",
+   "genres": "Comedy, Suspense, Fantasy, Action",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 201019,
+   "summary": "The Nine-tailed fox makes a crash landing in the year 1938, an era of chaos, and he struggles to return to the present.",
+   "episodes": 12,
+   "firstAir": "2023-05-06",
+   "lastAir": "2023-06-11",
+   "cast": [
+    "Lee Dong-wook",
+    "Kim So-yeon",
+    "Kim Bum",
+    "Ryu Kyung-soo",
+    "Kim Yong-ji",
+    "Kim Jung-nan"
+   ],
+   "roles": [
+    "Lee Yeon",
+    "Ryu Hong-joo",
+    "Lee Rang",
+    "Chun Moo-yeong",
+    "Sunwoo Eun-ho",
+    "Taluipa"
+   ],
+   "crew": [
+    {
+     "name": "Kang Shin-hyo",
+     "job": "Creator"
+    },
+    {
+     "name": "Cho Nam-hyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Hae-young",
+     "job": "Producer"
+    },
+    {
+     "name": "Cho Nam-hyung",
+     "job": "Director"
+    },
+    {
+     "name": "Han Woo-ri",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/tale-of-the-nine-tailed-1938-1789598506778-8n5s.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=UIp2o2wOtzY",
+     "title": "Tale of the Nine Tailed 1938 | Official Trailer | Amazon Prime"
+    }
+   ]
+  },
+  {
+   "id": "bloodhounds",
+   "title": "Bloodhounds",
+   "year": 2023,
+   "imdb": 8.1,
+   "network": "Netflix",
+   "genres": "Drama, Action, Crime, Tragedy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "see-you-in-my-19th-life",
+   "title": "See You in My 19th Life",
+   "year": 2023,
+   "imdb": 7.7,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "king-the-land",
+   "title": "King the Land",
+   "year": 2023,
+   "imdb": 5.5,
+   "network": "JTBC",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 198004,
+   "summary": "Amid a tense inheritance fight, a charming heir clashes with his hardworking employee who's known for her irresistible smile — which he cannot stand.",
+   "episodes": 16,
+   "firstAir": "2023-06-17",
+   "lastAir": "2023-08-06",
+   "cast": [
+    "Junho",
+    "Yoona",
+    "Go Won-hee",
+    "Kim Ga-eun",
+    "Ahn Se-ha",
+    "Kim Jae-won"
+   ],
+   "roles": [
+    "Gu Won",
+    "Cheon Sa-rang",
+    "Oh Pyeong-hwa",
+    "Kang Da-eul",
+    "Noh Sang-sik",
+    "Lee Ro-un"
+   ],
+   "crew": [
+    {
+     "name": "Chun Sung-il",
+     "job": "Creator"
+    },
+    {
+     "name": "Pyo Jong-rok",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/king-the-land-1789598508691-2iac.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=AGF16szMOmo",
+     "title": "Official Trailer"
+    }
+   ]
+  },
+  {
+   "id": "revenant",
+   "title": "Revenant",
+   "year": 2023,
+   "imdb": 7.8,
+   "network": "SBS",
+   "genres": "Drama, Horror, Crime, Suspense, Fantasy",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "celebrity",
+   "title": "Celebrity",
+   "year": 2023,
+   "imdb": 7.4,
+   "network": "Netflix",
+   "genres": "Drama, Suspense, Revenge",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "my-dearest",
+   "title": "My Dearest",
+   "year": 2023,
+   "imdb": 8.9,
+   "network": "MBC",
+   "genres": "Drama, Romance, Historical",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "moving",
+   "title": "Moving",
+   "year": 2023,
+   "imdb": 8.4,
+   "network": "Disney+",
+   "genres": "Suspense, Action, Fantasy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-killing-vote",
+   "title": "The Killing Vote",
+   "year": 2023,
+   "imdb": 7.1,
+   "network": "SBS",
+   "genres": "Drama, Suspense",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "mask-girl",
+   "title": "Mask Girl",
+   "year": 2023,
+   "imdb": 7.3,
+   "network": "Netflix",
+   "genres": "Drama, Comedy, Suspense, Horror",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 156888,
+   "summary": "An office worker who is insecure about her looks becomes a masked internet personality by night — until a chain of ill-fated events overtakes her life.",
+   "episodes": 7,
+   "firstAir": "2023-08-18",
+   "lastAir": "2023-08-18",
+   "poster": "images/mask-girl-1789523856010-btyh.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Gebl7um3jUg",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "a-time-called-you",
+   "title": "A Time Called You",
+   "year": 2023,
+   "imdb": 7.9,
+   "network": "Netflix",
+   "genres": "Suspense, Fantasy, Romance, Drama",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-escape-of-the-seven",
+   "title": "The Escape of the Seven",
+   "year": 2023,
+   "imdb": 7.1,
+   "network": "SBS",
+   "genres": "Drama, Suspense, Revenge",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "twinkling-watermelon",
+   "title": "Twinkling Watermelon",
+   "year": 2023,
+   "imdb": 8.9,
+   "network": "tvN",
+   "genres": "Comedy, Drama, School, Musical, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 212204,
+   "summary": "A CODA (child of deaf adult) student born with a gift for music crash lands at an unfamiliar place after time traveling through a suspicious music shop. There, he forms the band Watermelon Sugar with other mysterious youths.",
+   "episodes": 16,
+   "firstAir": "2023-09-25",
+   "lastAir": "2023-11-14",
+   "cast": [
+    "Ryeoun",
+    "Choi Hyun-wook",
+    "Seorina",
+    "Shin Eun-soo",
+    "Choi Won-young",
+    "Seo Young-hee"
+   ],
+   "roles": [
+    "Ha Eun-gyeol",
+    "Ha Yi-chan",
+    "Choi Se-gyeong / On Eun-yu",
+    "Yoon Chung-ah",
+    "Eun-gyeol's Father",
+    "Eun-gyeol's Mother"
+   ],
+   "crew": [
+    {
+     "name": "Son Jeong-hyeon",
+     "job": "Creator"
+    },
+    {
+     "name": "Jin Soo-wan",
+     "job": "Creator"
+    },
+    {
+     "name": "Jin Soo-wan",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Hee-yeol",
+     "job": "Producer"
+    },
+    {
+     "name": "Son Jeong-hyeon",
+     "job": "Director"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/bwTzW1wTgUxUOQruhT8DvinUYgR.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=KbWi3VW6QuM",
+     "title": "[Trailer] Viu Original, Twinkling Watermelon | Coming to Viu FREE this 25 Sep!"
+    }
+   ]
+  },
+  {
+   "id": "the-worst-of-evil",
+   "title": "The Worst of Evil",
+   "year": 2023,
+   "imdb": 8.3,
+   "network": "Disney+",
+   "genres": "Drama, Suspense, Action, Crime",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "strong-girl-namsoon",
+   "title": "Strong Girl Namsoon",
+   "year": 2023,
+   "imdb": 6.6,
+   "network": "JTBC",
+   "genres": "Comedy, Romance, Action, Crime, Fantasy",
+   "country": "KR",
+   "status": "W",
+   "myRate": 3.3,
+   "tmdbId": 203164,
+   "summary": "Gifted with superhuman strength, a young woman returns to Korea to find her birth family — only to be entangled in a drug case that could test her power.",
+   "episodes": 16,
+   "firstAir": "2023-10-07",
+   "lastAir": "2023-11-26",
+   "poster": "https://image.tmdb.org/t/p/w500/rjkHORZvB5bnz7kH1PufFCKsX4I.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=xN2BPRuVj8U",
+     "title": "Official Promo [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "high-cookie",
+   "title": "High Cookie",
+   "year": 2023,
+   "imdb": 6.4,
+   "network": "U+ Mobile TV",
+   "genres": "Drama, Crime, Suspense",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "perfect-marriage-revenge",
+   "title": "Perfect Marriage Revenge",
+   "year": 2023,
+   "imdb": 7.8,
+   "network": "MBN",
+   "genres": "Drama, Revenge, Romance, Fantasy",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "daily-dose-of-sunshine",
+   "title": "Daily Dose of Sunshine",
+   "year": 2023,
+   "imdb": 8.2,
+   "network": "Netflix",
+   "genres": "Drama, Medical, Psychological",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4.2,
+   "tmdbId": 205319,
+   "summary": "A kind-hearted nurse working in psychiatry goes above and beyond to be a ray of light for those under her care, despite the challenges coming her way.",
+   "episodes": 12,
+   "firstAir": "2023-11-03",
+   "lastAir": "2023-11-03",
+   "poster": "images/daily-dose-of-sunshine-1789524159388-xgqn.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=a81i3lenqp4",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "my-demon",
+   "title": "My Demon",
+   "year": 2023,
+   "imdb": 7.7,
+   "network": "SBS",
+   "genres": "Drama, Comedy, Suspense, Romance, Fantasy",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4.2,
+   "tmdbId": 218539,
+   "summary": "A pitiless demon becomes powerless after getting entangled with an icy heiress, who may hold the key to his lost abilities — and his heart.",
+   "episodes": 16,
+   "firstAir": "2023-11-24",
+   "lastAir": "2024-01-20",
+   "poster": "images/my-demon-1789524119877-h8g9.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=D-bAfFqvxZg",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "welcome-to-samdal-ri",
+   "title": "Welcome to Samdal-ri",
+   "year": 2023,
+   "imdb": 8,
+   "network": "JTBC",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 219651,
+   "summary": "After suffering a fall from grace, a photographer returns to her hometown and bumps into her childhood friend — rekindling an unfinished romance.",
+   "episodes": 16,
+   "firstAir": "2023-12-02",
+   "lastAir": "2024-01-21",
+   "cast": [
+    "Ji Chang-wook",
+    "Shin Hae-sun",
+    "Yu Oh-seong",
+    "Kim Mi-kyung",
+    "Lee Jae-won",
+    "Seo Hyun-chul"
+   ],
+   "roles": [
+    "Jo Yong-pil",
+    "Jo Sam-dal",
+    "Jo Sang-tae",
+    "Go Mi-ja",
+    "Wang Gyeong-tae",
+    "Jo Pan-shik"
+   ],
+   "crew": [
+    {
+     "name": "Kwon Hye-ju",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/welcome-to-samdal-ri-1789598518100-t8cm.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=aY8QmExZrlY",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "night-has-come",
+   "title": "Night Has Come",
+   "year": 2023,
+   "imdb": 7.8,
+   "network": "U+ Mobile TV",
+   "genres": "Suspense, Revenge, School, Horror, Crime",
+   "country": "KR",
+   "status": "U"
+  },
+  {
+   "id": "deaths-game",
+   "title": "Death's Game",
+   "year": 2023,
+   "imdb": 8.5,
+   "network": "tvN",
+   "genres": "Drama, Psychological, Fantasy",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 218230,
+   "summary": "At the brink of going to hell, Yee-jae must cycle through twelve separate lives and twelve separate deaths in this reincarnation drama.",
+   "episodes": 8,
+   "firstAir": "2023-12-15",
+   "lastAir": "2024-01-05",
+   "poster": "images/deaths-game-1789523849063-n7d7.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=RbLbACTHBvM",
+     "title": "Death's Game Official Trailer | Prime Video"
+    }
+   ]
+  },
+  {
+   "id": "like-flowers-in-sand",
+   "title": "Like Flowers in Sand",
+   "year": 2023,
+   "imdb": 7.5,
+   "network": "ENA",
+   "genres": "Comedy, Romance, Suspense",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "gyeongseong-creature",
+   "title": "Gyeongseong Creature",
+   "year": 2023,
+   "imdb": 7.4,
+   "network": "Netflix",
+   "genres": "Drama, Suspense, Horror, Action, Fantasy, Historical",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 135238,
+   "summary": "Gyeongseong, 1945. In Seoul's grim era under colonial rule, an entrepreneur and a sleuth fight for survival and face a monster born out of human greed.",
+   "episodes": 17,
+   "seasons": 2,
+   "firstAir": "2023-12-22",
+   "lastAir": "2024-09-27",
+   "poster": "images/gyeongseong-creature-1789523840417-ubrt.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=V5YbzU3aGDE",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "marry-my-husband",
+   "title": "Marry My Husband",
+   "year": 2023,
+   "imdb": 7.8,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Revenge, Romance, Fantasy",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4.1,
+   "tmdbId": 221851,
+   "summary": "Kang Ji-won, a terminally ill cancer patient, is killed by her husband and best friend after she witnesses them having an affair. She wakes up 10 years before the incident and decides to seek revenge with the help of Yu Ji-hyuk, a director at the company where she works. Now, she must reclaim her fate and eliminate the trash from her life.",
+   "episodes": 16,
+   "firstAir": "2024-01-01",
+   "lastAir": "2024-02-20",
+   "poster": "images/marry-my-husband-1789524150437-w533.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=4URidE59IAI",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "a-shop-for-killers",
+   "title": "A Shop for Killers",
+   "year": 2023,
+   "imdb": 8,
+   "network": "Disney+",
+   "genres": "Drama, Revenge, Suspense, Action, Tragedy",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4.5,
+   "tmdbId": 215072,
+   "summary": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+   "episodes": 16,
+   "seasons": 2,
+   "firstAir": "2024-01-17",
+   "lastAir": "2026-08-12",
+   "poster": "images/a-shop-for-killers-1789524075254-xzsb.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=69nzLpyMSHw",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "destined-with-you",
+   "title": "Destined with You",
+   "year": 2023,
+   "imdb": 7.6,
+   "network": "JTBC",
+   "genres": "Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "heartbeat",
+   "title": "Heartbeat",
+   "year": 2023,
+   "imdb": 7,
+   "network": "KBS",
+   "genres": "Fantasy, Romance, Comedy",
+   "country": "KR",
+   "status": "S"
+  },
+  {
+   "id": "flex-x-cop",
+   "title": "Flex X Cop",
+   "year": 2024,
+   "imdb": 7.8,
+   "network": "Disney+",
+   "genres": "Drama, Comedy, Suspense, Romance, Action",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "a-killer-paradox",
+   "title": "A Killer Paradox",
+   "year": 2024,
+   "imdb": 7.1,
+   "network": "Netflix",
+   "genres": "Comedy, Suspense, Crime",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "wonderful-world",
+   "title": "Wonderful World",
+   "year": 2024,
+   "imdb": 7.6,
+   "network": "MBC",
+   "genres": "Drama, Suspense",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "queen-of-tears",
+   "title": "Queen of Tears",
+   "year": 2024,
+   "imdb": 8.2,
+   "network": "tvN",
+   "genres": "Drama, Romance, Tragedy",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4.5,
+   "tmdbId": 215720,
+   "summary": "The queen of department stores and the prince of supermarkets weather a marital crisis—until love miraculously begins to bloom again.",
+   "episodes": 16,
+   "firstAir": "2024-03-09",
+   "lastAir": "2024-04-28",
+   "poster": "https://image.tmdb.org/t/p/w500/7ZXLZ3KYL3IVvsSHBZaHjcNQzNU.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Gg2D8zrzlOA",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ],
+   "cast": [
+    "Kim Soo-hyun",
+    "Kim Ji-won",
+    "Park Sung-hoon",
+    "Kwak Dong-yeon",
+    "Lee Ju-bin",
+    "Kim Kap-soo"
+   ],
+   "roles": [
+    "Baek Hyun-woo",
+    "Hong Hae-in",
+    "Yoon Eun-sung",
+    "Hong Soo-cheol",
+    "Cheon Da-hye",
+    "Hong Man-dae"
+   ],
+   "crew": [
+    {
+     "name": "Kim Hee-won",
+     "job": "Creator"
+    },
+    {
+     "name": "Jang Young-woo",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Ji-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Ji-eun",
+     "job": "Writer"
+    }
+   ]
+  },
+  {
+   "id": "parasyte-the-grey",
+   "title": "Parasyte: The Grey",
+   "year": 2024,
+   "imdb": 7.1,
+   "network": "Netflix",
+   "genres": "Suspense, Horror, Action",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "lovely-runner",
+   "title": "Lovely Runner",
+   "year": 2024,
+   "imdb": 8.6,
+   "network": "tvN",
+   "genres": "Comedy, School, Romance, Fantasy",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4.6,
+   "tmdbId": 230923,
+   "summary": "Right after Ryu Sun-jae, a top star, ends his life, Im Sol, his top fan, somehow ends up at a time when they were in high school and tries to protect him. A fantasy romance unfolds where people who missed each other in time finally meet.",
+   "episodes": 16,
+   "firstAir": "2024-04-08",
+   "lastAir": "2024-05-28",
+   "poster": "images/lovely-runner-1789524124508-y0pi.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=mZ7-J7dQmyQ",
+     "title": "[Trailer] Lovely Runner, Watch On Viu Today!"
+    }
+   ]
+  },
+  {
+   "id": "the-atypical-family",
+   "title": "The Atypical Family",
+   "year": 2024,
+   "imdb": 7.6,
+   "network": "JTBC",
+   "genres": "Drama, Romance, Fantasy",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "midnight-romance-in-hagwon",
+   "title": "The Midnight Romance in Hagwon",
+   "year": 2024,
+   "imdb": 7.3,
+   "network": "tvN",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "W",
+   "progress": "stopped at ep 15"
+  },
+  {
+   "id": "the-8-show",
+   "title": "The 8 Show",
+   "year": 2024,
+   "imdb": 7.2,
+   "network": "Netflix",
+   "genres": "Drama, Comedy, Horror, Suspense, Survival",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "connection",
+   "title": "Connection",
+   "year": 2024,
+   "imdb": 7.8,
+   "network": "SBS",
+   "genres": "Suspense, Action, Crime",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "hierarchy",
+   "title": "Hierarchy",
+   "year": 2024,
+   "imdb": 6,
+   "network": "Netflix",
+   "genres": "Suspense, Drama, School, Romance",
+   "country": "KR",
+   "status": "W",
+   "myRate": 2,
+   "tmdbId": 226527,
+   "summary": "The top 0.01% of students control law and order at Jooshin High School, but a secretive transfer student chips a crack in their indomitable world.",
+   "episodes": 7,
+   "firstAir": "2024-06-07",
+   "lastAir": "2024-06-07",
+   "poster": "images/hierarchy-1789523803173-a4wc.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=LQCpNqVa3LU",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "my-sweet-mobster",
+   "title": "My Sweet Mobster",
+   "year": 2024,
+   "imdb": 7.7,
+   "network": "JTBC",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "tarot",
+   "title": "Tarot",
+   "year": 2024,
+   "imdb": 5.2,
+   "network": "U+ Mobile TV",
+   "genres": "Drama, Horror",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 243763,
+   "summary": "A brutal fate mystery series that tells the story of being trapped in the curse of tarot cards twisted by a moment's choice.",
+   "episodes": 7,
+   "firstAir": "2024-07-15",
+   "lastAir": "2024-08-05",
+   "crew": [
+    {
+     "name": "Choi Byeong-gil",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/tarot-1789598530882-j8zf.jpg"
+  },
+  {
+   "id": "serendipitys-embrace",
+   "title": "Serendipity's Embrace",
+   "year": 2024,
+   "imdb": 7.3,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Drama",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "love-next-door",
+   "title": "Love Next Door",
+   "year": 2024,
+   "imdb": 7.6,
+   "network": "tvN",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "W",
+   "myRate": 2.6,
+   "tmdbId": 241454,
+   "summary": "A woman attempting to reboot her life returns to Korea and becomes entangled with her childhood friend — with whom she shares a complicated history.",
+   "episodes": 16,
+   "firstAir": "2024-08-17",
+   "lastAir": "2024-10-06",
+   "poster": "images/love-next-door-1789524197455-xxcs.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=3n1AHT-XwvA",
+     "title": "Official Clip [ENG SUB]"
+    }
+   ],
+   "cast": [
+    "Jung Hae-in",
+    "Jung So-min",
+    "Kim Ji-eun",
+    "Yun Ji-on",
+    "Park Ji-young",
+    "Cho Han-chul"
+   ],
+   "roles": [
+    "Choi Seung-hyo",
+    "Bae Seok-ryu",
+    "Jeong Mo-eum",
+    "Kang Dan-ho",
+    "Na Mi-suk",
+    "Bae Geun-sik"
+   ],
+   "crew": [
+    {
+     "name": "Yu Je-won",
+     "job": "Creator"
+    }
+   ]
+  },
+  {
+   "id": "the-frog",
+   "title": "The Frog",
+   "year": 2024,
+   "imdb": 6.8,
+   "network": "Netflix",
+   "genres": "Drama, Suspense, Crime",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "no-gain-no-love",
+   "title": "No Gain, No Love",
+   "year": 2024,
+   "imdb": 7.6,
+   "network": "tvN",
+   "genres": "Comedy, Drama, Romance",
+   "country": "KR",
+   "status": "W",
+   "myRate": 2.5,
+   "tmdbId": 229480,
+   "summary": "Son Hae-yeong seeks out a fake wedding with her neighbourhood convenience store employee, Kim Ji-uk, to avoid missing out on a promotion.",
+   "episodes": 12,
+   "firstAir": "2024-08-26",
+   "lastAir": "2024-10-01",
+   "poster": "images/no-gain-no-love-1789524204485-h2ne.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=tBo9xY1MPrE",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "cast": [
+    "Shin Min-a",
+    "Kim Young-dae",
+    "Lee Sang-yi",
+    "Han Ji-hyeon",
+    "Joo Min-kyung",
+    "Jeon Hye-won"
+   ],
+   "roles": [
+    "Son Hae-yeong",
+    "Kim Ji-uk",
+    "Bok Gyu-hyeon",
+    "Nam Ja-yeon",
+    "Cha Hee-Sung",
+    "Kwon Yi-rin"
+   ],
+   "crew": [
+    {
+     "name": "Kim Hye-young",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Jung-sik",
+     "job": "Director"
+    }
+   ]
+  },
+  {
+   "id": "the-judge-from-hell",
+   "title": "The Judge from Hell",
+   "year": 2024,
+   "imdb": 7.8,
+   "network": "KBS",
+   "genres": "Crime, Horror, Romance, Fantasy, Drama",
+   "country": "KR",
+   "status": "W"
+  },
+  {
+   "id": "spice-up-our-love",
+   "title": "Spice Up Our Love",
+   "year": 2024,
+   "imdb": 6.7,
+   "network": "tvN",
+   "genres": "Fantasy, Romance, Drama, Comedy",
+   "country": "KR",
+   "status": "W",
+   "myRate": 2.7,
+   "tmdbId": 273307,
+   "summary": "The R-rated web novel author, Nam Ja-yeon finds herself magically swapped with the female protagonist of her own novel! An unpredictable romance fantasy unfolds between the forever-alone author and the male lead of her romance novel, Kang Ha-jun.",
+   "episodes": 2,
+   "firstAir": "2024-10-03",
+   "lastAir": "2024-10-03",
+   "poster": "images/spice-up-our-love-1789524184550-ste6.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=7_lIdB3tcpU",
+     "title": "Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "family-by-choice",
+   "title": "Family by Choice",
+   "year": 2024,
+   "imdb": 8.3,
+   "network": "JTBC",
+   "genres": "Comedy, Drama, School, Romance, Family",
+   "country": "KR",
+   "status": "W",
+   "myRate": 3.3,
+   "tmdbId": 237565,
+   "summary": "A youth romance about two men and woman who aren't blood related but treated each other as family during their teens and how they meet again after 10 years.",
+   "episodes": 16,
+   "firstAir": "2024-10-09",
+   "lastAir": "2024-11-27",
+   "poster": "images/family-by-choice-1789524192421-ejep.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=pDiV5O_OIpM",
+     "title": "[TEASER] Family By Choice | Hwang In Youp, Jung Chae Yeon, Bae Hyeon Seong | Viu Original"
+    }
+   ],
+   "cast": [
+    "Hwang In-youp",
+    "Jung Chae-yeon",
+    "Bae Hyeon-seong",
+    "Choi Won-young",
+    "Choi Mu-sung",
+    "Seo Ji-hye"
+   ],
+   "roles": [
+    "Kim San-ha",
+    "Yun Ju-won",
+    "Kang Hae-joon",
+    "Yun Jeong-jae",
+    "Kim Dae-uk",
+    "Park Dal"
+   ],
+   "crew": [
+    {
+     "name": "Kim Seung-ho",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Seung-ho",
+     "job": "Director"
+    },
+    {
+     "name": "홍시영",
+     "job": "Screenplay"
+    }
+   ]
+  },
+  {
+   "id": "jeongnyeon",
+   "title": "Jeongnyeon: The Star Is Born",
+   "year": 2024,
+   "imdb": 8.2,
+   "network": "tvN",
+   "genres": "Drama, Musical, Historical",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "a-virtuous-business",
+   "title": "A Virtuous Business",
+   "year": 2024,
+   "imdb": 7.3,
+   "network": "JTBC",
+   "genres": "Comedy, Drama",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "brewing-love",
+   "title": "Brewing Love",
+   "year": 2024,
+   "imdb": 7,
+   "network": "ENA",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "W",
+   "myRate": 3.2,
+   "tmdbId": 253029,
+   "summary": "A heart-fluttering love story between Chae Yong-ju, a super passionate sales king at a liquor company who hides her emotions, and Yun Min-ju, a super sensitive brewery owner who is adept at catching people’s emotions.",
+   "episodes": 12,
+   "firstAir": "2024-11-04",
+   "lastAir": "2024-12-10",
+   "poster": "images/brewing-love-1789524176187-v42d.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=3c9VmrTjiso",
+     "title": "[TRAILER] Brewing Love | Kim Se Jeong, Lee Jong Won | Viu"
+    }
+   ]
+  },
+  {
+   "id": "gangnam-b-side",
+   "title": "Gangnam B-Side",
+   "year": 2024,
+   "imdb": 7.2,
+   "network": "Disney+",
+   "genres": "Suspense, Action, Crime, Drama",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4.1,
+   "tmdbId": 218631,
+   "summary": "When Jaehee, a top call girl at a club in Gangnam, goes missing, Detective Kang Dongwoo returns to crack the case. Prosecutor Min Seojin aims to rise in rank, while the notorious pimp, Yoon Gilho becomes a prime suspect. They unravel a web of secrets and connections behind the case.",
+   "episodes": 8,
+   "firstAir": "2024-11-05",
+   "lastAir": "2024-11-27",
+   "poster": "images/gangnam-b-side-1789524084979-k6pz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=BpLJphaOu3I",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "mr-plankton",
+   "title": "Mr. Plankton",
+   "year": 2024,
+   "imdb": 8.1,
+   "network": "Netflix",
+   "genres": "Drama, Comedy, Romance, Tragedy",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    4.4,
+    4.5,
+    4.5,
+    4.7,
+    4.5
+   ],
+   "tmdbId": 230448,
+   "summary": "A man plagued by misfortune and his ex, the unluckiest bride-to-be, are forced to accompany one another on the final journey of his life.",
+   "episodes": 10,
+   "firstAir": "2024-11-08",
+   "lastAir": "2024-11-08",
+   "poster": "images/mr-plankton-1789524093419-euui.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=mt4wezFpLvA",
+     "title": "Official Trailer  [EN-SUB]"
+    }
+   ]
+  },
+  {
+   "id": "when-the-phone-rings",
+   "title": "When the Phone Rings",
+   "year": 2024,
+   "imdb": 5.7,
+   "network": "MBC",
+   "genres": "Drama, Romance, Suspense",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    4.5,
+    4,
+    4.2,
+    4.5,
+    4.2
+   ],
+   "tmdbId": 253905,
+   "summary": "A rising politician and his mute wife's tense marriage begins to unravel after a call from a kidnapper turns their lives upside down.",
+   "episodes": 12,
+   "firstAir": "2024-11-22",
+   "lastAir": "2025-01-04",
+   "poster": "images/when-the-phone-rings-1789524063154-4ay3.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Y4P-z1Qy6xI",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ],
+   "cast": [
+    "Yoo Yeon-seok",
+    "Chae Soo-bin",
+    "Heo Nam-jun",
+    "Jang Gyu-ri",
+    "Lee Doo-seok"
+   ],
+   "roles": [
+    "Baek Sa-eon",
+    "Hong Hee-ju",
+    "Ji Sang-woo",
+    "Na Yu-ri",
+    "Kang Hyeong-Cheol"
+   ],
+   "crew": [
+    {
+     "name": "Kim Ji-woon",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Sang-woo",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Ji-woon",
+     "job": "Writer"
+    },
+    {
+     "name": "Wi Deuk-gyoo",
+     "job": "Director"
+    }
+   ]
+  },
+  {
+   "id": "the-trunk",
+   "title": "The Trunk",
+   "year": 2024,
+   "imdb": 7,
+   "network": "Netflix",
+   "genres": "Drama, Suspense, Romance, Psychological, Crime",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    4.2,
+    4.2,
+    4.2,
+    4,
+    3.7
+   ],
+   "tmdbId": 230777,
+   "summary": "A secret marriage service is uncovered when a trunk washes up on the shore, revealing the strange marriage between a couple in the thick of it all.",
+   "episodes": 8,
+   "firstAir": "2024-11-29",
+   "lastAir": "2024-11-29",
+   "poster": "images/the-trunk-1789524114356-4us5.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=96twl5nStnA",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "light-shop",
+   "title": "Light Shop",
+   "year": 2024,
+   "imdb": 7.8,
+   "network": "Disney+",
+   "genres": "Drama, Suspense, Horror, Psychological",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "love-scout",
+   "title": "Love Scout",
+   "year": 2025,
+   "imdb": 7.9,
+   "network": "SBS",
+   "genres": "Comedy, Drama, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 233100,
+   "summary": "Yoo Eun-ho, a single dad armed with perfection, becomes the secretary of Kang Ji-yun, the CEO of a popular headhunter company, who doesn't do anything except work.",
+   "episodes": 12,
+   "firstAir": "2025-01-03",
+   "lastAir": "2025-02-14",
+   "poster": "images/love-scout-1789522202829-1dro.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=2AaVGQR8HZk",
+     "title": "Han Ji-min Rushes to Kiss Lee Jun-hyuk | Love Scout | Netflix Philippines"
+    }
+   ]
+  },
+  {
+   "id": "when-the-stars-gossip",
+   "title": "When the Stars Gossip",
+   "year": 2025,
+   "imdb": 6.5,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Drama",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 154822,
+   "summary": "From two different worlds and with separate missions, an astronaut and a space tourist entangle in space — only to start falling for each other.",
+   "episodes": 16,
+   "firstAir": "2025-01-04",
+   "lastAir": "2025-02-23",
+   "poster": "images/when-the-stars-gossip-1789522450322-30xb.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=ASd_GLr3ZFY",
+     "title": "Official Clip [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "motel-california",
+   "title": "Motel California",
+   "year": 2025,
+   "imdb": 6.6,
+   "network": "MBC",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 256725,
+   "summary": "A woman with a unique upbringing in a motel in the countryside leaves her hometown at 20 to pursue her career in Seoul. Twelve years later though, she returns home to heal her heart and experiences twists and turns as she reunites with her first love, a now eligible bachelor and veterinarian.",
+   "episodes": 12,
+   "firstAir": "2025-01-10",
+   "lastAir": "2025-02-15",
+   "poster": "images/motel-california-1789522267712-bz8q.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=hR1BCXzOw-0",
+     "title": "[모텔 캘리포니아 멜로 티저] 이세영X나인우 ＂내 처음은 너야. 그러니까 기다린다고, 내가＂, MBC 250110 방송"
+    }
+   ]
+  },
+  {
+   "id": "study-group",
+   "title": "Study Group",
+   "year": 2025,
+   "imdb": 8.3,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Suspense, School, Action",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    4,
+    4,
+    4,
+    4,
+    4.2
+   ],
+   "tmdbId": 233347,
+   "summary": "A struggling student at Korea's worst high school forms a study group while protecting his classmates with his fighting skills, hoping to overcome academic challenges and secure a spot in college.",
+   "episodes": 11,
+   "seasons": 2,
+   "firstAir": "2025-01-23",
+   "lastAir": "2025-02-20",
+   "poster": "images/study-group-1789522125844-2moh.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Bx0piV_Uf4E",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "the-trauma-code",
+   "title": "The Trauma Code: Heroes on Call",
+   "year": 2025,
+   "imdb": 8.4,
+   "network": "Netflix",
+   "genres": "Medical, Drama",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 217553,
+   "summary": "To create a top-tier trauma center, a war-seasoned doctor arrives — bringing his blunt but skilled ways to transform his team into life-saving mavericks.",
+   "episodes": 16,
+   "seasons": 2,
+   "firstAir": "2025-01-24",
+   "lastAir": "2025-01-24",
+   "poster": "images/the-trauma-code-1789522533447-i88q.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=pdDXO-dMjAc",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "newtopia",
+   "title": "Newtopia",
+   "year": 2025,
+   "imdb": 6.7,
+   "network": "Coupang Play",
+   "genres": "Comedy, Action, Fantasy, Horror",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 233742,
+   "summary": "Jae-yoon, a late military enlistee, and his girlfriend, Young-joo, break up over the phone over growing misunderstandings. But a zombie outbreak rocks the world. A national emergency is declared, a plane crashes in the city center, and Jae-yoon and his unit get trapped on top of a Seoul skyscraper. Young-joo risks the zombie-filled streets to find him. Can their love survive the apocalypse?",
+   "episodes": 8,
+   "firstAir": "2025-02-07",
+   "lastAir": "2025-03-21",
+   "poster": "images/newtopia-1789522085372-i3ue.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=HtaaO9D9ZcU",
+     "title": "Newtopia - Official Trailer | Prime Video"
+    }
+   ]
+  },
+  {
+   "id": "melo-movie",
+   "title": "Melo Movie",
+   "year": 2025,
+   "imdb": 7.5,
+   "network": "Netflix",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 243964,
+   "summary": "A movie buff falls for an aspiring director, igniting a romance that fizzles out too soon. When their paths cross again, can love find its way back?",
+   "episodes": 10,
+   "firstAir": "2025-02-14",
+   "lastAir": "2025-02-14",
+   "poster": "images/melo-movie-1789522248987-0egp.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=F4leB_jBpDk",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ],
+   "cast": [
+    "Choi Woo-shik",
+    "Park Bo-young",
+    "Lee Jun-young",
+    "Jeon So-nee",
+    "Kim Jae-uck",
+    "Ko Chang-seok"
+   ],
+   "roles": [
+    "Ko Gyeom",
+    "Kim Moo-bi",
+    "Hong Si-joon",
+    "Son Joo-ah",
+    "Ko Joon",
+    "Ma Seong-u"
+   ],
+   "crew": [
+    {
+     "name": "Lee Na-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Oh Choong-hwan",
+     "job": "Creator"
+    },
+    {
+     "name": "Oh Choong-hwan",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Na-eun",
+     "job": "Writer"
+    },
+    {
+     "name": "Kwon Michelle",
+     "job": "Executive Producer"
+    }
+   ]
+  },
+  {
+   "id": "my-dearest-nemesis",
+   "title": "My Dearest Nemesis",
+   "year": 2025,
+   "imdb": 7.5,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Romance",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    3,
+    2.7,
+    3.5,
+    3.7,
+    2.7
+   ],
+   "tmdbId": 259015,
+   "summary": "Baek Su-jeong leads a planning team at a renowned department store. She meets her new boss, Ban Ju-yeon, her first love from an online game 16 years ago, stirring up memories of when he confessed his feelings but she rejected him.",
+   "episodes": 12,
+   "firstAir": "2025-02-17",
+   "lastAir": "2025-03-24",
+   "poster": "images/my-dearest-nemesis-1789522070750-lk8q.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Aq5h0LC4xJ8",
+     "title": "[ENG SUB] My Dearest Nemesis | Official Trailer | CJ ENM"
+    }
+   ]
+  },
+  {
+   "id": "undercover-high-school",
+   "title": "Undercover High School",
+   "year": 2025,
+   "imdb": 7.9,
+   "network": "MBC",
+   "genres": "Comedy, Action, Suspense, School",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 248244,
+   "summary": "Ace NIS agent Jung Hae-seong is demoted after a mission failure. He goes undercover at a high school to locate King Gojong's missing gold, meeting his teacher Oh Soo-ah, who sees him as her lost first love, stirring old heartbreak.",
+   "episodes": 12,
+   "firstAir": "2025-02-21",
+   "lastAir": "2025-03-29",
+   "poster": "images/undercover-high-school-1789522156298-siau.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=lUxhuwhczn8",
+     "title": "[1차티저] 국정원 요원 서강준, 고등학교에 잠입한다!, MBC 250221 방송"
+    }
+   ],
+   "cast": [
+    "Seo Kang-joon",
+    "Jin Ki-joo",
+    "Kim Shin-rock",
+    "Kim Min-ju",
+    "Yoon Ga-i",
+    "Kim Young-ah"
+   ],
+   "roles": [
+    "Jeong Hae-sung",
+    "Oh Su-ah",
+    "Seo Myung-ju",
+    "Lee Ye-na",
+    "Park Mi-jung",
+    "Im Chung-ha"
+   ],
+   "crew": [
+    {
+     "name": "Choi Jeong-in",
+     "job": "Creator"
+    },
+    {
+     "name": "Im Young-bin",
+     "job": "Creator"
+    },
+    {
+     "name": "Im Young-bin",
+     "job": "Writer"
+    },
+    {
+     "name": "Choi Jeong-in",
+     "job": "Director"
+    }
+   ]
+  },
+  {
+   "id": "buried-hearts",
+   "title": "Buried Hearts",
+   "year": 2025,
+   "imdb": 7.6,
+   "network": "SBS",
+   "genres": "Drama, Suspense, Revenge, Crime",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    4.7,
+    5,
+    4.6,
+    3.9,
+    5
+   ],
+   "tmdbId": 271309,
+   "summary": "Seo Dong-ju, who hacked a political slush fund worth two trillion won, risks it all for revenge.",
+   "episodes": 16,
+   "firstAir": "2025-02-21",
+   "lastAir": "2025-04-12",
+   "poster": "images/buried-hearts-1789521073271-2eyn.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=SSqNRHruCKM",
+     "title": "Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "when-life-gives-you-tangerines",
+   "title": "When Life Gives You Tangerines",
+   "year": 2025,
+   "imdb": 9.3,
+   "network": "Netflix",
+   "genres": "Drama, Romance, Historical",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 219246,
+   "summary": "In Jeju, a spirited girl and a steadfast boy's island story blossoms into a lifelong tale of setbacks and triumphs — proving love endures across time.",
+   "episodes": 16,
+   "firstAir": "2025-03-07",
+   "lastAir": "2025-03-28",
+   "poster": "images/when-life-gives-you-tangerines-1789522456677-nf6p.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=4ECAaQkNAbc",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "cast": [
+    "IU",
+    "Park Bo-gum",
+    "Moon So-ri",
+    "Park Hae-joon"
+   ],
+   "roles": [
+    "Oh Ae-sun / Yang Geum-myeong",
+    "Yang Gwan-sik",
+    "Oh Ae-sun (middle-aged)",
+    "Yang Gwan-sik (middle-aged)"
+   ],
+   "crew": [
+    {
+     "name": "Kim Won-suk",
+     "job": "Creator"
+    },
+    {
+     "name": "Im Sang-choon",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Seong-il",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Park Sang-hyun",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Hong Su-hwan",
+     "job": "Producer"
+    }
+   ]
+  },
+  {
+   "id": "the-divorce-insurance",
+   "title": "The Divorce Insurance",
+   "year": 2025,
+   "imdb": 6.6,
+   "network": "tvN",
+   "genres": "Drama, Comedy, Workplace",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 287001,
+   "summary": "When genius actuary Ki-jun from Plus General Insurance, an esteemed hub for the brightest minds, sets out to develop a divorce insurance policy, a task force is formed including an underwriter, quant, risk surveyor, loss adjuster, and a former top insurance agent. As they quantify divorce to determine fair premiums, this office rom-com follows their journey of newfound relationships and love.",
+   "episodes": 2,
+   "firstAir": "2025-03-20",
+   "lastAir": "2025-03-27",
+   "poster": "https://image.tmdb.org/t/p/w500/cSelS7SZt4nDCQZNQZvlA66spmc.jpg"
+  },
+  {
+   "id": "karma",
+   "title": "Karma",
+   "year": 2025,
+   "imdb": 7.6,
+   "network": "Netflix",
+   "genres": "Drama, Suspense, Crime",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 233686,
+   "summary": "A fateful accident intertwines six lives in a thrilling tale of karma and crime, where each must face their own dark truths and connections.",
+   "episodes": 6,
+   "firstAir": "2025-04-04",
+   "lastAir": "2025-04-04",
+   "poster": "https://image.tmdb.org/t/p/w500/nZ7SFBgEhgSCaQFFActjcBQeIV1.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=E_e9cpN994s",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "nine-puzzles",
+   "title": "Nine Puzzles",
+   "year": 2025,
+   "imdb": 7.7,
+   "network": "Disney+",
+   "genres": "Drama, Suspense, Crime",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    4.7,
+    3.7,
+    3.7,
+    3.5,
+    3.7
+   ],
+   "watched": "2026-01",
+   "comment": "Downloaded",
+   "tmdbId": 227191,
+   "summary": "Ten years after discovering her murdered uncle, Ena and Detective Hansaem must cooperate to stop a series of similar murders - each linked by strange puzzle pieces.",
+   "episodes": 11,
+   "firstAir": "2025-05-21",
+   "lastAir": "2025-06-04",
+   "poster": "images/nine-puzzles-1789522093912-8fh5.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=-UKrjg6RrjI",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "the-nice-guy",
+   "title": "The Nice Guy",
+   "year": 2025,
+   "imdb": 6.6,
+   "network": "JTBC",
+   "genres": "Romance, Action",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 211224,
+   "summary": "Seok-cheol, the eldest son in a family of three generations of gangsters, navigates the tumultuous ups and downs of life with tears and laughter, all to protect his family, career, and love.",
+   "episodes": 14,
+   "firstAir": "2025-07-18",
+   "lastAir": "2025-08-29",
+   "poster": "images/the-nice-guy-1789522554449-8afz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=hAXrg0UKIFI",
+     "title": "Teaser Trailer [ENG SUB]"
+    }
+   ],
+   "cast": [
+    "Lee Dong-wook",
+    "Lee Sung-kyung",
+    "Ryu Hye-young",
+    "Oh Na-ra",
+    "Park Hoon",
+    "Cheon Ho-jin"
+   ],
+   "roles": [
+    "Park Seok-cheol",
+    "Kang Mi-yeong",
+    "Park Seok-hee",
+    "Park Seok-kyung",
+    "",
+    ""
+   ],
+   "crew": [
+    {
+     "name": "Hyo-seok Kim",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Woon-kyeong",
+     "job": "Creator"
+    }
+   ]
+  },
+  {
+   "id": "the-defects",
+   "title": "The Defects",
+   "year": 2025,
+   "imdb": 7.4,
+   "network": "ENA",
+   "genres": "Action, Suspense, Drama",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 238673,
+   "summary": "An action thriller depicting the revenge of children who barely survived the brink of death after being abandoned by their adoptive parents.",
+   "episodes": 8,
+   "firstAir": "2025-07-21",
+   "lastAir": "2025-08-12",
+   "poster": "images/the-defects-1789522604461-sicz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=KXV0fFytVAE",
+     "title": "\"The Defects\" Kdrama (2025) Main Trailer ENG SUB"
+    }
+   ]
+  },
+  {
+   "id": "s-line",
+   "title": "S Line",
+   "year": 2025,
+   "imdb": 6.3,
+   "network": "Wavve",
+   "genres": "Suspense, Fantasy",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    4.7,
+    4.2,
+    3.5,
+    3.2,
+    4
+   ],
+   "watched": "2026-04",
+   "tmdbId": 232402,
+   "summary": "A young woman with the ability to see mysterious red connections between lovers discovers her secret gift is no longer unique when special glasses granting similar powers appear on the black market.",
+   "episodes": 6,
+   "firstAir": "2025-07-11",
+   "lastAir": "2025-07-25",
+   "poster": "images/s-line-1789522113412-wquv.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=ozeChwYWHhY",
+     "title": "S Line (2025) Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "bitch-x-rich",
+   "title": "Bitch X Rich 1 & 2",
+   "year": 2025,
+   "imdb": 6.6,
+   "network": "Wavve",
+   "genres": "Suspense, School, Crime",
+   "country": "KR",
+   "status": "W",
+   "myRate": 3.8,
+   "watched": "2026-01",
+   "tmdbId": 214994,
+   "summary": "Kim Hye-in has to transfer to Cheongdam International High School after witnessing a murder. She crosses paths with Baek Je-na, a bully who happens to be connected to the case.",
+   "episodes": 21,
+   "seasons": 3,
+   "firstAir": "2023-05-31",
+   "lastAir": "2025-08-01",
+   "poster": "https://image.tmdb.org/t/p/w500/r2qOi6cSb0aUH1lzrg8vbr6i0Uw.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=RR9ki1MCYoI",
+     "title": "[Trailer] Bitch x Rich | Coming to Viu for FREE this 31 May!"
+    }
+   ]
+  },
+  {
+   "id": "squid-game-3",
+   "title": "Squid Game",
+   "year": 2025,
+   "imdb": 8,
+   "network": "Netflix",
+   "genres": "Horror, Suspense, Action",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 93405,
+   "summary": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+   "episodes": 22,
+   "seasons": 3,
+   "firstAir": "2021-09-17",
+   "lastAir": "2025-06-27",
+   "poster": "https://image.tmdb.org/t/p/w500/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=oqxAJKy0ii4",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "head-over-heels",
+   "title": "Head Over Heels",
+   "year": 2025,
+   "imdb": 7.4,
+   "network": "tvN",
+   "genres": "Romance, Drama, Fantasy",
+   "country": "KR",
+   "status": "W",
+   "myRate": 3.7,
+   "watched": "2026-01",
+   "tmdbId": 258025,
+   "summary": "A teenage shaman determined to change fate sets out to save a mysterious boy destined to die. As danger looms, their fated encounter sparks a powerful first love that defies darkness and reclaims hope.",
+   "episodes": 12,
+   "firstAir": "2025-06-23",
+   "lastAir": "2025-07-29",
+   "poster": "images/head-over-heels-1789521198004-04u2.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=BCN3rBLSJQk",
+     "title": "Head Over Heels | Official Trailer | Amazon Prime"
+    }
+   ]
+  },
+  {
+   "id": "first-night-with-the-duke",
+   "title": "The First Night with the Duke",
+   "year": 2025,
+   "imdb": 7.1,
+   "network": "KBS",
+   "genres": "Romance, Fantasy, Historical, Comedy",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 278331,
+   "summary": "Reincarnated as a minor character in a novel, Cha Seon-taek unexpectedly spends a night with Prince Kyungsung, sparking an intense and unexpected romance.",
+   "episodes": 12,
+   "firstAir": "2025-06-11",
+   "lastAir": "2025-07-17",
+   "poster": "images/first-night-with-the-duke-1789522166860-2rtb.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=aV4Y4Bav_eE",
+     "title": "Exclusive Trailer for 'The First Night with the Duke' | Coming to Viki on June 11"
+    }
+   ]
+  },
+  {
+   "id": "mercy-for-none",
+   "title": "Mercy for None",
+   "year": 2025,
+   "imdb": 7.5,
+   "network": "Netflix",
+   "genres": "Action, Crime, Drama, Suspense",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 232766,
+   "summary": "After severing ties with his gang, a former gangster returns to uncover the truth behind his brother's death — embarking on a relentless path of revenge.",
+   "episodes": 7,
+   "firstAir": "2025-06-06",
+   "lastAir": "2025-06-06",
+   "poster": "images/mercy-for-none-1789522257504-xbdl.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=ZG5oMij_26s",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "good-boy",
+   "title": "Good Boy",
+   "year": 2025,
+   "imdb": 7.4,
+   "network": "JTBC",
+   "genres": "Action, Comedy, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 231280,
+   "summary": "Olympic medalists join the police force through a special recruitment program, trading medals for badges as they tackle violent crimes and injustices with their athletic skills.",
+   "episodes": 16,
+   "firstAir": "2025-05-31",
+   "lastAir": "2025-07-20",
+   "poster": "https://image.tmdb.org/t/p/w500/59MAdHaHepsz3uDCU1LyoNQcLlT.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=kWT5jZrXxhg",
+     "title": "GOOD BOY - Official Trailer | Prime Video India"
+    }
+   ],
+   "cast": [
+    "Park Bo-gum",
+    "Kim So-hyun",
+    "Oh Jung-se",
+    "Lee Sang-yi",
+    "Heo Sung-tae",
+    "Tae Won-seok"
+   ],
+   "roles": [
+    "Yun Dong-ju",
+    "Ji Han-na",
+    "Min Joo-young",
+    "Kim Jong-hyeon",
+    "Ko Man-sik",
+    "Shin Jae-hong"
+   ],
+   "crew": [
+    {
+     "name": "Lee Dae-il",
+     "job": "Creator"
+    },
+    {
+     "name": "Sim Na-yeon",
+     "job": "Creator"
+    }
+   ]
+  },
+  {
+   "id": "our-unwritten-seoul",
+   "title": "Our Unwritten Seoul",
+   "year": 2025,
+   "imdb": 7.9,
+   "network": "tvN",
+   "genres": "Drama, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 261980,
+   "summary": "Twin sisters, whose similarities end with their looks, swap identities amid personal struggles — embarking on a journey to rediscover love and life.",
+   "episodes": 12,
+   "firstAir": "2025-05-24",
+   "lastAir": "2025-06-29",
+   "poster": "images/our-unwritten-seoul-1789522277154-8dx4.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=lsDGSricQ60",
+     "title": "Official Clip [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "dear-hongrang",
+   "title": "Dear Hongrang",
+   "year": 2025,
+   "imdb": 7.6,
+   "network": "Netflix",
+   "genres": "Historical, Suspense, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 224819,
+   "summary": "When a long-missing heir returns with lost memories, love and suspicion entwine. Is he truly Hongrang, or a stranger disturbing hearts and family ties?",
+   "episodes": 11,
+   "firstAir": "2025-05-16",
+   "lastAir": "2025-05-16",
+   "poster": "images/dear-hongrang-1789521142612-o9qe.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=BfCrKi-ifl4",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "tastefully-yours",
+   "title": "Tastefully Yours",
+   "year": 2025,
+   "imdb": 7.3,
+   "network": "ENA",
+   "genres": "Romance, Comedy, Drama",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 281006,
+   "summary": "Driven to claim top culinary honors, an arrogant heir meets a low-profile but stubborn chef whose recipes astonish him — sparking an unlikely romance.",
+   "episodes": 10,
+   "firstAir": "2025-05-12",
+   "lastAir": "2025-06-10",
+   "poster": "images/tastefully-yours-1789522621139-v3x3.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=yKBesOo3PMg",
+     "title": "Official Clip [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "second-shot-at-love",
+   "title": "Second Shot at Love",
+   "year": 2025,
+   "imdb": 6.8,
+   "network": "tvN",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 261981,
+   "summary": "A woman who was born and raised in a family of alcoholics escaping from her drunkenness meets a man who believes alcohol is not a cure but an anesthetic.",
+   "episodes": 12,
+   "firstAir": "2025-05-12",
+   "lastAir": "2025-06-17",
+   "poster": "images/second-shot-at-love-1789522671215-yyq6.jpg"
+  },
+  {
+   "id": "pump-up-the-healthy-love",
+   "title": "Pump Up the Healthy Love",
+   "year": 2025,
+   "imdb": 7,
+   "network": "KBS",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 260555,
+   "summary": "Do Hyeon-joong, a health-obsessed gym manager, helps his members transform their lives while balancing the struggles of self-employment, and forms a passionate connection with Lee Mi-ran, a travel agency manager who loves food.",
+   "episodes": 12,
+   "firstAir": "2025-04-30",
+   "lastAir": "2025-06-05",
+   "poster": "images/pump-up-the-healthy-love-1789522101342-2nlj.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=gxPO6jDhfs0",
+     "title": "[1차 티저] 회원님은 할 수 있습니다😈💪 [24시 헬스클럽] | KBS 방송"
+    }
+   ]
+  },
+  {
+   "id": "weak-hero-class-2",
+   "title": "Weak Hero",
+   "year": 2025,
+   "imdb": 8.4,
+   "network": "Netflix",
+   "genres": "Action, Suspense, Drama",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 200709,
+   "summary": "With the aid of unexpected friends, a gifted but introverted student confronts bullies and violent foes — unaware of how dangerous his world will become.",
+   "episodes": 16,
+   "seasons": 2,
+   "firstAir": "2022-11-18",
+   "lastAir": "2025-04-25",
+   "poster": "https://image.tmdb.org/t/p/w500/dbqNBeLvAWFqpAvdBc0cecaqytT.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=GDTz8sLK3_Q",
+     "title": "Trailer | BIFF2022 약한영웅 Class 1 Weak Hero Class 1 | 온 스크린"
+    }
+   ]
+  },
+  {
+   "id": "hyper-knife",
+   "title": "Hyper Knife",
+   "year": 2025,
+   "imdb": 7.3,
+   "network": "Disney+",
+   "genres": "Suspense, Crime, Medical",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 245079,
+   "summary": "Seok, an eager yet genius neurosurgeon is reunited with Deokhee, the professor who ruined her life long ago. Once, the two surgeons cared for each other more than anyone else. But now with nothing but hatred toward each other, Seok is furious that he is back in her life and vows to take revenge.",
+   "episodes": 8,
+   "firstAir": "2025-03-19",
+   "lastAir": "2025-04-09",
+   "poster": "images/hyper-knife-1789521208039-zrhq.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=JY73T7jgex8",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "cast": [
+    "Park Eun-bin",
+    "Sul Kyung-gu",
+    "Yoon Chan-young",
+    "Park Byung-eun",
+    "Lee Jung-sic"
+   ],
+   "roles": [
+    "Jung Se-ok",
+    "Choi Deok-hee",
+    "Seo Young-joo",
+    "Han Hyun-ho",
+    "Ha U-Yeong"
+   ],
+   "crew": [
+    {
+     "name": "Kim Sun-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Jung-hyun",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Jung-hyun",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Sun-hee",
+     "job": "Writer"
+    }
+   ]
+  },
+  {
+   "id": "twelve",
+   "title": "Twelve",
+   "year": 2025,
+   "imdb": 5.2,
+   "network": "KBS",
+   "genres": "Action, Fantasy, Drama",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 274875,
+   "summary": "A group of heroes, each embodying one of the 12 zodiac signs, battles to defend the Korean Peninsula from malevolent spirits.",
+   "episodes": 8,
+   "firstAir": "2025-08-23",
+   "lastAir": "2025-09-14",
+   "poster": "images/twelve-1789522511783-702v.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=D92ZCUhGoGM",
+     "title": "Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "bon-appetit-your-majesty",
+   "title": "Bon Appétit, Your Majesty",
+   "year": 2025,
+   "imdb": 8.2,
+   "network": "tvN",
+   "genres": "Romance, Comedy, Fantasy, Historical, Drama",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 280945,
+   "summary": "After time traveling to the Joseon era, a talented chef meets a tyrant king. Her modern dishes captivate his palate, but royal challenges await her.",
+   "episodes": 12,
+   "firstAir": "2025-08-23",
+   "lastAir": "2025-09-28",
+   "poster": "images/bon-appetit-your-majesty-1789521050508-m7m4.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=rkB623sLOiM",
+     "title": "Official Clip [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "the-winning-try",
+   "title": "The Winning Try",
+   "year": 2025,
+   "imdb": 7.9,
+   "network": "SBS",
+   "genres": "Comedy, School",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 250463,
+   "summary": "A disgraced former rugby star returns as a coach to his high school’s struggling team, where he reunites with his ex-girlfriend and helps the determined captain lead the team to redemption.",
+   "episodes": 12,
+   "firstAir": "2025-07-25",
+   "lastAir": "2025-08-30",
+   "poster": "images/the-winning-try-1789522527015-t9i6.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=B9zPCvSacD0",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "law-and-the-city",
+   "title": "Law and the City",
+   "year": 2025,
+   "imdb": 6.2,
+   "network": "tvN",
+   "genres": "Romance, Drama",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 273418,
+   "summary": "Story of a lawyer who is known for his good appearance and straightforward personality and is working with Gyeongmin Law Firm for 9 years.",
+   "episodes": 12,
+   "firstAir": "2025-07-05",
+   "lastAir": "2025-08-10",
+   "poster": "images/law-and-the-city-1789522197404-mpzy.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=N2dj8kzEn_A",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "tempest",
+   "title": "Tempest",
+   "year": 2025,
+   "imdb": 6.3,
+   "network": "Disney+",
+   "genres": "Action, Suspense, Romance",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 223326,
+   "summary": "Seo Munju, a highly accomplished diplomat and former ambassador to the United Nations, and Sanho, an international special agent shrouded in a veil of secrets, race to uncover the truth behind an attack that threatens the future stability of the Korean peninsula.",
+   "episodes": 9,
+   "firstAir": "2025-09-10",
+   "lastAir": "2025-10-01",
+   "poster": "images/tempest-1789522613808-u81s.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=YEz4SuMI1-Q",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "dear-x",
+   "title": "Dear X",
+   "year": 2025,
+   "imdb": 8.4,
+   "network": "tvN",
+   "genres": "Suspense, Romance, Crime",
+   "country": "KR",
+   "status": "W",
+   "tmdbId": 256226,
+   "summary": "Behind a beautiful face hides a cruel nature—Baek Ah-jin, who sees through and manipulates others' hearts. After stepping on the sacrifices of many to reach the top, everything begins to change the moment she arrives there. A woman wearing a mask to escape hell and climb to the highest place. And the story of the Xs being brutally crushed by her.",
+   "episodes": 12,
+   "firstAir": "2025-11-06",
+   "lastAir": "2025-12-04",
+   "poster": "images/dear-x-1789521152927-u8rl.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=4_s3l_jrEmM",
+     "title": "Dear X | Official Trailer | November 6 on #HBOMaxAsia"
+    }
+   ]
+  },
+  {
+   "id": "genie-make-a-wish",
+   "title": "Genie, Make a Wish",
+   "year": 2025,
+   "imdb": 7.6,
+   "network": "Netflix",
+   "genres": "Comedy, Romance, Fantasy",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    3.7,
+    3.4,
+    3.6,
+    3.8,
+    3.6
+   ],
+   "watched": "2026-04",
+   "tmdbId": 228689,
+   "summary": "After a thousand years, a quirky genie returns to grant wishes to a woman born without feelings. Can his magic bring love and wonder to her world?",
+   "episodes": 13,
+   "firstAir": "2025-10-03",
+   "lastAir": "2025-10-03",
+   "poster": "images/genie-make-a-wish-1789521173001-lz4e.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=PaZIDBqhVSk",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "the-manipulated",
+   "title": "The Manipulated",
+   "year": 2025,
+   "imdb": 8.8,
+   "network": "Disney+",
+   "genres": "Action, Thriller, Crime",
+   "country": "KR",
+   "status": "S",
+   "progress": "ep 9",
+   "tmdbId": 239385,
+   "summary": "Taejoong's life is torn apart when he's framed for a heinous crime and imprisoned. Discovering it was all orchestrated by someone on the outside, he embarks on a rage-fueled quest for revenge.",
+   "episodes": 12,
+   "firstAir": "2025-11-05",
+   "lastAir": "2025-12-03",
+   "poster": "images/the-manipulated-1789522564914-ajm3.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=cXPDFkuLfhs",
+     "title": "Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "dynamite-kiss",
+   "title": "Dynamite Kiss",
+   "year": 2025,
+   "imdb": 8.2,
+   "network": "SBS, Netflix",
+   "genres": "Romance, Comedy, Workplace",
+   "country": "KR",
+   "status": "W",
+   "myRate": 4,
+   "watched": "2026-01",
+   "tmdbId": 281013,
+   "summary": "A passionate fling in Jeju ends abruptly — until fate reunites an heir and a young woman when she joins his company, disguised as a married mother.",
+   "episodes": 14,
+   "firstAir": "2025-11-12",
+   "lastAir": "2025-12-25",
+   "poster": "images/dynamite-kiss-1789521164332-brfy.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=PukVwohE-Vk",
+     "title": "Official Clip [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "the-price-of-confession",
+   "title": "The Price of Confession",
+   "year": 2025,
+   "imdb": 8.5,
+   "network": "Netflix",
+   "genres": "Suspense, Crime",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 209110,
+   "summary": "Accused of killing her husband, a woman is offered a way out by a mysterious stranger: in exchange for a confession in her place, she must commit murder.",
+   "episodes": 12,
+   "firstAir": "2025-12-05",
+   "lastAir": "2025-12-05",
+   "poster": "images/the-price-of-confession-1789522544038-1ab3.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Iz8ZW-H2FUg",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "typhoon-family",
+   "title": "Typhoon Family",
+   "year": 2025,
+   "imdb": 7.9,
+   "network": "tvN, Netflix",
+   "genres": "Workplace, Family",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 280946,
+   "summary": "Depicts the struggles of small and medium-sized businesses and their families who face the 1997 IMF crisis head-on.",
+   "episodes": 16,
+   "firstAir": "2025-10-11",
+   "lastAir": "2025-11-30",
+   "poster": "images/typhoon-family-1789522495620-ttjw.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=98gODGAmgSY",
+     "title": "Official Clip [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "walking-on-thin-ice",
+   "title": "Walking on Thin Ice",
+   "year": 2025,
+   "imdb": 7.5,
+   "network": "KBS",
+   "genres": "Drama, Suspense",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 232557,
+   "summary": "Eun-soo is a housewife, who struggles to pay for her husband's medical expenses. He is terminally ill. Eun-soo becomes entangled in a bag of drugs with a teacher named Yi-kyeong. He is a mysterious figure. Eun-soo and Yi-kyeong are chased by veteran detective Tae-gu.",
+   "episodes": 12,
+   "firstAir": "2025-09-20",
+   "lastAir": "2025-10-26",
+   "poster": "images/walking-on-thin-ice-1789522488883-t8tc.jpg"
+  },
+  {
+   "id": "confidence-queen",
+   "title": "Confidence Queen",
+   "year": 2025,
+   "imdb": 8,
+   "network": "Prime Video",
+   "genres": "Comedy, Crime",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 259710,
+   "summary": "Three con artists with different backgrounds, team up for a daring and adventurous scheme of revenge against the villains of this era.",
+   "episodes": 12,
+   "firstAir": "2025-09-06",
+   "lastAir": "2025-10-12",
+   "poster": "images/confidence-queen-1789521117014-5q7b.jpg"
+  },
+  {
+   "id": "would-you-marry-me",
+   "title": "Would You Marry Me",
+   "year": 2025,
+   "imdb": 8.1,
+   "network": "Prime Video",
+   "genres": "Romance, Comedy, Drama",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 281011,
+   "summary": "A couple who pretend to be newlyweds, find themselves developing genuine feelings for each other as they navigate their fake marriage.",
+   "episodes": 12,
+   "firstAir": "2025-10-10",
+   "lastAir": "2025-11-15",
+   "poster": "images/would-you-marry-me-1789522441767-ro3t.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=g5PBlF0fgJQ",
+     "title": "Would You Marry Me? | Teaser Trailer #2 | Disney+ Singapore"
+    }
+   ]
+  },
+  {
+   "id": "the-witch",
+   "title": "The Witch",
+   "year": 2025,
+   "imdb": 7.4,
+   "network": "Viki",
+   "genres": "Suspense, Romance, Fantasy",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 200794,
+   "summary": "The story of a woman who is kicked out of her village and called a \"witch\" when the men that she likes get hurt or die, and a man who risks his life to try to save her from the law of death.",
+   "episodes": 10,
+   "firstAir": "2025-02-15",
+   "lastAir": "2025-03-16",
+   "poster": "images/the-witch-1789522517164-p04r.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=J5l0RNGcUto",
+     "title": "[티저] 마녀라고 불리는 여자를 구하려는 남자와 세상으로부터 스스로를 단절한 여자의 미스터리 로맨스 | 강풀 웹툰 원작 마녀 2/15 토요일 밤 9시 10분 첫방송"
+    }
+   ]
+  },
+  {
+   "id": "the-first-frost",
+   "title": "The First Frost",
+   "year": 2025,
+   "network": "Netflix",
+   "genres": "Romance, Drama",
+   "country": "CN",
+   "status": "W",
+   "scores": [
+    3,
+    3.7,
+    3.5,
+    3.5,
+    3
+   ],
+   "tmdbId": 250060,
+   "summary": "Wen Yifan, by chance, ends up living with her high school classmate Sang Yan, whom she once rejected. They keep their distance until Wen Yifan learns from Sang Yan that she sleepwalks, intertwining their lives once more.",
+   "episodes": 32,
+   "firstAir": "2025-02-18",
+   "lastAir": "2025-03-10",
+   "poster": "images/the-first-frost-1789522138545-4p2v.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=5CXtkD4ezXI",
+     "title": "【Official Trailer】The First Frost: Unspoken love, hidden in the rush of the world.✨ | YOUKU"
+    }
+   ]
+  },
+  {
+   "id": "pursuit-of-jade",
+   "title": "Pursuit of Jade",
+   "year": 2025,
+   "country": "CN",
+   "status": "S",
+   "tmdbId": 279388,
+   "summary": "This drama follows Fan Changyu, a butcher’s daughter, and Xie Zheng, a fallen noble seeking revenge. Their fake marriage turns into true love, but war tears them apart. Determined, Fan Changyu wields her butcher’s knife on the battlefield, searching for justice and her husband. Meanwhile, Xie Zheng reclaims his title, fighting to protect his country and love. Reunited in battle, they stand together, defying fate, uncovering the truth, and returning home without forgetting their vows.",
+   "episodes": 40,
+   "firstAir": "2026-03-06",
+   "lastAir": "2026-03-26",
+   "network": "iQiyi, Tencent Video",
+   "poster": "images/pursuit-of-jade-1789522284631-uqev.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=_ftwQZjmgqU",
+     "title": "War-torn hearts, love eternal. [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "speed-and-love",
+   "title": "Speed and Love",
+   "year": 2025,
+   "status": "S",
+   "progress": "ep 2",
+   "tmdbId": 279041,
+   "summary": "After her parents' divorce, Jiang Mu reunites with her adopted brother Jin Chao, now a hardened young man living a dangerous life in Thailand. Despite their growing distance, Jiang Mu's unwavering love helps bridge the gap between them, leading to a journey of healing and redemption as they fight to rebuild their bond and face their struggles together.",
+   "episodes": 29,
+   "firstAir": "2025-12-12",
+   "lastAir": "2025-12-22",
+   "country": "CN",
+   "network": "iQiyi",
+   "poster": "images/speed-and-love-1789522657857-5ca9.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=IuyK7HKyHiE",
+     "title": "Trailer [English Subtitles]"
+    }
+   ]
+  },
+  {
+   "id": "can-this-love-be-translated",
+   "title": "Can This Love Be Translated?",
+   "year": 2026,
+   "imdb": 8,
+   "network": "Netflix",
+   "genres": "Drama, Romance, Comedy",
+   "status": "W",
+   "scores": [
+    4,
+    4,
+    4,
+    4.2,
+    4
+   ],
+   "watched": "2026-02",
+   "tmdbId": 229891,
+   "summary": "The emotions of a celebrity and her interpreter get lost in translation as they travel the world filming a TV show. Will love find its own language?",
+   "episodes": 12,
+   "firstAir": "2026-01-16",
+   "lastAir": "2026-01-16",
+   "country": "KR",
+   "poster": "images/can-this-love-be-translated-1789516186104-lt1n.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=tNZG1aLBATY",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "the-art-of-sarah",
+   "title": "The Art of Sarah",
+   "year": 2026,
+   "imdb": 8,
+   "network": "Netflix",
+   "genres": "Drama, Suspense, Crime",
+   "status": "W",
+   "scores": [
+    4.2,
+    4.6,
+    4.2,
+    4,
+    4.3
+   ],
+   "watched": "2026-02",
+   "tmdbId": 273977,
+   "summary": "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
+   "episodes": 8,
+   "firstAir": "2026-02-13",
+   "lastAir": "2026-02-13",
+   "country": "KR",
+   "poster": "images/the-art-of-sarah-1789516464382-5k68.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=aPNZNcBIWNw",
+     "title": "레이디 두아 | 공식 예고편 | 넷플릭스"
+    }
+   ]
+  },
+  {
+   "id": "undercover-miss-hong",
+   "title": "Undercover Miss Hong",
+   "year": 2026,
+   "network": "tvN, Netflix",
+   "genres": "Workplace, Comedy, Action",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    3.7,
+    3.5,
+    3.7,
+    4,
+    3.5
+   ],
+   "watched": "2026-03",
+   "tmdbId": 293608,
+   "summary": "A retro office comedy depicting the chaotic events that unfold in the late 1990s when Sammo Hung, a 30-year-old elite securities supervisor who only cares about work, goes undercover as a 20-year-old high school graduate employee at a securities firm where suspicious money flows are detected.",
+   "episodes": 16,
+   "firstAir": "2026-01-17",
+   "lastAir": "2026-03-08",
+   "poster": "images/undercover-miss-hong-1789516512551-xjix.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=ggrP-QrbkNM",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "boyfriend-on-demand",
+   "title": "Boyfriend on Demand",
+   "year": 2026,
+   "imdb": 8,
+   "network": "Netflix",
+   "genres": "Comedy, Romance, Fantasy",
+   "status": "W",
+   "scores": [
+    2.7,
+    3.7,
+    4.3,
+    4.3,
+    4.3
+   ],
+   "watched": "2026-03",
+   "tmdbId": 281016,
+   "summary": "Seo Mi-rae is worn out by work. Love? It's the last thing on her mind. But a virtual dating service sparks feelings — and maybe a real shot at romance.",
+   "episodes": 10,
+   "firstAir": "2026-03-06",
+   "lastAir": "2026-03-06",
+   "country": "KR",
+   "poster": "images/boyfriend-on-demand-1789516175182-6704.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=A0GqKTgSpuE",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "bloodhounds-2",
+   "title": "Bloodhounds",
+   "year": 2026,
+   "network": "Netflix",
+   "genres": "Action, Suspense",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    3.7,
+    4,
+    4.2,
+    4.2,
+    3.7
+   ],
+   "watched": "2026-04",
+   "tmdbId": 127529,
+   "summary": "Faced with ruthless foes with a violent thirst, two young boxers band together — risking life and limb to bring justice and protect their loved ones.",
+   "episodes": 15,
+   "seasons": 2,
+   "firstAir": "2023-06-09",
+   "lastAir": "2026-04-03",
+   "poster": "https://image.tmdb.org/t/p/w500/uSQzD7TXsL96J5ggDrJFdUs8uXU.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=eyiR8pO50JE",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "in-your-radiant-season",
+   "title": "In Your Radiant Season",
+   "year": 2026,
+   "status": "W",
+   "scores": [
+    4,
+    3.8,
+    4.1,
+    4.2,
+    4
+   ],
+   "watched": "2026-04",
+   "tmdbId": 233833,
+   "summary": "Chan lives every day like it is summer vacation. Haran is trapped in a lonely winter. When their forgotten past reunites them, Chan is determined to gift her another spring. Through laughter and tears, they face winter together and reach their spring in this heartwarming romance.",
+   "episodes": 12,
+   "firstAir": "2026-02-20",
+   "lastAir": "2026-04-03",
+   "country": "KR",
+   "network": "MBC",
+   "poster": "images/in-your-radiant-season-1789516385363-e4o4.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=scWRqoObKk8",
+     "title": "[찬너계 1차 티저] 이성경X채종협의 '찬란 로맨스'가 찾아옵니다, MBC 260220 방송"
+    }
+   ]
+  },
+  {
+   "id": "royal-nemesis",
+   "title": "My Royal Nemesis",
+   "year": 2026,
+   "network": "Netflix",
+   "genres": "Fantasy, Historical, Comedy",
+   "status": "W",
+   "scores": [
+    4,
+    4,
+    4,
+    4.2,
+    4
+   ],
+   "tmdbId": 303143,
+   "summary": "A Joseon-era villain doomed to die opens her eyes in modern-day Seoul — where a ruthless chaebol heir may be her last chance to rewrite her fate.",
+   "episodes": 14,
+   "firstAir": "2026-05-08",
+   "lastAir": "2026-06-20",
+   "country": "KR",
+   "poster": "images/royal-nemesis-1789516432125-sl2i.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=efj9rk9mCeo",
+     "title": "Final Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "teach-you-a-lesson",
+   "title": "Teach You a Lesson",
+   "year": 2026,
+   "status": "W",
+   "scores": [
+    4,
+    4,
+    4.5,
+    3.5,
+    4.2
+   ],
+   "tmdbId": 276161,
+   "summary": "An inspector from the Educational Rights Protection Bureau (ERPB) who is authorized by the government to use physical intervention and unconventional methods to discipline delinquent students and reform the educational system.",
+   "episodes": 10,
+   "firstAir": "2026-06-05",
+   "lastAir": "2026-06-05",
+   "country": "KR",
+   "network": "Netflix",
+   "poster": "images/teach-you-a-lesson-1789520899090-xppz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=LdezlX84py0",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "dream-to-you",
+   "title": "Dream to You",
+   "year": 2026,
+   "genres": "Romance, Comedy, Drama",
+   "status": "W",
+   "scores": [
+    3.6,
+    3.6,
+    3.6,
+    3.6,
+    3.6
+   ],
+   "watched": "2026-08",
+   "tmdbId": 301412,
+   "summary": "Two high school classmates bond over a shared love of filmmaking, turning a deep friendship into first love before an unexpected separation tears them apart. Years later, they reunite with their lives completely transformed—she’s lost her passion, while he’s become a celebrated director. Determined to reignite her dreams, he must first confront the hurt he left behind.",
+   "episodes": 12,
+   "firstAir": "2026-07-13",
+   "lastAir": "2026-08-18",
+   "country": "KR",
+   "network": "ENA",
+   "poster": "images/dream-to-you-1789516256475-lkmr.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=CrW2onTvp7s",
+     "title": "Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "the-wonderfools",
+   "title": "The Wonderfools",
+   "year": 2026,
+   "network": "Netflix",
+   "genres": "Comedy, Fantasy, Action",
+   "status": "W",
+   "scores": [
+    3.7,
+    3.7,
+    3.7,
+    3.7,
+    3.7
+   ],
+   "tmdbId": 259837,
+   "summary": "A goofy group of townies stumbles into superpowers and fights rising evil as doomsday panic grows in this wild, turn-of-the-century action comedy.",
+   "episodes": 8,
+   "firstAir": "2026-05-15",
+   "lastAir": "2026-05-15",
+   "country": "KR",
+   "poster": "images/the-wonderfools-1789516491577-ymrw.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=rVoc4WQVMCc",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ],
+   "watched": "2026-05",
+   "layout": "quick"
+  },
+  {
+   "id": "if-wishes-could-kill",
+   "title": "If Wishes Could Kill",
+   "year": 2026,
+   "network": "Netflix",
+   "genres": "Horror, School",
+   "status": "W",
+   "scores": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "tmdbId": 285838,
+   "summary": "A mysterious app promises wishes — then starts a countdown to death. As a group of teens becomes entangled, they must break the deadly chain to survive.",
+   "episodes": 8,
+   "firstAir": "2026-04-24",
+   "lastAir": "2026-04-24",
+   "country": "KR",
+   "poster": "images/if-wishes-could-kill-1789516302988-8rvm.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=OJsERPNI3D0",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "even-if-this-love-disappears-tonight",
+   "title": "Even If This Love Disappears Tonight",
+   "year": 2026,
+   "network": "Netflix",
+   "genres": "Romance, School, Melodrama",
+   "status": "W",
+   "comment": "Movie",
+   "tmdbId": 1466115,
+   "summary": "A high school girl wakes up each day with no memory of yesterday. When she agrees to date a shy classmate, can their love grow with every new beginning?",
+   "firstAir": "2025-12-24",
+   "country": "KR",
+   "poster": "images/even-if-this-love-disappears-tonight-1789516280129-yunj.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=rjAs9Ks-3V0",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "spooky-in-love",
+   "title": "Spooky in Love",
+   "year": 2026,
+   "network": "tvN",
+   "genres": "Comedy, Romance, Horror",
+   "country": "KR",
+   "status": "W",
+   "scores": [
+    3,
+    3,
+    3.5,
+    3.5,
+    3.2
+   ],
+   "tmdbId": 298610,
+   "summary": "When a ghost-seeing heir and an ace prosecutor learn that a single touch makes them a strangely effective duo, they team up to crack unsolved murders.",
+   "episodes": 12,
+   "firstAir": "2026-07-18",
+   "lastAir": "2026-08-23",
+   "poster": "images/spooky-in-love-1789516134966-x7k0.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=gFvycajlifg",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "the-early-spring",
+   "title": "The Early Spring",
+   "year": 2026,
+   "status": "W",
+   "scores": [
+    3.9,
+    4,
+    4.2,
+    4.6,
+    4.3
+   ],
+   "watched": "2026-09",
+   "tmdbId": 299952,
+   "summary": "New to Beijing, Shang Zhitao crosses paths with Luan Nian, a true creative genius. Bold and open-hearted, she grows stronger step by step and gradually breaks through the defenses around Luan's guarded heart. Drawn to each other, they find themselves caught in an intense, on-again, off-again relationship in the urban jungle. To love is to summon all your courage and leave no regrets, to heal each other, and to grow together. But when love and her career pull her in different directions, she puts her career first. When she has come into her own and he has learned to soften his sharp edges, they finally stand as equals, ready to write a new ending together...",
+   "episodes": 24,
+   "firstAir": "2026-08-26",
+   "lastAir": "2026-09-09",
+   "country": "CN",
+   "network": "Youku",
+   "poster": "images/the-early-spring-1789516479266-xebs.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=7JsnZ47CTDg",
+     "title": "Official Trailer"
+    }
+   ]
+  },
+  {
+   "id": "my-boss-my-bias",
+   "title": "My Bias My Boss",
+   "year": 2026,
+   "status": "W",
+   "scores": [
+    3.7,
+    3.7,
+    4.1,
+    4.2,
+    4
+   ],
+   "tmdbId": 296140,
+   "summary": "A dedicated fangirl lands a job at a fashion company, only to discover it was co-founded by her ultimate idol. Determined to remain professional, she hides her identity, but is quickly thrown off course by the company's workaholic CEO. As secret unrequited feelings and hidden personal struggles entangle the trio, she finds herself torn between her lifelong obsession and an unexpected new connection.",
+   "episodes": 12,
+   "firstAir": "2026-08-03",
+   "lastAir": "2026-09-08",
+   "country": "KR",
+   "network": "tvN",
+   "poster": "images/my-boss-my-bias-1789516399036-8csz.jpg"
+  },
+  {
+   "id": "spring-fever",
+   "title": "Spring Fever",
+   "year": 2026,
+   "network": "tvN, Prime Video",
+   "genres": "Comedy, Romance",
+   "country": "KR",
+   "status": "S",
+   "tmdbId": 280948,
+   "summary": "After moving to a quiet rural town to heal from past heartbreak, a withdrawn teacher slowly rediscovers warmth and joy through her unexpected connection with a rough-around-the-edges but kindhearted local man.",
+   "episodes": 12,
+   "firstAir": "2026-01-05",
+   "lastAir": "2026-02-10",
+   "poster": "https://image.tmdb.org/t/p/w500/50e9qtv8rKmcayAQSgB9P9XELpQ.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=IgyahanUcOk",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "honor",
+   "title": "Honor",
+   "year": 2026,
+   "imdb": 8.3,
+   "network": "ENA, Viki",
+   "genres": "Legal, Thriller, Political",
+   "country": "KR",
+   "status": "L"
+  },
+  {
+   "id": "the-judge-returns",
+   "title": "The Judge Returns",
+   "year": 2026,
+   "network": "MBC",
+   "genres": "Revenge, Fantasy",
+   "country": "KR",
+   "status": "L",
+   "tmdbId": 282810,
+   "summary": "The return of corrupt judge Lee Han-young, who was a slave to a large law firm, to the past 10 years ago. He makes new choices to punish evil and implement justice.",
+   "episodes": 14,
+   "firstAir": "2026-01-02",
+   "lastAir": "2026-02-14",
+   "poster": "images/the-judge-returns-1789520964471-ichz.jpg"
+  },
+  {
+   "id": "the-apartment-job",
+   "title": "The Apartment Job",
+   "year": 2026,
+   "status": "S",
+   "tmdbId": 300727,
+   "summary": "Desperate for cash, a former gang boss teams up with an aspiring lawyer to steal an apartment complex's reserve fund — only to uncover deep corruption.",
+   "episodes": 12,
+   "firstAir": "2026-07-11",
+   "lastAir": "2026-08-16",
+   "country": "KR",
+   "network": "JTBC",
+   "poster": "images/the-apartment-job-1789520945746-qppa.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=aovCC9XFVew",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "bloody-flower",
+   "title": "Bloody Flower",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 310024,
+   "summary": "A former medical school dropout claiming to be able to cure terminal illnesses is sentenced to death for the murder of 17 people. Is he a monstrous killer, or a savior holding the cure for humanity?",
+   "episodes": 8,
+   "firstAir": "2026-02-04",
+   "lastAir": "2026-02-25",
+   "country": "KR",
+   "network": "Disney+",
+   "poster": "images/bloody-flower-1789520726930-xjpi.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Kn97CaTWPzc",
+     "title": "Trailer [Subtitled]"
+    }
+   ]
+  },
+  {
+   "id": "sirens-kiss",
+   "title": "Siren's Kiss",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 310800,
+   "summary": "Ace insurance investigator Cha Woo-seok hunts a fraud ring tied to mysterious deaths and becomes dangerously entangled with Han Seol-ah, a flawless art auctioneer whose lovers all seem to die. As attraction and suspicion blur, he must uncover whether she’s a killer or a victim, before the truth costs him his life.",
+   "episodes": 12,
+   "firstAir": "2026-03-02",
+   "lastAir": "2026-04-07",
+   "country": "KR",
+   "network": "tvN",
+   "poster": "images/sirens-kiss-1789520871943-xlkh.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=rqWImQN1nsM",
+     "title": "[세이렌의 노래 티저] 아름다운 그녀를 사랑한 대가 = 죽음?🥀 박민영X위하준 치명적 로맨스릴러 [세이렌] #세이렌 EP.0"
+    }
+   ]
+  },
+  {
+   "id": "phantom-lawyer",
+   "title": "Phantom Lawyer",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 281010,
+   "summary": "A timid lawyer who suddenly gains the ability to see ghosts teams up with a cold, elite attorney, and together they take on supernatural clients whose unfinished business reveals buried truths.",
+   "episodes": 16,
+   "firstAir": "2026-03-13",
+   "lastAir": "2026-05-02",
+   "country": "KR",
+   "network": "SBS",
+   "poster": "images/phantom-lawyer-1789520865222-dx8p.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=e5IptmsWYHE",
+     "title": "Phantom Lawyer (2026) Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "doctor-shin",
+   "title": "Doctor Shin",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 314669,
+   "summary": "A medical thriller melodrama depicting the events that unfold between a genius doctor and the woman he loves after a chance accident.",
+   "episodes": 16,
+   "firstAir": "2026-03-14",
+   "lastAir": "2026-05-03",
+   "country": "KR",
+   "network": "TV Chosun",
+   "poster": "images/doctor-shin-1789520810694-la4a.jpg"
+  },
+  {
+   "id": "climax",
+   "title": "Climax",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 241860,
+   "summary": "An ambitious prosecutor rises through Korea’s elite by marrying a famous actress, only to be pulled into a ruthless power cartel where hidden informants, corporate heirs, and political players collide in a brutal struggle for survival and control.",
+   "episodes": 10,
+   "firstAir": "2026-03-16",
+   "lastAir": "2026-04-14",
+   "country": "KR",
+   "network": "ENA",
+   "poster": "https://image.tmdb.org/t/p/w500/znQD6puGiyMpNXPLs172Vv1h0GK.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=5-_100zrsz8",
+     "title": "Climax (2026) Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
+   "id": "perfect-crown",
+   "title": "Perfect Crown",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 278573,
+   "summary": "In 21st-century Korea under a constitutional monarchy, a chaebol heiress with everything but status tries to take control of her future after crossing paths with a lonely prince with nothing but his title. Together, bound by a contract marriage, they begin a class-defying romance to rewrite destiny.",
+   "episodes": 12,
+   "firstAir": "2026-04-10",
+   "lastAir": "2026-05-16",
+   "country": "KR",
+   "network": "MBC",
+   "poster": "images/perfect-crown-1789520854731-ftr7.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=MOXFNE9x1G4",
+     "title": "Highlight Trailer [Subtitled]"
+    }
+   ]
+  }
+ ],
+ "scratch": [
+  "four hands two sonatas",
+  "a love other than yours",
+  "we are all trying here"
+ ],
+ "people": {
+  "Ji Chang-wook": {
+   "p": "/sBmHrO5Tn27Ot5hy0yAKniROmNb.jpg"
+  },
+  "Yoo Ji-tae": {
+   "p": "/gGGV2gc0orgssYJ0Q9MSomdYo2I.jpg"
+  },
+  "Park Min-young": {
+   "p": "/5Op0Gx0DULFLHtGdWVdqnYdwkAS.jpg"
+  },
+  "Park Sang-won": {
+   "p": "/lNWzYkwlrAHQ0a6SXADFyEsrijd.jpg"
+  },
+  "Do Ji-won": {
+   "p": "/jrg51mEs4OG1BS6J3rS9sS3OTl2.jpg"
+  },
+  "Woo Hee-jin": {
+   "p": "/uYc7McCKY4rZZWJFAKvTkupcBXx.jpg"
+  },
+  "Kim Jin-woo": {},
+  "Song Ji-na": {},
+  "Lee Jung-sub": {
+   "p": "/yx4SiwKYgxfW6XDLqCUqRWp2ock.jpg"
+  },
+  "Lee Hye-ri": {
+   "p": "/5F5tjTAvpBcdVdhI9kGjlJY00fY.jpg"
+  },
+  "Ryu Jun-yeol": {
+   "p": "/ayjkSbxGkeiyE2JvbLlyNPNFxkn.jpg"
+  },
+  "Park Bo-gum": {
+   "p": "/iQHhzpJnxPAeZetNLJPr3gTs1rE.jpg"
+  },
+  "Go Kyung-pyo": {
+   "p": "/71ey2m4Ono5wHYAl4cUjJvYwrzP.jpg"
+  },
+  "Lee Dong-hwi": {
+   "p": "/dqGCVaJ5yuGgKTPUEqCJNk8Nzbs.jpg"
+  },
+  "Ryu Hye-young": {
+   "p": "/y9ePzFIHiKskVdQ6G1bFvsUcjs5.jpg"
+  },
+  "Lee Woo-jung": {
+   "p": "/wf3PwOoGnLTrKGby594IYeDm46Z.jpg"
+  },
+  "Shin Won-ho": {
+   "p": "/2skcn2e1GDFo5DLgJK3R4IDGXCz.jpg"
+  },
+  "Lee Myung-han": {
+   "p": "/xlS6aAANwajOQ13XHsdb9Bk33SX.jpg"
+  },
+  "Song Hye-kyo": {
+   "p": "/tlAX3f82Mf5h0rznpVBVK7nD2om.jpg"
+  },
+  "Song Joong-ki": {
+   "p": "/kgjb5OppOVTh5tz3hhnfDVnTvDv.jpg"
+  },
+  "Kim Ji-won": {
+   "p": "/lX7W1j9kg4jV6XNn5XEE3rKsd3x.jpg"
+  },
+  "Jin Goo": {
+   "p": "/jL0bhHE8vIEomP1Zdz3a0ryXXgk.jpg"
+  },
+  "Onew": {
+   "p": "/f8AQHm38LLm8urDIy6KZsIo1xpR.jpg"
+  },
+  "Kang Shin-il": {
+   "p": "/iQhXXV8Wsv2ZHifZqaIm1fJsW7F.jpg"
+  },
+  "Lee Eung-bok": {},
+  "Baek Sang-hoon": {},
+  "Kim Eun-sook": {
+   "p": "/iRI1bowXqsZ4BLrQ4A6RXuqlFUd.jpg"
+  },
+  "Kim Won-suk": {
+   "p": "/4b50XGXD5wbKuvHpEi9MXiuIwhk.jpg"
+  },
+  "Nam Ji-hyun": {
+   "p": "/dSFP974u2btrs44Ynw0osCTDBtH.jpg"
+  },
+  "Choi Tae-joon": {
+   "p": "/8ke10xg4YHqyWOyynnE917OW1xt.jpg"
+  },
+  "Kwon Na-ra": {
+   "p": "/4U0cNinwOf7DdsBYA3BFi7arDmz.jpg"
+  },
+  "Dong Ha": {
+   "p": "/ueuDkgp3KyWyhfXos2BMp9Git1b.jpg"
+  },
+  "Kim Ye-won": {
+   "p": "/iG7ygQ6k7hqbs3b2iMgOjVkuMsN.jpg"
+  },
+  "Park Seon-ho": {
+   "p": "/asuUwah7AtgbCCpnhkeIvGUfgrF.jpg"
+  },
+  "Kwon Ki-young": {
+   "p": "/oq3Ls5feQxqF0kT6AMs7BnuxKnb.jpg"
+  },
+  "Lee Sung Hoon": {},
+  "IU": {
+   "p": "/uNhKOO9lIAFXF11LM6gjCrX2CJz.jpg"
+  },
+  "Yeo Jin-goo": {
+   "p": "/f9Gj12cCk66vdIaDVjltTGAZPC9.jpg"
+  },
+  "Shin Jung-keun": {
+   "p": "/2zuxoRgBPNCQXDGb3wOnGaJCI4y.jpg"
+  },
+  "Bae Hae-sun": {
+   "p": "/hqR7waJDYkOspnosemMkD2Wm4rO.jpg"
+  },
+  "P.O": {
+   "p": "/rg2fuaF8yRmKBgyGWdpvEmtCBmU.jpg"
+  },
+  "Lee Do-hyun": {
+   "p": "/8LhhJWLGCoOPt5ygpDlrmfr1VOm.jpg"
+  },
+  "Hong Mi-ran": {
+   "p": "/zdsUkZRfYZdh76Y6Cd2g9wTcFW1.jpg"
+  },
+  "Hong Jeong-eun": {
+   "p": "/esIyjpCEh7MK087ivjOisJ7ZOKj.jpg"
+  },
+  "Oh Choong-hwan": {},
+  "Lee Seung-gi": {
+   "p": "/urz7CEh9rpC9GFqh5ht8R65dY9w.jpg"
+  },
+  "Suzy": {
+   "p": "/39x6Dc4ELZxHbxCuOM0ddbwKh3F.jpg"
+  },
+  "Shin Sung-rok": {
+   "p": "/6ajwIMcTc2jVFsjVOx2W0XARxpj.jpg"
+  },
+  "Moon Jeong-hee": {
+   "p": "/6V48aFHytTUAHG9EJ5JObUEbXOV.jpg"
+  },
+  "Baek Yoon-sik": {
+   "p": "/fLpY36m4pTnj5nLOBkyYKK69ela.jpg"
+  },
+  "Moon Sung-keun": {
+   "p": "/wQjOvAFqCItwMw7dxa486KnGgEE.jpg"
+  },
+  "Jang Yeong-cheol": {},
+  "Yoo In-sik": {
+   "p": "/6zbLpK1wRWySvpNx0KimiH1KNN6.jpg"
+  },
+  "Jang Young-cheol": {},
+  "Jung Gyeong-sun": {},
+  "Park Seo-jun": {
+   "p": "/k1ALgZkOApYt7PIUBkUitmknXQC.jpg"
+  },
+  "Kim Da-mi": {
+   "p": "/1biBc16BVz6bnkajnhdHUsE3j8p.jpg"
+  },
+  "Yoo Jae-myung": {
+   "p": "/zuFVYiE4y6DjGqFZCEZqwDyEpPi.jpg"
+  },
+  "Ahn Bo-hyun": {
+   "p": "/2pNNCnjI1TwxjyP3Y4cJln1wOKE.jpg"
+  },
+  "Kim Dong-hee": {
+   "p": "/hrW8nWYzGmm3StKdHuHQMGk23Kj.jpg"
+  },
+  "Cho Kwang-jin": {},
+  "Kim Seong-yoon": {
+   "p": "/j07zn7xFuU3Uqj3lQdmZjzxJl0n.jpg"
+  },
+  "Simon Lee": {},
+  "Cho Jun-hyeong": {},
+  "Lee Min-ho": {
+   "p": "/iqopuz6cKuRZRUPZQrj7lFZcWWb.jpg"
+  },
+  "Kim Go-eun": {
+   "p": "/fqoidsuSH7YgWdTt72SIKwUIijN.jpg"
+  },
+  "Woo Do-hwan": {
+   "p": "/6r1yIpHLmoIqujKv9KQeZPEUhXy.jpg"
+  },
+  "Kim Kyung-nam": {
+   "p": "/8aj45J8AoEnidX08NlgY9l4foE8.jpg"
+  },
+  "Jung Eun-chae": {
+   "p": "/cw3Ia40hTP1SfGj0Qw9pqRaNill.jpg"
+  },
+  "Lee Jung-jin": {
+   "p": "/rOSw03FHuJtnuWJuTJGJWxj1cLs.jpg"
+  },
+  "Jung Jee-hyun": {
+   "p": "/ezDvlVpk8fC6bfISHcB8RWo18yq.jpg"
+  },
+  "Jinnie Choi": {},
+  "Yoon Ha-lim": {},
+  "Lee Dong-wook": {
+   "p": "/khwUahjzIHFlrxYeKQAWrbWqsL6.jpg"
+  },
+  "Cho Bo-ah": {
+   "p": "/1torx99sDl20pTzMI9XHaPuVP96.jpg"
+  },
+  "Kim Bum": {
+   "p": "/sMYFAFG6yxhqUNIJzcDK1kGbfPq.jpg"
+  },
+  "Kim Yong-ji": {
+   "p": "/tW1Pp84uSieixUlKw0iRPiX8UFV.jpg"
+  },
+  "Hwang Hee": {
+   "p": "/jbsK0zA0ujSGtnAuhK7VKh4UsXc.jpg"
+  },
+  "Kim Jung-nan": {
+   "p": "/guaDtVcObvkRj2Jmku4kGw1HOVD.jpg"
+  },
+  "Han Woo-ri": {
+   "p": "/3joofJJncT8YNnNkCAZIKguJK2Q.jpg"
+  },
+  "Kang Shin-hyo": {
+   "p": "/rCLbnJRspx7rHsvjKCgJZ6TQ2sK.jpg"
+  },
+  "Cho Nam-hyung": {
+   "p": "/hQMV0nVCSQLIwiMAVFfgr6FIr2u.jpg"
+  },
+  "Kim Young-kyu": {},
+  "Jeon Yeo-bin": {
+   "p": "/l28uxiGDMyZjQMRvhfNCtkydmpK.jpg"
+  },
+  "Ok Taec-yeon": {
+   "p": "/zVOzETmSY8weWgvyh5KCfSyDSA7.jpg"
+  },
+  "Kim Yeo-jin": {
+   "p": "/ijRex60fv0k4neHuvWxi94qHSU1.jpg"
+  },
+  "Kwak Dong-yeon": {
+   "p": "/klgX8YheSFFXqEdjuCQY5rxTTGa.jpg"
+  },
+  "Cho Han-chul": {
+   "p": "/58DGEXFyWfaFdqL7yKKW0VdEg3R.jpg"
+  },
+  "Ham Seung-hoon": {},
+  "Lee Jang-Soo": {},
+  "Kim Hee-won": {
+   "p": "/diI15rY0gZjtwe4u6y1pZnsGCVN.jpg"
+  },
+  "Park Jae-beom": {
+   "p": "/hS96Gb7vGebNgo1wQOcnRSVXxkQ.jpg"
+  },
+  "Go Min-si": {
+   "p": "/tgBb9dDyewLlautcmJH9KSXZz1O.jpg"
+  },
+  "Lee Sang-yi": {
+   "p": "/4OSOux7D8ZIbNsA7eINSwmHM9nb.jpg"
+  },
+  "Keum Sae-rok": {
+   "p": "/lMs346qXonDCUxNtizX2UTVpmfi.jpg"
+  },
+  "Oh Man-seok": {
+   "p": "/f7EEVmUORXfWtrOUSIZ76MTU5NL.jpg"
+  },
+  "Kim Won-hae": {
+   "p": "/nWZGktRe2Ele7fLxZt8e492oRir.jpg"
+  },
+  "Song Min-yeop": {
+   "p": "/rcmViDPNftal1ohlFhussaNHoK6.jpg"
+  },
+  "Lee Kang": {},
+  "Ji Sung": {
+   "p": "/6RBiKyGLczeCrgnu1tfw5URRvEg.jpg"
+  },
+  "Kim Min-joung": {
+   "p": "/uiGvB9dAHUZcFLpJWMJTXiTSxGe.jpg"
+  },
+  "Jinyoung": {
+   "p": "/e2U4M1vkwvFjwj834ttERQva61E.jpg"
+  },
+  "Park Gyu-young": {
+   "p": "/8VWU3V1omprZmqk3Jk8EhDvwF6D.jpg"
+  },
+  "Jang Young-nam": {
+   "p": "/u0hl8WSswFhKVaKwaMAERU0xUJk.jpg"
+  },
+  "Kim Jae-kyung": {
+   "p": "/5pwe4svnG7eUmIlPnZoGlzTyhxG.jpg"
+  },
+  "Moon Yoo-seok": {
+   "p": "/7o6hWReUn6B8DdSlK1GJBZCuE8U.jpg"
+  },
+  "Choi Jung-kyu": {
+   "p": "/y6L0IHxDJ5J3VHFkYklxHQS7eta.jpg"
+  },
+  "Jung Se-rin": {},
+  "Jang Jung-do": {},
+  "Han So-hee": {
+   "p": "/8IvEOnqMjqJWcci3z44haH38Ee8.jpg"
+  },
+  "Park Hee-soon": {
+   "p": "/s2SSzvlsSfCPP5EXhCoWUr8970F.jpg"
+  },
+  "Kim Sang-ho": {
+   "p": "/jGo5mG7OEj9LAGh55UPEwL4cEQl.jpg"
+  },
+  "Lee Hak-ju": {
+   "p": "/9PuGmzY1nm8uYYiOanEKJHEcdbZ.jpg"
+  },
+  "Chang Ryul": {
+   "p": "/ad3JzZUeo9jj3UpRK4NoYioCIxQ.jpg"
+  },
+  "Kim Ba-da": {
+   "p": "/wTQoZmCuqVs7Qjy15okF1PDaTgx.jpg"
+  },
+  "Kim Jin-min": {
+   "p": "/9rD6ZctNo7yWcc34aM5fbZeLAgP.jpg"
+  },
+  "Yeom Jun-ho": {},
+  "Choi Woo-shik": {
+   "p": "/9mZ9DNopxpCLUjXd0rLd42TLamw.jpg"
+  },
+  "Kim Sung-cheol": {
+   "p": "/nR9r7iBvuLJJYvIxqbyzpWtsO6q.jpg"
+  },
+  "Roh Jeong-eui": {
+   "p": "/pYFgOVsNxI1fIHuPWtuaSgojMCP.jpg"
+  },
+  "Ahn Dong-gu": {
+   "p": "/rjQhK8KvpbFKkYHbyfb2KR7XWvN.jpg"
+  },
+  "Jeon Hye-won": {
+   "p": "/iiLAT4wZ1DtPUPA0l8YH9MeXgQS.jpg"
+  },
+  "Lee Na-eun": {
+   "p": "/52V9IJ9kScsWa2nVMxQezRhywo9.jpg"
+  },
+  "Kim Yoon-jin": {},
+  "Nam Hye-seung": {
+   "p": "/q8zTkg9c0G9PPGZ0AEhnjhLghiy.jpg"
+  },
+  "Han Hye-won": {
+   "p": "/5qTEl7CPaxiN4f5nrEzxEEcQyYi.jpg"
+  },
+  "Kim Hee-seon": {
+   "p": "/7ruHMfaI5YeJKfQBpUrri31SpL4.jpg"
+  },
+  "Rowoon": {
+   "p": "/sWf7wAG4upRgIkWuDfNvUog1UHc.jpg"
+  },
+  "Lee Soo-hyuk": {
+   "p": "/AlCxM67SKVhzwh06GMxuZoDILOz.jpg"
+  },
+  "Yun Ji-on": {
+   "p": "/lm6SziV6Mm954EW32xyiSc5jzif.jpg"
+  },
+  "Kim Hae-sook": {
+   "p": "/dt5bmKeG7qbvDwHrxFZFxiGc9fZ.jpg"
+  },
+  "Moon Seo-Youn": {
+   "p": "/fjWXFWrT9KRFcvlxpSqPQJhnaMs.jpg"
+  },
+  "Llama": {
+   "p": "/1bO7gzjEI0wFfxmMteNmTSvdTZy.jpg"
+  },
+  "Kim Tae-yun": {
+   "p": "/qRUjqRKnv0mWJ3w6PXBkIt6aWcy.jpg"
+  },
+  "Park Ran": {},
+  "Kim Yu-Jin": {},
+  "Park Ja-Kyung": {},
+  "Lee Sung-kyung": {
+   "p": "/c7glIwMg3XZO43wruVz4qeKgtL8.jpg"
+  },
+  "Kim Young-dae": {
+   "p": "/eF0ymiYRrCmoFncGf6mxRjhWelZ.jpg"
+  },
+  "Yoon Jong-hoon": {
+   "p": "/oybVSOy97pnuAUe1SFvkq4j56sy.jpg"
+  },
+  "Kim Yoon-hye": {
+   "p": "/747GCaTzw3owpL85uUTf4FJUWUL.jpg"
+  },
+  "Park So-jin": {
+   "p": "/cI64vJSNXzLwLm8wqIMKpLJTnmM.jpg"
+  },
+  "Lee Jung-shin": {
+   "p": "/ceYBMElPqwMiv4cYwOAdp3r68kx.jpg"
+  },
+  "Kim Gyeo-re": {},
+  "Park Ji-hu": {
+   "p": "/bZy15WXLhOflOgtQpICbgeeqzm6.jpg"
+  },
+  "Wi Ha-jun": {
+   "p": "/tEZuIaMESdBw4LfNq3vshGR4VlP.jpg"
+  },
+  "Uhm Ji-won": {
+   "p": "/icqDRYRw9T99ZIHYCxTUrl0s6aS.jpg"
+  },
+  "Uhm Ki-joon": {
+   "p": "/3YMBbcfM392UY9SuQoR30R4D6CR.jpg"
+  },
+  "Chung Seo-kyung": {
+   "p": "/puBGFSws4gSME2OhBUgzbcooOjQ.jpg"
+  },
+  "Louisa May Alcott": {
+   "p": "/1cZzAe0OF8OHJZCSz1kZOatRlwC.jpg"
+  },
+  "Kim So-yeon": {
+   "p": "/3N97WhQVtQjyVYtmrrTK4Wt98Rc.jpg"
+  },
+  "Ryu Kyung-soo": {
+   "p": "/4tjiTN3osUTaXE8lFAyK2Sjl8Lw.jpg"
+  },
+  "Lee Hae-young": {
+   "p": "/uirLA7jM7KhmRjO5LK6ysydWL11.jpg"
+  },
+  "Junho": {
+   "p": "/DJYwG0eWdCoxvqWhLsnJNKQlMR.jpg"
+  },
+  "Yoona": {
+   "p": "/JzAuAv17bWkLxVtfi9YJvQJhZl.jpg"
+  },
+  "Go Won-hee": {
+   "p": "/iHGHhIe4keVyxzUKNB0skR1wfGW.jpg"
+  },
+  "Kim Ga-eun": {
+   "p": "/x5xv6LcBvMWj5sGFDs5mOkFXwow.jpg"
+  },
+  "Ahn Se-ha": {
+   "p": "/ah6E27lc3UJrLPLArSEsgY4GXCu.jpg"
+  },
+  "Kim Jae-won": {
+   "p": "/diEPTDk0ngXGje4RGmoMaCd0TWe.jpg"
+  },
+  "Chun Sung-il": {
+   "p": "/2rDOOw6nJTy7CR8ujL0lYjEvrKw.jpg"
+  },
+  "Pyo Jong-rok": {},
+  "Ryeoun": {
+   "p": "/y2QVVNdV0PqWfvhuPT0hvdWOouP.jpg"
+  },
+  "Choi Hyun-wook": {
+   "p": "/oHG5nnXAzkNBs0xEQlbwOaIFYPQ.jpg"
+  },
+  "Seorina": {
+   "p": "/nfHLot4nBfqWQKwcXykeol4Owjb.jpg"
+  },
+  "Shin Eun-soo": {
+   "p": "/nZdf2sjN1RL8cr153zgc04SL5Ma.jpg"
+  },
+  "Choi Won-young": {
+   "p": "/fd6mthn1EonRrsk2WTtfQhzHCgn.jpg"
+  },
+  "Seo Young-hee": {
+   "p": "/ApIVqY4kmDNTm0PUP8EQXXs6KhI.jpg"
+  },
+  "Son Jeong-hyeon": {
+   "p": "/lL0IQQ85buZoC6pd7aGohJszrFC.jpg"
+  },
+  "Jin Soo-wan": {
+   "p": "/qOg3SQEp3dsouqOW8EjxOVb4Jej.jpg"
+  },
+  "Kim Hee-yeol": {
+   "p": "/boPKvNisrQbE5n87aud08sSixSm.jpg"
+  },
+  "Shin Hae-sun": {
+   "p": "/cuCFjBn3SpWyhIfBy9TupzvTrmp.jpg"
+  },
+  "Yu Oh-seong": {
+   "p": "/iNqbeyp8Qoi0Sw2rlKgvwu5rSV2.jpg"
+  },
+  "Kim Mi-kyung": {
+   "p": "/bJLkarteB2O0duu5ABvM5QFRuax.jpg"
+  },
+  "Lee Jae-won": {
+   "p": "/6oBaF1eyZAnTYJtBj9xRUqPjXVK.jpg"
+  },
+  "Seo Hyun-chul": {
+   "p": "/5vU1gJyQHhD1l8GvVHi05JjGWTI.jpg"
+  },
+  "Kwon Hye-ju": {},
+  "Choi Byeong-gil": {},
+  "Jung Hae-in": {
+   "p": "/7ZMUHR2q0XTWMxuqijWSVfWQv14.jpg"
+  },
+  "Jung So-min": {
+   "p": "/cv8i4ALEabYkwnu68p5AdRTrMG9.jpg"
+  },
+  "Kim Ji-eun": {
+   "p": "/eKDb8JtrO4SPySd0OwzttW1uvVw.jpg"
+  },
+  "Park Ji-young": {
+   "p": "/mwIZ7JjkELclzNERSHe9pFHR24U.jpg"
+  },
+  "Yu Je-won": {
+   "p": "/swttyVOTvYv08CeLbhHyKS6cGGm.jpg"
+  },
+  "Shin Min-a": {
+   "p": "/6CjxjYvZBuvbAQTcuoPb8EeVrUI.jpg"
+  },
+  "Han Ji-hyeon": {
+   "p": "/cjRtkcpNcgnM9d3RDj2JwaqmcVM.jpg"
+  },
+  "Joo Min-kyung": {
+   "p": "/w9M3K295SPKvXWem4Ox8M9o4ONm.jpg"
+  },
+  "Kim Hye-young": {},
+  "Kim Jung-sik": {
+   "p": "/dRzFunqNZgzYR8zZODAUHgn81ey.jpg"
+  },
+  "Hwang In-youp": {
+   "p": "/dI1dL3QHSmDdhXyB65ETjpxKN7Z.jpg"
+  },
+  "Jung Chae-yeon": {
+   "p": "/xdE2sxSVRf0JMLoyqTpwY3oU5Bl.jpg"
+  },
+  "Bae Hyeon-seong": {
+   "p": "/1z0z1OXEsrD5k6P5QGb6t8eBwEH.jpg"
+  },
+  "Choi Mu-sung": {
+   "p": "/gMhYRcJ9HMVcGUWwOGRTAcbDo9y.jpg"
+  },
+  "Seo Ji-hye": {
+   "p": "/hyqGwzfcmoZ5gdYuqEQWR8lPqID.jpg"
+  },
+  "Kim Seung-ho": {},
+  "홍시영": {},
+  "Yoo Yeon-seok": {
+   "p": "/cB95no6uPnMu5FdlVWK3cO9k5xR.jpg"
+  },
+  "Chae Soo-bin": {
+   "p": "/uHVJPhxn9b9tHK30KTxQpdGIs9K.jpg"
+  },
+  "Heo Nam-jun": {
+   "p": "/17NPgo2g3X6kjLaz9nx2qKFH9.jpg"
+  },
+  "Jang Gyu-ri": {
+   "p": "/u232DZRv4WBpOT6HKPnUR7DLQMq.jpg"
+  },
+  "Lee Doo-seok": {
+   "p": "/cQD0FqioziCBJE7KZC3KGmrO6xg.jpg"
+  },
+  "Kim Ji-woon": {},
+  "Park Sang-woo": {},
+  "Wi Deuk-gyoo": {},
+  "Park Bo-young": {
+   "p": "/x1LNh8i8XmO3oqNYzRslzYj1VoZ.jpg"
+  },
+  "Lee Jun-young": {
+   "p": "/zH8kiGox6n3FD82MKEhUq79X6gj.jpg"
+  },
+  "Jeon So-nee": {
+   "p": "/dIYceHYZ9lHePBnAsZo2zMEHHAq.jpg"
+  },
+  "Kim Jae-uck": {
+   "p": "/kCq8iKzKa2MxF9kxX7QfhRf6uin.jpg"
+  },
+  "Ko Chang-seok": {
+   "p": "/zhR1UpGXvh5oEsKNixHHoyfeoZH.jpg"
+  },
+  "Kwon Michelle": {
+   "p": "/vTShZiIoq1MpBYfPahHlzd2BL4j.jpg"
+  },
+  "Seo Kang-joon": {
+   "p": "/a73St97D7GmJteo3s3rNKxQWk7a.jpg"
+  },
+  "Jin Ki-joo": {
+   "p": "/xwhR8nrFKxalOjmADxJPTouxE0g.jpg"
+  },
+  "Kim Shin-rock": {
+   "p": "/x4zo2mSbehnQY80PbuldAZ7ruGm.jpg"
+  },
+  "Kim Min-ju": {
+   "p": "/egMmX5YaltrE86tH6ywukCWoeqS.jpg"
+  },
+  "Yoon Ga-i": {
+   "p": "/lB5FRwjwLHc223o4n1nBE3clJl.jpg"
+  },
+  "Kim Young-ah": {
+   "p": "/g21Pa5GKMHL99wYSFQqhJX9lMUl.jpg"
+  },
+  "Choi Jeong-in": {},
+  "Im Young-bin": {},
+  "Moon So-ri": {
+   "p": "/iXfIsmrzohNAAf2gyPCE06rJM1N.jpg"
+  },
+  "Park Hae-joon": {
+   "p": "/heNKjLHWCQXXfkDB1Hb2nhuhDCf.jpg"
+  },
+  "Im Sang-choon": {},
+  "Park Seong-il": {
+   "p": "/2IFi0nBwTTGzA1ySuwfY7B1J5c3.jpg"
+  },
+  "Park Sang-hyun": {},
+  "Hong Su-hwan": {},
+  "Oh Na-ra": {
+   "p": "/vGlPj4WSM0z5J1ZLIX5Y40MXJV8.jpg"
+  },
+  "Park Hoon": {
+   "p": "/vo0sLb0h5vJPr7OIooq64TMExIR.jpg"
+  },
+  "Cheon Ho-jin": {
+   "p": "/eS5jGpHrBDu3wtHHEfUNkwnZ0uE.jpg"
+  },
+  "Hyo-seok Kim": {},
+  "Kim Woon-kyeong": {
+   "p": "/jYTlgUJTO2P9jLElZNaZ3IJAO9p.jpg"
+  },
+  "Park Eun-bin": {
+   "p": "/2PqeVq0KV1pEUgeeSquk2ljfMR0.jpg"
+  },
+  "Sul Kyung-gu": {
+   "p": "/teD7AMzfNl4qhQO2b6MAWwLtPVn.jpg"
+  },
+  "Yoon Chan-young": {
+   "p": "/7Al19wuV9XnjIiiPlsor3MK84Kx.jpg"
+  },
+  "Park Byung-eun": {
+   "p": "/8lDiEHjbBxPD8VNu1kGifMXhPUn.jpg"
+  },
+  "Lee Jung-sic": {
+   "p": "/qlwtqNAaCFWsFxIQyfKv2BUHWUe.jpg"
+  },
+  "Kim Sun-hee": {},
+  "Kim Jung-hyun": {
+   "p": "/sJ6G1FKU46RCSB3fxPG2o5Q3CGn.jpg"
+  },
+  "Cho Jung-seok": {
+   "p": "/pVZHsNj31fNMyWixqg26TA9HjU1.jpg"
+  },
+  "Jung Kyung-ho": {
+   "p": "/fanLZsECF5nDy17HkhcdoLJjPaw.jpg"
+  },
+  "Kim Dae-myung": {
+   "p": "/aDBoiB6lfSFB3aKOopnp7Lau9mc.jpg"
+  },
+  "Jeon Mi-do": {
+   "p": "/5di7RaZamjLPRqSVlvjUlXgVKm4.jpg"
+  },
+  "Shin Hyun-been": {
+   "p": "/lU0yMFh5KgOEWZRThLYbB6ZI1hE.jpg"
+  },
+  "Kim Soo-hyun": {
+   "p": "/q24P4pmtWGhe08T7rTkoDc5EC1p.jpg"
+  },
+  "Park Sung-hoon": {
+   "p": "/nSF8VW2IoZcAA910gKQxbu01umk.jpg"
+  },
+  "Lee Ju-bin": {
+   "p": "/rO9UM65KgxfacCY3IsrHheOFBpZ.jpg"
+  },
+  "Kim Kap-soo": {
+   "p": "/u5Y4oC2qKPD2Xsw5JsC8vHQRo8s.jpg"
+  },
+  "Jang Young-woo": {
+   "p": "/zIiN8yUPDEfcUdbGwxUZwsiWfku.jpg"
+  },
+  "Park Ji-eun": {
+   "p": "/yMaHWq53gkopF0LWqPbHy7DDy5O.jpg"
+  },
+  "Kim So-hyun": {
+   "p": "/jrRXistOzBtfRkvf3WrxSmyDKBY.jpg"
+  },
+  "Oh Jung-se": {
+   "p": "/oIqRAdI5e777odhOJl6e4Jc9ADj.jpg"
+  },
+  "Heo Sung-tae": {
+   "p": "/j65kOkZ8RjGVuwNHjuIVbSD49tB.jpg"
+  },
+  "Tae Won-seok": {
+   "p": "/9OB8p1XSJO32bUPp1PZvL79vhQA.jpg"
+  },
+  "Lee Dae-il": {},
+  "Sim Na-yeon": {
+   "p": "/tEUsE7BEo6rIbEpw6qGb64Yub9h.jpg"
+  }
+ }
 }
