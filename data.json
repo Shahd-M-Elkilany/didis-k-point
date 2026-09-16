@@ -23,7 +23,54 @@
    "title": "A Bona Fide Killer",
    "status": "L",
    "year": 2026,
-   "country": "KR"
+   "country": "KR",
+   "tmdbId": 294095,
+   "summary": "A seemingly ordinary working mother secretly lives as a legendary sniper who delivers justice where the law fails. After returning from a three-year hiatus, she must balance protecting her family with eliminating dangerous criminals, all while a determined journalist and a relentless detective close in on her hidden identity.",
+   "episodes": 14,
+   "firstAir": "2026-07-31",
+   "lastAir": "2026-09-12",
+   "network": "MBC",
+   "cast": [
+    "Kong Hyo-jin",
+    "Jung Jun-won",
+    "Lee Sang-yi",
+    "Sung Dong-il",
+    "Moo Jin-sung",
+    "Lee Eun-saem"
+   ],
+   "roles": [
+    "Yoo Bo-na",
+    "Kwon Tae-sung",
+    "Lee Dong-jin",
+    "Kim Bong-pal",
+    "Gi Yeong-do",
+    "Kwon Se-ah"
+   ],
+   "crew": [
+    {
+     "name": "YOON",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Eun-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoon Jong-ho",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Eun-hee",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/e9ziA4Y6md4Ytr62r5y9vRdv4ll.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=bqBRG54y3X0",
+     "title": "Teaser [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "agent-kim",
@@ -5998,6 +6045,28 @@
   "Lee Dae-il": {},
   "Sim Na-yeon": {
    "p": "/tEUsE7BEo6rIbEpw6qGb64Yub9h.jpg"
+  },
+  "Kong Hyo-jin": {
+   "p": "/u2ZDHJOHRkgzY0dpaORitoZjF4F.jpg"
+  },
+  "Jung Jun-won": {
+   "p": "/iuVXuY4kyP3IP14aivYGMqZv0gF.jpg"
+  },
+  "Sung Dong-il": {
+   "p": "/9VLRIvOyQSHkpJaeaBcmHzcEUQn.jpg"
+  },
+  "Moo Jin-sung": {
+   "p": "/4q6G7ols81nkXRuY5F2gebhFTfY.jpg"
+  },
+  "Lee Eun-saem": {
+   "p": "/6zv1p5MNhJq24AfFPRXd4b2ejQB.jpg"
+  },
+  "YOON": {},
+  "Kim Eun-hee": {
+   "p": "/hpD4tMq2MvgEYikQHb4V76TqP6f.jpg"
+  },
+  "Yoon Jong-ho": {
+   "p": "/xs3oBxF7VKgBEJoq84meGz0Y3m8.jpg"
   }
  }
 }
