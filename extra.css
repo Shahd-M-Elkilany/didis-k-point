@@ -1,0 +1,78 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Didi's K-point — the additions
+   Ditched status, Didi's Picks, films, the one-score control and the
+   shortlist drop target. Loads last, after style.css and chrome.css.
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  --ash:#8C7A80;          /* ditched — the colour of walking away */
+  --on-ash:#FBF4E7;
+}
+
+/* ── ditched ────────────────────────────────────────────────── */
+.stat.d{background:linear-gradient(140deg,#6E5A62,#3B2C33)}
+.chip.d[aria-pressed="true"]{background:var(--ash); border-color:var(--ash); color:var(--on-ash)}
+/* a ditched cover is quieter than the rest — it's a show you left */
+.card:has(.stamp[style*="--ash"]) .cover .slab{filter:saturate(.45) brightness(.8)}
+
+/* ── Didi's Picks ───────────────────────────────────────────── */
+.chip.pickchip[aria-pressed="true"]{background:var(--gold); border-color:var(--gold);
+  color:var(--coal)}
+.cover.picked{box-shadow:0 10px 24px #3a102047, inset 0 0 0 1px #00000047,
+  0 0 0 2px var(--gold)}
+.card:hover .cover.picked{box-shadow:0 18px 32px #3a10205e, inset 0 0 0 1px #00000047,
+  0 0 0 2px var(--gold)}
+.pickmark{position:absolute; z-index:9; top:14px; left:14px; width:26px; height:26px;
+  display:grid; place-items:center; border-radius:50%; background:var(--gold);
+  color:var(--coal); font-size:13px; line-height:1; box-shadow:0 2px 6px #00000073}
+.pickbanner{position:absolute; z-index:4; top:0; left:0; right:0; padding:7px 10px;
+  text-align:center; background:var(--gold); color:var(--coal);
+  font-family:"Jost",sans-serif; text-transform:uppercase; letter-spacing:.26em;
+  font-size:9px; font-weight:500}
+.r-hero:has(.pickbanner){padding-top:54px}
+.pickstrip{margin-bottom:34px}
+.pickstrip .grid.flat{max-width:none; margin:0; padding:0;
+  grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:18px 14px}
+.pickstrip .sec-h h2{color:var(--gold-d); letter-spacing:.24em}
+.gridfull{grid-column:1/-1}
+
+/* ── films ──────────────────────────────────────────────────── */
+.filmmark{position:absolute; z-index:9; bottom:56px; right:14px;
+  font-family:"Jost",sans-serif; text-transform:uppercase; letter-spacing:.2em;
+  font-size:8px; padding:3px 8px; border-radius:40px; background:#170710b3;
+  color:var(--gold-l); border:1px solid var(--gold-d)}
+
+/* ── one score for the lot ──────────────────────────────────── */
+.overallrow{display:none; align-items:center; gap:12px; margin-bottom:20px;
+  padding:14px 16px; border:1px dashed var(--gold-d); background:var(--paper-2)}
+body.editing .overallrow{display:flex}
+.overallrow input{width:90px; border:1px solid var(--gold-d); background:var(--sheet);
+  padding:8px 12px; font-family:"DM Mono",monospace; font-size:15px; text-align:center}
+.overallrow .dim{opacity:.7}
+.growinput{flex:1 1 240px; min-width:0; border:1px solid var(--gold-d);
+  background:var(--paper-2); padding:9px 13px; font-family:"Jost",sans-serif; font-size:14px}
+
+/* ── the missing-picture placeholder ────────────────────────── */
+.missingpic{aspect-ratio:4/3; border:1px dashed var(--gold-d); background:var(--paper-2);
+  display:grid; place-items:center; text-align:center; padding:10px;
+  font-family:"Jost",sans-serif; font-size:9.5px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ink-soft)}
+
+/* ── dragging a cover onto the shortlist ────────────────────── */
+.card{cursor:grab}
+.card:active{cursor:grabbing}
+body.dragging-card .shortlist{outline:2px dashed var(--gold); outline-offset:6px}
+.shortlist.dropping{outline:2px solid var(--gold); outline-offset:6px;
+  background:var(--paper-2)}
+.shortlist.dropping::after{content:"Drop it on the list";
+  position:absolute; inset:0; z-index:5; display:grid; place-items:center;
+  background:#fbf4e7d9; font-family:"Jost",sans-serif; text-transform:uppercase;
+  letter-spacing:.24em; font-size:11px; color:var(--oxblood)}
+
+/* ── the two pages still to come ────────────────────────────── */
+.page .pagehead .fine b{color:var(--oxblood)}
+
+@media (max-width:560px){
+  .overallrow{flex-wrap:wrap; gap:9px}
+  .pickstrip .grid.flat{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+  .pickmark{width:22px; height:22px; font-size:11px; top:12px; left:12px}
+}

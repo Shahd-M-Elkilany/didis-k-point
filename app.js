@@ -2,8 +2,11 @@
    Didi's K-point
    Data lives in data.json. Edits are held in memory, kept in this
    browser as a draft, and committed to GitHub when you hit Save.
-   Pictures you add wait in IndexedDB until that commit, so closing
-   the tab before saving doesn't lose them.
+   Pictures wait in IndexedDB until that commit.
+
+   The colour tokens written into inline styles below (--pink, --blue
+   and friends) are defined in style.css. Re-pointing them there
+   re-skins every cover without touching this file.
    ═══════════════════════════════════════════════════════════════ */
 
 const CRITERIA = [["plot","Plot"],["sequence","Sequence"],["characters","Characters"],
@@ -12,22 +15,21 @@ const STATUS = {
   W:{name:"Watched",  cls:"w", color:"var(--pink)",   on:"var(--on-pink)"},
   S:{name:"Watching", cls:"s", color:"var(--yellow)", on:"var(--on-yellow)"},
   L:{name:"Watchlist",cls:"l", color:"var(--blue)",   on:"var(--on-blue)"},
-  U:{name:"Unsure",   cls:"u", color:"var(--violet)", on:"var(--on-violet)"}
+  U:{name:"Unsure",   cls:"u", color:"var(--violet)", on:"var(--on-violet)"},
+  D:{name:"Ditched",  cls:"d", color:"var(--ash)",    on:"var(--on-ash)"}
 };
-const ORDER = ["W","S","L","U"];
+const ORDER = ["W","S","L","U","D"];
 const COUNTRIES = [["KR","Korean"],["CN","Chinese"],["JP","Japanese"],["OT","Other"]];
+const KINDS = [["series","Series"],["film","Film"]];
 const MONTHS = ["January","February","March","April","May","June",
                 "July","August","September","October","November","December"];
 const LAYOUTS = [["standard","Standard"],["poster","Poster-led"],
                  ["essay","Photo essay"],["quick","Quick take"]];
 const VIEWS = [["library","The library"],["diary","The diary"],["ranking","The ranking"],
-               ["numbers","The numbers"],["next","Next up"]];
+               ["numbers","The numbers"],["people","The people"],
+               ["suggest","Suggestions"],["next","Next up"]];
 const BANDS = [["45","4.5 and up"],["4","4 to 4.5"],["35","3.5 to 4"],
                ["3","3 to 3.5"],["lt3","Under 3"],["none","Not scored"]];
-const SORTS = {year:"Newest first",yearAsc:"Oldest first",watched:"Recently watched",
-  mine:"My score",imdb:"IMDb score",over:"Loved more than IMDb",under:"Loved less than IMDb",
-  c0:"Best plot",c1:"Best sequence",c2:"Best characters",c3:"Best chemistry",
-  c4:"Biggest impact",az:"A to Z"};
 const INK_PAIRS = [
   ["var(--pink)","var(--on-pink)","var(--yellow)"],
   ["var(--blue)","var(--on-blue)","var(--pink)"],
@@ -43,14 +45,15 @@ const GH_KEY    = "kpoint.gh";
 const TRASH_KEY = "kpoint.trash";
 
 let DATA = { name:"Didi's K-point", shows:[], scratch:[] };
-let pending = Object.create(null);     // path -> {blob, url, done}
-let trash = [];                        // repo files to delete on the next save
-const broken = new Set();              // paths that failed to load
+let pending = Object.create(null);
+let trash = [];
+const broken = new Set();
 let dirty = false, editMode = false, openId = null, view = "library";
 let rankSort = {key:"avg", dir:-1};
 let gh = { owner:"", repo:"", branch:"main", token:"" };
 const state = { q:"", status:"all", genre:"all", net:"all", year:"all",
-                watched:"all", country:"all", band:"all", todo:false, sort:"year" };
+                watched:"all", country:"all", band:"all", kind:"all",
+                todo:false, picks:false, sort:"year" };
 
 const $  = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -76,12 +79,14 @@ function gapOf(s){
   return Math.round((m*2 - s.imdb)*10)/10;
 }
 function countryName(c){ const f = COUNTRIES.find(x=>x[0]===c); return f ? f[1] : ""; }
+function isFilm(s){ return s.kind === "film"; }
 function watchLabel(w){
   if (!w) return "";
   const [y,m] = String(w).split("-");
   return m ? MONTHS[parseInt(m,10)-1]+" "+y : y;
 }
 function needsWriteUp(s){ return (s.status==="W") && myScore(s)!=null && !(s.review||"").trim(); }
+function thisYear(){ return new Date().getFullYear(); }
 
 function mediaSrc(p){
   if (!p) return null;
@@ -182,8 +187,16 @@ async function idbAll(){
   window.addEventListener("hashchange", route);
   route();
   updateSaveBar();
-  setTimeout(moveTools, 60);      // after add-ons have staged their buttons
+  setTimeout(moveTools, 60);
+  setTimeout(nagIfStranded, 2600);
 })();
+
+/* Your work only exists in this browser until it's committed. Say so. */
+function nagIfStranded(){
+  if (!dirty) return;
+  if (!gh.token) toast("Nothing is saved to GitHub yet — Studio → GitHub to connect");
+  else toast("You have unsaved work — hit Save to GitHub");
+}
 
 /* ── routing ────────────────────────────────────────────────── */
 function route(){
@@ -209,21 +222,19 @@ function markDirty(){
 function saveTrash(){ try { localStorage.setItem(TRASH_KEY, JSON.stringify(trash)); } catch(e){} }
 function unsavedPics(){ return Object.keys(pending).filter(p=>!pending[p].done).length; }
 function updateSaveBar(){
-  const pendingWork = dirty || trash.length>0;
-  $("#saveBar").classList.toggle("on", pendingWork);
+  const work = dirty || trash.length>0;
+  $("#saveBar").classList.toggle("on", work);
   const n = unsavedPics(), d = trash.length;
-  const extra = [
-    n ? n+" picture"+(n>1?"s":"")+" waiting" : "",
-    d ? d+" to remove" : ""
-  ].filter(Boolean).join(" · ");
+  const extra = [ n ? n+" picture"+(n>1?"s":"")+" waiting" : "",
+                  d ? d+" to remove" : "" ].filter(Boolean).join(" · ");
   $("#saveCount").textContent = gh.token
     ? "Unsaved" + (extra ? " · "+extra : "")
     : "Unsaved — connect GitHub to publish";
-
   const btn = $("#studioBtn"), line = $("#studioState");
-  if (btn) btn.classList.toggle("dirty", pendingWork);
-  if (line) line.textContent = pendingWork
-    ? "You have unsaved changes" + (extra ? " — "+extra+"." : ".")
+  if (btn) btn.classList.toggle("dirty", work);
+  if (line) line.textContent = work
+    ? (gh.token ? "You have unsaved changes"+(extra?" — "+extra+".":".")
+                : "Nothing is saved to GitHub yet. Connect below, then Save.")
     : "Everything published.";
 }
 
@@ -251,17 +262,18 @@ function renderChrome(){
   $("#mastRange").textContent = yrs.length ? Math.min(...yrs)+" — "+Math.max(...yrs) : "—";
   $("#mastCount").textContent = all.length;
 
-  const c = {W:0,S:0,L:0,U:0};
+  const c = {W:0,S:0,L:0,U:0,D:0};
   all.forEach(s=>{ if (c[s.status]!=null) c[s.status]++; });
   $("#statBand").innerHTML =
     ORDER.map(k=>`<div class="stat ${STATUS[k].cls}"><span class="n">${c[k]}</span><span class="k">${STATUS[k].name}</span></div>`).join("") +
-    `<div class="band-note">${all.filter(s=>myScore(s)!=null).length} scored · ${all.filter(s=>(s.review||"").trim()).length} written up · ${all.filter(needsWriteUp).length} waiting on words</div>`;
+    `<div class="band-note">${all.filter(s=>myScore(s)!=null).length} scored · ${all.filter(s=>(s.review||"").trim()).length} written up · ${all.filter(s=>s.pick).length} picks</div>`;
 
   if (!$("#statusChips").children.length){
     $("#statusChips").innerHTML =
       `<button class="chip" data-st="all" aria-pressed="true" type="button">All</button>` +
       ORDER.map(k=>`<button class="chip ${STATUS[k].cls}" data-st="${k}" aria-pressed="false" type="button">${STATUS[k].name}</button>`).join("") +
-      `<button class="chip todo" id="todoChip" aria-pressed="false" type="button">✎ Needs a write-up</button>`;
+      `<button class="chip todo" id="todoChip" aria-pressed="false" type="button">✎ Needs a write-up</button>` +
+      `<button class="chip pickchip" id="pickChip" aria-pressed="false" type="button">★ Didi's Picks</button>`;
   }
 
   const g=new Set(), n=new Set(), y=new Set(), w=new Set(), co=new Set();
@@ -276,6 +288,7 @@ function renderChrome(){
   fill("#netSel","All platforms",[...n].sort().map(v=>[v,v]));
   fill("#yearSel","All release years",[...y].sort((a,b)=>b-a).map(v=>[v,"Released "+v]));
   fill("#bandSel","Any score",BANDS);
+  fill("#kindSel","Series and films",KINDS);
   const coOpts = COUNTRIES.filter(([k])=>co.has(k)).map(([k,l])=>[k,l]);
   coOpts.push(["untagged","Not tagged yet"]);
   fill("#countrySel","Anywhere",coOpts);
@@ -303,7 +316,7 @@ function fill(sel, allLabel, pairs){
   if (prev && [...el.options].some(o=>o.value===prev)) el.value = prev;
 }
 
-/* ── which filters are on, and how to switch one off ────────── */
+/* ── active filters ─────────────────────────────────────────── */
 function labelOf(sel, val){
   const el = $(sel); if (!el) return val;
   const o = [...el.options].find(x=>x.value===val);
@@ -311,31 +324,31 @@ function labelOf(sel, val){
 }
 function activeFilters(){
   const out = [];
-  if (state.status!=="all") out.push({ k:"status", label:STATUS[state.status].name,
+  if (state.status!=="all") out.push({ label:STATUS[state.status].name,
     off:()=>{ state.status="all";
       $$("#statusChips .chip[data-st]").forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.st==="all"))); }});
-  if (state.todo) out.push({ k:"todo", label:"Needs a write-up",
+  if (state.todo) out.push({ label:"Needs a write-up",
     off:()=>{ state.todo=false; $("#todoChip").setAttribute("aria-pressed","false"); }});
-  [["year","#yearSel"],["watched","#watchedSel"],["genre","#genreSel"],
-   ["net","#netSel"],["country","#countrySel"],["band","#bandSel"]].forEach(([k,sel])=>{
-    if (state[k]!=="all") out.push({ k, label:labelOf(sel,state[k]),
+  if (state.picks) out.push({ label:"Didi's Picks",
+    off:()=>{ state.picks=false; $("#pickChip").setAttribute("aria-pressed","false"); }});
+  [["year","#yearSel"],["watched","#watchedSel"],["genre","#genreSel"],["net","#netSel"],
+   ["country","#countrySel"],["band","#bandSel"],["kind","#kindSel"]].forEach(([k,sel])=>{
+    if (state[k]!=="all") out.push({ label:labelOf(sel,state[k]),
       off:()=>{ state[k]="all"; const e=$(sel); if(e) e.value="all"; }});
   });
-  if (state.q.trim()) out.push({ k:"q", label:'"'+state.q.trim()+'"',
+  if (state.q.trim()) out.push({ label:'"'+state.q.trim()+'"',
     off:()=>{ state.q=""; $("#q").value=""; }});
   return out;
 }
 function renderPills(){
   const act = activeFilters();
-  const n = act.filter(a=>a.k!=="q").length;
   const badge = $("#filterCount");
+  const n = act.filter(a=>!a.label.startsWith('"')).length;
   badge.textContent = n; badge.hidden = n===0;
   $("#pills").innerHTML = act.map((a,i)=>
     `<button class="pill" type="button" data-pill="${i}"><b>${esc(a.label)}</b><i>×</i></button>`).join("")
     + (act.length>1 ? `<button class="pill clearall" type="button" data-clearall>Clear all</button>` : "");
-  $$("#pills [data-pill]").forEach(b=>b.onclick = ()=>{
-    act[+b.dataset.pill].off(); renderView();
-  });
+  $$("#pills [data-pill]").forEach(b=>b.onclick = ()=>{ act[+b.dataset.pill].off(); renderView(); });
   const ca = $("#pills [data-clearall]");
   if (ca) ca.onclick = clearFilters;
 }
@@ -357,10 +370,15 @@ function visible(base){
   const q = state.q.trim().toLowerCase();
   const list = (base||DATA.shows).filter(s=>{
     if (state.todo && !needsWriteUp(s)) return false;
+    if (state.picks && !s.pick) return false;
     if (state.status!=="all" && s.status!==state.status) return false;
     if (state.genre!=="all" && !genresOf(s).includes(state.genre)) return false;
     if (state.net!=="all" && !netsOf(s).includes(state.net)) return false;
     if (state.year!=="all" && String(s.year)!==state.year) return false;
+    if (state.kind!=="all"){
+      const k = s.kind || "series";
+      if (k!==state.kind) return false;
+    }
     if (state.country!=="all"){
       if (state.country==="untagged"){ if (s.country) return false; }
       else if (s.country!==state.country) return false;
@@ -372,7 +390,8 @@ function visible(base){
       else if (!w || !w.startsWith(state.watched)) return false;
     }
     if (q){
-      const hay = [s.title,s.network,s.genres,s.review,s.comment,s.summary].join(" ").toLowerCase();
+      const hay = [s.title,s.network,s.genres,s.review,s.comment,s.summary,
+                   (s.cast||[]).join(" "),(s.crew||[]).map(c=>c.name).join(" ")].join(" ").toLowerCase();
       if (!hay.includes(q)) return false;
     }
     return true;
@@ -396,15 +415,22 @@ function visible(base){
 }
 function clearFilters(){
   Object.assign(state,{q:"",status:"all",genre:"all",net:"all",year:"all",
-                       watched:"all",country:"all",band:"all",todo:false});
+                       watched:"all",country:"all",band:"all",kind:"all",todo:false,picks:false});
   $("#q").value="";
-  ["#genreSel","#netSel","#yearSel","#watchedSel","#countrySel","#bandSel"].forEach(s=>{ if($(s)) $(s).value="all"; });
+  ["#genreSel","#netSel","#yearSel","#watchedSel","#countrySel","#bandSel","#kindSel"]
+    .forEach(s=>{ if($(s)) $(s).value="all"; });
   $$("#statusChips .chip").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.st==="all")));
-  const t = $("#todoChip"); if (t) t.setAttribute("aria-pressed","false");
+  ["#todoChip","#pickChip"].forEach(s=>{ const e=$(s); if(e) e.setAttribute("aria-pressed","false"); });
   renderView();
 }
 
 /* ── views ──────────────────────────────────────────────────── */
+function notReady(name){
+  $("#page").innerHTML = `
+    <div class="pagehead"><h2 class="pagetitle">${esc(name)}</h2>
+    <p class="fine">This page is built by the research desk and isn't installed yet — it arrives
+    with the next version of <b>enrich.js</b>. The tab is here so the page has somewhere to land.</p></div>`;
+}
 function renderView(){
   const lib = (view==="library" || view==="next");
   $("#controls").classList.toggle("hidden", !lib);
@@ -417,6 +443,8 @@ function renderView(){
   else if (view==="diary") renderDiary();
   else if (view==="ranking") renderRanking();
   else if (view==="numbers") renderNumbers();
+  else if (view==="people") (window.renderPeople ? renderPeople() : notReady("The people"));
+  else if (view==="suggest") (window.renderSuggest ? renderSuggest() : notReady("Suggestions"));
 }
 
 function coverHTML(s){
@@ -424,13 +452,15 @@ function coverHTML(s){
   const st = STATUS[s.status]||STATUS.L;
   const ms = myScore(s);
   const poster = mediaSrc(s.poster);
-  return `<div class="cover" style="color:${poster?"var(--paper)":fg}">
+  return `<div class="cover${s.pick?" picked":""}${isFilm(s)?" film":""}" style="color:${poster?"var(--paper)":fg}">
     <div class="slab" style="background:${bg};background-image:linear-gradient(118deg, ${accent} 0 34%, transparent 34%)"></div>
     ${imgTag(s.poster,"","")}
     <div class="dots"></div>
     <span class="yr"${poster?' style="background:var(--ink);color:var(--paper);border-color:var(--ink)"':""}>${s.year||"TBA"}</span>
     <span class="stamp" style="background:${st.color};color:${st.on}">${st.name}</span>
     ${poster?"":`<div class="ttl">${esc(s.title)}</div>`}
+    ${s.pick?`<span class="pickmark" title="Didi's pick">★</span>`:""}
+    ${isFilm(s)?`<span class="filmmark">Film</span>`:""}
     ${ms!=null?`<span class="mypick">My score</span><span class="score">${ms}</span>`:""}
   </div>`;
 }
@@ -444,9 +474,11 @@ function cardHTML(s){
   if (s.progress) bits.push(esc(s.progress));
   if ((s.review||"").trim()) bits.push("✎ written up");
   const st = STATUS[s.status]||STATUS.L;
-  return `<div class="card" data-id="${esc(s.id)}" tabindex="0" role="button">
+  return `<div class="card" data-id="${esc(s.id)}" tabindex="0" role="button" draggable="true">
     <div class="quick">
       <button type="button" data-cycle="${esc(s.id)}" title="Change status">${st.name}</button>
+      <button type="button" data-pickit="${esc(s.id)}" title="Didi's pick">${s.pick?"★":"☆"}</button>
+      <button type="button" data-tolist="${esc(s.id)}" title="Add to the shortlist">+ List</button>
       <button type="button" data-setposter="${esc(s.id)}" title="${s.poster?"Replace the poster":"Set the poster"}">Poster</button>
       ${s.poster?`<button type="button" data-clearposter="${esc(s.id)}" title="Remove the poster">✕</button>`:""}
     </div>
@@ -460,14 +492,26 @@ function renderGrid(){
   const list = visible(), total = DATA.shows.length;
   $("#countLine").innerHTML =
     `<span class="big">${list.length}</span><span class="label">of ${total} titles shown</span>`;
-  $("#grid").innerHTML = list.length ? list.map(cardHTML).join("")
-    : `<p class="empty">Nothing matches that. Try clearing a filter.</p>`;
+
+  // Didi's Picks for whatever genre you're looking at
+  let picksBlock = "";
+  if (!state.picks){
+    const inGenre = state.genre!=="all";
+    const picks = DATA.shows.filter(s=>s.pick && (!inGenre || genresOf(s).includes(state.genre)));
+    if (picks.length) picksBlock =
+      `<div class="pickstrip">
+         <div class="sec-h"><h2>★ Didi's Picks${inGenre?" in "+esc(state.genre):""}</h2><div class="rule"></div></div>
+         <div class="grid flat">${picks.slice(0,8).map(cardHTML).join("")}</div>
+       </div>`;
+  }
+  $("#grid").innerHTML = (picksBlock ? `<div class="gridfull">${picksBlock}</div>` : "") +
+    (list.length ? list.map(cardHTML).join("") : `<p class="empty">Nothing matches that. Try clearing a filter.</p>`);
 }
 
 /* ── the diary ──────────────────────────────────────────────── */
 function renderDiary(){
   const logged = DATA.shows.filter(s=>s.watched);
-  const unlogged = DATA.shows.filter(s=>s.status==="W" && !s.watched).length;
+  const unlogged = DATA.shows.filter(s=>s.status==="W" && !s.watched);
   const byYear = {};
   logged.forEach(s=>{
     const [y,m] = String(s.watched).split("-");
@@ -481,7 +525,9 @@ function renderDiary(){
     <div class="pagehead">
       <h2 class="pagetitle">The diary</h2>
       <p class="fine">What you actually finished, month by month. ${logged.length} logged${
-        unlogged ? ` · ${unlogged} watched shows have no date yet — add one in any article` : ""}.</p>
+        unlogged.length ? ` · ${unlogged.length} watched shows have no date yet` : ""}.</p>
+      ${unlogged.length?`<button class="btn editonly" id="datemAll" type="button">
+        Date the ${unlogged.length} undated as ${thisYear()}</button>`:""}
     </div>
     ${years.length ? years.map(y=>{
       const months = Object.keys(byYear[y]).sort().reverse();
@@ -501,7 +547,7 @@ function renderDiary(){
               const ms = myScore(s);
               return `<button class="tl-card" type="button" data-open="${esc(s.id)}">
                 <span class="tl-dot" style="background:${INK_PAIRS[hash(s.id)%INK_PAIRS.length][0]}"></span>
-                <span class="tl-name">${esc(s.title)}</span>
+                <span class="tl-name">${esc(s.title)}${s.pick?" ★":""}</span>
                 ${ms!=null?`<span class="tl-score mono">${ms}</span>`:""}
               </button>`;
             }).join("")}</div>
@@ -509,6 +555,14 @@ function renderDiary(){
         }).join("")}</div>
       </section>`;
     }).join("") : `<p class="empty">Nothing dated yet. Open any show and set the month you finished it.</p>`}`;
+
+  const da = $("#datemAll");
+  if (da) da.onclick = ()=>{
+    if (!confirm("Give all "+unlogged.length+" undated watched shows the year "+thisYear()+"?")) return;
+    unlogged.forEach(s=>{ s.watched = String(thisYear()); });
+    markDirty(); renderChrome(); renderDiary();
+    toast("Dated — open any of them to set the month");
+  };
 }
 
 /* ── the ranking ────────────────────────────────────────────── */
@@ -522,8 +576,7 @@ function renderRanking(){
     if (k==="avg") return myScore(s);
     if (k==="imdb") return s.imdb??null;
     if (k==="gap") return gapOf(s);
-    const i = +k.slice(1);
-    return Array.isArray(s.scores) ? s.scores[i] : null;
+    return Array.isArray(s.scores) ? s.scores[+k.slice(1)] : null;
   };
   const rows = DATA.shows.filter(s=>myScore(s)!=null).sort((a,b)=>{
     const av = val(a,rankSort.key), bv = val(b,rankSort.key);
@@ -547,7 +600,7 @@ function renderRanking(){
           const g = gapOf(s);
           return `<tr data-open="${esc(s.id)}">
             <td class="num mono dim">${i+1}</td>
-            <td class="l"><b>${esc(s.title)}</b>${s.country?` <span class="tag">${esc(s.country)}</span>`:""}</td>
+            <td class="l"><b>${esc(s.title)}</b>${s.pick?' <span class="tag">★</span>':""}${isFilm(s)?' <span class="tag">film</span>':""}</td>
             <td class="num mono dim">${s.year||"—"}</td>
             ${CRITERIA.map((c,ci)=>{
               const v = Array.isArray(s.scores)?s.scores[ci]:null;
@@ -559,9 +612,7 @@ function renderRanking(){
           </tr>`;
         }).join("")}</tbody>
       </table>
-    </div>
-    <p class="fine" style="margin-top:14px"><b>Gap</b> is your score doubled to IMDb's ten-point scale,
-    minus IMDb. Positive means you rated it higher than the crowd.</p>`;
+    </div>`;
 }
 
 /* ── the numbers ────────────────────────────────────────────── */
@@ -612,22 +663,22 @@ function renderNumbers(){
 
   const gaps = all.filter(s=>gapOf(s)!=null).sort((a,b)=>gapOf(b)-gapOf(a));
   const over = gaps.slice(0,5), under = gaps.slice(-5).reverse();
-
   const cc = {};
   all.forEach(s=>{ const k = s.country||"untagged"; cc[k]=(cc[k]||0)+1; });
+  const ditched = all.filter(s=>s.status==="D");
 
   $("#page").innerHTML = `
     <div class="pagehead">
       <h2 class="pagetitle">The numbers</h2>
-      <p class="fine">Your taste, counted. Everything here comes from the ${all.length} titles in the library —
-      ${scored.length} of them scored.</p>
+      <p class="fine">Your taste, counted. Everything here comes from the ${all.length} titles in the
+      library — ${scored.length} of them scored.</p>
     </div>
 
     <div class="tiles">
       <div class="tile"><span class="t-n">${watched.length}</span><span class="t-k">Finished</span></div>
       <div class="tile"><span class="t-n">${avg.toFixed(2)}</span><span class="t-k">Average score</span></div>
       <div class="tile"><span class="t-n">${full.length}</span><span class="t-k">Scored all five ways</span></div>
-      <div class="tile"><span class="t-n">${all.filter(s=>s.status==="L").length}</span><span class="t-k">Still waiting</span></div>
+      <div class="tile"><span class="t-n">${ditched.length}</span><span class="t-k">Ditched</span></div>
     </div>
 
     <div class="twoup">
@@ -641,8 +692,8 @@ function renderNumbers(){
 
     <section class="sec">
       <div class="sec-h"><h2>Which of the five drives your verdict</h2><div class="rule"></div></div>
-      <p class="fine" style="margin-bottom:14px">Averaged across the ${full.length} shows you scored on all five.
-      The one that runs highest is what you forgive a show for; the lowest is what you actually notice.</p>
+      <p class="fine" style="margin-bottom:14px">Averaged across the ${full.length} shows you scored on
+      all five. The one that runs highest is what you forgive a show for; the lowest is what you notice.</p>
       ${bars(critRows,{max:5,fmt:v=>v.toFixed(2)})}
     </section>
 
@@ -672,32 +723,30 @@ function renderNumbers(){
     <section class="sec">
       <div class="sec-h"><h2>You vs. the crowd</h2><div class="rule"></div></div>
       <div class="twoup">
-        <div>
-          <span class="label">You liked these more than everyone else</span>
+        <div><span class="label">You liked these more than everyone else</span>
           <ol class="gaplist">${over.map(s=>`<li><button type="button" data-open="${esc(s.id)}">${esc(s.title)}</button>
-            <span class="mono up">+${gapOf(s).toFixed(1)}</span>
-            <span class="mono dim">${myScore(s).toFixed(1)}×2 vs ${s.imdb}</span></li>`).join("")}</ol>
-        </div>
-        <div>
-          <span class="label">And these you didn't buy</span>
+            <span class="mono up">+${gapOf(s).toFixed(1)}</span></li>`).join("")}</ol></div>
+        <div><span class="label">And these you didn't buy</span>
           <ol class="gaplist">${under.map(s=>`<li><button type="button" data-open="${esc(s.id)}">${esc(s.title)}</button>
-            <span class="mono down">${gapOf(s).toFixed(1)}</span>
-            <span class="mono dim">${myScore(s).toFixed(1)}×2 vs ${s.imdb}</span></li>`).join("")}</ol>
-        </div>
+            <span class="mono down">${gapOf(s).toFixed(1)}</span></li>`).join("")}</ol></div>
       </div>
     </section>
+
+    ${ditched.length?`<section class="sec">
+      <div class="sec-h"><h2>The ones you walked away from</h2><div class="rule"></div></div>
+      <ol class="gaplist">${ditched.map(s=>`<li><button type="button" data-open="${esc(s.id)}">${esc(s.title)}</button>
+        <span class="mono dim">${esc(s.progress||"no note on where you stopped")}</span></li>`).join("")}</ol>
+    </section>`:""}
 
     <section class="sec">
       <div class="sec-h"><h2>Where they're from</h2><div class="rule"></div></div>
       ${bars(Object.entries(cc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({
         k: k==="untagged" ? "Not tagged yet" : countryName(k), v,
         c: k==="untagged" ? "var(--ink-soft)" : "var(--grass)" })))}
-      ${cc.untagged?`<p class="fine" style="margin-top:12px">${cc.untagged} titles have no country yet —
-        filter the library by <b>Not tagged yet</b> to clear them out.</p>`:""}
     </section>`;
 }
 
-/* ── next up, with your own shortlist on top ────────────────── */
+/* ── next up ────────────────────────────────────────────────── */
 function renderNext(){
   const base = DATA.shows.filter(s=>s.status==="L");
   const list = visible(base);
@@ -716,22 +765,21 @@ function renderNext(){
   $("#page").innerHTML = `
     <div class="pagehead">
       <h2 class="pagetitle">Next up</h2>
-      <p class="fine">${base.length} shows you've lined up and not started. Narrow it with the filters
-      above, or let the dice decide.</p>
+      <p class="fine">${base.length} shows you've lined up and not started.</p>
     </div>
 
-    <div class="shortlist">
+    <div class="shortlist" id="shortDrop">
       <div class="sec-h"><h2>Your shortlist</h2><div class="rule"></div>
         <span class="label">${scratch.length||"nothing"} jotted down</span></div>
-      <p class="fine">Anything you've heard about and don't want to forget. This is just a list of
-      names — nothing here has to exist in the library.</p>
+      <p class="fine">Type a name, or <b>drag any cover onto this box</b> from the library or the
+      grid below. Nothing here has to exist in the library.</p>
       ${scratch.length ? `<ol class="slist">${scratch.map((t,i)=>`
         <li>
           <span class="n">${i+1}</span>
           <span class="t" data-sc="${i}" contenteditable="true" spellcheck="false">${esc(t)}</span>
           <button class="mv" type="button" data-up="${i}" title="Move up" ${i===0?"disabled":""}>↑</button>
           <button class="mv" type="button" data-down="${i}" title="Move down" ${i===scratch.length-1?"disabled":""}>↓</button>
-          <button class="promote" type="button" data-prom="${i}" title="Make it a real entry">To library</button>
+          <button class="promote" type="button" data-prom="${i}">To library</button>
           <button class="x" type="button" data-rmsc="${i}" aria-label="Remove">×</button>
         </li>`).join("")}</ol>`
       : `<p class="shortempty">Nothing on it yet.</p>`}
@@ -744,34 +792,48 @@ function renderNext(){
     <div class="sec-h" style="margin-top:38px"><h2>Everything on the watchlist</h2><div class="rule"></div></div>
     <div class="grid flat">${list.length?list.map(cardHTML).join(""):`<p class="empty">Nothing matches.</p>`}</div>`;
 
-  const addSc = ()=>{
-    const box = $("#scIn"), v = (box.value||"").trim();
+  const addSc = (text)=>{
+    const box = $("#scIn");
+    const v = (text!=null ? text : (box ? box.value : "")).trim();
     if (!v) return;
+    if ((DATA.scratch||[]).includes(v)) return toast(v+" is already on the shortlist");
     DATA.scratch = (DATA.scratch||[]).concat([v]);
     markDirty(); renderNext();
-    const nb = $("#scIn"); if (nb) nb.focus();
+    const nb = $("#scIn"); if (nb && text==null) nb.focus();
   };
-  const ab = $("#scAdd"); if (ab) ab.onclick = addSc;
+  const ab = $("#scAdd"); if (ab) ab.onclick = ()=>addSc();
   const ib = $("#scIn");
   if (ib) ib.addEventListener("keydown", e=>{ if (e.key==="Enter"){ e.preventDefault(); addSc(); }});
 
+  // drag a cover in
+  const drop = $("#shortDrop");
+  if (drop){
+    drop.addEventListener("dragover", e=>{
+      if (!e.dataTransfer.types.includes("text/kpoint-id")) return;
+      e.preventDefault(); drop.classList.add("dropping");
+    });
+    drop.addEventListener("dragleave", ()=>drop.classList.remove("dropping"));
+    drop.addEventListener("drop", e=>{
+      drop.classList.remove("dropping");
+      const id = e.dataTransfer.getData("text/kpoint-id");
+      if (!id) return;
+      e.preventDefault();
+      const s = get(id);
+      if (s){ addSc(s.title); toast(s.title+" added to the shortlist"); }
+    });
+  }
+
   $$("#page [data-rmsc]").forEach(b=>b.onclick = ()=>{
-    DATA.scratch.splice(+b.dataset.rmsc,1); markDirty(); renderNext();
-  });
+    DATA.scratch.splice(+b.dataset.rmsc,1); markDirty(); renderNext(); });
   $$("#page [data-up]").forEach(b=>b.onclick = ()=>{
     const i = +b.dataset.up; if (i<1) return;
-    const a = DATA.scratch;
-    [a[i-1],a[i]] = [a[i],a[i-1]]; markDirty(); renderNext();
-  });
+    const a = DATA.scratch; [a[i-1],a[i]] = [a[i],a[i-1]]; markDirty(); renderNext(); });
   $$("#page [data-down]").forEach(b=>b.onclick = ()=>{
     const i = +b.dataset.down, a = DATA.scratch;
     if (i>=a.length-1) return;
-    [a[i+1],a[i]] = [a[i],a[i+1]]; markDirty(); renderNext();
-  });
+    [a[i+1],a[i]] = [a[i],a[i+1]]; markDirty(); renderNext(); });
   $$("#page [data-sc]").forEach(el=>{
-    el.addEventListener("input", ()=>{
-      DATA.scratch[+el.dataset.sc] = el.innerText.trim(); markDirty();
-    });
+    el.addEventListener("input", ()=>{ DATA.scratch[+el.dataset.sc] = el.innerText.trim(); markDirty(); });
     el.addEventListener("keydown", e=>{ if (e.key==="Enter"){ e.preventDefault(); el.blur(); }});
   });
   $$("#page [data-prom]").forEach(b=>b.onclick = ()=>{
@@ -799,7 +861,6 @@ function renderReader(){
   wireArticle(s);
 }
 function closeShow(){ go(view); }
-
 function ytId(u){
   const m = String(u).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([A-Za-z0-9_-]{11})/);
   return m ? m[1] : null;
@@ -815,6 +876,7 @@ function articleHTML(s){
 
   const facts = [];
   if (s.year) facts.push(s.year);
+  if (isFilm(s)) facts.push("Film");
   if (s.country) facts.push(countryName(s.country));
   if (s.network) facts.push(s.network);
   if (s.imdb) facts.push("IMDb "+s.imdb);
@@ -825,6 +887,7 @@ function articleHTML(s){
   const hero = `
     <article class="r-hero" style="background:${bg}; color:${fg}">
       <div class="dots"></div>
+      ${s.pick?`<div class="pickbanner">★ Didi's Pick</div>`:""}
       <div class="r-kicker" data-edit="genres" data-empty="Add genres, comma separated">${esc(s.genres||"")}</div>
       <h1 class="r-title" data-edit="title">${esc(s.title)}</h1>
       <div class="r-facts">${facts.map(f=>`<span class="fact">${esc(f)}</span>`).join("")}</div>
@@ -835,8 +898,7 @@ function articleHTML(s){
     ? `${imgTag(s.poster,"r-poster",s.title+" poster")}
        <div class="row editonly" style="margin-top:12px">
          <button class="btn ghost" id="posterSwap" type="button">Replace poster</button>
-         <button class="btn ghost" id="posterRm" type="button">✕ Remove poster</button>
-       </div>`
+         <button class="btn ghost" id="posterRm" type="button">✕ Remove poster</button></div>`
     : `${posterBroken?`<p class="noyet editonly" style="margin-top:26px">The poster for this one is missing — it was added but never saved to GitHub. Clear it below, then drop a new one in.</p>`:""}
        <div class="drop editonly" id="posterDrop" style="margin-top:26px">Add a poster — click, or drag one in</div>
        ${posterBroken?`<div class="row editonly" style="margin-top:10px">
@@ -846,8 +908,11 @@ function articleHTML(s){
     <section class="sec editonly">
       <div class="sec-h"><h2>Details</h2><div class="rule"></div></div>
       <div class="fgrid">
+        <label class="field"><span class="label">Series or film</span>
+          <select id="f-kind">${KINDS.map(([k,l])=>
+            `<option value="${k}"${(s.kind||"series")===k?" selected":""}>${l}</option>`).join("")}</select></label>
         <label class="field"><span class="label">Released</span>
-          <input id="f-year" type="number" min="1990" max="2040" value="${s.year||""}"></label>
+          <input id="f-year" type="number" min="1950" max="2040" value="${s.year||""}"></label>
         <label class="field"><span class="label">From</span>
           <select id="f-country"><option value="">Not tagged</option>${COUNTRIES.map(([k,l])=>
             `<option value="${k}"${s.country===k?" selected":""}>${l}</option>`).join("")}</select></label>
@@ -858,7 +923,7 @@ function articleHTML(s){
         <label class="field"><span class="label">Status</span>
           <select id="f-status">${ORDER.map(k=>`<option value="${k}"${s.status===k?" selected":""}>${STATUS[k].name}</option>`).join("")}</select></label>
         <label class="field"><span class="label">Watched — year</span>
-          <input id="f-wyear" type="number" min="2000" max="2040" placeholder="2026"
+          <input id="f-wyear" type="number" min="1990" max="2040" placeholder="${thisYear()}"
             value="${s.watched?String(s.watched).split("-")[0]:""}"></label>
         <label class="field"><span class="label">Watched — month</span>
           <select id="f-wmonth"><option value="">—</option>${MONTHS.map((m,i)=>{
@@ -870,6 +935,10 @@ function articleHTML(s){
           <input id="f-progress" value="${esc(s.progress||"")}" placeholder="ep 9"></label>
         <label class="field"><span class="label">Note</span>
           <input id="f-comment" value="${esc(s.comment||"")}" placeholder="Downloaded, film not a series…"></label>
+      </div>
+      <div class="row" style="margin-top:16px">
+        <button class="btn" id="pickToggle" type="button" aria-pressed="${!!s.pick}">
+          ${s.pick?"★ A Didi's Pick":"☆ Make it a pick"}</button>
       </div>
       <div class="sec-h" style="margin-top:26px"><h2>Article layout</h2><div class="rule"></div></div>
       <div class="laypick">${LAYOUTS.map(([v,n])=>
@@ -888,6 +957,13 @@ function articleHTML(s){
   const scores = `
     <section class="sec">
       <div class="sec-h"><h2>The scorecard</h2><div class="rule"></div></div>
+      <div class="row editonly overallrow">
+        <span class="label">One score for the lot</span>
+        <input id="f-overall" type="number" step="0.1" min="0" max="5" placeholder="4.2"
+          value="${ms!=null?ms:""}">
+        <button class="btn" id="applyOverall" type="button">Set all five</button>
+        <span class="label dim">then nudge any bar</span>
+      </div>
       <div class="scores">${scoreRows}</div>
       <div class="verdict">
         <span class="bignum" id="bigAvg">${ms!=null?ms:"—"}<small>/5</small></span>
@@ -896,7 +972,6 @@ function articleHTML(s){
         <span class="row editonly" style="margin-left:auto">
           <button class="btn ghost" id="clearScores" type="button">Clear marks</button></span>
       </div>
-      ${!Array.isArray(s.scores)&&ms!=null?`<p class="fine" style="margin-top:12px">Only an overall score came across from the sheet. Drag the bars to break it into the five marks.</p>`:""}
     </section>`;
 
   const review = (s.review||"").trim();
@@ -918,17 +993,12 @@ function articleHTML(s){
         if (!src && !editMode) return "";
         return `<figure>
           ${src ? imgTag(g.src,"",g.caption||s.title)
-                : `<div style="aspect-ratio:4/3;border:2px dashed var(--ink);background:var(--paper-2);
-                     display:grid;place-items:center;text-align:center;padding:10px;
-                     font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:.12em;
-                     text-transform:uppercase;color:var(--ink-soft)">Missing —<br>remove it</div>`}
-          <button class="x" type="button" data-rmimg="${i}" aria-label="Remove this picture"
-            title="Remove this picture">×</button>
+                : `<div class="missingpic">Missing —<br>remove it</div>`}
+          <button class="x" type="button" data-rmimg="${i}" aria-label="Remove this picture">×</button>
           <figcaption data-edit="gallery.${i}.caption" data-empty="Caption">${esc(g.caption||"")}</figcaption>
         </figure>`;
       }).join("")}</div>`:(!editMode?`<p class="noyet">No stills yet.</p>`:"")}
       <div class="drop editonly" id="galDrop" style="margin-top:14px">Add pictures — click, drag them in, or just paste</div>
-      ${gallery.length?`<p class="label editonly" style="margin-top:10px">The ✕ on a picture removes it.</p>`:""}
     </section>`;
 
   const vids = (s.videos||[]);
@@ -944,8 +1014,7 @@ function articleHTML(s){
           <button class="x editonly" type="button" data-rmvid="${i}" aria-label="Remove video">×</button></div>`;
       }).join("")}</div>`:(!editMode?`<p class="noyet">No trailer yet.</p>`:"")}
       <div class="row editonly" style="margin-top:14px">
-        <input id="vidUrl" placeholder="Paste a YouTube or trailer link"
-          style="flex:1 1 240px; min-width:0; border:2px solid var(--ink); background:var(--paper-2); padding:8px 10px">
+        <input id="vidUrl" placeholder="Paste a YouTube or trailer link" class="growinput">
         <button class="btn" id="vidAdd" type="button">Add</button>
       </div>
     </section>`;
@@ -1004,18 +1073,50 @@ function wireArticle(s){
   bind("#f-year", v=>s.year = v?parseInt(v,10):undefined);
   bind("#f-imdb", v=>s.imdb = v?parseFloat(v):undefined);
   on("#f-country","change",e=>{ s.country = e.target.value||undefined; markDirty(); renderReader(); });
-  on("#f-status","change",e=>{ s.status=e.target.value; markDirty(); renderReader(); });
+  on("#f-kind","change",e=>{ s.kind = e.target.value==="film" ? "film" : undefined; markDirty(); renderReader(); });
+
+  /* Status change also dates it, so the diary fills itself in */
+  on("#f-status","change",e=>{
+    s.status = e.target.value;
+    if (s.status==="W" && !s.watched){
+      const now = new Date();
+      s.watched = now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
+      toast("Dated as "+watchLabel(s.watched)+" — change it in Details");
+    }
+    markDirty(); renderChrome(); renderReader();
+  });
+
+  /* The month alone is enough now — the year fills itself in */
   const setWatched = ()=>{
-    const y = ($("#f-wyear")||{}).value, m = ($("#f-wmonth")||{}).value;
+    const ye = $("#f-wyear"), me = $("#f-wmonth");
+    let y = ye ? ye.value.trim() : "";
+    const m = me ? me.value : "";
+    if (!y && m){ y = String(thisYear()); if (ye) ye.value = y; }
     s.watched = y ? (m ? y+"-"+m : y) : undefined;
-    markDirty();
+    markDirty(); renderChrome();
   };
   on("#f-wyear","input",setWatched);
   on("#f-wmonth","change",setWatched);
 
+  on("#pickToggle","click",()=>{
+    if (s.pick) delete s.pick; else s.pick = true;
+    markDirty(); renderChrome(); renderReader();
+    toast(s.pick ? "Added to Didi's Picks" : "Removed from Didi's Picks");
+  });
+
   $$("[data-lay]").forEach(b=>b.addEventListener("click",()=>{
-    s.layout = b.dataset.lay; markDirty(); renderReader();
-  }));
+    s.layout = b.dataset.lay; markDirty(); renderReader(); }));
+
+  /* one number, all five marks — then nudge whichever you like */
+  on("#applyOverall","click",()=>{
+    const v = parseFloat(($("#f-overall")||{}).value);
+    if (isNaN(v) || v<0 || v>5) return toast("Give it a number between 0 and 5");
+    const r = Math.round(v*10)/10;
+    s.scores = [r,r,r,r,r];
+    delete s.myRate;
+    markDirty(); renderReader();
+    toast("All five set to "+r.toFixed(1)+" — drag any bar to adjust");
+  });
 
   $$("#reader [data-bar]").forEach(bar=>{
     const idx = +bar.dataset.bar;
@@ -1055,8 +1156,7 @@ function wireArticle(s){
     toast("Picture removed — hit Save to publish that");
   }));
   $$("[data-rmvid]").forEach(b=>b.addEventListener("click",()=>{
-    s.videos.splice(+b.dataset.rmvid,1); markDirty(); renderReader();
-  }));
+    s.videos.splice(+b.dataset.rmvid,1); markDirty(); renderReader(); }));
   on("#vidAdd","click",()=>{
     let u = ($("#vidUrl").value||"").trim(); if (!u) return;
     if (!/^https?:\/\//i.test(u)) u = "https://"+u;
@@ -1078,6 +1178,7 @@ function wireArticle(s){
       else addGallery(s, files);
     });
   }
+  if (window.decorateArticle) try { decorateArticle(s); } catch(e){}
 }
 function setScore(s, idx, val){
   if (!Array.isArray(s.scores)) s.scores = [null,null,null,null,null];
@@ -1117,14 +1218,10 @@ function forgetImage(path){
     if (!wasCommitted) idbDel(path);
   }
   broken.delete(path);
-  if (wasCommitted && /^images\//.test(path) && !trash.includes(path)){
-    trash.push(path); saveTrash();
-  }
+  if (wasCommitted && /^images\//.test(path) && !trash.includes(path)){ trash.push(path); saveTrash(); }
 }
 function removePoster(s){
-  forgetImage(s.poster);
-  delete s.poster;
-  markDirty();
+  forgetImage(s.poster); delete s.poster; markDirty();
   if (openId) renderReader(); else renderView();
   toast("Poster removed — hit Save to publish that");
 }
@@ -1164,21 +1261,25 @@ function setEdit(v){
 }
 function typingInField(){
   const a = document.activeElement;
-  return a && (a.tagName==="INPUT" || a.tagName==="TEXTAREA" || a.tagName==="SELECT"
-            || a.isContentEditable);
+  return a && (a.tagName==="INPUT"||a.tagName==="TEXTAREA"||a.tagName==="SELECT"||a.isContentEditable);
+}
+function addToShortlist(title){
+  if (!title) return;
+  DATA.scratch = DATA.scratch || [];
+  if (DATA.scratch.includes(title)) return toast(title+" is already on the shortlist");
+  DATA.scratch.push(title); markDirty();
+  toast(title+" added to the shortlist");
+  if (view==="next") renderNext();
 }
 function wireChrome(){
   $("#tabs").addEventListener("click", e=>{
-    const b = e.target.closest("[data-view]"); if (b) go(b.dataset.view);
-  });
+    const b = e.target.closest("[data-view]"); if (b) go(b.dataset.view); });
   $("#editToggle").addEventListener("click", ()=>{
-    setEdit(!editMode);
-    closeSheet("studioSheet");
+    setEdit(!editMode); closeSheet("studioSheet");
     if (editMode && !gh.token) toast("Connect GitHub when you're ready to publish");
     if (openId) renderReader(); else renderView();
   });
 
-  // studio + filters
   $("#studioBtn").addEventListener("click", ()=>openSheet("studioSheet"));
   $("#studioClose").addEventListener("click", ()=>closeSheet("studioSheet"));
   $("#studioSheet").addEventListener("click", e=>{ if (e.target===$("#studioSheet")) closeSheet("studioSheet"); });
@@ -1190,7 +1291,7 @@ function wireChrome(){
 
   document.addEventListener("click", e=>{
     const o = e.target.closest("[data-open]");
-    if (o && o.dataset.open){ go("show/"+o.dataset.open); }
+    if (o && o.dataset.open) go("show/"+o.dataset.open);
     const so = e.target.closest("[data-sort]");
     if (so){
       const k = so.dataset.sort;
@@ -1204,7 +1305,19 @@ function wireChrome(){
     if (cyc){ e.stopPropagation();
       const s = get(cyc.dataset.cycle);
       s.status = ORDER[(ORDER.indexOf(s.status)+1)%ORDER.length];
+      if (s.status==="W" && !s.watched){
+        const n = new Date();
+        s.watched = n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0");
+      }
       markDirty(); renderChrome(); renderView(); return; }
+    const pk = e.target.closest("[data-pickit]");
+    if (pk){ e.stopPropagation();
+      const s = get(pk.dataset.pickit);
+      if (s.pick) delete s.pick; else s.pick = true;
+      markDirty(); renderChrome(); renderView();
+      toast(s.pick ? s.title+" is a pick" : s.title+" is no longer a pick"); return; }
+    const tl = e.target.closest("[data-tolist]");
+    if (tl){ e.stopPropagation(); addToShortlist(get(tl.dataset.tolist).title); return; }
     const cp = e.target.closest("[data-clearposter]");
     if (cp){ e.stopPropagation(); removePoster(get(cp.dataset.clearposter)); return; }
     const sp = e.target.closest("[data-setposter]");
@@ -1232,8 +1345,18 @@ function wireChrome(){
   $("#grid").addEventListener("keydown", cardKey);
   $("#page").addEventListener("keydown", cardKey);
 
+  /* dragging a cover: onto the shortlist, or a picture onto a cover */
+  const dragStart = e=>{
+    const card = e.target.closest("[data-id]"); if (!card) return;
+    e.dataTransfer.setData("text/kpoint-id", card.dataset.id);
+    e.dataTransfer.setData("text/plain", (get(card.dataset.id)||{}).title || "");
+    e.dataTransfer.effectAllowed = "copy";
+    document.body.classList.add("dragging-card");
+  };
+  const dragEnd = ()=>document.body.classList.remove("dragging-card");
   const dragOver = e=>{
     if (!editMode) return;
+    if (!e.dataTransfer.types.includes("Files")) return;
     const card = e.target.closest("[data-id]"); if (!card) return;
     e.preventDefault(); card.classList.add("dragover");
   };
@@ -1241,23 +1364,29 @@ function wireChrome(){
   const dropOn = e=>{
     if (!editMode) return;
     const card = e.target.closest("[data-id]"); if (!card) return;
-    e.preventDefault(); card.classList.remove("dragover");
     const f = [...(e.dataTransfer.files||[])].find(x=>x.type.startsWith("image/"));
+    card.classList.remove("dragover");
     if (!f || tooBig(f)) return;
+    e.preventDefault();
     const s = get(card.dataset.id);
     forgetImage(s.poster);
     s.poster = queueImage(s.id, f); markDirty(); renderView();
     toast("Poster set for "+s.title+" — hit Save to publish it");
   };
   ["#grid","#page"].forEach(sel=>{
-    $(sel).addEventListener("dragover", dragOver);
-    $(sel).addEventListener("dragleave", dragLeave);
-    $(sel).addEventListener("drop", dropOn);
+    const el = $(sel);
+    el.addEventListener("dragstart", dragStart);
+    el.addEventListener("dragend", dragEnd);
+    el.addEventListener("dragover", dragOver);
+    el.addEventListener("dragleave", dragLeave);
+    el.addEventListener("drop", dropOn);
   });
 
   $("#statusChips").addEventListener("click", e=>{
     const todo = e.target.closest("#todoChip");
     if (todo){ state.todo = !state.todo; todo.setAttribute("aria-pressed",String(state.todo)); renderView(); return; }
+    const pc = e.target.closest("#pickChip");
+    if (pc){ state.picks = !state.picks; pc.setAttribute("aria-pressed",String(state.picks)); renderView(); return; }
     const b = e.target.closest("[data-st]"); if (!b) return;
     state.status = b.dataset.st;
     $$("#statusChips .chip[data-st]").forEach(c=>c.setAttribute("aria-pressed", String(c===b)));
@@ -1265,18 +1394,18 @@ function wireChrome(){
   });
   let qt=null;
   $("#q").addEventListener("input", e=>{
-    clearTimeout(qt); qt=setTimeout(()=>{ state.q=e.target.value; renderView(); },140);
-  });
+    clearTimeout(qt); qt=setTimeout(()=>{ state.q=e.target.value; renderView(); },140); });
   const sel = {"#genreSel":"genre","#netSel":"net","#yearSel":"year","#watchedSel":"watched",
-               "#countrySel":"country","#bandSel":"band","#sortSel":"sort"};
-  Object.keys(sel).forEach(k=>{ const el=$(k); if(el) el.addEventListener("change", e=>{ state[sel[k]]=e.target.value; renderView(); }); });
+               "#countrySel":"country","#bandSel":"band","#kindSel":"kind","#sortSel":"sort"};
+  Object.keys(sel).forEach(k=>{ const el=$(k);
+    if(el) el.addEventListener("change", e=>{ state[sel[k]]=e.target.value; renderView(); }); });
 
   $("#addBtn").addEventListener("click", ()=>{
     closeSheet("studioSheet");
     const t = prompt("What's it called?"); if (!t || !t.trim()) return;
     let id = slugify(t), n = 1;
     while (get(id)) { n++; id = slugify(t)+"-"+n; }
-    DATA.shows.unshift({ id, title:t.trim(), year:new Date().getFullYear(), status:"S" });
+    DATA.shows.unshift({ id, title:t.trim(), year:thisYear(), status:"S" });
     setEdit(true); markDirty(); renderChrome(); go("show/"+id);
   });
 
@@ -1290,8 +1419,7 @@ function wireChrome(){
     }
     if ((e.metaKey||e.ctrlKey) && e.key==="s"){ e.preventDefault(); saveAll(); return; }
     if ((e.key==="e"||e.key==="E") && !e.metaKey && !e.ctrlKey && !e.altKey && !typingInField()){
-      e.preventDefault();
-      setEdit(!editMode);
+      e.preventDefault(); setEdit(!editMode);
       if (openId) renderReader(); else renderView();
       toast(editMode ? "Edit mode on" : "Edit mode off");
     }
@@ -1310,20 +1438,15 @@ function wireChrome(){
   $("#saveBtn").addEventListener("click", saveAll);
   $("#discardBtn").addEventListener("click", async ()=>{
     if (!confirm("Throw away every unsaved change and reload from GitHub?")) return;
-    localStorage.removeItem(DRAFT_KEY);
-    localStorage.removeItem(TRASH_KEY);
+    localStorage.removeItem(DRAFT_KEY); localStorage.removeItem(TRASH_KEY);
     for (const p of Object.keys(pending)) await idbDel(p);
     trash = []; dirty = false; location.reload();
   });
 }
 
 /* ── GitHub ─────────────────────────────────────────────────── */
-function repoSlug(name){
-  return name.trim().replace(/[^A-Za-z0-9._-]+/g,"-").replace(/^-+|-+$/g,"");
-}
-function onGithubPages(){
-  return /\.github\.io$/i.test(location.hostname) || location.hostname==="localhost";
-}
+function repoSlug(name){ return name.trim().replace(/[^A-Za-z0-9._-]+/g,"-").replace(/^-+|-+$/g,""); }
+function onGithubPages(){ return /\.github\.io$/i.test(location.hostname) || location.hostname==="localhost"; }
 function openGh(){
   $("#ghOwner").value = gh.owner || "";
   $("#ghRepo").value  = gh.repo  || "";
@@ -1342,13 +1465,11 @@ async function connectGh(){
   const branch = $("#ghBranch").value.trim() || "main";
   const token = $("#ghToken").value.trim() || gh.token;
   const say = m => { $("#ghStatus").innerHTML = m; };
-
   if (!owner || !repo || !token){ say("Username, repository and token are all needed."); return; }
   if (repo !== rawRepo){
     $("#ghRepo").value = repo;
     say(`A repository name can't contain spaces or apostrophes, so I've changed it to
-         <b>${esc(repo)}</b>. If that isn't right, open your repo on GitHub and copy the
-         name out of the address bar. Then hit Connect again.`);
+         <b>${esc(repo)}</b>. Hit Connect again.`);
     return;
   }
   say("Checking…");
@@ -1360,13 +1481,11 @@ async function connectGh(){
     say(onGithubPages()
       ? "Couldn't reach GitHub. Check your internet connection and try again."
       : `This page can't talk to GitHub — the request was blocked before it left the browser.
-         Saving only works on your live <b>github.io</b> site, not on a preview or a file
-         opened from your computer.`);
+         Saving only works on your live <b>github.io</b> site.`);
     return;
   }
   if (!r.ok){
-    say(r.status===404
-        ? `No repository called <b>${esc(owner)}/${esc(repo)}</b> that this token can see.`
+    say(r.status===404 ? `No repository called <b>${esc(owner)}/${esc(repo)}</b> that this token can see.`
       : r.status===401 ? "That token was rejected. It may have expired — make a new one."
       : r.status===403 ? `The token reached GitHub but isn't allowed in. It needs
            <b>Contents: Read and write</b> on this repository.`
@@ -1375,9 +1494,9 @@ async function connectGh(){
   }
   gh = {owner, repo, branch, token};
   localStorage.setItem(GH_KEY, JSON.stringify(gh));
-  say("Connected. Your changes can publish now.");
+  say("Connected. Hit <b>Save to GitHub</b> now to publish everything you've done so far.");
   updateSaveBar();
-  toast("Connected to "+owner+"/"+repo);
+  toast("Connected — now hit Save to GitHub");
 }
 function ghHeaders(g){
   return { Authorization:"Bearer "+((g||gh).token), Accept:"application/vnd.github+json",
@@ -1436,7 +1555,6 @@ async function saveAll(){
       pending[todo[i]].done = true;
       await idbDel(todo[i]);
     }
-
     btn.textContent = "Saving…";
     DATA.updated = new Date().toISOString().slice(0,10);
     await putFile("data.json", b64text(JSON.stringify(DATA,null,1)+"\n"), "Update the journal");
@@ -1458,12 +1576,15 @@ async function saveAll(){
     localStorage.removeItem(DRAFT_KEY);
     updateSaveBar();
     toast(todo.length
-      ? "Published — pictures take about a minute to show up for everyone else"
+      ? "Published "+todo.length+" picture(s) — they appear for everyone in about a minute"
       : "Published — the site updates in about a minute");
     renderChrome(); renderView();
     if (openId) renderReader();
   } catch(err){
     toast(String(err.message).slice(0,140));
+    alert("Save failed:\n\n" + err.message +
+          "\n\nNothing was lost — your work is still in this browser. " +
+          "Check the token has Contents: Read and write on this repository.");
   } finally {
     btn.disabled = false; btn.textContent = "Save to GitHub";
   }
@@ -1475,5 +1596,5 @@ function toast(msg){
   const t = $("#toast");
   t.textContent = msg; t.classList.add("on");
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(()=>t.classList.remove("on"), 2600);
+  toastTimer = setTimeout(()=>t.classList.remove("on"), 2800);
 }

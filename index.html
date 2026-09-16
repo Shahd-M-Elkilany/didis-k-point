@@ -15,10 +15,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&family=Jost:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="chrome.css">
+<link rel="stylesheet" href="extra.css">
 </head>
 <body>
 
-<!-- motifs used across the page -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="crest" viewBox="0 0 64 64">
     <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
@@ -27,14 +27,6 @@
       <path d="M32 40c7-6 16-6 22-1-5 7-15 9-22 5z"/>
     </g>
     <circle cx="32" cy="20" r="3.4" fill="currentColor"/>
-  </symbol>
-  <symbol id="sprig" viewBox="0 0 64 34">
-    <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M6 17h52"/></g>
-    <g fill="currentColor" opacity=".85">
-      <path d="M18 17c0-5 4-8 9-8-1 5-4 8-9 8z"/><path d="M18 17c0 5 4 8 9 8-1-5-4-8-9-8z"/>
-      <path d="M46 17c0-5-4-8-9-8 1 5 4 8 9 8z"/><path d="M46 17c0 5-4 8-9 8 1-5 4-8 9-8z"/>
-    </g>
-    <circle cx="32" cy="17" r="4.4" fill="currentColor"/>
   </symbol>
 </svg>
 
@@ -66,7 +58,7 @@
   <div class="controls-in">
     <label class="search">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6"></circle><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.6"></path></svg>
-      <input id="q" type="search" placeholder="Search titles, genres, write-ups…" autocomplete="off">
+      <input id="q" type="search" placeholder="Search titles, cast, genres, write-ups…" autocomplete="off">
     </label>
     <button class="btn" id="filterBtn" type="button" aria-haspopup="dialog">
       Filters<span class="fcount" id="filterCount" hidden>0</span>
@@ -123,6 +115,7 @@
     <div class="fgroup">
       <span class="label">What it is</span>
       <div class="selrow">
+        <select class="sel wide" id="kindSel" aria-label="Series or film"></select>
         <select class="sel wide" id="genreSel" aria-label="Filter by genre"></select>
         <select class="sel wide" id="netSel" aria-label="Filter by platform"></select>
         <select class="sel wide" id="countrySel" aria-label="Filter by country"></select>
@@ -161,7 +154,7 @@
     <p class="fine">Your token is kept in this browser only — it never goes into the repo and nobody else can read it. Make a <b>fine-grained</b> token scoped to just this repository, with <b>Contents: Read and write</b>.</p>
     <div class="fgrid">
       <label class="field"><span class="label">GitHub username</span>
-        <input id="ghOwner" placeholder="shahd" autocomplete="off"></label>
+        <input id="ghOwner" placeholder="Shahd-M-Elkilany" autocomplete="off"></label>
       <label class="field"><span class="label">Repository</span>
         <input id="ghRepo" placeholder="didis-k-point" autocomplete="off"></label>
       <label class="field"><span class="label">Branch</span>
