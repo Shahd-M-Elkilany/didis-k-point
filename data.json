@@ -2986,7 +2986,53 @@
    "network": "Netflix",
    "genres": "Comedy, Suspense, Crime",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 202783,
+   "summary": "When one accidental killing leads to another, an ordinary young man finds himself stuck in an endless cat-and-mouse chase with a shrewd detective.",
+   "episodes": 8,
+   "firstAir": "2024-02-09",
+   "lastAir": "2024-02-09",
+   "cast": [
+    "Choi Woo-shik",
+    "Son Suk-ku",
+    "Lee Hee-jun",
+    "Kwon Da-ham"
+   ],
+   "roles": [
+    "Lee Tang",
+    "Jang Nan-gam",
+    "Song Chon",
+    "Ahn Yong-jae"
+   ],
+   "crew": [
+    {
+     "name": "Kim Da-min",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Chang-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Chang-hee",
+     "job": "Director"
+    },
+    {
+     "name": "Jung Su-jin",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Shon Seung-ae",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/a-killer-paradox-1789602969317-aqmk.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=X2rXQ0rEfPI",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "wonderful-world",
@@ -6253,6 +6299,21 @@
   "Kim Mi-sook": {
    "p": "/cRq8LIJTFsMaiIk54aoCscWHtqA.jpg"
   },
-  "Park Gun-ho": {}
+  "Park Gun-ho": {},
+  "Son Suk-ku": {
+   "p": "/natZWFVBAWLKWCYebgVGywHtsME.jpg"
+  },
+  "Lee Hee-jun": {
+   "p": "/4slyXnHbKgzmeyJNetBSORgDDEF.jpg"
+  },
+  "Kwon Da-ham": {
+   "p": "/ulInuoKvagzuCPmuRNQiFyHLFLv.jpg"
+  },
+  "Kim Da-min": {},
+  "Lee Chang-hee": {
+   "p": "/6d1j13WsqUV39yfY8QB6MUbycV9.jpg"
+  },
+  "Jung Su-jin": {},
+  "Shon Seung-ae": {}
  }
 }
