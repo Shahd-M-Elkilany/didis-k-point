@@ -3699,7 +3699,57 @@
    "network": "KBS",
    "genres": "Crime, Horror, Romance, Fantasy, Drama",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 235577,
+   "summary": "A cruel and vicious judge, who wields power only for herself, meets a warm and cheerful detective who puts the victims first.",
+   "episodes": 14,
+   "seasons": 2,
+   "firstAir": "2024-09-21",
+   "lastAir": "2024-11-02",
+   "cast": [
+    "Park Shin-hye",
+    "Kim Jae-young",
+    "Kim Ah-young",
+    "Kim In-kwon",
+    "Kim Hye-hwa",
+    "Kim Ji-hoon"
+   ],
+   "roles": [
+    "Kang Bit-na",
+    "Han Da-on",
+    "Lee Ah-rong",
+    "Koo Man-do",
+    "Kim So-young",
+    "Park Dong-hun"
+   ],
+   "crew": [
+    {
+     "name": "Jo Yi-soo",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Jin-pyo",
+     "job": "Director"
+    },
+    {
+     "name": "Jo Yi-soo",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/the-judge-from-hell-1789603124866-lroz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=xvec_vioks8",
+     "title": "Trailer [Subtitled]"
+    }
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
   },
   {
    "id": "spice-up-our-love",
@@ -6974,6 +7024,25 @@
   "Mo Wan-il": {
    "p": "/asDAdFbVyrcpI7IuLbXWS1apOxy.jpg"
   },
-  "Shon Ho-young": {}
+  "Shon Ho-young": {},
+  "Park Shin-hye": {
+   "p": "/5wyerOQUW0Ej7Xs8eqfwdoJgV7E.jpg"
+  },
+  "Kim Jae-young": {
+   "p": "/s6qcQ7rvKOjMZOsxcl1KgYLHIiz.jpg"
+  },
+  "Kim Ah-young": {
+   "p": "/mIRYdYJMUMtfBrIjH0l4va6dJHz.jpg"
+  },
+  "Kim Hye-hwa": {
+   "p": "/pCwGRkimaHXcv7MOn20cgJrUCAU.jpg"
+  },
+  "Kim Ji-hoon": {
+   "p": "/rXuAZ7PLorLTSHVUNXCQFElJxcp.jpg"
+  },
+  "Jo Yi-soo": {},
+  "Park Jin-pyo": {
+   "p": "/5AIebaONbgdmuRq9q5SY9ku9to.jpg"
+  }
  }
 }
