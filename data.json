@@ -9,7 +9,54 @@
    "title": "The East Palace",
    "status": "L",
    "year": 2026,
-   "country": "KR"
+   "country": "KR",
+   "tmdbId": 279323,
+   "summary": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
+   "episodes": 8,
+   "firstAir": "2026-07-17",
+   "lastAir": "2026-07-17",
+   "network": "Netflix",
+   "cast": [
+    "Nam Joo-hyuk",
+    "Roh Yoon-seo",
+    "Cho Seung-woo",
+    "Jang Young-nam"
+   ],
+   "roles": [
+    "Gu-cheon",
+    "Saeng-gang",
+    "King (Lee Yeon)",
+    "Queen Dowager"
+   ],
+   "crew": [
+    {
+     "name": "Seo Jae-won",
+     "job": "Creator"
+    },
+    {
+     "name": "Kwon So-ra",
+     "job": "Creator"
+    },
+    {
+     "name": "Choi Jung-kyu",
+     "job": "Director"
+    },
+    {
+     "name": "Kwon So-ra",
+     "job": "Writer"
+    },
+    {
+     "name": "Seo Jae-won",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=wBUkNE1l9DU",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
   },
   {
    "id": "overdo",
@@ -6130,6 +6177,17 @@
   },
   "Yi Jun": {
    "p": "/9FZyG9rus9ECgXQF3ZPGPfRtri8.jpg"
-  }
+  },
+  "Nam Joo-hyuk": {
+   "p": "/kuLC8pR24kbEIAjfg3WpKW41Kcl.jpg"
+  },
+  "Roh Yoon-seo": {
+   "p": "/A67wGhTozfav5saZ1Umi5f98Ezb.jpg"
+  },
+  "Cho Seung-woo": {
+   "p": "/agXysHUmaUdHrEQAZ2ZMvMR5oCU.jpg"
+  },
+  "Seo Jae-won": {},
+  "Kwon So-ra": {}
  }
 }
