@@ -3770,7 +3770,57 @@
    "network": "Disney+",
    "genres": "Drama, Suspense, Horror, Psychological",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 226529,
+   "summary": "In a mysterious shop that sells lamps, the dead may return to the world of the living, while the living may not walk out alive.",
+   "episodes": 8,
+   "firstAir": "2024-12-04",
+   "lastAir": "2024-12-18",
+   "cast": [
+    "Ju Ji-hoon",
+    "Park Bo-young",
+    "Um Tae-goo",
+    "Kim Seol-hyun",
+    "Lee Jung-eun",
+    "Bae Sung-woo"
+   ],
+   "roles": [
+    "Jung Won-young",
+    "Kwon Young-ji",
+    "Kim Hyun-min",
+    "Lee Ji-young",
+    "Jung Yu-hee",
+    "Yang Sung-sik"
+   ],
+   "crew": [
+    {
+     "name": "Kim Hie-won",
+     "job": "Creator"
+    },
+    {
+     "name": "Kang Full",
+     "job": "Creator"
+    },
+    {
+     "name": "Cho Neung-yeon",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Kim Hae-won",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Yu Jae-hyeok",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/light-shop-1789603026865-uhtj.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=wFATeqKxa1Q",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "love-scout",
@@ -6514,6 +6564,30 @@
   },
   "Woo Da-vi": {
    "p": "/rFiZZVNdz3Br9x8ckEtSghlgpoa.jpg"
-  }
+  },
+  "Ju Ji-hoon": {
+   "p": "/7PYfUrBBXhYv5PIsTalJhjbRteg.jpg"
+  },
+  "Um Tae-goo": {
+   "p": "/gUhi5YnUGQQ9k4RKWaVZmw7skgX.jpg"
+  },
+  "Kim Seol-hyun": {
+   "p": "/femMcHRxmj8wRTPP65pSdH0MxfW.jpg"
+  },
+  "Lee Jung-eun": {
+   "p": "/4r3K47UpSmzZ5t9cyTRRqRl9rdz.jpg"
+  },
+  "Bae Sung-woo": {
+   "p": "/qocgfpxNoLWtrbh4JDfZxhn4zSg.jpg"
+  },
+  "Kim Hie-won": {
+   "p": "/sDCxskfmmNidOjV2LwsWh9dAVbN.jpg"
+  },
+  "Kang Full": {
+   "p": "/2DKBBRbPaN3TSXKkWcPxXbTeo8c.jpg"
+  },
+  "Cho Neung-yeon": {},
+  "Kim Hae-won": {},
+  "Yu Jae-hyeok": {}
  }
 }
