@@ -3598,7 +3598,49 @@
    "network": "Netflix",
    "genres": "Drama, Suspense, Crime",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 219652,
+   "summary": "One tranquil summer, a mysterious woman checks into a vacation rental — triggering events that disrupt the lives of the owner and those around him.",
+   "episodes": 8,
+   "firstAir": "2024-08-23",
+   "lastAir": "2024-08-23",
+   "cast": [
+    "Kim Yoon-seok",
+    "Go Min-si",
+    "Lee Jung-eun",
+    "Roh Yoon-seo",
+    "Park Ji-hwan",
+    "Yoon Kye-sang"
+   ],
+   "roles": [
+    "Jeon Yeong-ha",
+    "Yoo Seong-a",
+    "Yoon Bo-min",
+    "Jeon Ui-seon",
+    "Jong-du",
+    "Koo Sang-jun"
+   ],
+   "crew": [
+    {
+     "name": "Mo Wan-il",
+     "job": "Creator"
+    },
+    {
+     "name": "Mo Wan-il",
+     "job": "Director"
+    },
+    {
+     "name": "Shon Ho-young",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/the-frog-1789603107469-zyvj.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=C4wG17oHrM0",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "no-gain-no-love",
@@ -6919,6 +6961,19 @@
   },
   "Kang Eun-kyung": {
    "p": "/vbY4tYNPTSLumuA3PDBywIWGGUI.jpg"
-  }
+  },
+  "Kim Yoon-seok": {
+   "p": "/kScVbOdmlQC8Og8NoTn0UEE1Cq7.jpg"
+  },
+  "Park Ji-hwan": {
+   "p": "/jgydG4s0GsZ2YR5lmjd8T9aawBy.jpg"
+  },
+  "Yoon Kye-sang": {
+   "p": "/1OOGGKuyVOoTQJzjv6yypqzoJHc.jpg"
+  },
+  "Mo Wan-il": {
+   "p": "/asDAdFbVyrcpI7IuLbXWS1apOxy.jpg"
+  },
+  "Shon Ho-young": {}
  }
 }
