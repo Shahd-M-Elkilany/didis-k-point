@@ -3235,7 +3235,45 @@
    "network": "JTBC",
    "genres": "Drama, Romance, Fantasy",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 232616,
+   "summary": "Once blessed with unique superpowers, a family loses their abilities due to modern day problems — until a mysterious woman changes everything.",
+   "episodes": 12,
+   "firstAir": "2024-05-04",
+   "lastAir": "2024-06-09",
+   "cast": [
+    "Jang Ki-yong",
+    "Chun Woo-hee",
+    "Goh Doo-shim",
+    "Claudia Kim",
+    "Park So-i",
+    "Ryu Abel"
+   ],
+   "roles": [
+    "Bok Gwi-ju",
+    "Do Da-hae",
+    "Bok Man-heum",
+    "Bok Dong-hee",
+    "Bok I-na",
+    "Grace Kang"
+   ],
+   "crew": [
+    {
+     "name": "Kang Eun-kyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Jun-seo",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/the-atypical-family-1789603097501-j1rs.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=CotipI30Bx8",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "midnight-romance-in-hagwon",
@@ -6863,6 +6901,24 @@
   "Kim Dae-seung": {
    "p": "/qQN5AUIu8zbbEI7HLLGgQLmaVro.jpg"
   },
-  "손기선": {}
+  "손기선": {},
+  "Jang Ki-yong": {
+   "p": "/Gc3gcQLMCkR3l0nQgQ3nUxVv1u.jpg"
+  },
+  "Goh Doo-shim": {
+   "p": "/kp93ShpiupK6A9c0eLyQVmFHt2m.jpg"
+  },
+  "Claudia Kim": {
+   "p": "/lIP9G93fPfePB1TaFTlcirEybUq.jpg"
+  },
+  "Park So-i": {
+   "p": "/7ZxLsQjvqMyuahnfjjuD6NRLCx4.jpg"
+  },
+  "Ryu Abel": {
+   "p": "/sP9CX0sgskjr5whNPJYfYOUyQMm.jpg"
+  },
+  "Kang Eun-kyung": {
+   "p": "/vbY4tYNPTSLumuA3PDBywIWGGUI.jpg"
+  }
  }
 }
