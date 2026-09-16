@@ -273,15 +273,32 @@ function refreshDesk(){
 }
 
 /* ── TMDB ───────────────────────────────────────────────────── */
+/* TMDB throws the occasional 500 or 429 under load. Those are worth
+   waiting out — a wrong key or a missing title never is. */
 async function tmdb(path, params){
   if (!keys.tmdb) throw new Error("No TMDB key yet — open the research desk and add one.");
   const u = new URL(TMDB+path);
   u.searchParams.set("api_key", keys.tmdb);
   Object.entries(params||{}).forEach(([k,v])=>u.searchParams.set(k,v));
-  const r = await fetch(u);
-  if (r.status===401) throw new Error("TMDB rejected that key.");
-  if (!r.ok) throw new Error("TMDB said "+r.status);
-  return r.json();
+
+  let lastStatus = 0;
+  for (let attempt = 0; attempt < 4; attempt++){
+    if (attempt) await sleep(700 * Math.pow(2, attempt - 1));
+    let r;
+    try { r = await fetch(u); }
+    catch(e){ lastStatus = 0; continue; }
+    if (r.ok) return r.json();
+    lastStatus = r.status;
+    if (r.status === 401) throw new Error("TMDB rejected that key.");
+    if (r.status === 404) throw new Error("TMDB has no record at that address.");
+    if (r.status !== 429 && r.status < 500) throw new Error("TMDB said "+r.status);
+  }
+  throw new Error(lastStatus === 429
+    ? "TMDB is rate-limiting you — wait a minute and run it again."
+    : lastStatus >= 500
+      ? "TMDB is having a wobble (error "+lastStatus+"). It's their end — try again shortly."
+      : "Couldn't reach TMDB. Check your connection.");
+}
 }
 async function searchCandidates(s){
   const q = s.title.replace(/\s*\d+\s*&\s*\d+\s*$/,"").trim();
