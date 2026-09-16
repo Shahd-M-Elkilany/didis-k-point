@@ -3409,7 +3409,53 @@
    "network": "tvN",
    "genres": "Comedy, Romance, Drama",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 211065,
+   "summary": "After 10 years in the US, Hu-young returns to Korea and meets his first love, Hong-ju, at a café by chance. Just as the window into which Peter Pan flew happened to be Wendy's room. Just as the prince happened to find Cinderella's glass shoes. As if nothing had changed in the past 10 years, Hu-young becomes clumsier only in front of Hong-ju. It’s like going back to the age of 19 when he met his first love, Hong-ju. Hu-young and Hong-ju’s days, which have faded a little, begin to turn into vivid rainbow colors again.",
+   "episodes": 8,
+   "firstAir": "2024-07-22",
+   "lastAir": "2024-08-13",
+   "cast": [
+    "Kim So-hyun",
+    "Chae Jong-hyeop",
+    "Yun Ji-on",
+    "Kim Da-som",
+    "Lee Won-jeong",
+    "Hwang Seong-bin"
+   ],
+   "roles": [
+    "Lee Hong-ju",
+    "Kang Hu-young",
+    "Bang Joon-ho",
+    "Kim Hye-ji",
+    "Kwon Sang-pil",
+    "Son Kyung-taek"
+   ],
+   "crew": [
+    {
+     "name": "Song Hyun-wook",
+     "job": "Creator"
+    },
+    {
+     "name": "Nam Ji-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Song Hyun-wook",
+     "job": "Director"
+    },
+    {
+     "name": "Park Geu-ro",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/serendipitys-embrace-1789603066978-ihsp.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=5kZK0oDPG1w",
+     "title": "[Trailer] Serendipity's Embrace | Coming to Viu TOMORROW!"
+    }
+   ]
   },
   {
    "id": "love-next-door",
@@ -6729,6 +6775,25 @@
   "Jo Eun-hye": {},
   "Byun Seung-min": {
    "p": "/nNRZzfolAKyvn7agsUbSvPcG9mq.jpg"
-  }
+  },
+  "Chae Jong-hyeop": {
+   "p": "/eFlwUjihobBpGKeRqGUV3NSZP0G.jpg"
+  },
+  "Kim Da-som": {
+   "p": "/okJ8twG1vnGFX89YUOOy2rgqgun.jpg"
+  },
+  "Lee Won-jeong": {
+   "p": "/hczrrDSomDouv3IH8ujed31qKN7.jpg"
+  },
+  "Hwang Seong-bin": {
+   "p": "/xGxo06uY0XaXnqbIZAmBbtImX4f.jpg"
+  },
+  "Song Hyun-wook": {
+   "p": "/gzgrnSYGH67uIctjlkN5EJGqt7R.jpg"
+  },
+  "Nam Ji-eun": {
+   "p": "/gdpaCCZ9Lgf7Z96IolsJsbO8BLC.jpg"
+  },
+  "Park Geu-ro": {}
  }
 }
