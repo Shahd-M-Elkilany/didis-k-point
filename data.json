@@ -2976,7 +2976,50 @@
    "network": "Disney+",
    "genres": "Drama, Comedy, Suspense, Romance, Action",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 220074,
+   "summary": "A chaebol cop joins forces with a gritty detective to take down criminals with a touch of wealth and a whole lot of wit.",
+   "episodes": 30,
+   "seasons": 2,
+   "firstAir": "2024-01-26",
+   "lastAir": "2026-08-28",
+   "cast": [
+    "Ahn Bo-hyun",
+    "Jung Eun-chae",
+    "Kang Sang-jun",
+    "Kim Shin-bi",
+    "Kim Myung-soo",
+    "Jeong Ga-hee"
+   ],
+   "roles": [
+    "Jin I-soo",
+    "Joo Hye-ra",
+    "Park Joon-young",
+    "Choi Kyung-jin",
+    "Choi Jeong-hun",
+    "Yoon Ji-won"
+   ],
+   "crew": [
+    {
+     "name": "Lee Ok-gyu",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Ba-da",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Jae-hong",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/flex-x-cop-1789603004794-fin6.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=fsRLcPlGsxE",
+     "title": "Teaser Trailer #2 [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "a-killer-paradox",
@@ -6409,6 +6452,22 @@
   "Lee Sang-jun": {
    "p": "/kmc1v6MRTtAshBIM55lcZtulAMt.jpg"
   },
-  "Kim Moon-kyo": {}
+  "Kim Moon-kyo": {},
+  "Kang Sang-jun": {
+   "p": "/ntVm8JzE6eXvfDsvDOY9hQQbEmP.jpg"
+  },
+  "Kim Shin-bi": {
+   "p": "/or6KtPM9qvgBuiXsNImpCUBjMit.jpg"
+  },
+  "Kim Myung-soo": {
+   "p": "/pEAUSMEr5sxC5bHpu6UJnNs6t4W.jpg"
+  },
+  "Jeong Ga-hee": {
+   "p": "/4W8uhfX4Gpy4R4vuBORa0B6izpL.jpg"
+  },
+  "Lee Ok-gyu": {},
+  "Kim Jae-hong": {
+   "p": "/j98WmOxayQ4nLfxyVoKMVioZox0.jpg"
+  }
  }
 }
