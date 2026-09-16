@@ -3173,7 +3173,35 @@
    "network": "SBS",
    "genres": "Suspense, Action, Crime",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 234590,
+   "summary": "Someone causes a narcotics unit detective to become addicted to drugs. What is the connection between them?",
+   "episodes": 14,
+   "firstAir": "2024-05-24",
+   "lastAir": "2024-07-06",
+   "cast": [
+    "Ji Sung",
+    "Jeon Mi-do",
+    "Lee Hyun So",
+    "Kwon Yul",
+    "Kim Kyung-nam",
+    "Lee Sang-jun"
+   ],
+   "roles": [
+    "Jang Jae-gyeong",
+    "Oh Yoon-jin",
+    "Park Joon-Seo (teen)",
+    "Park Tae-jin",
+    "Won Jong-soo",
+    "Kim U-sung"
+   ],
+   "crew": [
+    {
+     "name": "Kim Moon-kyo",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/connection-1789602991428-arsw.jpg"
   },
   {
    "id": "hierarchy",
@@ -6371,6 +6399,16 @@
   },
   "Choi Bo-rim": {},
   "Park Jun-seo": {},
-  "Jo Woong": {}
+  "Jo Woong": {},
+  "Lee Hyun So": {
+   "p": "/aqxYIkZRoiNa55633iUFeiRXqvf.jpg"
+  },
+  "Kwon Yul": {
+   "p": "/rE7kLmUVFxeRqUUMFW8gr5nGi07.jpg"
+  },
+  "Lee Sang-jun": {
+   "p": "/kmc1v6MRTtAshBIM55lcZtulAMt.jpg"
+  },
+  "Kim Moon-kyo": {}
  }
 }
