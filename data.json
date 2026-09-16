@@ -3509,7 +3509,41 @@
    "network": "tvN",
    "genres": "Drama, Musical, Historical",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 214528,
+   "summary": "The 1950s were an era filled with desire and aspiration, despite the aftermath of the Korean War. Jeongnyeon, a girl with a gifted voice, embarks on a journey to become the best actor of gukgeuk, or Korean female classical opera, where she encounters competition, solidarity, and growth.",
+   "episodes": 12,
+   "firstAir": "2024-10-12",
+   "lastAir": "2024-11-17",
+   "cast": [
+    "Kim Tae-ri",
+    "Shin Ye-eun",
+    "Ra Mi-ran",
+    "Jung Eun-chae",
+    "Kim Yoon-hye",
+    "Woo Da-vi"
+   ],
+   "roles": [
+    "Yoon Jeong-nyeon",
+    "Heo Young-seo",
+    "Kang So-bok",
+    "Moon Ok-gyeong",
+    "Seo Hye-rang",
+    "Hong Joo-ran"
+   ],
+   "crew": [
+    {
+     "name": "Pyo Jong-rok",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/jeongnyeon-1789603016442-z0s0.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=oOOdt5DwIpI",
+     "title": "Jeongnyeon: The Star is Born | Official Trailer | Disney+ Singapore"
+    }
+   ]
   },
   {
    "id": "a-virtuous-business",
@@ -6468,6 +6502,18 @@
   "Lee Ok-gyu": {},
   "Kim Jae-hong": {
    "p": "/j98WmOxayQ4nLfxyVoKMVioZox0.jpg"
+  },
+  "Kim Tae-ri": {
+   "p": "/gFofVUeVlIvBJMUv7maHQwWdfsk.jpg"
+  },
+  "Shin Ye-eun": {
+   "p": "/dGJRM6rEdk9NLdryDUg172XK5ip.jpg"
+  },
+  "Ra Mi-ran": {
+   "p": "/45jkWK6vQpQo32FsbGMSDrZig62.jpg"
+  },
+  "Woo Da-vi": {
+   "p": "/rFiZZVNdz3Br9x8ckEtSghlgpoa.jpg"
   }
  }
 }
