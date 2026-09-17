@@ -3115,7 +3115,57 @@
    "network": "Disney+",
    "genres": "Drama, Suspense, Action, Crime",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 210704,
+   "summary": "Set in the 1980s, a husband and wife, both detectives, infiltrate a massive criminal organization responsible for the illegal drug trade between Korea, China, and Japan.",
+   "episodes": 12,
+   "firstAir": "2023-09-27",
+   "lastAir": "2023-10-25",
+   "cast": [
+    "Ji Chang-wook",
+    "Wi Ha-jun",
+    "Im Se-mi",
+    "BIBI",
+    "Im Sung-jae",
+    "Cha Rae-hyung"
+   ],
+   "roles": [
+    "Park Jun-mo",
+    "Jung Gi-cheol",
+    "Yoo Eui-jeong",
+    "Lee Hae-ryeon",
+    "Choi Jeong-bae",
+    "Hong Hee-seong"
+   ],
+   "crew": [
+    {
+     "name": "Jang Min-seok",
+     "job": "Creator"
+    },
+    {
+     "name": "Han Dong-wook",
+     "job": "Creator"
+    },
+    {
+     "name": "Han Dong-wook",
+     "job": "Director"
+    },
+    {
+     "name": "Jang Min-seok",
+     "job": "Writer"
+    },
+    {
+     "name": "Park Geun-buem",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/the-worst-of-evil-1789603525312-b1k4.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=L5qtpG1kqfI",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "strong-girl-namsoon",
@@ -8120,6 +8170,20 @@
    "p": "/tdB0QONQN8Z7nO544tesCrylKor.jpg"
   },
   "Kim Eun-mi": {},
-  "Lee Seul-gi": {}
+  "Lee Seul-gi": {},
+  "BIBI": {
+   "p": "/9Iiul7eoFojB1gorvSjbMnkXRGE.jpg"
+  },
+  "Im Sung-jae": {
+   "p": "/ncRZs8msrPP3oS8KbZsvsXeq4VJ.jpg"
+  },
+  "Cha Rae-hyung": {
+   "p": "/bqChXxA6gkjhkxoZ5qxU8fbwas9.jpg"
+  },
+  "Jang Min-seok": {},
+  "Han Dong-wook": {
+   "p": "/jU4fcYDOOgyjpijnwMmrBoP5GHb.jpg"
+  },
+  "Park Geun-buem": {}
  }
 }
