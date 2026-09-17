@@ -2910,7 +2910,50 @@
    "network": "SBS",
    "genres": "Drama, Suspense, Revenge",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 200707,
+   "summary": "The mysterious disappearance of a girl brings together seven people from all different walks of life. They all have an intertwined connection to her disappearance in the most horrific, unfathomable, and despicable way. As money drives them to their greed, lies, and delirium, they face divine retribution as they struggle for their lives in a picturesque revenge. How far will they go to claim their innocence, and will anyone make it out alive?",
+   "episodes": 33,
+   "seasons": 2,
+   "firstAir": "2023-09-15",
+   "lastAir": "2024-05-18",
+   "cast": [
+    "Uhm Ki-joon",
+    "Hwang Jung-eum",
+    "Lee Joon",
+    "Lee Yu-bi",
+    "Shin Eun-kyung",
+    "Yoon Jong-hoon"
+   ],
+   "roles": [
+    "Matthew Lee",
+    "Geum Ra-hee",
+    "Min Do-hyuk",
+    "Han Mo-ne",
+    "Cha Joo-ran",
+    "Yang Jin-mo"
+   ],
+   "crew": [
+    {
+     "name": "Kim Soon-ok",
+     "job": "Creator"
+    },
+    {
+     "name": "Oh Jun-hyeok",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Soon-ok",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/the-escape-of-the-seven-1789603493256-hawd.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=0-jzWdm99hU",
+     "title": "Official Trailer"
+    }
+   ]
   },
   {
    "id": "twinkling-watermelon",
@@ -7937,6 +7980,22 @@
   "Lee Na-jeong": {
    "p": "/3FtAMi3SwmdpzsXo59CS0ywyEgW.jpg"
   },
-  "Kim Seon-tae": {}
+  "Kim Seon-tae": {},
+  "Hwang Jung-eum": {
+   "p": "/mmGpW7eAtEgIs6nNElmFDI1JErv.jpg"
+  },
+  "Lee Joon": {
+   "p": "/bF3Zg2vzl4wUnFgcPhcS1J3Csxe.jpg"
+  },
+  "Lee Yu-bi": {
+   "p": "/dWJhrhEf9IfT62Qo7bT4j3ab1IE.jpg"
+  },
+  "Shin Eun-kyung": {
+   "p": "/5byW92WgWudOaKHnyevnd4NSy8K.jpg"
+  },
+  "Kim Soon-ok": {
+   "p": "/n7X3tY64qBSWj7qT14lG4IIq08J.jpg"
+  },
+  "Oh Jun-hyeok": {}
  }
 }
