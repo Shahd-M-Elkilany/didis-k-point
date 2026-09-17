@@ -2576,7 +2576,14 @@
      "title": "Official Trailer"
     }
    ],
-   "layout": "standard"
+   "layout": "standard",
+   "scores": [
+    3.8,
+    3.8,
+    3.8,
+    3.8,
+    3.8
+   ]
   },
   {
    "id": "revenant",
