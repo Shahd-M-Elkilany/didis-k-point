@@ -2623,7 +2623,58 @@
    "network": "Disney+",
    "genres": "Suspense, Action, Fantasy",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 126485,
+   "summary": "Children who live in hiding with superpowers, along with their parents who live with painful secrets of the past, face enormous dangers together.",
+   "episodes": 21,
+   "seasons": 2,
+   "firstAir": "2023-08-09",
+   "lastAir": "2023-09-20",
+   "cast": [
+    "Ryu Seung-ryong",
+    "Han Hyo-joo",
+    "Zo In-sung",
+    "Cha Tae-hyun",
+    "Ryoo Seung-bum",
+    "Kim Sung-kyun"
+   ],
+   "roles": [
+    "Jang Ju-won",
+    "Lee Mi-hyun",
+    "Kim Doo-sik",
+    "Jeon Gye-do",
+    "Frank",
+    "Lee Jae-man"
+   ],
+   "crew": [
+    {
+     "name": "Park In-je",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Yoon-seo",
+     "job": "Creator"
+    },
+    {
+     "name": "Kang Full",
+     "job": "Creator"
+    },
+    {
+     "name": "Dalpalan",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Kim Woo-taek",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/vf9SNXNAFqzKBGksFwrXhkg9cb7.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=_dJuI1_G638",
+     "title": "Official Trailer (English Dubbed)"
+    }
+   ]
   },
   {
    "id": "the-killing-vote",
@@ -7527,6 +7578,33 @@
   "Lee Jae-joon": {
    "p": "/6CcBkVT7Mrcmryll7AyzqzpOcER.jpg"
   },
-  "Won Yoo-jung": {}
+  "Won Yoo-jung": {},
+  "Ryu Seung-ryong": {
+   "p": "/p0LjCRqVqgTyvlZScMmsVFCnTIt.jpg"
+  },
+  "Han Hyo-joo": {
+   "p": "/4E7NuJsR7AnMYAefFSHkj4cftdf.jpg"
+  },
+  "Zo In-sung": {
+   "p": "/9TS1cSfetbwsa5T59n5cxn7egKc.jpg"
+  },
+  "Cha Tae-hyun": {
+   "p": "/fzMKBBQaBeK6V0dJnPMWHFaJx8T.jpg"
+  },
+  "Ryoo Seung-bum": {
+   "p": "/xFp1ON5RN9EYw4hQOnqfjWIxjVt.jpg"
+  },
+  "Kim Sung-kyun": {
+   "p": "/pii4fmXdkSEppsHSIhJ9jV5izX1.jpg"
+  },
+  "Park In-je": {
+   "p": "/2lWtsjtqcUzkUm4VAV94d7vIdB1.jpg"
+  },
+  "Park Yoon-seo": {
+   "p": "/nn8tFhG9r9twTVAbf3cwbXWZQTF.jpg"
+  },
+  "Dalpalan": {
+   "p": "/tGH9zerISvma1JfyL1bCSthNcWD.jpg"
+  }
  }
 }
