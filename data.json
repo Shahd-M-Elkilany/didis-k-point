@@ -2621,7 +2621,45 @@
    "network": "Netflix",
    "genres": "Suspense, Fantasy, Romance, Drama",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 196474,
+   "summary": "A grieving woman magically travels through time to 1998, where she meets a man with an uncanny resemblance to her late love.",
+   "episodes": 12,
+   "firstAir": "2023-09-08",
+   "lastAir": "2023-09-08",
+   "cast": [
+    "Ahn Hyo-seop",
+    "Jeon Yeo-bin",
+    "Kang Hoon",
+    "Jang Hye-jin",
+    "Park Hyuk-kwon",
+    "Yun Sang-jeong"
+   ],
+   "roles": [
+    "Nam Si-heon / Koo Yeon-jun",
+    "Kwon Min-ju / Han Jun-hee",
+    "Jung In-gyu",
+    "Bae Mi-yeong",
+    "Bae Chi-won",
+    "Sung Hye-mi"
+   ],
+   "crew": [
+    {
+     "name": "Choi Hyo-bi",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Jin-won",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/a-time-called-you-1789603225751-4rhz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=c_sKheuGE7o",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "the-escape-of-the-seven",
@@ -7171,6 +7209,25 @@
   "Kim Eun-ji": {},
   "Lee Sung-young": {
    "p": "/iyhP97U7gFwLcYwdW52mwj3Y4UR.jpg"
+  },
+  "Ahn Hyo-seop": {
+   "p": "/hVnKQ5WO8MGFrm6ShPmL90NZloV.jpg"
+  },
+  "Kang Hoon": {
+   "p": "/dg2FTdGkacJLyLP8PlsE3Oz93fO.jpg"
+  },
+  "Jang Hye-jin": {
+   "p": "/pZiQXSWwo9F4gncHfa1yw0CQjxk.jpg"
+  },
+  "Park Hyuk-kwon": {
+   "p": "/d4p9iRGNkZUZrFenD0gj0nQN3gR.jpg"
+  },
+  "Yun Sang-jeong": {
+   "p": "/pOwEfgsFJhYQ8PtxtQW0aaeW0nR.jpg"
+  },
+  "Choi Hyo-bi": {},
+  "Kim Jin-won": {
+   "p": "/mbYSjRMavnYh5rcNWCHwAu75dYC.jpg"
   }
  }
 }
