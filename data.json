@@ -2024,7 +2024,57 @@
    "network": "SBS",
    "genres": "Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 154825,
+   "summary": "In disguise as her friend, Ha-ri shows up to a blind date to scare him away. But plans go awry when he turns out to be her CEO — and makes a proposal.",
+   "episodes": 12,
+   "firstAir": "2022-02-28",
+   "lastAir": "2022-04-05",
+   "cast": [
+    "Ahn Hyo-seop",
+    "Kim Se-jeong",
+    "Kim Min-gue",
+    "Seorina",
+    "Lee Duck-hwa",
+    "Kim Kwang-kyu"
+   ],
+   "roles": [
+    "Kang Tae-moo",
+    "Shin Ha-ri",
+    "Cha Sung-hoon",
+    "Jin Young-seo",
+    "Kang Da-goo",
+    "Shin Joong-hae"
+   ],
+   "crew": [
+    {
+     "name": "Hong Bo-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Seon-ho",
+     "job": "Creator"
+    },
+    {
+     "name": "Han Sul-hee",
+     "job": "Creator"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/iLh7L8ZuvgdxFaM9sImyv2iKYLe.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=M-PHcxPyasA",
+     "title": "Business Proposal | Official Trailer | Netflix [ENG SUB]"
+    }
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "watched": "2022"
   },
   {
    "id": "soundtrack-1",
@@ -8184,6 +8234,22 @@
   "Han Dong-wook": {
    "p": "/jU4fcYDOOgyjpijnwMmrBoP5GHb.jpg"
   },
-  "Park Geun-buem": {}
+  "Park Geun-buem": {},
+  "Kim Se-jeong": {
+   "p": "/xGlsWq7iKB2DDNs04CaJEyQV3Vl.jpg"
+  },
+  "Kim Min-gue": {
+   "p": "/w4NojHsHdLGf7LLoT6jfyDcE8K6.jpg"
+  },
+  "Lee Duck-hwa": {
+   "p": "/ysB2JatlYtEHffdujEn7BZuNRXU.jpg"
+  },
+  "Kim Kwang-kyu": {
+   "p": "/5X3oJA1NaesYHeX3LfuC7t3j7VV.jpg"
+  },
+  "Hong Bo-hee": {},
+  "Han Sul-hee": {
+   "p": "/7TbRZP2UL1kPgNd7HGZjWYigvcO.jpg"
+  }
  }
 }
