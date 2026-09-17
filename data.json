@@ -1,7 +1,7 @@
 {
  "name": "Didi's K-point",
  "tagline": "A drama journal",
- "updated": "2026-09-16",
+ "updated": "2026-09-17",
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
@@ -3085,7 +3085,49 @@
    "network": "MBC",
    "genres": "Drama, Suspense",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 227190,
+   "summary": "A mother who unfairly lost her young son, takes revenge against the perpetrator who has been forgiven by the law and heals her wounds.",
+   "episodes": 14,
+   "firstAir": "2024-03-01",
+   "lastAir": "2024-04-13",
+   "cast": [
+    "Kim Nam-ju",
+    "Cha Eun-woo",
+    "Kim Kang-woo",
+    "Im Se-mi",
+    "Yang Hye-ji",
+    "Cha Soo-yeon"
+   ],
+   "roles": [
+    "Eun Soo-hyeon",
+    "Kwon Seon-yul",
+    "Kang Su-ho",
+    "Han Yu-ri",
+    "Hong Soo-jin",
+    "Yoon Hye-geum"
+   ],
+   "crew": [
+    {
+     "name": "Kim Eun-ji",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Sung-young",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Ji-eun",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/wonderful-world-1789603202921-8rh4.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=XZ89cfASPoc",
+     "title": "Trailer [Subtitled]"
+    }
+   ]
   },
   {
    "id": "queen-of-tears",
@@ -7107,6 +7149,28 @@
   "Ahn Pan-seok": {
    "p": "/5kqfXl3hQj7BxAaDyQBGAAv2ZhG.jpg"
   },
-  "Park Gyeong-hwa": {}
+  "Park Gyeong-hwa": {},
+  "Kim Nam-ju": {
+   "p": "/pZoqHRXFNFkr6HIGriqtXl2eeKN.jpg"
+  },
+  "Cha Eun-woo": {
+   "p": "/kZUO2s2ZsBRYZ8acu0wMzlGHpRS.jpg"
+  },
+  "Kim Kang-woo": {
+   "p": "/1B883y0AG0WPTmGkC14XIggXVLz.jpg"
+  },
+  "Im Se-mi": {
+   "p": "/WZhJWf02ara2TkOWDqKUOVHw35.jpg"
+  },
+  "Yang Hye-ji": {
+   "p": "/Apv9I2oG4eZNX6De9Y1gqy19f0U.jpg"
+  },
+  "Cha Soo-yeon": {
+   "p": "/cIXDwGP3MxATDKX2Za1cezFKa2.jpg"
+  },
+  "Kim Eun-ji": {},
+  "Lee Sung-young": {
+   "p": "/iyhP97U7gFwLcYwdW52mwj3Y4UR.jpg"
+  }
  }
 }
