@@ -2474,16 +2474,6 @@
    ]
   },
   {
-   "id": "bloodhounds",
-   "title": "Bloodhounds",
-   "year": 2023,
-   "imdb": 8.1,
-   "network": "Netflix",
-   "genres": "Drama, Action, Crime, Tragedy",
-   "country": "KR",
-   "status": "W"
-  },
-  {
    "id": "see-you-in-my-19th-life",
    "title": "See You in My 19th Life",
    "year": 2023,
@@ -2994,7 +2984,45 @@
    "network": "JTBC",
    "genres": "Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 215001,
+   "summary": "A lawyer bound by a centuries-old curse becomes entangled with a civil servant who holds the key to his freedom — igniting an unexpected romance.",
+   "episodes": 16,
+   "firstAir": "2023-08-23",
+   "lastAir": "2023-10-12",
+   "cast": [
+    "Rowoon",
+    "Cho Bo-ah",
+    "Ha Jun",
+    "Yura",
+    "Lee Pil-mo",
+    "Lee Bong-ryeon"
+   ],
+   "roles": [
+    "Jang Sin-yu",
+    "Lee Hong-jo",
+    "Kwon Jae-kyung",
+    "Yoon Na-yeon",
+    "Jang Se-heon",
+    "Ma Eun-young"
+   ],
+   "crew": [
+    {
+     "name": "Noh Ji-sul",
+     "job": "Creator"
+    },
+    {
+     "name": "Nam Ki-hoon",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/destined-with-you-1789603252429-84wx.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=BXTDH1Ropfo",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
   },
   {
    "id": "heartbeat",
@@ -7228,6 +7256,22 @@
   "Choi Hyo-bi": {},
   "Kim Jin-won": {
    "p": "/mbYSjRMavnYh5rcNWCHwAu75dYC.jpg"
+  },
+  "Ha Jun": {
+   "p": "/1UbY5XFDdNQk7tQliOfSxdtCJmf.jpg"
+  },
+  "Yura": {
+   "p": "/agb4el3J2wBVq4ZmNHTJlms07Q8.jpg"
+  },
+  "Lee Pil-mo": {
+   "p": "/sVnDH47xdLtTs3dyHkZu6LzWkGn.jpg"
+  },
+  "Lee Bong-ryeon": {
+   "p": "/AkpzrUGpT0JvRY9Zk6qceKm937l.jpg"
+  },
+  "Noh Ji-sul": {},
+  "Nam Ki-hoon": {
+   "p": "/2rza9hs42aC5f4AG2VG213kfKgv.jpg"
   }
  }
 }
