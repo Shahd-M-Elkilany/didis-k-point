@@ -2401,7 +2401,53 @@
    "network": "JTBC",
    "genres": "Comedy, Drama, Medical",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 214997,
+   "summary": "Twenty years after leaving her medical career, a housewife returns as a first-year resident — struggling to find her footing in a job full of surprises.",
+   "episodes": 16,
+   "firstAir": "2023-04-15",
+   "lastAir": "2023-06-04",
+   "cast": [
+    "Uhm Jung-hwa",
+    "Kim Byong-chul",
+    "Myung Se-bin",
+    "Min Woo-hyuk",
+    "Song Ji-ho",
+    "Jo A-ram"
+   ],
+   "roles": [
+    "Cha Jung-sook",
+    "Seo In-ho",
+    "Choi Seung-hee",
+    "Roy Kim",
+    "Seo Jung-min",
+    "Jeon So-ra"
+   ],
+   "crew": [
+    {
+     "name": "Jung Yeo-rang",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Dae-jin",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Woo-taek",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Jang Kyung-ik",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/doctor-cha-1789603259749-3e9n.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=L7LfpZoLDlI",
+     "title": "Official Promo [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "the-good-bad-mother",
@@ -7272,6 +7318,30 @@
   "Noh Ji-sul": {},
   "Nam Ki-hoon": {
    "p": "/2rza9hs42aC5f4AG2VG213kfKgv.jpg"
-  }
+  },
+  "Uhm Jung-hwa": {
+   "p": "/m2FWdLDVttcMrKcAjMKQx6Zhtfj.jpg"
+  },
+  "Kim Byong-chul": {
+   "p": "/ynyE7u1u6SdUBFL1OmmxGVHX6g7.jpg"
+  },
+  "Myung Se-bin": {
+   "p": "/olgVibZEws5BQhzj6ZGbu05mel.jpg"
+  },
+  "Min Woo-hyuk": {
+   "p": "/bsOhsSrdppGDPafLbX3wo4FnYJq.jpg"
+  },
+  "Song Ji-ho": {
+   "p": "/rGUi1dLg0ETQuPxD0jO7EfzN5Ko.jpg"
+  },
+  "Jo A-ram": {
+   "p": "/vcJF048TtTA7uiOGKkzTLp3MdeB.jpg"
+  },
+  "Jung Yeo-rang": {},
+  "Kim Dae-jin": {},
+  "Kim Woo-taek": {
+   "p": "/b4s2QVMWc0CStTwOYdKg02Ns4st.jpg"
+  },
+  "Jang Kyung-ik": {}
  }
 }
