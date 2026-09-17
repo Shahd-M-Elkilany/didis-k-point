@@ -2951,7 +2951,57 @@
    "network": "MBN",
    "genres": "Drama, Revenge, Romance, Fantasy",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 230524,
+   "summary": "Waking from a fatal accident to find herself in the past, Han Yi-joo teams up with Seo Do-guk to take revenge on the family who never loved her.",
+   "episodes": 12,
+   "firstAir": "2023-10-28",
+   "lastAir": "2023-12-03",
+   "cast": [
+    "Jung Yoo-min",
+    "Sung Hoon",
+    "Jin Ji-hee",
+    "Kang Shin-hyo",
+    "Oh Seung-yun",
+    "Lee Min-young"
+   ],
+   "roles": [
+    "Han Yi-joo",
+    "Seo Do-guk",
+    "Han Yu-ra",
+    "Seo Jung-wook",
+    "Yoo Sae-hyuk",
+    "Lee Jeong-hye"
+   ],
+   "crew": [
+    {
+     "name": "Young",
+     "job": "Creator"
+    },
+    {
+     "name": "Yi Bam-be",
+     "job": "Creator"
+    },
+    {
+     "name": "Yi Bam-be",
+     "job": "Novel"
+    },
+    {
+     "name": "Oh Sang-won",
+     "job": "Director"
+    },
+    {
+     "name": "Im Seo-ra",
+     "job": "Screenplay"
+    }
+   ],
+   "poster": "images/perfect-marriage-revenge-1789603397867-bome.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=D3ojNqT-kgQ",
+     "title": "[Trailer] Perfect Marriage Revenge | Coming to Viu for FREE TOMORROW"
+    }
+   ]
   },
   {
    "id": "daily-dose-of-sunshine",
@@ -7735,6 +7785,27 @@
   "Kang Min-ji": {
    "p": "/2i1xi5Suz7DIbynG7ESbeeNsS3c.jpg"
   },
-  "Park Jong-cheol": {}
+  "Park Jong-cheol": {},
+  "Jung Yoo-min": {
+   "p": "/r6WwKqdjhwarud4ArwcD1yO9xYn.jpg"
+  },
+  "Sung Hoon": {
+   "p": "/wGNCbshSo0YBcrsUCxfWMR9DLNr.jpg"
+  },
+  "Jin Ji-hee": {
+   "p": "/teRGolQsyOk0D8O0K4BGZ3R2H9p.jpg"
+  },
+  "Oh Seung-yun": {
+   "p": "/30ECcD2uZnp06JsQQjNbXAGcSMy.jpg"
+  },
+  "Lee Min-young": {
+   "p": "/wDkzoPsSJCvcmZxyVz576FaRgus.jpg"
+  },
+  "Young": {},
+  "Yi Bam-be": {},
+  "Oh Sang-won": {
+   "p": "/AiYERWuv9c8x89DPD2Y8qhjm6EQ.jpg"
+  },
+  "Im Seo-ra": {}
  }
 }
