@@ -2593,7 +2593,64 @@
    "network": "SBS",
    "genres": "Drama, Horror, Crime, Suspense, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 210702,
+   "summary": "A woman possessed by an evil spirit and a man who can see evil spirits uncover the secrets of mysterious deaths surrounding five spirits.",
+   "episodes": 12,
+   "firstAir": "2023-06-23",
+   "lastAir": "2023-07-29",
+   "cast": [
+    "Kim Tae-ri",
+    "Oh Jung-se",
+    "Hong Kyung",
+    "Park Ji-young",
+    "Yang Hye-ji",
+    "Ye Su-jeong"
+   ],
+   "roles": [
+    "Gu San-yeong",
+    "Yeom Hae-sang",
+    "Lee Hong-sae",
+    "Yoon Kyung-moon",
+    "Baek Se-mi",
+    "Kim Seok-ran"
+   ],
+   "crew": [
+    {
+     "name": "Kim Eun-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Ok-gyu",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Jeong-lim",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Eun-hee",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Jeong-lim",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/revenant-1789603404105-8yuw.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=NuEiPKmv6qs",
+     "title": "Teaser Trailer"
+    }
+   ],
+   "scores": [
+    4.4,
+    4.4,
+    4.4,
+    4.4,
+    4.4
+   ]
   },
   {
    "id": "celebrity",
@@ -7806,6 +7863,15 @@
   "Oh Sang-won": {
    "p": "/AiYERWuv9c8x89DPD2Y8qhjm6EQ.jpg"
   },
-  "Im Seo-ra": {}
+  "Im Seo-ra": {},
+  "Hong Kyung": {
+   "p": "/wRXum47BB0ciPGINjCvT36rDuQE.jpg"
+  },
+  "Ye Su-jeong": {
+   "p": "/rwGPhu8Ge36eMkrOlzfdKKFargw.jpg"
+  },
+  "Lee Jeong-lim": {
+   "p": "/vECGxw0lUSviNUqEiiuNHIhg3rZ.jpg"
+  }
  }
 }
