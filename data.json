@@ -2872,7 +2872,57 @@
    "network": "SBS",
    "genres": "Drama, Suspense",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 217088,
+   "summary": "People are busy watching the screen. The person wearing a mysterious mask so called 'Gaetal' appears, and the Killing Vote begins.",
+   "episodes": 12,
+   "firstAir": "2023-08-10",
+   "lastAir": "2023-11-16",
+   "cast": [
+    "Park Hae-jin",
+    "Im Ji-yeon",
+    "Park Sung-woong",
+    "Kim Yu-mi",
+    "Shin Jung-keun",
+    "Kim Kwon"
+   ],
+   "roles": [
+    "Kim Mu-chan",
+    "Joo Hyun",
+    "Kwon Seok-joo",
+    "Min Ji-young",
+    "Choi Jin-soo",
+    "Lee Min-soo"
+   ],
+   "crew": [
+    {
+     "name": "Cho Yoon-young",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Shin-woo",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Shin-woo",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Eun-mi",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Lee Seul-gi",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/the-killing-vote-1789603514277-hnbu.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=LxGl61T7Z2Q",
+     "title": "The Killing Vote | Official Trailer | Prime"
+    }
+   ]
   },
   {
    "id": "mask-girl",
@@ -8047,6 +8097,29 @@
   },
   "Bae Se-young": {
    "p": "/8v9EwTTW5srGM41nurrtfm8kyP9.jpg"
-  }
+  },
+  "Park Hae-jin": {
+   "p": "/hiSahEWd1VH0UXgFpZlMLqaS8JG.jpg"
+  },
+  "Im Ji-yeon": {
+   "p": "/gAwwi5fBxCKLnrP9bjOQFtMUs6j.jpg"
+  },
+  "Park Sung-woong": {
+   "p": "/nyCMZSOV1P4GtRo9svoDwHl19WO.jpg"
+  },
+  "Kim Yu-mi": {
+   "p": "/sUqZLoXcT6t7bpX1LkD5W9n2foG.jpg"
+  },
+  "Kim Kwon": {
+   "p": "/6ikXQq7EWBtf5lFTDu9D5BSB7uQ.jpg"
+  },
+  "Cho Yoon-young": {
+   "p": "/wGunId70xzVenCtFIg8XAThNoma.jpg"
+  },
+  "Park Shin-woo": {
+   "p": "/tdB0QONQN8Z7nO544tesCrylKor.jpg"
+  },
+  "Kim Eun-mi": {},
+  "Lee Seul-gi": {}
  }
 }
