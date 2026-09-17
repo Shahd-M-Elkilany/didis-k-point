@@ -2808,7 +2808,43 @@
    "network": "U+ Mobile TV",
    "genres": "Drama, Crime, Suspense",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 223489,
+   "summary": "With just one bite, a mysterious homemade cookie turns dreams into reality, but it takes over the elite high school, and deadly consequences await.",
+   "episodes": 20,
+   "firstAir": "2023-10-23",
+   "lastAir": "2023-11-20",
+   "cast": [
+    "Nam Ji-hyun",
+    "Jung Da-bin",
+    "Choi Hyun-wook",
+    "Kim Moo-yul",
+    "Seo Bum-jun",
+    "Chae Seo-eun"
+   ],
+   "roles": [
+    "Choi Soo-young",
+    "Choi Min-young",
+    "Seo Ho-soo",
+    "Yoo Sung-phil",
+    "Song Jin-woo",
+    "Park Hee-jin"
+   ],
+   "crew": [
+    {
+     "name": "Song Min-yeop",
+     "job": "Creator"
+    },
+    {
+     "name": "Song Min-yeop",
+     "job": "Director"
+    },
+    {
+     "name": "Kang Han",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/high-cookie-1789603292028-9jk9.jpg"
   },
   {
    "id": "perfect-marriage-revenge",
@@ -7417,6 +7453,19 @@
   "Jeong Seung-ju": {},
   "Lee Min-soo": {
    "p": "/dckiF72bbkh4beqANSFMCh7bSwj.jpg"
-  }
+  },
+  "Jung Da-bin": {
+   "p": "/nE6AZgKofgr3CzdA48nsRPuqLU3.jpg"
+  },
+  "Kim Moo-yul": {
+   "p": "/wLuVca9icDLjUkOG84IlEmfP52b.jpg"
+  },
+  "Seo Bum-jun": {
+   "p": "/4oOXfojRx4oF9AJm32UAxoNeGQq.jpg"
+  },
+  "Chae Seo-eun": {
+   "p": "/gwEVDlcIO5kGrKbhyDcTiL95zaO.jpg"
+  },
+  "Kang Han": {}
  }
 }
