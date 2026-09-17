@@ -2362,7 +2362,43 @@
    "network": "SBS",
    "genres": "Drama, Comedy, School",
    "country": "KR",
-   "status": "S"
+   "status": "D",
+   "tmdbId": 155229,
+   "summary": "A renowned college cheerleading squad is about to go under. But love and mysteries occur within the team.",
+   "episodes": 16,
+   "firstAir": "2022-10-03",
+   "lastAir": "2022-12-13",
+   "cast": [
+    "Han Ji-hyeon",
+    "Bae In-hyuk",
+    "Kim Hyun-jin",
+    "Jang Gyu-ri",
+    "Lee Eun-saem",
+    "Yang Dong-geun"
+   ],
+   "roles": [
+    "Do Hae-yi",
+    "Park Jung-woo",
+    "Jin Seon-ho",
+    "Tae Cho-hee",
+    "Joo Seon-ja",
+    "Bae Young-woong"
+   ],
+   "crew": [
+    {
+     "name": "Lee Ok-gyu",
+     "job": "Creator"
+    },
+    {
+     "name": "Han Tae-seob",
+     "job": "Director"
+    },
+    {
+     "name": "Cha Hae-won",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/cheer-up-1789603597811-s15v.jpg"
   },
   {
    "id": "weak-hero-class-1",
@@ -8250,6 +8286,16 @@
   "Hong Bo-hee": {},
   "Han Sul-hee": {
    "p": "/7TbRZP2UL1kPgNd7HGZjWYigvcO.jpg"
-  }
+  },
+  "Bae In-hyuk": {
+   "p": "/8UOUm9lQEOD1vBHZwbtP7IiARhU.jpg"
+  },
+  "Yang Dong-geun": {
+   "p": "/jlUJ6i91HYBs2QmcVKe1x3ByuaD.jpg"
+  },
+  "Han Tae-seob": {
+   "p": "/vFC5kcQrURJG37zZolxZ70qHEnO.jpg"
+  },
+  "Cha Hae-won": {}
  }
 }
