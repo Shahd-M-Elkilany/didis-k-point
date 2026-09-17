@@ -3051,7 +3051,53 @@
    "network": "U+ Mobile TV",
    "genres": "Suspense, Revenge, School, Horror, Crime",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 229915,
+   "summary": "Trapped in a deadly cursed Mafia game, the students of Yoo-il High must play the game to survive while unraveling the mysteries behind the curse.",
+   "episodes": 12,
+   "firstAir": "2023-12-04",
+   "lastAir": "2023-12-21",
+   "cast": [
+    "Song Byeong-geun",
+    "Lee Jae-in",
+    "Kim Woo-seok",
+    "Choi Ye-bin",
+    "Park Yoon-ho",
+    "Cha Woo-min"
+   ],
+   "roles": [
+    "Im Eun-chan",
+    "Lee Yoon-seo",
+    "Kim Jun-hee",
+    "Oh Jung-won",
+    "Heo Yul",
+    "Ko Kyung-jun"
+   ],
+   "crew": [
+    {
+     "name": "Lim Dae-wung",
+     "job": "Creator"
+    },
+    {
+     "name": "Lim Dae-wung",
+     "job": "Director"
+    },
+    {
+     "name": "Kang Min-ji",
+     "job": "Writer"
+    },
+    {
+     "name": "Park Jong-cheol",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/night-has-come-1789603385849-2c8y.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=yNkfTd8R7x0",
+     "title": "Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "deaths-game",
@@ -7664,6 +7710,31 @@
   },
   "Hwang Jin-young": {
    "p": "/qW5x1JeD1vsVK0FwnECrdpmxbD5.jpg"
-  }
+  },
+  "Song Byeong-geun": {
+   "p": "/sfCYn0cJe9Y0xhUjWVKuOK3L3PV.jpg"
+  },
+  "Lee Jae-in": {
+   "p": "/5gdJ9n6rJZZyGGaMw3Hcr52zQMU.jpg"
+  },
+  "Kim Woo-seok": {
+   "p": "/dCIQlI50jCWr58vzgY9iwGnRUq2.jpg"
+  },
+  "Choi Ye-bin": {
+   "p": "/1V1ZELL7L6eWT4aEiWCq8XmgVF3.jpg"
+  },
+  "Park Yoon-ho": {
+   "p": "/8hgwNPy66kaWbZlBoaKyOWXU7Q5.jpg"
+  },
+  "Cha Woo-min": {
+   "p": "/z8Lz0Opnl4i7Aj8b7jC4qYP01xJ.jpg"
+  },
+  "Lim Dae-wung": {
+   "p": "/wIQboABS8WdZEmX46xfJdudtVgE.jpg"
+  },
+  "Kang Min-ji": {
+   "p": "/2i1xi5Suz7DIbynG7ESbeeNsS3c.jpg"
+  },
+  "Park Jong-cheol": {}
  }
 }
