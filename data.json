@@ -3078,7 +3078,57 @@
    "network": "KBS",
    "genres": "Fantasy, Romance, Comedy",
    "country": "KR",
-   "status": "S"
+   "status": "D",
+   "tmdbId": 218099,
+   "summary": "A thrilling romance between a vampire who desires to experience heart-throbbing love, and a cold-blooded woman.",
+   "episodes": 16,
+   "firstAir": "2023-06-26",
+   "lastAir": "2023-08-15",
+   "cast": [
+    "Ok Taec-yeon",
+    "Won Ji-an",
+    "Yoon So-hee",
+    "Park Kang-hyun",
+    "Ko Kyu-pil",
+    "Yoon Byung-hee"
+   ],
+   "roles": [
+    "Seon Woo-hyeol",
+    "Joo In-hae",
+    "Na Hae-won / Yoon Hae-sun",
+    "Shin Do-sik",
+    "Park Dong-seop",
+    "Lee Sang-hae"
+   ],
+   "crew": [
+    {
+     "name": "Lee Hyun-suk",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Ha-na",
+     "job": "Creator"
+    },
+    {
+     "name": "Jeong Seung-ju",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Min-soo",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Hyun-suk",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/heartbeat-1789603271230-uz9w.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=nUCSxkd6Xp8",
+     "title": "HeartBeat | Official Trailer | Amazon Prime"
+    }
+   ]
   },
   {
    "id": "flex-x-cop",
@@ -7342,6 +7392,31 @@
   "Kim Woo-taek": {
    "p": "/b4s2QVMWc0CStTwOYdKg02Ns4st.jpg"
   },
-  "Jang Kyung-ik": {}
+  "Jang Kyung-ik": {},
+  "Won Ji-an": {
+   "p": "/cMPm0hAhsRyTnPrI0X8oNqRDJt4.jpg"
+  },
+  "Yoon So-hee": {
+   "p": "/cr3PvUEb116rnH6B9nALIigQlws.jpg"
+  },
+  "Park Kang-hyun": {
+   "p": "/i4g8WkYuAr1mFr3lMqge5GQpJ1y.jpg"
+  },
+  "Ko Kyu-pil": {
+   "p": "/uP18ldneBx5WcmHmvwoyGVSBArY.jpg"
+  },
+  "Yoon Byung-hee": {
+   "p": "/77HOYpL0BI6BN4kaTYUMNIlnLM0.jpg"
+  },
+  "Lee Hyun-suk": {
+   "p": "/v7fmwPSHGUnHzeteU38Y1B38zXE.jpg"
+  },
+  "Kim Ha-na": {
+   "p": "/9pypl4ojITNOUx4ORwaIed1nTqr.jpg"
+  },
+  "Jeong Seung-ju": {},
+  "Lee Min-soo": {
+   "p": "/dckiF72bbkh4beqANSFMCh7bSwj.jpg"
+  }
  }
 }
