@@ -2014,7 +2014,65 @@
    "network": "tvN",
    "genres": "Drama, Romance, School",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 129888,
+   "summary": "In a time when dreams seem out of reach, a teen fencer pursues big ambitions and meets a hardworking young man who seeks to rebuild his life.",
+   "episodes": 16,
+   "firstAir": "2022-02-12",
+   "lastAir": "2022-04-03",
+   "cast": [
+    "Kim Tae-ri",
+    "Nam Joo-hyuk",
+    "Bona",
+    "Choi Hyun-wook",
+    "Lee Ju-myoung",
+    "Kim Hye-eun"
+   ],
+   "roles": [
+    "Na Hee-do",
+    "Baek Yi-jin",
+    "Ko Yu-rim",
+    "Moon Ji-woong",
+    "Ji Seung-wan",
+    "Yang Chan-mi"
+   ],
+   "crew": [
+    {
+     "name": "Kwon Do-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Jee-hyun",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Young-kyu",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Heo Seok-won",
+     "job": "Producer"
+    },
+    {
+     "name": "Park Hun-joo",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/twenty-five-twenty-one-1789603666334-opm4.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=gYp4cKumTwU",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ],
+   "scores": [
+    4.1,
+    4.1,
+    4.1,
+    4.1,
+    4.1
+   ],
+   "comment": "2022"
   },
   {
    "id": "business-proposal",
@@ -8304,6 +8362,15 @@
   "Han Tae-seob": {
    "p": "/vFC5kcQrURJG37zZolxZ70qHEnO.jpg"
   },
-  "Cha Hae-won": {}
+  "Cha Hae-won": {},
+  "Bona": {
+   "p": "/zXVHkg4CxGjDGK6N4SIwZERmbhc.jpg"
+  },
+  "Kim Hye-eun": {
+   "p": "/qoOOqPCwoNoZpZuelhOG1M4klgK.jpg"
+  },
+  "Kwon Do-eun": {},
+  "Heo Seok-won": {},
+  "Park Hun-joo": {}
  }
 }
