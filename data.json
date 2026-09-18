@@ -1436,7 +1436,41 @@
    "network": "tvN",
    "genres": "Comedy, Drama, Romance",
    "country": "KR",
-   "status": "S"
+   "status": "D",
+   "tmdbId": 99048,
+   "summary": "Young entrepreneurs aspiring to launch virtual dreams into reality compete for success and love in the cutthroat world of Korea's high-tech industry.",
+   "episodes": 16,
+   "firstAir": "2020-10-17",
+   "lastAir": "2020-12-06",
+   "cast": [
+    "Suzy",
+    "Nam Joo-hyuk",
+    "Kim Seon-ho",
+    "Kang Han-na",
+    "Kim Hae-sook",
+    "Kim Do-wan"
+   ],
+   "roles": [
+    "Seo Dal-mi",
+    "Nam Do-san",
+    "Han Ji-pyeong",
+    "Won In-jae",
+    "Choi Won-deok",
+    "Kim Yong-san"
+   ],
+   "crew": [
+    {
+     "name": "Park Hye-ryun",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/start-up-1789756006953-e80t.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=BemKyzbLDDc",
+     "title": "Start-Up | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "the-penthouse",
@@ -8381,6 +8415,16 @@
   },
   "Kwon Do-eun": {},
   "Heo Seok-won": {},
-  "Park Hun-joo": {}
+  "Park Hun-joo": {},
+  "Kim Seon-ho": {
+   "p": "/qG8QeXHCn3iAJxeUCsPswM3Zw5l.jpg"
+  },
+  "Kang Han-na": {
+   "p": "/fXydO3AV3arjm3mMPhIxbf26l6a.jpg"
+  },
+  "Kim Do-wan": {
+   "p": "/p9RDV2mcjgH7J6M2qT9NaTSQPYs.jpg"
+  },
+  "Park Hye-ryun": {}
  }
 }
