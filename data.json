@@ -2074,7 +2074,57 @@
    "network": "KBS",
    "genres": "Comedy, School, Romance",
    "country": "KR",
-   "status": "S"
+   "status": "D",
+   "tmdbId": 97765,
+   "summary": "A former athlete, a dedicated student, and an ambitious learner forge an unbreakable bond as they navigate life's obstacles and chase their dreams against all odds.",
+   "episodes": 16,
+   "firstAir": "2021-11-24",
+   "lastAir": "2022-01-13",
+   "cast": [
+    "Kim Yo-han",
+    "Cho Yi-hyun",
+    "Choo Young-woo",
+    "Hwang Bo-reum-byeol",
+    "Kim Kang-min",
+    "Seo Hee-sun"
+   ],
+   "roles": [
+    "Gong Ki-joon",
+    "Jin Ji-won",
+    "Jung Young-joo",
+    "Kang Seo-young",
+    "Ji Ho-sung",
+    "Go Eun-bi"
+   ],
+   "crew": [
+    {
+     "name": "Jo Ah-ra",
+     "job": "Creator"
+    },
+    {
+     "name": "Dong Hee-sun",
+     "job": "Creator"
+    },
+    {
+     "name": "Dong Hee-sun",
+     "job": "Writer"
+    },
+    {
+     "name": "Jo Ah-ra",
+     "job": "Writer"
+    },
+    {
+     "name": "Hong Eun-mi",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/school-2021-1789756203456-q8cb.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=SUZlRN1lQdg",
+     "title": "Official Trailer 3 [Subtitled]"
+    }
+   ]
   },
   {
    "id": "our-beloved-summer",
@@ -8606,6 +8656,29 @@
   "Han Hee-jung": {},
   "Noh Jong-chan": {
    "p": "/xa6paKwvE8KFSOQGHcCga3EYk6M.jpg"
+  },
+  "Kim Yo-han": {
+   "p": "/hd3G0YRYGD2t90jJZ7VsiadzGBI.jpg"
+  },
+  "Cho Yi-hyun": {
+   "p": "/gXN9DiFTwri92HkKSjfbMyYEELR.jpg"
+  },
+  "Choo Young-woo": {
+   "p": "/nGICKq8yq7G6nDUNVjrUoMe4iQ0.jpg"
+  },
+  "Hwang Bo-reum-byeol": {
+   "p": "/jdf6q4TBFlrzq3yb61PBinAIjwR.jpg"
+  },
+  "Kim Kang-min": {
+   "p": "/lShZsNK3SimVpnJctkDI0ZxFFqu.jpg"
+  },
+  "Seo Hee-sun": {
+   "p": "/weB9dXSeTG3Fd4OudcEyNh069Mo.jpg"
+  },
+  "Jo Ah-ra": {},
+  "Dong Hee-sun": {},
+  "Hong Eun-mi": {
+   "p": "/dMggTo24SlU9xWSNkPgamIBtPjV.jpg"
   }
  }
 }
