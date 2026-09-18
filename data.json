@@ -5,6 +5,63 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "scandel",
+   "title": "scandal",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 275102,
+   "summary": "In Joseon, a secret proposal ignites hidden desires in a gifted noblewoman, a famed lover and an unsuspecting lady caught in their dangerous game.",
+   "episodes": 8,
+   "firstAir": "2026-09-18",
+   "country": "KR",
+   "network": "Netflix",
+   "cast": [
+    "Son Ye-jin",
+    "Ji Chang-wook",
+    "Nana",
+    "Han Seon-hwa",
+    "Shin Youn-ha",
+    "Kang Ji-eun"
+   ],
+   "roles": [
+    "Lady Cho",
+    "Cho Won",
+    "Ahn Hui-yeon",
+    "So-ok's Mom",
+    "Lee So-ok",
+    "Lady Jeonggyeong"
+   ],
+   "crew": [
+    {
+     "name": "Jung Ji-woo",
+     "job": "Creator"
+    },
+    {
+     "name": "Ahn Hye-song",
+     "job": "Writer"
+    },
+    {
+     "name": "Jung Ji-woo",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Seung-yeong",
+     "job": "Writer"
+    },
+    {
+     "name": "Choderlos de Laclos",
+     "job": "Novel"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/pJsIzlTjmx07ilwEkl0cglrMVa1.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=FeISX5E1uJc",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
+  },
+  {
    "id": "the-east-palace",
    "title": "The East Palace",
    "status": "L",
@@ -8679,6 +8736,26 @@
   "Dong Hee-sun": {},
   "Hong Eun-mi": {
    "p": "/dMggTo24SlU9xWSNkPgamIBtPjV.jpg"
+  },
+  "Son Ye-jin": {
+   "p": "/i6fASFvO3mUceZJvipn4RiLHA44.jpg"
+  },
+  "Nana": {
+   "p": "/zEjVBD734pLcNQrZESkKTNhKl6z.jpg"
+  },
+  "Shin Youn-ha": {
+   "p": "/9F8XXBvdziId1BwW1EwZbY8hOiB.jpg"
+  },
+  "Kang Ji-eun": {
+   "p": "/2godIG1dfY3T1akTDsstvStYPh4.jpg"
+  },
+  "Jung Ji-woo": {
+   "p": "/mQUDzhJ7IpKj9qsZTimqKFHKf91.jpg"
+  },
+  "Ahn Hye-song": {},
+  "Lee Seung-yeong": {},
+  "Choderlos de Laclos": {
+   "p": "/re6q4Vx56AzLDOrhDd0S8RpFDsv.jpg"
   }
  }
 }
