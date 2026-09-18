@@ -1,7 +1,7 @@
 {
  "name": "Didi's K-point",
  "tagline": "A drama journal",
- "updated": "2026-09-17",
+ "updated": "2026-09-18",
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
@@ -3084,7 +3084,7 @@
    "network": "Netflix",
    "genres": "Drama, Comedy, Suspense, Horror",
    "country": "KR",
-   "status": "S",
+   "status": "U",
    "tmdbId": 156888,
    "summary": "An office worker who is insecure about her looks becomes a masked internet personality by night — until a chain of ill-fated events overtakes her life.",
    "episodes": 7,
