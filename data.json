@@ -1013,7 +1013,57 @@
    "network": "JTBC",
    "genres": "Comedy, Romance",
    "country": "KR",
-   "status": "S"
+   "status": "U",
+   "tmdbId": 78869,
+   "summary": "Gil Oh-so, an employee at a cleaning company, meets Jang Seon-gyul, the boss of the company. The two are diametric opposite when it comes to cleanliness. With the help of Oh-sol, Seon-gyul faces his mysophobia and falls in love with her.",
+   "episodes": 16,
+   "firstAir": "2018-11-26",
+   "lastAir": "2019-02-04",
+   "cast": [
+    "Yoon Kyun-sang",
+    "Kim You-jung",
+    "Song Jae-im",
+    "Joo Jong-hyuk",
+    "Yu Seon",
+    "Ahn Suk-hwan"
+   ],
+   "roles": [
+    "Jang Sun-Gyeol",
+    "Gil O-Sol",
+    "Choi Ha-In / Choi Daniel",
+    "Jong-hyuk",
+    "Secretary Gwon",
+    "CEO Cha"
+   ],
+   "crew": [
+    {
+     "name": "Han Hee-jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Noh Jong-chan",
+     "job": "Creator"
+    },
+    {
+     "name": "Noh Jong-chan",
+     "job": "Director"
+    },
+    {
+     "name": "Han Hee-jung",
+     "job": "Writer"
+    },
+    {
+     "name": "Park Jun-seo",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/clean-with-passion-1789756184696-mnyz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=TaINaFCFxFM",
+     "title": "Clean With Passion For Now 일단 뜨겁게 청소하라 Trailer | Available with subs 12h after Korea!"
+    }
+   ]
   },
   {
    "id": "memories-of-the-alhambra",
@@ -8537,6 +8587,25 @@
    "p": "/etjHXvHDpfFqCwZCfGhhg8L9oUY.jpg"
   },
   "Kim Ji Sun": {},
-  "Choi Kyung-sook": {}
+  "Choi Kyung-sook": {},
+  "Kim You-jung": {
+   "p": "/eFcMTDIgzSGLHZYXcsf1M42cvFt.jpg"
+  },
+  "Song Jae-im": {
+   "p": "/yoGDZ8Dd5zfpoVttMZri2jwKi5i.jpg"
+  },
+  "Joo Jong-hyuk": {
+   "p": "/xOx3f9y4rLa84AMglgejC6spEQD.jpg"
+  },
+  "Yu Seon": {
+   "p": "/1gssOi0HNqUJWyZ8ocOZKi5uuNw.jpg"
+  },
+  "Ahn Suk-hwan": {
+   "p": "/rDKP8P0Zpj6c1eiEWirZvmQT0Ni.jpg"
+  },
+  "Han Hee-jung": {},
+  "Noh Jong-chan": {
+   "p": "/xa6paKwvE8KFSOQGHcCga3EYk6M.jpg"
+  }
  }
 }
