@@ -707,7 +707,51 @@
    "network": "tvN",
    "genres": "Comedy, Horror, Romance, Fantasy",
    "country": "KR",
-   "status": "S"
+   "status": "D",
+   "tmdbId": 66393,
+   "summary": "Hyun-Ji, a 19-year-old ghost meets exorcist Park Bong-Pal. They team up to listen to and solve the problems of various ghosts in order to help them rest peacefully.",
+   "episodes": 16,
+   "firstAir": "2016-07-11",
+   "lastAir": "2016-08-30",
+   "cast": [
+    "Kim So-hyun",
+    "Ok Taec-yeon",
+    "Kwon Yul",
+    "Kim Sang-ho",
+    "David Lee",
+    "Kang Ki-young"
+   ],
+   "roles": [
+    "Kim Hyun-ji",
+    "Park Bong-pal",
+    "Joo Hye-sung",
+    "Monk Myung-cheol",
+    "Kim In-rang",
+    "Choi Cheon-sang"
+   ],
+   "crew": [
+    {
+     "name": "Park Joon-hwa",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Joon-hwa",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Ji Sun",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Lee Dae-il",
+     "job": "Writer"
+    },
+    {
+     "name": "Choi Kyung-sook",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/bring-it-on-ghost-1789756169574-2c8d.jpg"
   },
   {
    "id": "w",
@@ -8482,6 +8526,17 @@
   },
   "Ha Myung-hee": {
    "p": "/gzMMmhqBRj1Z9eYUmu4dKtwmTY8.jpg"
-  }
+  },
+  "David Lee": {
+   "p": "/qWGDFlr47d2AJLtJsOEmfmaC21l.jpg"
+  },
+  "Kang Ki-young": {
+   "p": "/bZKB6fXWS7mBWoOBsXlLx0P36hJ.jpg"
+  },
+  "Park Joon-hwa": {
+   "p": "/etjHXvHDpfFqCwZCfGhhg8L9oUY.jpg"
+  },
+  "Kim Ji Sun": {},
+  "Choi Kyung-sook": {}
  }
 }
