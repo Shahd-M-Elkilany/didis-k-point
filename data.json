@@ -247,13 +247,47 @@
    "lastAir": "2026-05-24",
    "country": "KR",
    "network": "JTBC",
-   "poster": "images/we-are-all-trying-here-1789523641184-ay3o.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=2W9wOtwEWE8",
      "title": "Official Trailer [ENG SUB]"
     }
-   ]
+   ],
+   "cast": [
+    "Koo Kyo-hwan",
+    "Go Youn-jung",
+    "Oh Jung-se",
+    "Kang Mal-geum",
+    "Park Hae-joon",
+    "Bae Jong-ok"
+   ],
+   "roles": [
+    "Hwang Dong-man",
+    "Byeon Eun-a",
+    "Park Kyeong-se",
+    "Ko Hye-jin",
+    "Hwang Jin-man",
+    "Oh Jeong-hee"
+   ],
+   "crew": [
+    {
+     "name": "Cha Yeong-hun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Hae-young",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Hae-young",
+     "job": "Writer"
+    },
+    {
+     "name": "Cha Yeong-hun",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/we-are-all-trying-here-1789783211037-p4hc.jpg"
   },
   {
    "id": "four-hands",
@@ -8933,6 +8967,18 @@
   "Lee Nam-kyu": {
    "p": "/xRyEwXszGWKL3L00i7nIz1Vs81q.jpg"
   },
-  "Kim Da-hee": {}
+  "Kim Da-hee": {},
+  "Go Youn-jung": {
+   "p": "/1AlwvzW8dUvJXreVvzyTXsa6FOh.jpg"
+  },
+  "Kang Mal-geum": {
+   "p": "/aQcgxtVnbHnWwjR3yUtnbvwARSR.jpg"
+  },
+  "Cha Yeong-hun": {
+   "p": "/jg0EkyAS9RGPAa272TudECUpwIN.jpg"
+  },
+  "Park Hae-young": {
+   "p": "/w87x3MLSkee1ldto7MDFZpcSRTd.jpg"
+  }
  }
 }
