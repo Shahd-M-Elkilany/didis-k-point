@@ -7175,14 +7175,52 @@
    "firstAir": "2026-04-24",
    "lastAir": "2026-04-24",
    "country": "KR",
-   "poster": "images/if-wishes-could-kill-1789516302988-8rvm.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=OJsERPNI3D0",
      "title": "Official Trailer [ENG SUB]"
     }
    ],
-   "watched": "2026-04"
+   "watched": "2026-04",
+   "cast": [
+    "Jeon So-young",
+    "Baek Sun-ho",
+    "Kang Mi-na",
+    "Hyun Woo-seok",
+    "Lee Hyo-je",
+    "Roh Jae-won"
+   ],
+   "roles": [
+    "Yoo Se-ah",
+    "Kim Gun-woo",
+    "Im Na-ri",
+    "Kang Ha-joon",
+    "Choi Hyeong-wook",
+    "Bang-wool"
+   ],
+   "crew": [
+    {
+     "name": "Park Yoon-seo",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Joong-seop",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Yoon-seo",
+     "job": "Director"
+    },
+    {
+     "name": "Park Joong-seop",
+     "job": "Writer"
+    },
+    {
+     "name": "Oh Gwang-hui",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/if-wishes-could-kill-1789783287957-zlgw.jpg"
   },
   {
    "id": "even-if-this-love-disappears-tonight",
@@ -9186,6 +9224,23 @@
    "p": "/nQKFXTmDeTMnkbqLQ2aGuRJFXil.jpg"
   },
   "Jo Sung-hee": {},
-  "Jung Sang-hee": {}
+  "Jung Sang-hee": {},
+  "Baek Sun-ho": {
+   "p": "/laCfweiT6RDh8mf439OrGh9blD1.jpg"
+  },
+  "Kang Mi-na": {
+   "p": "/sIGBlUCXt8pBqZhjesm4PKthEIn.jpg"
+  },
+  "Hyun Woo-seok": {
+   "p": "/ij9JemBr4CMHXFjiNWIPVFvzIw0.jpg"
+  },
+  "Lee Hyo-je": {
+   "p": "/wt0uE34RJCsELecJy27VlkqqZlb.jpg"
+  },
+  "Roh Jae-won": {
+   "p": "/8M4PRXZGllg3yrwluJraP1bakLO.jpg"
+  },
+  "Park Joong-seop": {},
+  "Oh Gwang-hui": {}
  }
 }
