@@ -7413,13 +7413,35 @@
    "lastAir": "2026-04-07",
    "country": "KR",
    "network": "tvN",
-   "poster": "images/sirens-kiss-1789520871943-xlkh.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=rqWImQN1nsM",
      "title": "[세이렌의 노래 티저] 아름다운 그녀를 사랑한 대가 = 죽음?🥀 박민영X위하준 치명적 로맨스릴러 [세이렌] #세이렌 EP.0"
     }
-   ]
+   ],
+   "cast": [
+    "Park Min-young",
+    "Wi Ha-jun",
+    "Kim Jung-hyun",
+    "Han Jun-woo",
+    "Kong Seong-ha",
+    "Hong Gi-jun"
+   ],
+   "roles": [
+    "Han Seol-ah",
+    "Cha Woo-seok",
+    "Baek Jun-beom",
+    "Do Eun-hyeok",
+    "Kong Ju-yeong",
+    "Pyo Seong-il"
+   ],
+   "crew": [
+    {
+     "name": "Lee Young",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/sirens-kiss-1789783237489-8a61.jpg"
   },
   {
    "id": "phantom-lawyer",
@@ -9017,6 +9039,16 @@
   },
   "Lee Jae-jin": {
    "p": "/bHTC0lz1yGL8dbCULnHIcvoHuRt.jpg"
-  }
+  },
+  "Han Jun-woo": {
+   "p": "/uVxc53lfW7mhb4pOEMtJQ9ytp32.jpg"
+  },
+  "Kong Seong-ha": {
+   "p": "/u6qDnQ2EdtA3HDwtHfTrk969DPR.jpg"
+  },
+  "Hong Gi-jun": {
+   "p": "/jSWU103gfGXoLRYynQexdGHVnhf.jpg"
+  },
+  "Lee Young": {}
  }
 }
