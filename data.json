@@ -6899,13 +6899,47 @@
    "firstAir": "2026-03-06",
    "lastAir": "2026-03-06",
    "country": "KR",
-   "poster": "images/boyfriend-on-demand-1789516175182-6704.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=A0GqKTgSpuE",
      "title": "Official Trailer [Subtitled]"
     }
-   ]
+   ],
+   "cast": [
+    "JISOO",
+    "Seo In-guk",
+    "Gong Min-jeung",
+    "Cho Han-chul"
+   ],
+   "roles": [
+    "Seo Mi-rae",
+    "Park Kyeong-nam",
+    "Yoon Song",
+    "Hwang Byung-hak"
+   ],
+   "crew": [
+    {
+     "name": "Kim Jung-sik",
+     "job": "Creator"
+    },
+    {
+     "name": "Namgung Do-young",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Jung-sik",
+     "job": "Director"
+    },
+    {
+     "name": "Namgung Do-young",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim A-young",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/boyfriend-on-demand-1789783328454-qsak.jpg"
   },
   {
    "id": "bloodhounds-2",
@@ -9329,6 +9363,17 @@
   },
   "Yoo Young-eun": {
    "p": "/4icsXjeP3z9u66JVoz48YfovaNw.jpg"
-  }
+  },
+  "JISOO": {
+   "p": "/23qpgi6fFBjybTuIcKItQBEINb5.jpg"
+  },
+  "Seo In-guk": {
+   "p": "/gs7RRZt2tWBJ7OR9BD3TFSYteJj.jpg"
+  },
+  "Gong Min-jeung": {
+   "p": "/wkUiwCHq2Z2h4A7JDlhjrVGQiCk.jpg"
+  },
+  "Namgung Do-young": {},
+  "Kim A-young": {}
  }
 }
