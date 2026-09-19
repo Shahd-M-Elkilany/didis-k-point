@@ -6943,14 +6943,52 @@
    "lastAir": "2026-06-05",
    "country": "KR",
    "network": "Netflix",
-   "poster": "images/teach-you-a-lesson-1789520899090-xppz.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=LdezlX84py0",
      "title": "Official Trailer [ENG SUB]"
     }
    ],
-   "watched": "2026-06"
+   "watched": "2026-06",
+   "cast": [
+    "Kim Moo-yul",
+    "Lee Sung-min",
+    "Jin Ki-joo",
+    "P.O",
+    "Kim Jong-soo",
+    "Ahn Ha-young"
+   ],
+   "roles": [
+    "Na Hwa-jin",
+    "Choi Kang-seok",
+    "Im Han-rim",
+    "Bong Geun-dae",
+    "Hwang Gi-tae",
+    "Choi Ga-yun"
+   ],
+   "crew": [
+    {
+     "name": "Han Ga-ram",
+     "job": "Creator"
+    },
+    {
+     "name": "Chae Yong-taek",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Jong-chan",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Nam-kyu",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Kim Da-hee",
+     "job": "Screenplay"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg"
   },
   {
    "id": "dream-to-you",
@@ -8873,6 +8911,28 @@
   "Bae Jong-ok": {
    "p": "/sIn8u0JmFNd9MYqW6wgC0Rv52xY.jpg"
   },
-  "Chu Song-yeon": {}
+  "Chu Song-yeon": {},
+  "Lee Sung-min": {
+   "p": "/p71yyyIQmHbrOZHU2lphMvjlVIk.jpg"
+  },
+  "Kim Jong-soo": {
+   "p": "/bcZLy3t0EXvRY4EWsD5BoEt3xOM.jpg"
+  },
+  "Ahn Ha-young": {
+   "p": "/a4BwdtRS1VjzARuqmCV2JWQUf43.jpg"
+  },
+  "Han Ga-ram": {
+   "p": "/itCvVFRePlQmg5svBMX1F85mpfR.jpg"
+  },
+  "Chae Yong-taek": {
+   "p": "/9yNq77bzQaxdBsLDBwzf7LEnn8P.jpg"
+  },
+  "Hong Jong-chan": {
+   "p": "/uOFfEaWRxrlWcefcmZP1tBv15Mh.jpg"
+  },
+  "Lee Nam-kyu": {
+   "p": "/xRyEwXszGWKL3L00i7nIz1Vs81q.jpg"
+  },
+  "Kim Da-hee": {}
  }
 }
