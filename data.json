@@ -6949,14 +6949,48 @@
    "firstAir": "2026-05-08",
    "lastAir": "2026-06-20",
    "country": "KR",
-   "poster": "images/royal-nemesis-1789516432125-sl2i.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=efj9rk9mCeo",
      "title": "Final Trailer [ENG SUB]"
     }
    ],
-   "watched": "2026-06"
+   "watched": "2026-06",
+   "cast": [
+    "Im Ji-yeon",
+    "Heo Nam-jun",
+    "Jang Seung-jo",
+    "Kim Min-seok",
+    "Lee Se-hee",
+    "Yoon Byung-hee"
+   ],
+   "roles": [
+    "Shin Seo-ri / Kang Dan-sim",
+    "Cha Se-gye / Yi Hyeon",
+    "Choi Mun-do / King An-jeong",
+    "Bae Gwang-nam",
+    "Yoon Ji-hyo",
+    "Son Jae-han"
+   ],
+   "crew": [
+    {
+     "name": "Kang Hyun-joo",
+     "job": "Creator"
+    },
+    {
+     "name": "Kang Hyun-joo",
+     "job": "Writer"
+    },
+    {
+     "name": "Han Tae-seob",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Min-tae",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/royal-nemesis-1789783252685-dchv.jpg"
   },
   {
    "id": "teach-you-a-lesson",
@@ -9049,6 +9083,11 @@
   "Hong Gi-jun": {
    "p": "/jSWU103gfGXoLRYynQexdGHVnhf.jpg"
   },
-  "Lee Young": {}
+  "Lee Young": {},
+  "Jang Seung-jo": {
+   "p": "/3HWGHh4Zazo4rEjQNz1B7KEJ9Cd.jpg"
+  },
+  "Kang Hyun-joo": {},
+  "Kim Min-tae": {}
  }
 }
