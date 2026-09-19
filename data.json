@@ -7332,7 +7332,33 @@
    "episodes": 14,
    "firstAir": "2026-01-02",
    "lastAir": "2026-02-14",
-   "poster": "images/the-judge-returns-1789520964471-ichz.jpg"
+   "cast": [
+    "Ji Sung",
+    "Won Jin-ah",
+    "Park Hee-soon",
+    "Baek Jin-hee",
+    "Oh Se-young",
+    "Hwang Hee"
+   ],
+   "roles": [
+    "Lee Han-young",
+    "Kim Jin-ah",
+    "Kang Shin-jin",
+    "Song Na-yeon",
+    "Yoo Se-hee",
+    "Park Cheol-wu"
+   ],
+   "crew": [
+    {
+     "name": "Lee Jae-jin",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Jae-jin",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/the-judge-returns-1789783223616-cr8y.jpg"
   },
   {
    "id": "the-apartment-job",
@@ -8979,6 +9005,18 @@
   },
   "Park Hae-young": {
    "p": "/w87x3MLSkee1ldto7MDFZpcSRTd.jpg"
+  },
+  "Won Jin-ah": {
+   "p": "/rgRHrpnvV5pSw2MdJtFjr7dlQ2n.jpg"
+  },
+  "Baek Jin-hee": {
+   "p": "/opTeHaQv6cNVlM33Tk50C2uxjeI.jpg"
+  },
+  "Oh Se-young": {
+   "p": "/iPA2Rf0xDC56DWy8EPE5slB5B7d.jpg"
+  },
+  "Lee Jae-jin": {
+   "p": "/bHTC0lz1yGL8dbCULnHIcvoHuRt.jpg"
   }
  }
 }
