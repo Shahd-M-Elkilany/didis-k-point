@@ -6744,7 +6744,6 @@
    "firstAir": "2026-02-13",
    "lastAir": "2026-02-13",
    "country": "KR",
-   "poster": "images/the-art-of-sarah-1789516464382-5k68.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=aPNZNcBIWNw",
@@ -6776,7 +6775,8 @@
      "name": "Kim Jin-min",
      "job": "Creator"
     }
-   ]
+   ],
+   "poster": "images/the-art-of-sarah-1789783187353-o11z.jpg"
   },
   {
    "id": "undercover-miss-hong",
