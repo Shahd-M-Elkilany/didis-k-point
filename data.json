@@ -7055,7 +7055,6 @@
    "episodes": 12,
    "firstAir": "2026-07-18",
    "lastAir": "2026-08-23",
-   "poster": "images/spooky-in-love-1789516134966-x7k0.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=gFvycajlifg",
@@ -7092,7 +7091,8 @@
      "name": "최정미",
      "job": "Writer"
     }
-   ]
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/acVOH8Pr5LEZ7WKZCbzwNuHVr9x.jpg"
   },
   {
    "id": "the-early-spring",
