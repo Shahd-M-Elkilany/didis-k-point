@@ -7291,7 +7291,41 @@
    "lastAir": "2026-09-08",
    "country": "KR",
    "network": "tvN",
-   "poster": "images/my-boss-my-bias-1789516399036-8csz.jpg"
+   "cast": [
+    "Kang Hoon",
+    "Kim Hye-jun",
+    "Cha Woo-min",
+    "YUNA",
+    "Chun Woo-jin",
+    "Yoon Hyun-suk"
+   ],
+   "roles": [
+    "Kang Ha-gi",
+    "Nam Da-reum",
+    "Lee Chan",
+    "Yoon Choi",
+    "Roy",
+    "Hyeok"
+   ],
+   "crew": [
+    {
+     "name": "Seong Eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Ji-an",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Young",
+     "job": "Writer"
+    },
+    {
+     "name": "박지현",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/my-boss-my-bias-1789783263623-unsg.jpg"
   },
   {
    "id": "spring-fever",
@@ -9088,6 +9122,21 @@
    "p": "/3HWGHh4Zazo4rEjQNz1B7KEJ9Cd.jpg"
   },
   "Kang Hyun-joo": {},
-  "Kim Min-tae": {}
+  "Kim Min-tae": {},
+  "Kim Hye-jun": {
+   "p": "/9ptrnFQm0uBBogrHLmRb91usDo0.jpg"
+  },
+  "YUNA": {
+   "p": "/9vjd24lq9Q2aSzd4QtY3nhLH5HB.jpg"
+  },
+  "Chun Woo-jin": {
+   "p": "/xDUeZ0jePwGW66hHs49Wnlu92rF.jpg"
+  },
+  "Yoon Hyun-suk": {
+   "p": "/ucy9RMTBygTW0UuStsjx5xcC7fe.jpg"
+  },
+  "Seong Eun": {},
+  "Kim Ji-an": {},
+  "박지현": {}
  }
 }
