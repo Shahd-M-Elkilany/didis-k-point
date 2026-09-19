@@ -7117,13 +7117,43 @@
    "lastAir": "2026-08-18",
    "country": "KR",
    "network": "ENA",
-   "poster": "images/dream-to-you-1789516256475-lkmr.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=CrW2onTvp7s",
      "title": "Trailer [ENG SUB]"
     }
-   ]
+   ],
+   "cast": [
+    "Hwang In-youp",
+    "Lee Hye-ri",
+    "Baek Sung-chul",
+    "Lee Yul-eum",
+    "Lee Sang-yeob",
+    "Park Ji-young"
+   ],
+   "roles": [
+    "Woo Su-bin",
+    "Joo Yi-jae",
+    "Shim Yu-geon",
+    "Oh Ha-na",
+    "Seo In-wook",
+    "An Su-hui"
+   ],
+   "crew": [
+    {
+     "name": "Jeong Eun-bi",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo Sun-dong",
+     "job": "Director"
+    },
+    {
+     "name": "Jeong Eun-bi",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/cBiwrUwUNNYXTc5xrDEQWcMqftd.jpg"
   },
   {
    "id": "the-wonderfools",
@@ -9241,6 +9271,16 @@
    "p": "/8M4PRXZGllg3yrwluJraP1bakLO.jpg"
   },
   "Park Joong-seop": {},
-  "Oh Gwang-hui": {}
+  "Oh Gwang-hui": {},
+  "Baek Sung-chul": {
+   "p": "/2zGYEMlDuQWlUBGZ93TeY942a6F.jpg"
+  },
+  "Lee Sang-yeob": {
+   "p": "/m3b6lKDDs6CmBqnaEWEUMdCVjZI.jpg"
+  },
+  "Jeong Eun-bi": {},
+  "Yoo Sun-dong": {
+   "p": "/inQLiElwPIeiKkIm7AWKjbWGtXu.jpg"
+  }
  }
 }
