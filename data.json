@@ -6750,6 +6750,32 @@
      "url": "https://www.youtube.com/watch?v=aPNZNcBIWNw",
      "title": "레이디 두아 | 공식 예고편 | 넷플릭스"
     }
+   ],
+   "cast": [
+    "Shin Hae-sun",
+    "Lee Jun-hyuk",
+    "Park Bo-kyung",
+    "Jung Da-bin",
+    "Shin Hyeon-seung",
+    "Bae Jong-ok"
+   ],
+   "roles": [
+    "Sarah Kim",
+    "Park Mu-gyeong",
+    "Jeong Yeo-jin",
+    "Woo Hyo-eun",
+    "Hyun Jae-hyun",
+    "Choi Chae-u"
+   ],
+   "crew": [
+    {
+     "name": "Chu Song-yeon",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Jin-min",
+     "job": "Creator"
+    }
    ]
   },
   {
@@ -8834,6 +8860,19 @@
   "Gao Xiaoxian": {
    "p": "/eEew7exX9PSgGgreNIOPyYRMtKD.jpg"
   },
-  "Gu Niang Bie Ku": {}
+  "Gu Niang Bie Ku": {},
+  "Lee Jun-hyuk": {
+   "p": "/zXo037qPJhdSvyhAjGCNoT0TcCF.jpg"
+  },
+  "Park Bo-kyung": {
+   "p": "/mHM4Zf1Knw6MdPrTsyfzrCckyaV.jpg"
+  },
+  "Shin Hyeon-seung": {
+   "p": "/5xkCNtJIJqozc0pitsgC38rukSc.jpg"
+  },
+  "Bae Jong-ok": {
+   "p": "/sIn8u0JmFNd9MYqW6wgC0Rv52xY.jpg"
+  },
+  "Chu Song-yeon": {}
  }
 }
