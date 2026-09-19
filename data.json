@@ -7114,13 +7114,31 @@
    "lastAir": "2026-09-09",
    "country": "CN",
    "network": "Youku",
-   "poster": "images/the-early-spring-1789516479266-xebs.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=7JsnZ47CTDg",
      "title": "Official Trailer"
     }
-   ]
+   ],
+   "cast": [
+    "Jing Boran",
+    "Sun Qian"
+   ],
+   "roles": [
+    "Luan Nian",
+    "Shang Zhitao"
+   ],
+   "crew": [
+    {
+     "name": "Gao Xiaoxian",
+     "job": "Producer"
+    },
+    {
+     "name": "Gu Niang Bie Ku",
+     "job": "Novel"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/lGFngmJWMO4HTPcI0sUGKBAFqMe.jpg"
   },
   {
    "id": "my-boss-my-bias",
@@ -8806,6 +8824,16 @@
    "p": "/gunEDHw5kp3Por19IelR8qOp8kL.jpg"
   },
   "Hwang In-ho": {},
-  "최정미": {}
+  "최정미": {},
+  "Jing Boran": {
+   "p": "/vsXA4vbmlYDUmAAUuLBYQUUcMcF.jpg"
+  },
+  "Sun Qian": {
+   "p": "/3W570R5S7hcjKb1gLLRMVc7liJH.jpg"
+  },
+  "Gao Xiaoxian": {
+   "p": "/eEew7exX9PSgGgreNIOPyYRMtKD.jpg"
+  },
+  "Gu Niang Bie Ku": {}
  }
 }
