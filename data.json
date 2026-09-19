@@ -7062,7 +7062,37 @@
      "title": "Official Trailer [ENG SUB]"
     }
    ],
-   "watched": "2026-08"
+   "watched": "2026-08",
+   "cast": [
+    "Park Eun-bin",
+    "Yang Se-jong",
+    "Ong Seong-wu",
+    "Jo Hye-joo",
+    "Baek Ji-won",
+    "Lee Chang-hoon"
+   ],
+   "roles": [
+    "Cheon Yeo-ri",
+    "Ma Gang-uk",
+    "Kang Min-hwan",
+    "Cheon Ha-ri",
+    "Ok Gye-hui",
+    "Ko Pil-dong"
+   ],
+   "crew": [
+    {
+     "name": "Hwang In-ho",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Min-soo",
+     "job": "Director"
+    },
+    {
+     "name": "최정미",
+     "job": "Writer"
+    }
+   ]
   },
   {
    "id": "the-early-spring",
@@ -8759,6 +8789,23 @@
   "Lee Seung-yeong": {},
   "Choderlos de Laclos": {
    "p": "/re6q4Vx56AzLDOrhDd0S8RpFDsv.jpg"
-  }
+  },
+  "Yang Se-jong": {
+   "p": "/zQQixC3LXRvvbiecDFbNGIKe5Nc.jpg"
+  },
+  "Ong Seong-wu": {
+   "p": "/wkEE49MqC6oCeTC3YqMfmM0FOmt.jpg"
+  },
+  "Jo Hye-joo": {
+   "p": "/7nBMavFQSdTK6ARlNgKaeCmYZ89.jpg"
+  },
+  "Baek Ji-won": {
+   "p": "/z8nW62LAHh3YW5Z1OlcK7hJcQ5S.jpg"
+  },
+  "Lee Chang-hoon": {
+   "p": "/gunEDHw5kp3Por19IelR8qOp8kL.jpg"
+  },
+  "Hwang In-ho": {},
+  "최정미": {}
  }
 }
