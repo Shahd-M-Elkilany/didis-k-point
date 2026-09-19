@@ -6748,13 +6748,49 @@
    "firstAir": "2026-01-16",
    "lastAir": "2026-01-16",
    "country": "KR",
-   "poster": "images/can-this-love-be-translated-1789516186104-lt1n.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=tNZG1aLBATY",
      "title": "Official Trailer [Subtitled]"
     }
-   ]
+   ],
+   "cast": [
+    "Kim Seon-ho",
+    "Go Youn-jung",
+    "Sota Fukushi",
+    "Lee E-dam",
+    "Choi Woo-sung"
+   ],
+   "roles": [
+    "Joo Ho-jin",
+    "Cha Mu-hee",
+    "Hiro Kurosawa",
+    "Shin Ji-seon",
+    "Kim Yong-woo"
+   ],
+   "crew": [
+    {
+     "name": "Yoo Young-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Mi-ran",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo Young-eun",
+     "job": "Director"
+    },
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/can-this-love-be-translated-1789783314325-q80m.jpg"
   },
   {
    "id": "the-art-of-sarah",
@@ -9281,6 +9317,18 @@
   "Jeong Eun-bi": {},
   "Yoo Sun-dong": {
    "p": "/inQLiElwPIeiKkIm7AWKjbWGtXu.jpg"
+  },
+  "Sota Fukushi": {
+   "p": "/kUC8afeFVBM5jVSdmJ4Gz12IggV.jpg"
+  },
+  "Lee E-dam": {
+   "p": "/raND8efeLH0TmIgs6ZSzgp42the.jpg"
+  },
+  "Choi Woo-sung": {
+   "p": "/rtVfcQa6ZNbOky8qllrlyER0XV9.jpg"
+  },
+  "Yoo Young-eun": {
+   "p": "/4icsXjeP3z9u66JVoz48YfovaNw.jpg"
   }
  }
 }
