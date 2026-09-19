@@ -6921,13 +6921,51 @@
    "lastAir": "2026-04-03",
    "country": "KR",
    "network": "MBC",
-   "poster": "images/in-your-radiant-season-1789516385363-e4o4.jpg",
    "videos": [
     {
      "url": "https://www.youtube.com/watch?v=scWRqoObKk8",
      "title": "[찬너계 1차 티저] 이성경X채종협의 '찬란 로맨스'가 찾아옵니다, MBC 260220 방송"
     }
-   ]
+   ],
+   "cast": [
+    "Lee Sung-kyung",
+    "Chae Jong-hyeop",
+    "Han Ji-hyeon",
+    "Kwon Hyuk",
+    "Oh Ye-ju",
+    "Kim Tae-young"
+   ],
+   "roles": [
+    "Song Ha-ran",
+    "Sunwoo Chan",
+    "Song Ha-yeong",
+    "Yeon Tae-seok",
+    "Song Ha-dam",
+    "Cha Yu-gyeom"
+   ],
+   "crew": [
+    {
+     "name": "Jo Sung-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Sang-hee",
+     "job": "Director"
+    },
+    {
+     "name": "Park Seon-ho",
+     "job": "Director"
+    },
+    {
+     "name": "Jo Sung-hee",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Park Sang-hyun",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/in-your-radiant-season-1789783275109-dqda.jpg"
   },
   {
    "id": "royal-nemesis",
@@ -9137,6 +9175,17 @@
   },
   "Seong Eun": {},
   "Kim Ji-an": {},
-  "박지현": {}
+  "박지현": {},
+  "Kwon Hyuk": {
+   "p": "/7R3CMR9Km4cN9FGVZdgBsOjKHBA.jpg"
+  },
+  "Oh Ye-ju": {
+   "p": "/fL9SPh2j0SZ0Oc17cQHk1upEK2f.jpg"
+  },
+  "Kim Tae-young": {
+   "p": "/nQKFXTmDeTMnkbqLQ2aGuRJFXil.jpg"
+  },
+  "Jo Sung-hee": {},
+  "Jung Sang-hee": {}
  }
 }
