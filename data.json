@@ -1,7 +1,7 @@
 {
  "name": "Didi's K-point",
  "tagline": "A drama journal",
- "updated": "2026-09-19",
+ "updated": "2026-09-29",
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
@@ -59,7 +59,15 @@
      "url": "https://www.youtube.com/watch?v=FeISX5E1uJc",
      "title": "Official Trailer [ENG SUB]"
     }
-   ]
+   ],
+   "scores": [
+    3.7,
+    3.7,
+    3.7,
+    3.7,
+    3.7
+   ],
+   "watched": "2026-09"
   },
   {
    "id": "the-east-palace",
@@ -7765,7 +7773,6 @@
  "scratch": [
   "Alchemy of Souls",
   "four hands two sonatas",
-  "scandal",
   "a love other than yours",
   "we are all trying here",
   "A Shop for Killers"
