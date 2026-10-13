@@ -478,9 +478,9 @@ function missingBits(s){
   return !s.summary || !s.poster || !s.episodes || !(s.videos||[]).length
       || !s.network || !s.country || !(s.cast||[]).length;
 }
-function openBatch(){
+function openBatch(only){
   if (!keys.tmdb) return openKeys(true);
-  const all = DATA.shows, todo = all.filter(missingBits);
+  const all = DATA.shows, todo = Array.isArray(only) ? only : all.filter(missingBits);
   const el = sheet("batchSheet", `
     <div class="sec-h"><h2>Fill in what's missing</h2><div class="rule"></div>
       <button class="x big" data-x type="button" aria-label="Close">×</button></div>
@@ -922,6 +922,17 @@ if (typeof openGh === "function"){
     if (t) t.placeholder = readGh().token ? "Saved — leave blank to keep it" : "github_pat_…";
   };
 }
+
+/* what boost.js is allowed to borrow */
+window.KP = {
+  hasTmdb: ()=>!!keys.tmdb,
+  openKeys: ()=>openKeys(true),
+  batch: list=>openBatch(list),
+  fetchOne, tmdb, details, apply, norm,
+  img: p=>p ? (/^https?:/.test(p) ? p : IMG+p) : "",
+  face: name=>{ const p = ((DATA.people||{})[name]||{}).p; return p ? FACE+p : ""; },
+  openPerson: name=>{ peopleOpen = name; peopleMode = "all"; peopleQ = ""; location.hash = "#/people"; }
+};
 
 /* masthead buttons — staged into Studio by app.js */
 const actions = document.querySelector(".mast-actions");

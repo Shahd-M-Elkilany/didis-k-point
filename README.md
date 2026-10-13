@@ -74,7 +74,12 @@ Click **✎ Edit mode**. Then:
 | Set a score | Click or drag along the bar |
 | Add a poster or stills | Drag pictures onto the article, paste a screenshot, or click the dotted box |
 | Set a poster without opening the show | Drag a picture straight onto its cover in the grid |
-| Change a status fast | Click the status button on the cover |
+| Change a status fast | Hover a cover: ✓ Watched · ▶ Watching · + Watchlist · ? Unsure · ✕ Dropped |
+| Score without opening it | Hover a cover and tap a star (half stars work) |
+| Count episodes | **+1 ep** on the cover, in *Continue watching*, or on the show page |
+| Log a finished show | **✓ Finished** — date, score and one line in a single sheet |
+| Fill gaps in bulk | *Needs attention* above the library → **Fix in a list** |
+| Move shows between statuses | Library → **Board**, then drag between columns |
 | Add a trailer | Paste a YouTube link in the Watch section — it embeds |
 | Change how an article looks | Details → Article layout → Standard, Poster-led, Photo essay, Quick take |
 | Add a show | **+ Add a show** in the header |
@@ -149,3 +154,31 @@ every load.
 - **Two people editing at once** will overwrite each other. It's a personal journal, so
   this is unlikely to bite, but it's worth knowing.
 - **If your token expires**, the Save button will say so. Make a new one and reconnect.
+
+---
+
+## Getting around
+
+- **Grid · Cover wall · Board** — switch above the library (or press **V**).
+- Tap a platform, country, genre, year or month anywhere to see everything that matches.
+- The address bar keeps your filters, so a filtered view can be bookmarked or sent.
+- The diary has a heatmap of what you finished each month; The numbers has clickable charts,
+  a radar of your five criteria and a side-by-side comparison of any two shows.
+- Suggestions ranks your own watchlist by what your scores say you like, and (with a TMDB
+  key) finds shows similar to your favourites.
+
+### Keyboard
+
+| Key | Does |
+|---|---|
+| `/` | Search |
+| `?` | Show all shortcuts |
+| `E` | Edit mode on / off |
+| `V` | Grid · wall · board |
+| `←` `→` | Previous / next show (on a show page) |
+| `1`–`5` | Score it (edit mode) |
+| `W` `S` `L` `U` `D` | Watched · Watching · Watchlist · Unsure · Dropped (edit mode) |
+| `F` | Finished it |
+| `+` | One more episode |
+| `T` | Play the trailer |
+

@@ -93,6 +93,12 @@ function watchLabel(w){
 }
 function needsWriteUp(s){ return (s.status==="W") && myScore(s)!=null && !(s.review||"").trim(); }
 function thisYear(){ return new Date().getFullYear(); }
+/* boost.js plugs extra pieces into cards and pages through these hooks */
+function hook(name, ...args){
+  const f = window["kp_"+name];
+  if (typeof f !== "function") return "";
+  try { return f(...args) || ""; } catch(e){ console.warn(name, e); return ""; }
+}
 
 function mediaSrc(p){
   if (!p) return null;
@@ -207,13 +213,15 @@ function nagIfStranded(){
 /* ── routing ────────────────────────────────────────────────── */
 function route(){
   const h = (location.hash||"").replace(/^#\/?/,"");
-  const [a,b] = h.split("/");
+  const [path, qs] = h.split("?");
+  const [a,b] = path.split("/");
   if (a==="show" && b){
     const s = get(decodeURIComponent(b));
     if (s){ openId = s.id; renderReader(); return; }
   }
   if (openId){ openId = null; $("#reader").classList.remove("on"); document.body.style.overflow=""; }
   view = VIEWS.some(v=>v[0]===a) ? a : "library";
+  hook("fromQuery", qs||"");
   renderTabs(); renderView();
 }
 function go(hashPath){ location.hash = "#/"+hashPath; }
@@ -437,6 +445,15 @@ function clearFilters(){
 /* Clicking a status pill (or a tile on The numbers) jumps to the library
    filtered to that status. Clicking the one that's already on clears it. */
 function showStatus(k){
+  /* coming from another page: start from a clean library */
+  if (view!=="library"){
+    Object.assign(state,{q:"",status:"all",genre:"all",net:"all",year:"all",
+                         watched:"all",country:"all",band:"all",kind:"all",todo:false,picks:false,need:"all"});
+    $("#q").value="";
+    ["#genreSel","#netSel","#yearSel","#watchedSel","#countrySel","#bandSel","#kindSel"]
+      .forEach(s=>{ if($(s)) $(s).value="all"; });
+    ["#todoChip","#pickChip"].forEach(s=>{ const e=$(s); if(e) e.setAttribute("aria-pressed","false"); });
+  }
   if (k==="picks"){
     const on = !(view==="library" && state.picks);
     state.picks = on;
@@ -497,12 +514,13 @@ function coverHTML(s){
     ${s.pick?`<span class="pickmark" title="Didi's pick">★</span>`:""}
     ${isFilm(s)?`<span class="filmmark">Film</span>`:""}
     ${ms!=null?`<span class="mypick">My score</span><span class="score">${ms}</span>`:""}
+    ${hook("coverExtra", s)}
   </div>`;
 }
 function cardHTML(s){
   const bits = [];
-  if (s.country) bits.push(countryName(s.country));
-  if (s.network) bits.push(esc(s.network));
+  if (s.country) bits.push(`<button type="button" class="tag-f" data-f="country:${esc(s.country)}" title="Show everything ${esc(countryName(s.country))}">${countryName(s.country)}</button>`);
+  netsOf(s).forEach(n=>bits.push(`<button type="button" class="tag-f" data-f="net:${esc(n)}" title="Show everything on ${esc(n)}">${esc(n)}</button>`));
   if (s.imdb) bits.push("IMDb "+s.imdb);
   if (s.episodes) bits.push(s.episodes+" eps");
   if (s.watched) bits.push("watched "+esc(watchLabel(s.watched)));
@@ -511,16 +529,17 @@ function cardHTML(s){
   const st = STATUS[s.status]||STATUS.L;
   return `<div class="card" data-id="${esc(s.id)}" tabindex="0" role="button" draggable="true">
     <div class="quick">
-      <button type="button" data-cycle="${esc(s.id)}" title="Change status">${st.name}</button>
       <button type="button" data-pickit="${esc(s.id)}" title="Didi's pick">${s.pick?"★":"☆"}</button>
       <button type="button" data-tolist="${esc(s.id)}" title="Add to the shortlist">+ List</button>
       <button type="button" data-setposter="${esc(s.id)}" title="${s.poster?"Replace the poster":"Set the poster"}">Poster</button>
       ${s.poster?`<button type="button" data-clearposter="${esc(s.id)}" title="Remove the poster">✕</button>`:""}
     </div>
     ${coverHTML(s)}
+    ${hook("quick", s)}
     <div class="c-meta">
       <span class="c-name">${esc(s.title)}</span>
       <span class="c-sub">${bits.join(" · ")||"&nbsp;"}</span>
+      ${hook("cardExtra", s)}
     </div></div>`;
 }
 function renderGrid(){
@@ -895,7 +914,10 @@ function renderReader(){
   r.scrollTop = 0;
   wireArticle(s);
 }
-function closeShow(){ go(view); }
+function closeShow(){
+  const back = hook("backHash");
+  if (back) location.hash = back; else go(view);
+}
 function ytId(u){
   const m = String(u).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([A-Za-z0-9_-]{11})/);
   return m ? m[1] : null;
@@ -1103,7 +1125,7 @@ function wireArticle(s){
 
   const bind = (sel, fn)=>on(sel,"input",e=>{ fn(e.target.value); markDirty(); });
   bind("#f-network", v=>s.network=v);
-  bind("#f-progress", v=>s.progress=v||undefined);
+  bind("#f-progress", v=>{ s.progress=v||undefined; s.touched = new Date().toISOString().slice(0,10); });
   bind("#f-comment", v=>s.comment=v||undefined);
   bind("#f-year", v=>s.year = v?parseInt(v,10):undefined);
   bind("#f-imdb", v=>s.imdb = v?parseFloat(v):undefined);
@@ -1112,13 +1134,16 @@ function wireArticle(s){
 
   /* Status change also dates it, so the diary fills itself in */
   on("#f-status","change",e=>{
+    const was = s.status;
     s.status = e.target.value;
+    s.touched = new Date().toISOString().slice(0,10);
     if (s.status==="W" && !s.watched){
       const now = new Date();
       s.watched = now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
       toast("Dated as "+watchLabel(s.watched)+" — change it in Details");
     }
     markDirty(); renderChrome(); renderReader();
+    if (s.status==="W" && was!=="W") hook("finish", s);
   });
 
   /* The month alone is enough now — the year fills itself in */
