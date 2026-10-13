@@ -48,7 +48,7 @@ let DATA = { name:"Didi's K-point", shows:[], scratch:[] };
 let pending = Object.create(null);
 let trash = [];
 const broken = new Set();
-let dirty = false, editMode = false, openId = null, view = "library";
+let dirty = false, editRev = 0, editMode = false, openId = null, view = "library";
 let rankSort = {key:"avg", dir:-1};
 let gh = { owner:"", repo:"", branch:"main", token:"" };
 const state = { q:"", status:"all", genre:"all", net:"all", year:"all",
@@ -215,7 +215,7 @@ function go(hashPath){ location.hash = "#/"+hashPath; }
 /* ── model ──────────────────────────────────────────────────── */
 function get(id){ return DATA.shows.find(s=>s.id===id); }
 function markDirty(){
-  dirty = true;
+  dirty = true; editRev++;
   try { localStorage.setItem(DRAFT_KEY, JSON.stringify(DATA)); } catch(e){}
   updateSaveBar();
 }
@@ -1515,36 +1515,63 @@ function b64blob(blob){
     fr.readAsDataURL(blob);
   });
 }
-async function putFile(path, contentB64, message){
-  let sha;
+/* GitHub's API can hand back a stale file fingerprint (sha) for a little while
+   after a commit, which makes the next write fail with "does not match".
+   So: remember the sha each successful write returns, bust caches when we
+   have to ask, and on a conflict re-ask and try again a few times. */
+const shaCache = Object.create(null);
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
+async function remoteSha(path){
   try {
-    const head = await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}?ref=${gh.branch}`,
-      {headers: ghHeaders(), cache:"no-store"});
-    if (head.ok) sha = (await head.json()).sha;
+    const head = await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}`+
+      `?ref=${encodeURIComponent(gh.branch)}&_=${Date.now()}`, {headers: ghHeaders(), cache:"no-store"});
+    if (head.ok) return (await head.json()).sha;
   } catch(e){}
-  const r = await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}`, {
-    method:"PUT", headers: Object.assign({"Content-Type":"application/json"}, ghHeaders()),
-    body: JSON.stringify({ message, content:contentB64, branch:gh.branch, sha })
-  });
-  if (!r.ok){
+  return undefined;
+}
+async function putFile(path, contentB64, message){
+  let sha = shaCache[path] || await remoteSha(path);
+  for (let attempt=0; ; attempt++){
+    const r = await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}`, {
+      method:"PUT", headers: Object.assign({"Content-Type":"application/json"}, ghHeaders()),
+      body: JSON.stringify({ message, content:contentB64, branch:gh.branch, sha })
+    });
+    if (r.ok){
+      const j = await r.json();
+      if (j && j.content && j.content.sha) shaCache[path] = j.content.sha;
+      return j;
+    }
     const j = await r.json().catch(()=>({}));
-    throw new Error((j.message||"GitHub refused the write")+" ("+path+")");
+    const conflict = r.status===409 || (r.status===422 && /sha/i.test(j.message||""));
+    if (conflict && attempt < 4){
+      delete shaCache[path];
+      await sleep(1200*(attempt+1));
+      sha = await remoteSha(path);
+      continue;
+    }
+    const e = new Error((j.message||"GitHub refused the write")+" ("+path+")");
+    e.status = r.status; e.conflict = conflict;
+    throw e;
   }
-  return r.json();
 }
 async function deleteFile(path){
   const head = await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}?ref=${gh.branch}`,
     {headers: ghHeaders(), cache:"no-store"});
   if (!head.ok) return;
   const sha = (await head.json()).sha;
+  delete shaCache[path];
   await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${path}`, {
     method:"DELETE", headers: Object.assign({"Content-Type":"application/json"}, ghHeaders()),
     body: JSON.stringify({ message:"Remove "+path, sha, branch:gh.branch })
   });
 }
+let saving = false;
 async function saveAll(){
+  if (saving) return toast("Already saving — hang on a second");
   if (!dirty && !trash.length) return toast("Nothing to save");
   if (!gh.token){ openGh(); return; }
+  saving = true;
+  const startRev = editRev;
   const btn = $("#saveBtn");
   btn.disabled = true; btn.textContent = "Saving…";
   try {
@@ -1572,8 +1599,11 @@ async function saveAll(){
     trash = trash.filter(p=>used.has(p));
     saveTrash();
 
-    dirty = false;
-    localStorage.removeItem(DRAFT_KEY);
+    // If something was edited while the save was running, keep it marked unsaved.
+    if (editRev === startRev){
+      dirty = false;
+      localStorage.removeItem(DRAFT_KEY);
+    }
     updateSaveBar();
     toast(todo.length
       ? "Published "+todo.length+" picture(s) — they appear for everyone in about a minute"
@@ -1582,10 +1612,15 @@ async function saveAll(){
     if (openId) renderReader();
   } catch(err){
     toast(String(err.message).slice(0,140));
+    const hint = err.conflict
+      ? "GitHub's copy changed while this was saving (another tab or device, or a save that just finished). Wait a few seconds and hit Save again."
+      : (err.status===401 || err.status===403 || err.status===404)
+        ? "Check the token has Contents: Read and write on this repository."
+        : "Check your connection and try again.";
     alert("Save failed:\n\n" + err.message +
-          "\n\nNothing was lost — your work is still in this browser. " +
-          "Check the token has Contents: Read and write on this repository.");
+          "\n\nNothing was lost — your work is still in this browser. " + hint);
   } finally {
+    saving = false;
     btn.disabled = false; btn.textContent = "Save to GitHub";
   }
 }
