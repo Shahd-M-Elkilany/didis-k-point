@@ -12,11 +12,17 @@
 const CRITERIA = [["plot","Plot"],["sequence","Sequence"],["characters","Characters"],
                   ["chemistry","Chemistry"],["impact","Impact on me"]];
 const STATUS = {
-  W:{name:"Watched",  cls:"w", color:"var(--pink)",   on:"var(--on-pink)"},
-  S:{name:"Watching", cls:"s", color:"var(--yellow)", on:"var(--on-yellow)"},
-  L:{name:"Watchlist",cls:"l", color:"var(--blue)",   on:"var(--on-blue)"},
-  U:{name:"Unsure",   cls:"u", color:"var(--violet)", on:"var(--on-violet)"},
-  D:{name:"Ditched",  cls:"d", color:"var(--ash)",    on:"var(--on-ash)"}
+  W:{name:"Watched",  cls:"w", color:"var(--pink)",   on:"var(--on-pink)",
+     hint:"Finished it"},
+  S:{name:"Watching", cls:"s", color:"var(--yellow)", on:"var(--on-yellow)",
+     hint:"Not finished yet, but I'll go back and finish it one day"},
+  L:{name:"Watchlist",cls:"l", color:"var(--blue)",   on:"var(--on-blue)",
+     hint:"Want to watch"},
+  U:{name:"Unsure",   cls:"u", color:"var(--violet)", on:"var(--on-violet)",
+     hint:"Not sure about this one yet"},
+  /* status code stays "D" so data.json doesn't need rewriting */
+  D:{name:"Dropped",  cls:"d", color:"var(--ash)",    on:"var(--on-ash)",
+     hint:"Stopped watching and not going back to it"}
 };
 const ORDER = ["W","S","L","U","D"];
 const COUNTRIES = [["KR","Korean"],["CN","Chinese"],["JP","Japanese"],["OT","Other"]];
@@ -265,13 +271,17 @@ function renderChrome(){
   const c = {W:0,S:0,L:0,U:0,D:0};
   all.forEach(s=>{ if (c[s.status]!=null) c[s.status]++; });
   $("#statBand").innerHTML =
-    ORDER.map(k=>`<div class="stat ${STATUS[k].cls}"><span class="n">${c[k]}</span><span class="k">${STATUS[k].name}</span></div>`).join("") +
-    `<div class="band-note">${all.filter(s=>myScore(s)!=null).length} scored · ${all.filter(s=>(s.review||"").trim()).length} written up · ${all.filter(s=>s.pick).length} picks</div>`;
+    ORDER.map(k=>`<button type="button" class="stat ${STATUS[k].cls}" data-stat="${k}"
+        aria-pressed="false" title="${esc(STATUS[k].hint)} — show these">
+        <span class="n">${c[k]}</span><span class="k">${STATUS[k].name}</span></button>`).join("") +
+    `<div class="band-note">${all.filter(s=>myScore(s)!=null).length} scored · ${all.filter(s=>(s.review||"").trim()).length} written up ·
+      <button type="button" class="band-link" data-stat="picks" aria-pressed="false" title="Show Didi's Picks">${all.filter(s=>s.pick).length} picks</button></div>`;
+  syncStatBand();
 
   if (!$("#statusChips").children.length){
     $("#statusChips").innerHTML =
       `<button class="chip" data-st="all" aria-pressed="true" type="button">All</button>` +
-      ORDER.map(k=>`<button class="chip ${STATUS[k].cls}" data-st="${k}" aria-pressed="false" type="button">${STATUS[k].name}</button>`).join("") +
+      ORDER.map(k=>`<button class="chip ${STATUS[k].cls}" data-st="${k}" aria-pressed="false" type="button" title="${esc(STATUS[k].hint)}">${STATUS[k].name}</button>`).join("") +
       `<button class="chip todo" id="todoChip" aria-pressed="false" type="button">✎ Needs a write-up</button>` +
       `<button class="chip pickchip" id="pickChip" aria-pressed="false" type="button">★ Didi's Picks</button>`;
   }
@@ -424,6 +434,23 @@ function clearFilters(){
   renderView();
 }
 
+/* Clicking a status pill (or a tile on The numbers) jumps to the library
+   filtered to that status. Clicking the one that's already on clears it. */
+function showStatus(k){
+  if (k==="picks"){
+    const on = !(view==="library" && state.picks);
+    state.picks = on;
+    const pc = $("#pickChip"); if (pc) pc.setAttribute("aria-pressed", String(on));
+  } else {
+    state.status = (view==="library" && state.status===k) ? "all" : k;
+    $$("#statusChips .chip[data-st]").forEach(c=>
+      c.setAttribute("aria-pressed", String(c.dataset.st===state.status)));
+  }
+  if (view!=="library"){ view = "library"; history.replaceState(null,"","#/library"); renderTabs(); }
+  renderView();
+  const to = $("#controls"); if (to) to.scrollIntoView({behavior:"smooth", block:"start"});
+}
+
 /* ── views ──────────────────────────────────────────────────── */
 function notReady(name){
   $("#page").innerHTML = `
@@ -445,6 +472,14 @@ function renderView(){
   else if (view==="numbers") renderNumbers();
   else if (view==="people") (window.renderPeople ? renderPeople() : notReady("The people"));
   else if (view==="suggest") (window.renderSuggest ? renderSuggest() : notReady("Suggestions"));
+  syncStatBand();
+}
+function syncStatBand(){
+  $$("#statBand [data-stat]").forEach(b=>{
+    const k = b.dataset.stat;
+    const on = view==="library" && (k==="picks" ? !!state.picks : state.status===k);
+    b.setAttribute("aria-pressed", String(on));
+  });
 }
 
 function coverHTML(s){
@@ -665,7 +700,7 @@ function renderNumbers(){
   const over = gaps.slice(0,5), under = gaps.slice(-5).reverse();
   const cc = {};
   all.forEach(s=>{ const k = s.country||"untagged"; cc[k]=(cc[k]||0)+1; });
-  const ditched = all.filter(s=>s.status==="D");
+  const dropped = all.filter(s=>s.status==="D");
 
   $("#page").innerHTML = `
     <div class="pagehead">
@@ -675,10 +710,10 @@ function renderNumbers(){
     </div>
 
     <div class="tiles">
-      <div class="tile"><span class="t-n">${watched.length}</span><span class="t-k">Finished</span></div>
+      <button type="button" class="tile" data-stat="W" title="Show everything you've finished"><span class="t-n">${watched.length}</span><span class="t-k">Finished</span></button>
       <div class="tile"><span class="t-n">${avg.toFixed(2)}</span><span class="t-k">Average score</span></div>
       <div class="tile"><span class="t-n">${full.length}</span><span class="t-k">Scored all five ways</span></div>
-      <div class="tile"><span class="t-n">${ditched.length}</span><span class="t-k">Ditched</span></div>
+      <button type="button" class="tile" data-stat="D" title="Show everything you dropped"><span class="t-n">${dropped.length}</span><span class="t-k">Dropped</span></button>
     </div>
 
     <div class="twoup">
@@ -732,9 +767,9 @@ function renderNumbers(){
       </div>
     </section>
 
-    ${ditched.length?`<section class="sec">
+    ${dropped.length?`<section class="sec">
       <div class="sec-h"><h2>The ones you walked away from</h2><div class="rule"></div></div>
-      <ol class="gaplist">${ditched.map(s=>`<li><button type="button" data-open="${esc(s.id)}">${esc(s.title)}</button>
+      <ol class="gaplist">${dropped.map(s=>`<li><button type="button" data-open="${esc(s.id)}">${esc(s.title)}</button>
         <span class="mono dim">${esc(s.progress||"no note on where you stopped")}</span></li>`).join("")}</ol>
     </section>`:""}
 
@@ -921,7 +956,7 @@ function articleHTML(s){
         <label class="field"><span class="label">IMDb</span>
           <input id="f-imdb" type="number" step="0.1" min="0" max="10" value="${s.imdb||""}"></label>
         <label class="field"><span class="label">Status</span>
-          <select id="f-status">${ORDER.map(k=>`<option value="${k}"${s.status===k?" selected":""}>${STATUS[k].name}</option>`).join("")}</select></label>
+          <select id="f-status">${ORDER.map(k=>`<option value="${k}"${s.status===k?" selected":""}>${STATUS[k].name} — ${esc(STATUS[k].hint)}</option>`).join("")}</select></label>
         <label class="field"><span class="label">Watched — year</span>
           <input id="f-wyear" type="number" min="1990" max="2040" placeholder="${thisYear()}"
             value="${s.watched?String(s.watched).split("-")[0]:""}"></label>
@@ -1382,6 +1417,12 @@ function wireChrome(){
     el.addEventListener("drop", dropOn);
   });
 
+  $("#statBand").addEventListener("click", e=>{
+    const b = e.target.closest("[data-stat]"); if (b) showStatus(b.dataset.stat);
+  });
+  $("#page").addEventListener("click", e=>{
+    const b = e.target.closest(".tile[data-stat]"); if (b) showStatus(b.dataset.stat);
+  });
   $("#statusChips").addEventListener("click", e=>{
     const todo = e.target.closest("#todoChip");
     if (todo){ state.todo = !state.todo; todo.setAttribute("aria-pressed",String(state.todo)); renderView(); return; }

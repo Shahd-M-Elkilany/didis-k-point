@@ -1,15 +1,15 @@
 /* ═══════════════════════════════════════════════════════════════════
    Didi's K-point — the additions
-   Ditched status, Didi's Picks, films, the one-score control, the
+   Dropped status, Didi's Picks, films, the one-score control, the
    shortlist drop target and the drag dock.
    Loads last, after style.css and chrome.css.
    ═══════════════════════════════════════════════════════════════ */
 :root{
-  --ash:#8C7A80;          /* ditched — the colour of walking away */
+  --ash:#8C7A80;          /* dropped — the colour of walking away */
   --on-ash:#FBF4E7;
 }
 
-/* ── ditched ────────────────────────────────────────────────── */
+/* ── dropped ────────────────────────────────────────────────── */
 .stat.d{background:linear-gradient(140deg,#6E5A62,#3B2C33)}
 .chip.d[aria-pressed="true"]{background:var(--ash); border-color:var(--ash); color:var(--on-ash)}
 .card:has(.stamp[style*="--ash"]) .cover .slab{filter:saturate(.45) brightness(.8)}
@@ -103,3 +103,17 @@ body.dragging-card .shortlist{outline:2px dashed var(--gold); outline-offset:6px
   body.dragging-card #dragdock{height:64px}
   #dragdock .dd-txt{font-size:10px; letter-spacing:.16em}
 }
+
+/* ── clickable status pills + number tiles ─────────────────── */
+button.stat, button.tile{font:inherit; text-align:left; cursor:pointer;
+  transition:transform .15s ease, box-shadow .15s ease, filter .15s ease}
+button.stat:hover, button.tile:hover{transform:translateY(-2px);
+  box-shadow:0 8px 18px #3a10203d; filter:brightness(1.08)}
+button.stat:focus-visible, button.tile:focus-visible, .band-link:focus-visible{
+  outline:2px solid var(--gold); outline-offset:3px}
+button.stat[aria-pressed="true"]{box-shadow:0 0 0 2px var(--paper), 0 0 0 4px var(--gold);
+  transform:translateY(-1px)}
+.band-link{font:inherit; font-style:inherit; color:inherit; background:none; border:0;
+  padding:0; cursor:pointer; text-decoration:underline; text-decoration-color:var(--gold);
+  text-underline-offset:3px}
+.band-link[aria-pressed="true"]{color:var(--oxblood); font-weight:600}
