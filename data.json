@@ -1070,7 +1070,45 @@
    "network": "KBS",
    "genres": "Drama, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 76114,
+   "summary": "Song Geurim is a radio program writer who isn't exactly talented in writing. She's got the passion, initiative, and drive, but due to her lack of writing skills, she still remains an assistant writer. When she was young, the radio was the only thing in the world that she could share with her blind mother. She was consoled by the sounds of the radio and loved it more than anything, so she became a writer. When her radio program is on the verge of cancellation, she succeeds in casting a top actor Ji Suho, who can't do anything without a script.",
+   "episodes": 16,
+   "firstAir": "2018-01-29",
+   "lastAir": "2018-03-20",
+   "cast": [
+    "Yoon Doo-joon",
+    "Kim So-hyun",
+    "Ha Jun",
+    "Yura",
+    "Yoon Park",
+    "Im Ji-gyu"
+   ],
+   "roles": [
+    "Ji Soo-Ho",
+    "Song Geu-Rim",
+    "Kim Joon-Woo",
+    "Jin Tae-Ri",
+    "Lee Gang",
+    "Lee Seung-Soo"
+   ],
+   "crew": [
+    {
+     "name": "Jeon Yu-ri",
+     "job": "Writer"
+    },
+    {
+     "name": "Moon Joon-ha",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/radio-romance-1793200034026-y293.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=rWab1gFEox4",
+     "title": "Radio Romance | 라디오 로맨스 [Trailer]"
+    }
+   ]
   },
   {
    "id": "a-poem-a-day",
@@ -10327,6 +10365,19 @@
   },
   "Jung Jae-il": {
    "p": "/a1q0hsgTTUJwaq0T3W02mi1b6Q6.jpg"
+  },
+  "Yoon Doo-joon": {
+   "p": "/7qb8hOcCNgOYEgxiQ7iPa4gWyws.jpg"
+  },
+  "Yoon Park": {
+   "p": "/tVcCKYAgfWWosil8zfk2rKmtFEv.jpg"
+  },
+  "Im Ji-gyu": {
+   "p": "/k6zfUwPd2HaUsvjzOeHytJni1gY.jpg"
+  },
+  "Jeon Yu-ri": {},
+  "Moon Joon-ha": {
+   "p": "/qpzz2TyU17alLuvSDFATMpCsqzj.jpg"
   }
  }
 }
