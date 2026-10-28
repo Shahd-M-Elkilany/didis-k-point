@@ -5,6 +5,65 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "doctor-x",
+   "title": "doctor x",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 293610,
+   "summary": "In a hospital dominated by ego and corruption, an enigmatic but brilliant surgeon arrives — taking on seemingly impossible cases amid fierce opposition.",
+   "episodes": 12,
+   "firstAir": "2026-10-09",
+   "lastAir": "2026-10-24",
+   "country": "KR",
+   "network": "SBS",
+   "cast": [
+    "Kim Ji-won",
+    "Lee Jung-eun",
+    "Son Hyun-joo",
+    "Kim Woo-seok",
+    "Lee Jin-hee",
+    "Kim Young-min"
+   ],
+   "roles": [
+    "Gye Su-jeong",
+    "Jeong Hee-sook",
+    "Bu Seung-gwon",
+    "Park Tae-gyeong",
+    "Jo Won-jin",
+    "Do Yoon-sik"
+   ],
+   "crew": [
+    {
+     "name": "Pyeon Seong-geun",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Jeong-lim",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Jae-woo",
+     "job": "Producer"
+    },
+    {
+     "name": "Pyeon Seong-geun",
+     "job": "Writer"
+    },
+    {
+     "name": "Hong Sung-chang",
+     "job": "Producer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/nDDVzQfv95PGwj9nV2fJvUrkcvU.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=v6KNnhkLnnY",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "touched": "2026-10-28"
+  },
+  {
    "id": "merry-berry-love",
    "title": "merry berry love",
    "year": 2026,
@@ -13465,6 +13524,17 @@
   "Lee Jae-yun": {},
   "Shinji Enari": {},
   "Kim Soo-jung": {},
-  "Roh Young-sub": {}
+  "Roh Young-sub": {},
+  "Son Hyun-joo": {
+   "p": "/pOpqydpiDrXvd9ynZEt8GQl6yJD.jpg"
+  },
+  "Lee Jin-hee": {
+   "p": "/ejdN4VmStDyyhi7sN5Nox5VVh5x.jpg"
+  },
+  "Pyeon Seong-geun": {},
+  "Lee Jae-woo": {},
+  "Hong Sung-chang": {
+   "p": "/nTH5dkbrO98l6xtmCm1YD5Q7af2.jpg"
+  }
  }
 }
