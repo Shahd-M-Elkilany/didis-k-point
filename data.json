@@ -982,7 +982,57 @@
    "network": "MBC",
    "genres": "Comedy, Romance, School",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 68349,
+   "summary": "A competitive swimmer crosses paths with his childhood friend, a rising weight lifting star, and realizes that she has a secret crush on his cousin.",
+   "episodes": 16,
+   "firstAir": "2016-11-16",
+   "lastAir": "2017-01-11",
+   "cast": [
+    "Lee Sung-kyung",
+    "Nam Joo-hyuk",
+    "Lee Jae-yoon",
+    "Gyeong Su-jin",
+    "Choi Woong",
+    "Ji Il-ju"
+   ],
+   "roles": [
+    "Kim Bok-joo",
+    "Jung Joon-hyung",
+    "Jung Jae-yi",
+    "Song Shi-ho",
+    "Kim Ki-seok",
+    "Tae-kwon"
+   ],
+   "crew": [
+    {
+     "name": "Kim Soo-jin",
+     "job": "Creator"
+    },
+    {
+     "name": "Oh Hyun-jong",
+     "job": "Creator"
+    },
+    {
+     "name": "Yang Hui-seung",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Soo-jin",
+     "job": "Writer"
+    },
+    {
+     "name": "Han Hee",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/weightlifting-fairy-1793200107337-qgu7.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=FKpPKqEg2Pc",
+     "title": "[NEW] Weightlifting Fairy Kim Bok Ju 1st teaser, 역도요정 김복주 1차 티저"
+    }
+   ]
   },
   {
    "id": "legend-of-the-blue-sea",
@@ -10774,6 +10824,25 @@
    "p": "/rVJRXGHjDSWkC58SgBYfMbeAm1t.jpg"
   },
   "Jang Hyeok-Rin": {},
-  "Kwak Jung-hwan": {}
+  "Kwak Jung-hwan": {},
+  "Lee Jae-yoon": {
+   "p": "/8hBRSqOatHmLrOuT0LFJ8fV5ekT.jpg"
+  },
+  "Gyeong Su-jin": {
+   "p": "/5gdThWkpzuNkNyQ6Cw29oOefvXO.jpg"
+  },
+  "Choi Woong": {
+   "p": "/rHjpDiOlgsm9XacwFxQzyLWbTQ7.jpg"
+  },
+  "Ji Il-ju": {
+   "p": "/wFp3Af5MD4MrGMD3ro2Gis4tAe7.jpg"
+  },
+  "Oh Hyun-jong": {
+   "p": "/iv4xA36b18oj7saQ8SOy2NkiqRy.jpg"
+  },
+  "Yang Hui-seung": {
+   "p": "/vW1RbpxmoWLuyD6oTzYQqtlJupl.jpg"
+  },
+  "Han Hee": {}
  }
 }
