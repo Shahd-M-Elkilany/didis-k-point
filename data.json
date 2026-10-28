@@ -938,7 +938,35 @@
    "network": "SBS",
    "genres": "Suspense, Drama, Crime",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 68890,
+   "summary": "Park Jung-Woo is a prosecutor at Seoul Central District Prosecutors' Office. One day, he wakes up and finds himself in locked up at the police station. He has temporary amnesia. Park Jung-Woo is falsely accused and is sentenced to death. He must struggle to prove his innocence.",
+   "episodes": 18,
+   "firstAir": "2017-01-23",
+   "lastAir": "2017-03-21",
+   "cast": [
+    "Ji Sung",
+    "Uhm Ki-joon",
+    "Kwon Yu-ri",
+    "Oh Chang-seok",
+    "Uhm Hyun-kyung",
+    "Son Yeo-eun"
+   ],
+   "roles": [
+    "Park Jung-Woo",
+    "Cha Sun-Ho / Cha Min-Ho",
+    "Seo Eun-Hye",
+    "Kang Joon-Hyuk",
+    "Na Yeon-Hee",
+    "Yoon Ji-Soo"
+   ],
+   "crew": [
+    {
+     "name": "Jeong Dong-yoon",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/defendant-1793200043417-cu5f.jpg"
   },
   {
    "id": "strong-woman-do-bong-soon",
@@ -10378,6 +10406,18 @@
   "Jeon Yu-ri": {},
   "Moon Joon-ha": {
    "p": "/qpzz2TyU17alLuvSDFATMpCsqzj.jpg"
+  },
+  "Kwon Yu-ri": {
+   "p": "/1Bz2sLQKHhFQMwIKCqxGXpEgodj.jpg"
+  },
+  "Oh Chang-seok": {
+   "p": "/k28KzPVKgVrZWZA7KwURX6duuS9.jpg"
+  },
+  "Uhm Hyun-kyung": {
+   "p": "/ekBPnpmP8nN2XMpujoC3A4SU6IJ.jpg"
+  },
+  "Jeong Dong-yoon": {
+   "p": "/fwQQ7Zckud6iVmlcUwBjIqtm3tb.jpg"
   }
  }
 }
