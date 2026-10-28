@@ -1354,7 +1354,64 @@
    "network": "SBS",
    "genres": "Comedy, Drama, Romance, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 67018,
+   "summary": "A mermaid from the Joseon period ends up in present-day Seoul, where she crosses paths with a swindler who may have ties to someone from her past.",
+   "episodes": 20,
+   "firstAir": "2016-11-16",
+   "lastAir": "2017-01-25",
+   "cast": [
+    "Gianna Jun",
+    "Lee Min-ho",
+    "Lee Hee-jun",
+    "Shin Won-ho",
+    "Shin Rin-a",
+    "Shin Hae-sun"
+   ],
+   "roles": [
+    "Shim Cheong / Se-hwa",
+    "Heo Joon-jae / Kim Dam-ryung",
+    "Jo Nam-doo / Park Moo",
+    "Tae-oh",
+    "Seo Yoo-na",
+    "Cha Shi-ah"
+   ],
+   "crew": [
+    {
+     "name": "Park Ji-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Ji-eun",
+     "job": "Writer"
+    },
+    {
+     "name": "Jin Hyuk",
+     "job": "Director"
+    },
+    {
+     "name": "Jinnie Choi",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Jong Byeong Bae",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/legend-of-the-blue-sea-1793201129567-zvdf.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=G_jt3EwBMwU",
+     "title": "The Legend of the Blue Sea - Trailer 2 | Lee Min Ho & Jun Ji Hyun 2016 Korean Drama"
+    }
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
   },
   {
    "id": "goblin",
@@ -13129,6 +13186,13 @@
   },
   "Kim Nam-hee": {},
   "Soonkki": {},
-  "Go Sun-hee": {}
+  "Go Sun-hee": {},
+  "Gianna Jun": {
+   "p": "/qejOQBdIzN18e69yRcsiD0JQi4c.jpg"
+  },
+  "Shin Rin-a": {
+   "p": "/MHYUqgSAn7sSuBWTukBoC5Nof8.jpg"
+  },
+  "Jong Byeong Bae": {}
  }
 }
