@@ -3332,7 +3332,65 @@
    "network": "Netflix",
    "genres": "Suspense, Drama, Survival, Crime",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 93405,
+   "summary": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+   "episodes": 22,
+   "seasons": 3,
+   "firstAir": "2021-09-17",
+   "lastAir": "2025-06-27",
+   "cast": [
+    "Lee Jung-jae",
+    "Yim Si-wan",
+    "Wi Ha-jun",
+    "Jo Yuri",
+    "Lee Byung-hun",
+    "Park Gyu-young"
+   ],
+   "roles": [
+    "Seong Gi-hun / Player 456",
+    "Lee Myung-gi / Player 333",
+    "Detective Hwang Jun-ho",
+    "Kim Jun-hee / Player 222",
+    "Front Man / Hwang In-ho",
+    "Kang No-eul / Guard 011"
+   ],
+   "crew": [
+    {
+     "name": "Hwang Dong-hyuk",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Jae-il",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Park Min-joo",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Kim Sung-soo",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Hwang Dong-hyuk",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=oqxAJKy0ii4",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "scores": [
+    3.8,
+    3.8,
+    3.8,
+    3.8,
+    3.8
+   ]
   },
   {
    "id": "yumis-cells",
@@ -11899,6 +11957,17 @@
   "Kim Hye-yoon": {
    "p": "/ujFBbc3d0UdS4qeioxvO3xRLkdl.jpg"
   },
-  "Yoo Hyun-mi": {}
+  "Yoo Hyun-mi": {},
+  "Lee Jung-jae": {
+   "p": "/lx8oiTXL9lIx78KOXlrlvNfoz43.jpg"
+  },
+  "Jo Yuri": {
+   "p": "/4GwoDQFPwpaKldOTpGrIJUzBa9h.jpg"
+  },
+  "Hwang Dong-hyuk": {
+   "p": "/xyr3b04ayyJtA5ZN3L0Af10WKIR.jpg"
+  },
+  "Park Min-joo": {},
+  "Kim Sung-soo": {}
  }
 }
