@@ -833,7 +833,56 @@
    "network": "MBC",
    "genres": "Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 63767,
+   "summary": "A former ugly duckling tries to track down his childhood first love. But what will happen when a case of false identities backfires?",
+   "episodes": 16,
+   "firstAir": "2015-09-16",
+   "lastAir": "2015-11-11",
+   "cast": [
+    "Hwang Jung-eum",
+    "Park Seo-jun",
+    "Choi Si-won",
+    "Go Joon-hee",
+    "Shin Dong-mi",
+    "Ahn Se-ha"
+   ],
+   "roles": [
+    "Kim Hye-jin",
+    "Ji Sung-joon",
+    "Kim Shin-hyuk",
+    "Min Ha-ri",
+    "Cha Joo-young",
+    "Kim Poong-ho"
+   ],
+   "crew": [
+    {
+     "name": "Jo Sung-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Dae-yoon",
+     "job": "Director"
+    },
+    {
+     "name": "Jo Sung-hee",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/she-was-pretty-1793201206139-nm5z.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=m01e07jGzl0",
+     "title": "[Teaser] 황정음, 박서준, 고준희, 최시원의 '그녀는 예뻤다' 9월 16일 첫 방송"
+    }
+   ],
+   "scores": [
+    3.7,
+    3.7,
+    3.7,
+    3.7,
+    3.7
+   ]
   },
   {
    "id": "reply-1988",
@@ -13369,6 +13418,15 @@
   "Seok Woo": {},
   "Lee Hyung-min": {
    "p": "/fbZs9CwH8hPiBOK3ciKK9U43lOa.jpg"
+  },
+  "Choi Si-won": {
+   "p": "/9NWbnMRKDa6HV2OeoNw0wTeyl6t.jpg"
+  },
+  "Go Joon-hee": {
+   "p": "/ksilFsztYt9Ojp2cbMk75nxumOS.jpg"
+  },
+  "Shin Dong-mi": {
+   "p": "/xqdLnXuECfvhd4CHQJFhlyi032V.jpg"
   }
  }
 }
