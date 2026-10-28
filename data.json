@@ -1830,7 +1830,52 @@
    "network": "tvN",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 85220,
+   "summary": "A gifted writer who's the youngest editor-in-chief ever at his publishing company gets enmeshed in the life of a former copywriter desperate for a job.",
+   "episodes": 16,
+   "firstAir": "2019-01-26",
+   "lastAir": "2019-03-17",
+   "cast": [
+    "Lee Jong-suk",
+    "Lee Na-young",
+    "Eugene Jung",
+    "Wi Ha-jun",
+    "Kim Tae-woo",
+    "Kim Yu-mi"
+   ],
+   "roles": [
+    "Cha Eun-ho",
+    "Kang Dan-yi",
+    "Song Hae-rin",
+    "Ji Seo-joon",
+    "Kim Jae-min",
+    "Ko Yoo-sun"
+   ],
+   "crew": [
+    {
+     "name": "Lee Jung-hyo",
+     "job": "Director"
+    },
+    {
+     "name": "Jung Hyun-jung",
+     "job": "Screenplay"
+    }
+   ],
+   "poster": "images/romance-is-a-bonus-book-1793200894592-h1jb.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=zjeXZEtEI2A",
+     "title": "Romance is a Bonus Book | Official Trailer [HD] | Netflix"
+    }
+   ],
+   "scores": [
+    3.7,
+    3.7,
+    3.7,
+    3.7,
+    3.7
+   ]
   },
   {
    "id": "her-private-life",
@@ -12538,6 +12583,9 @@
   },
   "Shin Woo-chul": {
    "p": "/DowyohPBdY0RL2BgOgXWKauDxZ.jpg"
+  },
+  "Eugene Jung": {
+   "p": "/iiY8UUU93EjutlfRrTZTPm566d6.jpg"
   }
  }
 }
