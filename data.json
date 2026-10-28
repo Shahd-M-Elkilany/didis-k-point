@@ -3150,7 +3150,64 @@
    "network": "JTBC",
    "genres": "Drama, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 126035,
+   "summary": "The intoxicating charm of a flirtatious art school classmate pulls a reluctant love cynic into a friends-with-benefits relationship.",
+   "episodes": 10,
+   "firstAir": "2021-06-19",
+   "lastAir": "2021-08-21",
+   "cast": [
+    "Han So-hee",
+    "Song Kang",
+    "Chae Jong-hyeop",
+    "Lee Yul-eum",
+    "Yang Hye-ji",
+    "Kim Kang-bin"
+   ],
+   "roles": [
+    "Yoo Na-bi",
+    "Park Jae-eon",
+    "Yang Do-hyeok",
+    "Yoon Seol-a",
+    "Oh Bit-na",
+    "Nam Gyu-hyun"
+   ],
+   "crew": [
+    {
+     "name": "Jung Seo",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Ga-ram",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Ga-ram",
+     "job": "Director"
+    },
+    {
+     "name": "Jung Won",
+     "job": "Writer"
+    },
+    {
+     "name": "Park Seong-eun",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/nevertheless-1793200548594-0ik7.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=xJCTxUuu3js",
+     "title": "Nevertheless, | Official Trailer | Netflix [ENG SUB]"
+    }
+   ],
+   "scores": [
+    3.8,
+    3.8,
+    3.8,
+    3.8,
+    3.8
+   ]
   },
   {
    "id": "the-devil-judge",
@@ -11775,6 +11832,14 @@
   },
   "Yoo Je-won": {
    "p": "/swttyVOTvYv08CeLbhHyKS6cGGm.jpg"
-  }
+  },
+  "Kim Kang-bin": {
+   "p": "/qBOxRyaXPfshr60QZfNHCLgC1oj.jpg"
+  },
+  "Jung Seo": {},
+  "Kim Ga-ram": {
+   "p": "/v2DeTAV0lwxzuKi2wbfSvbdMPeh.jpg"
+  },
+  "Jung Won": {}
  }
 }
