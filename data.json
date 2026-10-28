@@ -3333,7 +3333,49 @@
    "network": "tvN",
    "genres": "Comedy, Action, Fantasy, Psychological",
    "country": "KR",
-   "status": "S"
+   "status": "S",
+   "tmdbId": 132979,
+   "summary": "A superhero drama about Soo-yeol who has lived his whole life as a materialistic police detective, but changes into a champion for justice and fights against police corruption when a hidden persona called \"K\" awakens inside him.",
+   "episodes": 12,
+   "firstAir": "2021-12-17",
+   "lastAir": "2022-01-28",
+   "cast": [
+    "Lee Dong-wook",
+    "Wi Ha-jun",
+    "Han Ji-eun",
+    "Cha Hak-yeon",
+    "Kang Ae-sim",
+    "Kim Dae-gon"
+   ],
+   "roles": [
+    "Ryu Soo-yeol",
+    "K",
+    "Lee Hee-gyeom",
+    "Oh Kyung-tae",
+    "Seo Seung-sook",
+    "Ryu Dong-yeol"
+   ],
+   "crew": [
+    {
+     "name": "Kim Sae-bom",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo Sun-dong",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Sae-bom",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/bad-and-crazy-1793200182567-76wa.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=VLSIGKr7f9E",
+     "title": "Trailer: Ryu Su Yeol & K, an unlikely duo unites to regain humanity | Bad and Crazy | iQiyi Original"
+    }
+   ]
   },
   {
    "id": "snowdrop",
@@ -11173,6 +11215,19 @@
    "p": "/bNwN0gVkE2RLPjBKVpXSn4D2mgi.jpg"
   },
   "Kim Min-jung": {},
-  "Han Seok-won": {}
+  "Han Seok-won": {},
+  "Han Ji-eun": {
+   "p": "/zIDcvAITf82sEDqfAcDfHDybEnM.jpg"
+  },
+  "Cha Hak-yeon": {
+   "p": "/wI2xhjCXyWOWnH9iQK8PnGwLuEL.jpg"
+  },
+  "Kang Ae-sim": {
+   "p": "/mnUozozJf3VUpgi91ysfyxlRqs1.jpg"
+  },
+  "Kim Dae-gon": {
+   "p": "/zchl2U5HsmP964TB1Hm18HuNH5O.jpg"
+  },
+  "Kim Sae-bom": {}
  }
 }
