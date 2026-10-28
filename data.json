@@ -780,7 +780,50 @@
    "network": "KBS",
    "genres": "Fantasy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 62669,
+   "summary": "Despite a 200-year-old treaty between humans and vampires, both races still don't get along. Amidst the looming tension, Jung Jae Min, a posh yet kindhearted high school student, quickly falls for the mysterious new girl Baek Ma Ri. But can Ma Ri conceal her true vampire identity and give love an honest chance? If these star-crossed lovers can find the courage to make the leap, Jae Min and Ma Ri may just be the key to a final resolution between humans and vampires...",
+   "episodes": 12,
+   "firstAir": "2015-05-15",
+   "lastAir": "2015-07-24",
+   "cast": [
+    "Yeo Jin-goo",
+    "Kim Seol-hyun",
+    "Lee Jong-hyun",
+    "Song Jong-ho",
+    "Lee Il-hwa",
+    "Gil Eun-hye"
+   ],
+   "roles": [
+    "Jung Jae-min",
+    "Baek Ma-ri",
+    "Han Shi-hoo",
+    "Han Yoon-jae",
+    "Kang Min-ha",
+    "Jo Ah-ra"
+   ],
+   "crew": [
+    {
+     "name": "Seok Woo",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Hyung-min",
+     "job": "Director"
+    },
+    {
+     "name": "Choi Seong-beom",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/orange-marmalade-1793201182331-kosa.jpg",
+   "scores": [
+    2,
+    2,
+    2,
+    2,
+    2
+   ]
   },
   {
    "id": "she-was-pretty",
@@ -13310,6 +13353,22 @@
   },
   "Lee Kwon": {
    "p": "/iFuKriMZ8koGUZCLsFOkAIPftW1.jpg"
+  },
+  "Lee Jong-hyun": {
+   "p": "/plMraKGccUZeAfcGelw34gN0rdf.jpg"
+  },
+  "Song Jong-ho": {
+   "p": "/1XTHUwFZtHG1BMp36e0Clb2FE7V.jpg"
+  },
+  "Lee Il-hwa": {
+   "p": "/7xRYe23aiFhLd094wv1syDiFzai.jpg"
+  },
+  "Gil Eun-hye": {
+   "p": "/5azq1FI3kMBYbJXH3Z7meuCHpDc.jpg"
+  },
+  "Seok Woo": {},
+  "Lee Hyung-min": {
+   "p": "/fbZs9CwH8hPiBOK3ciKK9U43lOa.jpg"
   }
  }
 }
