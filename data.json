@@ -976,7 +976,57 @@
    "network": "JTBC",
    "genres": "Suspense, Comedy, Fantasy, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 68814,
+   "summary": "Born with supernatural strength, Bong-soon fights evil and procures justice while getting tangled in a love triangle with her CEO boss and cop crush.",
+   "episodes": 16,
+   "firstAir": "2017-02-24",
+   "lastAir": "2017-04-15",
+   "cast": [
+    "Park Bo-young",
+    "Park Hyung-sik",
+    "Kim Ji-soo",
+    "Jun Seok-ho",
+    "Shim Hye-jin",
+    "Yoo Jae-myung"
+   ],
+   "roles": [
+    "Do Bong-soon",
+    "Ahn Min-hyuk",
+    "In Guk-doo",
+    "Secretary Kong",
+    "Hwang Jin-i",
+    "Do Chil-goo"
+   ],
+   "crew": [
+    {
+     "name": "Baek Mi-kyoung",
+     "job": "Creator"
+    },
+    {
+     "name": "Song Won-sub",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Park In-sun",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Lee Jin-suk",
+     "job": "Producer"
+    },
+    {
+     "name": "Ra Sung-shik",
+     "job": "Producer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/sPdS6oUdXfBNGKROE5RY5s5laqx.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=HPle8DKUXbc",
+     "title": "Watch the trailer of \"Strong Woman Do Bong Soon\" (w/ Eng Subs)"
+    }
+   ]
   },
   {
    "id": "my-secret-romance",
@@ -10418,6 +10468,25 @@
   },
   "Jeong Dong-yoon": {
    "p": "/fwQQ7Zckud6iVmlcUwBjIqtm3tb.jpg"
-  }
+  },
+  "Park Hyung-sik": {
+   "p": "/8FHH9kQLRdByDOjdMn1oRUCEWZA.jpg"
+  },
+  "Kim Ji-soo": {
+   "p": "/pvjLDRzf6yysj0djCzWdO051yrD.jpg"
+  },
+  "Jun Seok-ho": {
+   "p": "/xMUCuermXrjVNOWDV3gIfpP5yhF.jpg"
+  },
+  "Shim Hye-jin": {
+   "p": "/dFZksi2ovgOy43fqZUHgzvi1988.jpg"
+  },
+  "Baek Mi-kyoung": {
+   "p": "/kWP4K2Xy0P8Cl8ecftPXni8ERAk.jpg"
+  },
+  "Song Won-sub": {},
+  "Park In-sun": {},
+  "Lee Jin-suk": {},
+  "Ra Sung-shik": {}
  }
 }
