@@ -934,7 +934,45 @@
    "network": "tvN",
    "genres": "Drama, Romance, Action, Suspense",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 67391,
+   "summary": "A patriotic bodyguard who was abandoned by his country and colleagues, a hidden daughter of leading Presidential candidate who regards love as a tool for revenge, and the First Lady contender who hides her ambition and charisma behind a kind and friendly personality.",
+   "episodes": 16,
+   "firstAir": "2016-09-23",
+   "lastAir": "2016-11-12",
+   "cast": [
+    "Ji Chang-wook",
+    "Song Yun-ah",
+    "Yoona",
+    "Cho Seong-ha",
+    "Kim Kap-soo",
+    "Lee Jung-jin"
+   ],
+   "roles": [
+    "Kim Je-ha",
+    "Choi Yoo-jin",
+    "Ko An-na",
+    "Jang Se-joon",
+    "Park Gwan-soo",
+    "Choi Sung-won"
+   ],
+   "crew": [
+    {
+     "name": "Jang Hyeok-Rin",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Kwak Jung-hwan",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/the-k2-1793200101873-0jd8.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=P3F_ydSlTMs",
+     "title": "THE K2 (Exclusive) tvN's super-special bodyguard action drama THE K2 main teaser released! 160923..."
+    }
+   ]
   },
   {
    "id": "weightlifting-fairy",
@@ -10728,6 +10766,14 @@
   },
   "Kim Kyu-tae": {
    "p": "/9sriXZ6C29ADMsEFqezyEbeGOCc.jpg"
-  }
+  },
+  "Song Yun-ah": {
+   "p": "/g7RYwluNBsmZwUILiINSymmKoc7.jpg"
+  },
+  "Cho Seong-ha": {
+   "p": "/rVJRXGHjDSWkC58SgBYfMbeAm1t.jpg"
+  },
+  "Jang Hyeok-Rin": {},
+  "Kwak Jung-hwan": {}
  }
 }
