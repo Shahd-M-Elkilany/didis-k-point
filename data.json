@@ -1426,7 +1426,50 @@
    "network": "OCN",
    "genres": "Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 70744,
+   "summary": "A partying chaebol has a one-night stand with a beautiful girl. When she joins his company years later, it is difficult to hide their secret romance.",
+   "episodes": 13,
+   "firstAir": "2017-04-17",
+   "lastAir": "2017-05-30",
+   "cast": [
+    "Sung Hoon",
+    "Song Ji-eun",
+    "Kim Jae-young",
+    "Kim Si-young",
+    "Im Do-yoon",
+    "Lee Hae-in"
+   ],
+   "roles": [
+    "Cha Jin Wook",
+    "Lee Yoo Mi",
+    "Jung Hyun Tae",
+    "Wang Bok Ja",
+    "Kang Je Ni",
+    "Jang Eun Bi"
+   ],
+   "crew": [
+    {
+     "name": "Kang Cheol-woo",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Young-yoon",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Ha-na",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/my-secret-romance-1793201003161-cvn5.jpg",
+   "scores": [
+    3.7,
+    3.7,
+    3.7,
+    3.7,
+    3.7
+   ]
   },
   {
    "id": "suspicious-partner",
@@ -12870,6 +12913,22 @@
   },
   "Ko Gun-han": {
    "p": "/x9wPSUH71He1brPS4dsrcfN9flo.jpg"
-  }
+  },
+  "Song Ji-eun": {
+   "p": "/gzmENHQOaHDbEugMHk4d6UWQlUk.jpg"
+  },
+  "Kim Si-young": {
+   "p": "/c8zyLtl9f0nVvhQonJ7ylZS7S1E.jpg"
+  },
+  "Im Do-yoon": {
+   "p": "/z6ixvp4qb2eWBzMDgYBezWk1sNa.jpg"
+  },
+  "Lee Hae-in": {
+   "p": "/2x9Gzhtg0CCfgbqOnwuGG97BDJC.jpg"
+  },
+  "Kang Cheol-woo": {
+   "p": "/d45nLUlyf4dRiNmzuWm07ySTWP0.jpg"
+  },
+  "Kim Young-yoon": {}
  }
 }
