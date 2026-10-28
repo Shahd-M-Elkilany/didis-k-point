@@ -1164,7 +1164,45 @@
    "network": "SBS",
    "genres": "Drama, Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 70649,
+   "summary": "Nam Hong Ju, endowed with the ability to foresee events, resides with her widowed mother who runs a small restaurant. Despite her gift, she often finds herself powerless to change the outcomes. On the other side of the street, Jung Jae Chan, a rookie prosecutor, and his younger brother Seung Won become their new neighbors. An unusual dream involving Hong Ju, ruthless attorney Lee Yu Beom, and a life-saving intervention leads Jae Chan to realize their destinies are intertwined, as they begin sharing dreams and connecting in mysterious ways.",
+   "episodes": 32,
+   "firstAir": "2017-09-27",
+   "lastAir": "2017-11-16",
+   "cast": [
+    "Suzy",
+    "Lee Jong-suk",
+    "Jung Hae-in",
+    "Lee Sang-yeob",
+    "Hwang Young-hee",
+    "Shin Jae-ha"
+   ],
+   "roles": [
+    "Nam Hong-joo",
+    "Jeong Jae-chan",
+    "Han Woo-tak",
+    "Lee Yoo-beom",
+    "Yoon Moon-seon",
+    "Jeong Seung-won"
+   ],
+   "crew": [
+    {
+     "name": "Park Hye-ryun",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Oh Choong-hwan",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/while-you-were-sleeping-1793200061507-0x67.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=g-NQ-7Qeivs",
+     "title": "While You Were Sleeping (당신이 잠든 사이에) Teaser #3 | Watch with subs RIGHT after Korea!"
+    }
+   ]
   },
   {
    "id": "im-not-a-robot",
@@ -10553,6 +10591,12 @@
   "Jung Yoon-jung": {
    "p": "/rfbW1OgOWwttAU7dKMvi2o3dvMB.jpg"
   },
-  "Kim Byung-soo": {}
+  "Kim Byung-soo": {},
+  "Hwang Young-hee": {
+   "p": "/t6qR3LFv17ZsvlHPZUoODwtwxKa.jpg"
+  },
+  "Shin Jae-ha": {
+   "p": "/dPCaPnaL0GrqRvHnwITQqDmoNQc.jpg"
+  }
  }
 }
