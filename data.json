@@ -2883,7 +2883,43 @@
    "network": "MBC",
    "genres": "Drama, Fantasy, Suspense, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 157383,
+   "summary": "Would you trade your poor but loving family for a life of riches? When Seung Cheon gets his hands on a magical spoon that allows him to switch lives with his rich best friend, he thinks it’s a no-brainer. But life-altering decisions are always accompanied by a sense of doubt, and with only three chances to change his mind, Seung Cheon has to decide which of his two possible futures is worth keeping.",
+   "episodes": 16,
+   "firstAir": "2022-09-23",
+   "lastAir": "2022-11-12",
+   "cast": [
+    "Yook Sung-jae",
+    "Lee Jong-won",
+    "Jung Chae-yeon",
+    "Yeon Woo",
+    "Choi Won-young",
+    "Son Yeo-eun"
+   ],
+   "roles": [
+    "Lee Seung-chun",
+    "Hwang Tae-yong",
+    "Na Ju-hee",
+    "Oh Yeo-jin",
+    "Hwang Hyeon-do",
+    "Seo Young-sin"
+   ],
+   "crew": [
+    {
+     "name": "Song Hyun-wook",
+     "job": "Director"
+    },
+    {
+     "name": "Yoon Eun-kyung",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Seon-soo",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/the-golden-spoon-1793199917028-gjo6.jpg"
   },
   {
    "id": "cheer-up",
@@ -9627,6 +9663,22 @@
   "Jung Dae-yoon": {
    "p": "/65J58uFy5zsBbrxMjjpxBVGJjBX.jpg"
   },
-  "Kim Tae-hee": {}
+  "Kim Tae-hee": {},
+  "Yook Sung-jae": {
+   "p": "/shxDGBPUpygNxqXsEBZwUcMExNc.jpg"
+  },
+  "Lee Jong-won": {
+   "p": "/rMiWM5MybZJ0SoBuDAYxEt8dCD2.jpg"
+  },
+  "Yeon Woo": {
+   "p": "/tn2g5D33zqea9eKTpwVFFneyr2s.jpg"
+  },
+  "Son Yeo-eun": {
+   "p": "/icxTiLf5KXP7lPk57VlR6iRn3O8.jpg"
+  },
+  "Yoon Eun-kyung": {
+   "p": "/kvgXHaHNZX94gcs41aoTfUsCmKM.jpg"
+  },
+  "Kim Seon-soo": {}
  }
 }
