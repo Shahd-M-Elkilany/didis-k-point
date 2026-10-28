@@ -1460,7 +1460,45 @@
    "network": "JTBC",
    "genres": "Drama, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 96977,
+   "summary": "Drained from her life in the city, a young cellist moves to a quiet small town, where she encounters an old friend who helps her heal and remake herself.",
+   "episodes": 16,
+   "firstAir": "2020-02-24",
+   "lastAir": "2020-04-21",
+   "cast": [
+    "Seo Kang-joon",
+    "Park Min-young",
+    "Moon Jeong-hee",
+    "Lee Jae-wook",
+    "Im Se-mi",
+    "Kim Hwan-hee"
+   ],
+   "roles": [
+    "Im Eun-seop",
+    "Mok Hae-won",
+    "Shim Myeong-yeo",
+    "Lee Jang-u",
+    "Kim Bo-yeong",
+    "Im Hwi"
+   ],
+   "crew": [
+    {
+     "name": "Han Ga-ram",
+     "job": "Creator"
+    },
+    {
+     "name": "Han Ji-seung",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/when-the-weather-is-fine-1793199998872-mbjs.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=ZOuMRNMa8UU",
+     "title": "When the Weather is Fine Trailer #2 | Park Min Young, Seo Kang Joon | Now on Viu"
+    }
+   ]
   },
   {
    "id": "hospital-playlist",
@@ -10168,6 +10206,13 @@
   "Ham Yeong-hoon": {},
   "Joo Hyun": {
    "p": "/kzZHRP5zp5yDTLif4uERYtn8Ib5.jpg"
-  }
+  },
+  "Lee Jae-wook": {
+   "p": "/9dsWM2kiXO4utrg4GctdXDvhOKD.jpg"
+  },
+  "Kim Hwan-hee": {
+   "p": "/j3LPA7qgk12J1rTgojRHiMuKFOF.jpg"
+  },
+  "Han Ji-seung": {}
  }
 }
