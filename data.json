@@ -1290,7 +1290,49 @@
    "network": "OCN",
    "genres": "Suspense, Horror, Crime",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 89959,
+   "summary": "Unpleasant events disturb the life of an aspiring crime fiction writer when he becomes a resident of an apartment building teeming with shady neighbors.",
+   "episodes": 10,
+   "firstAir": "2019-08-31",
+   "lastAir": "2019-10-06",
+   "cast": [
+    "Yim Si-wan",
+    "Lee Dong-wook",
+    "Lee Hyun-wook",
+    "Park Jong-hwan",
+    "Ro Jong-hyun",
+    "Lee Jung-eun"
+   ],
+   "roles": [
+    "Yoon Jong-woo",
+    "Seo Moon-jo",
+    "Yoo Gi-hyeok",
+    "Byeon Deuk-jong",
+    "Kang Seok-yoon",
+    "Eom Bok-soon"
+   ],
+   "crew": [
+    {
+     "name": "Kim Yong-ki",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Yi-do",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Chang-hee",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/strangers-from-hell-1793200015454-pklr.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=aSP__swZhL0",
+     "title": "STRANGER FROM HELL | 2 MINUTE TRAILER | Free on Viu"
+    }
+   ]
   },
   {
    "id": "vagabond",
@@ -10213,6 +10255,20 @@
   "Kim Hwan-hee": {
    "p": "/j3LPA7qgk12J1rTgojRHiMuKFOF.jpg"
   },
-  "Han Ji-seung": {}
+  "Han Ji-seung": {},
+  "Yim Si-wan": {
+   "p": "/xhItkYqo5DnFunTLBe65npwi0Me.jpg"
+  },
+  "Lee Hyun-wook": {
+   "p": "/gu1sSYADankzaBQudyRhiL3mCuf.jpg"
+  },
+  "Park Jong-hwan": {
+   "p": "/uENBbZbwMH7ftvSy704n2owWV9g.jpg"
+  },
+  "Ro Jong-hyun": {
+   "p": "/z4qlXrpz5EWUDrjf3yaN3hoiN4T.jpg"
+  },
+  "Kim Yong-ki": {},
+  "Jung Yi-do": {}
  }
 }
