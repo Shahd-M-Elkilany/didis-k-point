@@ -5,6 +5,53 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "latent-of-autumn",
+   "title": "the lament of autumn",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 304452,
+   "summary": "In the turbulent era of the Republic of China, student Ye Pingjun takes a job at a Western Hunan meeting house to fund her mother’s medical care. However, she's unexpectedly caught in the crossfire of an assassination attempt against the powerful Yu family’s fifth son, Yu Changxuan, and ends up accused of a crime she didn’t commit. Pingjun strikes a bold bargain: if Changxuan cannot identify the true culprit within ten days, he must clear her name. What begins as a high-stakes investigation quickly evolves into a calculated courtship as Changxuan maneuvers to win her heart while hiding a complex web of secrets. Will their blossoming romance survive the encroaching shadows of war, or will the secrets of their past pull them apart?",
+   "episodes": 40,
+   "firstAir": "2026-10-12",
+   "lastAir": "2026-10-26",
+   "country": "CN",
+   "network": "Hunan Television, Mango TV",
+   "cast": [
+    "Cheng Lei",
+    "Xu Ruohan"
+   ],
+   "roles": [
+    "Yu Changxuan",
+    "Ye Pingjun"
+   ],
+   "crew": [
+    {
+     "name": "Kuk Kok-Leung",
+     "job": "Director"
+    },
+    {
+     "name": "Quan Ying",
+     "job": "Novel"
+    },
+    {
+     "name": "Ye Yang",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Wang Hui",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/latent-of-autumn-1793208644162-5ouk.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=4Idq9bH6zl8",
+     "title": "OFFICIAL TRAILER [Subtitled]"
+    }
+   ],
+   "touched": "2026-10-28"
+  },
+  {
    "id": "doctor-on-the-edge",
    "title": "doctor on the edge",
    "year": 2026,
@@ -13591,6 +13638,18 @@
   },
   "Joo In-young": {
    "p": "/p3H4MdWh49zcqFd2Skvtme9O7c.jpg"
-  }
+  },
+  "Cheng Lei": {
+   "p": "/lPCcaPjZkd1LVzIf9ZYRB82u9Z0.jpg"
+  },
+  "Xu Ruohan": {
+   "p": "/2STQEbzr74sOlJ4iGZLyWxsMenp.jpg"
+  },
+  "Kuk Kok-Leung": {
+   "p": "/jq4cIQnNZwHDWfpCZGjGfK3hYgT.jpg"
+  },
+  "Quan Ying": {},
+  "Ye Yang": {},
+  "Wang Hui": {}
  }
 }
