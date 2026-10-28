@@ -2094,7 +2094,64 @@
    "network": "MBC",
    "genres": "Comedy, School, Romance, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 93657,
+   "summary": "When a high-school girl finds that she is merely a character from a comic book whose destiny is decided by the writer, she decides to change the plot to suit her desires and find the love of her life.",
+   "episodes": 32,
+   "firstAir": "2019-10-02",
+   "lastAir": "2019-11-21",
+   "cast": [
+    "Kim Hye-yoon",
+    "Rowoon",
+    "Lee Jae-wook",
+    "Lee Na-eun",
+    "Jung Gun-joo",
+    "Kim Young-dae"
+   ],
+   "roles": [
+    "Eun Dan-oh",
+    "Number 13 / Haru",
+    "Baek Kyung",
+    "Yeo Joo-da",
+    "Lee Do-hwa",
+    "Oh Nam-joo"
+   ],
+   "crew": [
+    {
+     "name": "Moon Joo-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Dong-rae",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Sang-hyub",
+     "job": "Director"
+    },
+    {
+     "name": "In Ji-hye",
+     "job": "Writer"
+    },
+    {
+     "name": "Song Ha-young",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/extraordinary-you-1793200832467-lst6.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=a_1Tf3Rhf6E",
+     "title": "\"That handsome and tall guy is one of my classmates?\" [Extra ordinary YouㅣTeaser Trailer]"
+    }
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
   },
   {
    "id": "crash-landing-on-you",
@@ -12350,6 +12407,16 @@
   },
   "Lee Jung-hyo": {
    "p": "/cEo12JTBw7hHAS8x4720sg69bvM.jpg"
-  }
+  },
+  "Jung Gun-joo": {
+   "p": "/xWkRzpjrOEIlnhUEdMWGK2qpFqM.jpg"
+  },
+  "Moon Joo-hee": {},
+  "Kim Dong-rae": {},
+  "Kim Sang-hyub": {},
+  "In Ji-hye": {
+   "p": "/7YtQOQDAvZERHSyOWIjLxozZXhj.jpg"
+  },
+  "Song Ha-young": {}
  }
 }
