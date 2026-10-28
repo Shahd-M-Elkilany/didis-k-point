@@ -2549,7 +2549,57 @@
    "network": "JTBC",
    "genres": "Drama, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 154887,
+   "summary": "Three siblings, exhausted by the monotony of day-to-day adulthood, seek to find fulfillment and freedom from their unremarkable lives.",
+   "episodes": 16,
+   "firstAir": "2022-04-09",
+   "lastAir": "2022-05-29",
+   "cast": [
+    "Lee Min-ki",
+    "Kim Ji-won",
+    "Son Suk-ku",
+    "EL",
+    "Cheon Ho-jin",
+    "Lee Ki-woo"
+   ],
+   "roles": [
+    "Yeom Chang-hee",
+    "Yeom Mi-jeong",
+    "Mr. Gu",
+    "Yeom Gi-jeong",
+    "Yeom Je-ho",
+    "Cho Tae-hun"
+   ],
+   "crew": [
+    {
+     "name": "Kim Sok-yun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Hae-young",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Tae-seong",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Kim Sok-yun",
+     "job": "Director"
+    },
+    {
+     "name": "Park Hae-young",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/my-liberation-notes-1793199894244-b3om.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=FQEm4dPZsNo",
+     "title": "My Liberation Notes | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "shooting-stars",
@@ -9451,6 +9501,21 @@
   "Ok Ja-yeon": {
    "p": "/6yWwOkFMXYBJAC2z8sfN54DRAwj.jpg"
   },
-  "Lee Sang-baek": {}
+  "Lee Sang-baek": {},
+  "Lee Min-ki": {
+   "p": "/cS9o926nFrFaiWPGUXC07gSFGTA.jpg"
+  },
+  "EL": {
+   "p": "/4AkevGu4IoGiWEeq46nX3pvByWO.jpg"
+  },
+  "Lee Ki-woo": {
+   "p": "/sS1wmmunXNRlBxoQu2LuYMYY2H.jpg"
+  },
+  "Kim Sok-yun": {
+   "p": "/3Sy6iCAwYTZxev3040gmKofzJri.jpg"
+  },
+  "Kim Tae-seong": {
+   "p": "/xhgqPP53RXquNeqcZA3CcfhZsn9.jpg"
+  }
  }
 }
