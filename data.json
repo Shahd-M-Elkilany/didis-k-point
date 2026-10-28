@@ -1980,7 +1980,41 @@
    "network": "tvN",
    "genres": "Drama",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 119464,
+   "summary": "A 70-year-old with a dream and a 23-year-old with a gift lift each other out of harsh realities and rise to the challenge of becoming ballerinos.",
+   "episodes": 12,
+   "firstAir": "2021-03-22",
+   "lastAir": "2021-04-27",
+   "cast": [
+    "Park In-hwan",
+    "Song Kang",
+    "Na Moon-hee",
+    "Hong Seung-hee",
+    "Kim Tae-hun",
+    "Kim Soo-jin"
+   ],
+   "roles": [
+    "Sim Deok-chul",
+    "Lee Chae-rok",
+    "Choi Hae-nam",
+    "Sim Eun-ho",
+    "Ki Seung-joo",
+    "Sim Seong-suk"
+   ],
+   "crew": [
+    {
+     "name": "Oh Hwan-min",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/navillera-1793199956558-w5ep.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=YtK3Vtw4rno",
+     "title": "Navillera | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "youth-of-may",
@@ -9892,7 +9926,9 @@
   "Choi Sung-eun": {
    "p": "/sbtcXMrHoFVyX2Mw5s5NDryaUaM.jpg"
   },
-  "Kim Soo-jin": {},
+  "Kim Soo-jin": {
+   "p": "/72tFyGXH1ta8oV0ojOBKi61FIGW.jpg"
+  },
   "Park Seong-eun": {},
   "Patchanan Jiajirachote": {
    "p": "/mQR7V86Tigud3CiZeuuQPRuLMP9.jpg"
@@ -9937,6 +9973,21 @@
   "Lee Moon-sik": {
    "p": "/l35QNTHvVchdwKaX4TBvmC5ibRy.jpg"
   },
-  "Yoon Ji-ryun": {}
+  "Yoon Ji-ryun": {},
+  "Park In-hwan": {
+   "p": "/nQ9gZB2u5SXNnwTU8FLlIVYZBOS.jpg"
+  },
+  "Song Kang": {
+   "p": "/83fLAMMb1LGT8YZ4dgRI0fti3az.jpg"
+  },
+  "Na Moon-hee": {
+   "p": "/ly5hCJSjgCM0i2JQ0xeWqJZSliR.jpg"
+  },
+  "Kim Tae-hun": {
+   "p": "/8mTd6HpLDFK2cwiWhoyZO78A5n1.jpg"
+  },
+  "Oh Hwan-min": {
+   "p": "/goDyxLIG7QWDShPRT7yG9JYhgY1.jpg"
+  }
  }
 }
