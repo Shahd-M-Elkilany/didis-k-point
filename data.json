@@ -2515,7 +2515,64 @@
    "network": "KBS",
    "genres": "Comedy, Drama, Musical, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 106465,
+   "summary": "A riches-to-rags pianist who loses everything but her smile is guided by twinkling little stars to a small town where she finds hope, home and love.",
+   "episodes": 16,
+   "firstAir": "2020-10-07",
+   "lastAir": "2020-11-26",
+   "cast": [
+    "Go Ara",
+    "Lee Jae-wook",
+    "Kim Ju-hun",
+    "Shin Eun-soo",
+    "Ye Ji-won",
+    "Lee Soon-jae"
+   ],
+   "roles": [
+    "Goo Ra-Ra",
+    "Sun Woo-Joon",
+    "Cha Eun-Seok",
+    "Jin Ha-Young",
+    "Jin Sook-Kyeong",
+    "Kim Man-Bok"
+   ],
+   "crew": [
+    {
+     "name": "Oh Ji-young",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Min-gyeong",
+     "job": "Creator"
+    },
+    {
+     "name": "Oh Ji-young",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Min-gyeong",
+     "job": "Director"
+    },
+    {
+     "name": "Goo Sung-joon",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/do-do-sol-sol-la-la-sol-1793200657741-fpzl.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=QJVJsXpdxEQ",
+     "title": "Do Do Sol Sol La La Sol | Official Trailer | Netflix [ENG SUB]"
+    }
+   ],
+   "scores": [
+    3.8,
+    3.8,
+    3.8,
+    3.8,
+    3.8
+   ]
   },
   {
    "id": "start-up",
@@ -11975,6 +12032,19 @@
    "p": "/xyr3b04ayyJtA5ZN3L0Af10WKIR.jpg"
   },
   "Park Min-joo": {},
-  "Kim Sung-soo": {}
+  "Kim Sung-soo": {},
+  "Ye Ji-won": {
+   "p": "/lAPYKqxx9rKmVPcYHW4g6fqeQ1U.jpg"
+  },
+  "Lee Soon-jae": {
+   "p": "/zYjhQJ27PUY2hxiIr50AIJ7TWa8.jpg"
+  },
+  "Oh Ji-young": {
+   "p": "/8PsPz1JAyd3HRxrMkWTZ8j7Rujh.jpg"
+  },
+  "Kim Min-gyeong": {},
+  "Goo Sung-joon": {
+   "p": "/gT4QTSsJaytKPIAq4D1mI9FKLTi.jpg"
+  }
  }
 }
