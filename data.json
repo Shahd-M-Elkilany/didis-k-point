@@ -3741,7 +3741,56 @@
    "network": "JTBC",
    "genres": "Drama, Romance, Tragedy, Historical, Suspense",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 108291,
+   "summary": "An enduring love story in 1987 Seoul; Young-ro, a female university student, treats the bleeding Soo-ho, a student attending a prestigious university, who one day jumps into a women's university dormitory despite the dangerous situation.",
+   "episodes": 16,
+   "firstAir": "2021-12-18",
+   "lastAir": "2022-01-30",
+   "cast": [
+    "Jung Hae-in",
+    "JISOO",
+    "Yoo In-na",
+    "Jang Seung-jo",
+    "Yoon Se-a",
+    "Kim Hye-yoon"
+   ],
+   "roles": [
+    "Lim Soo-ho",
+    "Eun Yoeng-ro",
+    "Kang Cheong-ya",
+    "Lee Kang-moo",
+    "Pi Seung-hee",
+    "Kye Boon-ok"
+   ],
+   "crew": [
+    {
+     "name": "Yoo Hyun-mi",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Tae-seong",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Park Jun-seo",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/snowdrop-1793200573076-x4j3.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=HeIQjrZSbQA",
+     "title": "Snowdrop Limited Series Trailer | Rotten Tomatoes TV"
+    }
+   ],
+   "scores": [
+    4.1,
+    4.1,
+    4.1,
+    4.1,
+    4.1
+   ]
   },
   {
    "id": "doom-at-your-service",
@@ -11840,6 +11889,16 @@
   "Kim Ga-ram": {
    "p": "/v2DeTAV0lwxzuKi2wbfSvbdMPeh.jpg"
   },
-  "Jung Won": {}
+  "Jung Won": {},
+  "Yoo In-na": {
+   "p": "/zkw2hJv40No9ugqzr818e1Y8iDL.jpg"
+  },
+  "Yoon Se-a": {
+   "p": "/wdytv8MZeNjulCR4nMmpreuDS6w.jpg"
+  },
+  "Kim Hye-yoon": {
+   "p": "/ujFBbc3d0UdS4qeioxvO3xRLkdl.jpg"
+  },
+  "Yoo Hyun-mi": {}
  }
 }
