@@ -2611,7 +2611,57 @@
    "network": "Kakao TV",
    "genres": "Comedy, School, Romance",
    "country": "KR",
-   "status": "S"
+   "status": "S",
+   "tmdbId": 114395,
+   "summary": "Love is as tough as it is sweet for a lovestruck teenager, whose relationship with her next-door neighbor transforms as they grow into adulthood.",
+   "episodes": 24,
+   "firstAir": "2020-12-28",
+   "lastAir": "2021-02-20",
+   "cast": [
+    "So Joo-yeon",
+    "Kim Yo-han",
+    "Yeo Hoi-hyeon",
+    "Jo Hye-joo",
+    "Jung Jae-Oh",
+    "Park Ji-won"
+   ],
+   "roles": [
+    "Shin Sol-i",
+    "Cha Heon",
+    "Woo Dae-sung",
+    "Kang Ha-Young",
+    "Jung Jin-hwan",
+    "Oh Hee-Ji"
+   ],
+   "crew": [
+    {
+     "name": "Jang Yoo-Yeon",
+     "job": "Creator"
+    },
+    {
+     "name": "Choi Yoo-Jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Seo Min-jung",
+     "job": "Director"
+    },
+    {
+     "name": "Jang Yoo-Yeon",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Choi Yoo-Jung",
+     "job": "Screenplay"
+    }
+   ],
+   "poster": "images/a-love-so-beautiful-1793200232651-5lyh.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=0NiSVkyqfPs",
+     "title": "A Love So Beautiful | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "luca-the-beginning",
@@ -11430,6 +11480,18 @@
   },
   "Kim Yoon-joo": {},
   "Song Jae-jung": {},
-  "Jay J Yang": {}
+  "Jay J Yang": {},
+  "Yeo Hoi-hyeon": {
+   "p": "/wri1I9vkzULblDHGvF7ZK0sPGco.jpg"
+  },
+  "Jung Jae-Oh": {
+   "p": "/rJBwZtklg637vlr5E0U6yed4ajN.jpg"
+  },
+  "Park Ji-won": {
+   "p": "/o6mcItpsSI9sNUrY3sTakmre9OR.jpg"
+  },
+  "Jang Yoo-Yeon": {},
+  "Choi Yoo-Jung": {},
+  "Seo Min-jung": {}
  }
 }
