@@ -2783,7 +2783,60 @@
    "network": "Kakao TV",
    "genres": "Drama, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 113710,
+   "summary": "Heart stolen by a free-spirited woman after a beachside romance, a passionate architect sets out to reunite with her on the streets of Seoul.",
+   "episodes": 17,
+   "firstAir": "2020-12-22",
+   "lastAir": "2021-02-16",
+   "cast": [
+    "Ji Chang-wook",
+    "Kim Ji-won",
+    "Kim Min-seok",
+    "So Joo-yeon",
+    "Ryu Kyung-soo",
+    "Han Ji-eun"
+   ],
+   "roles": [
+    "Park Jae-won",
+    "Lee Eun-oh",
+    "Choi Kyung-joon",
+    "Seo Rin-yi",
+    "Kang Geon",
+    "Oh Sun-young"
+   ],
+   "crew": [
+    {
+     "name": "Jung Hyun-jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Shin-woo",
+     "job": "Director"
+    },
+    {
+     "name": "Jung Hyun-jung",
+     "job": "Writer"
+    },
+    {
+     "name": "Nam Hye-seung",
+     "job": "Original Music Composer"
+    }
+   ],
+   "poster": "images/lovestruck-in-the-city-1793200715703-hj0m.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=c_LSBRJB3wE",
+     "title": "Lovestruck in the City | Official Trailer | Netflix [ENG SUB]"
+    }
+   ],
+   "scores": [
+    3.8,
+    3.8,
+    3.8,
+    3.8,
+    3.8
+   ]
   },
   {
    "id": "a-love-so-beautiful",
@@ -12111,6 +12164,9 @@
    "p": "/5sDZDAAxgJVAi4fxfgKVKD6owaw.jpg"
   },
   "Yoo Jung-hee": {},
-  "Kim Jun-seok": {}
+  "Kim Jun-seok": {},
+  "Jung Hyun-jung": {
+   "p": "/sURAlEglbcthQIFf7Ce3Lnp4itz.jpg"
+  }
  }
 }
