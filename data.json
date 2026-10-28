@@ -2359,7 +2359,41 @@
    "network": "tvN",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "S"
+   "status": "S",
+   "tmdbId": 96462,
+   "summary": "Desperate to escape from his emotional baggage and the heavy responsibility he’s had all his life, a psychiatric ward worker begins to heal with help from the unexpected – a woman who writes fairy tales but doesn’t believe in them.",
+   "episodes": 16,
+   "firstAir": "2020-06-20",
+   "lastAir": "2020-08-09",
+   "cast": [
+    "Kim Soo-hyun",
+    "Seo Yea-ji",
+    "Oh Jung-se",
+    "Park Gyu-young"
+   ],
+   "roles": [
+    "Moon Gang-tae",
+    "Ko Moon-young",
+    "Moon Sang-tae",
+    "Nam Joo-ri"
+   ],
+   "crew": [
+    {
+     "name": "Jo Yong",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Shin-woo",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/its-okay-to-not-be-okay-1793200239374-p78u.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=89i-Fn2CqQg",
+     "title": "It's Okay to Not Be Okay | Official Trailer #2 | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "flower-of-evil",
@@ -11492,6 +11526,10 @@
   },
   "Jang Yoo-Yeon": {},
   "Choi Yoo-Jung": {},
-  "Seo Min-jung": {}
+  "Seo Min-jung": {},
+  "Seo Yea-ji": {
+   "p": "/a9moiE8WWuygU02m4KE3M2Nrrkp.jpg"
+  },
+  "Jo Yong": {}
  }
 }
