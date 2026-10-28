@@ -3732,7 +3732,57 @@
    "network": "Netflix",
    "genres": "Drama, Musical, Fantasy",
    "country": "KR",
-   "status": "S"
+   "status": "S",
+   "tmdbId": 123349,
+   "summary": "An enigmatic magician living in an abandoned amusement park introduces magic into the life of a high schooler struggling with harsh realities.",
+   "episodes": 6,
+   "firstAir": "2022-05-06",
+   "lastAir": "2022-05-06",
+   "cast": [
+    "Ji Chang-wook",
+    "Choi Sung-eun",
+    "Hwang In-youp",
+    "Chi Hae-won",
+    "Choi Young-jun",
+    "Yoo Jae-myung"
+   ],
+   "roles": [
+    "Lee Eul",
+    "Yun Ah-yi",
+    "Na Il-deung",
+    "Baek Ha-Na",
+    "Detective Kim",
+    "Il-deung's Father"
+   ],
+   "crew": [
+    {
+     "name": "Ha Il-kwon",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Seong-yoon",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Min-jung",
+     "job": "Writer"
+    },
+    {
+     "name": "Park Seong-il",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Han Seok-won",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/the-sound-of-magic-1793200174304-c2ub.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=GaVW093-cSw",
+     "title": "The Sound of Magic | Official Teaser | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "alchemy-of-souls",
@@ -11112,6 +11162,17 @@
   "Choi Soo-jin": {},
   "Kim Young Sup": {
    "p": "/6Hz21IVIrJ5ZFimZDwIVd4Nvd6m.jpg"
-  }
+  },
+  "Chi Hae-won": {
+   "p": "/usAZ7PwGfyZ5VsWAARjWpxLuFfS.jpg"
+  },
+  "Choi Young-jun": {
+   "p": "/8qi16JP0iqxDektKbQSsopKAhos.jpg"
+  },
+  "Ha Il-kwon": {
+   "p": "/bNwN0gVkE2RLPjBKVpXSn4D2mgi.jpg"
+  },
+  "Kim Min-jung": {},
+  "Han Seok-won": {}
  }
 }
