@@ -4920,7 +4920,52 @@
    "network": "Netflix",
    "genres": "Drama, Suspense, Revenge",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 131305,
+   "summary": "Fame. Money. Power. One young woman fights to become the next hottest celebrity in the glamorous yet scandalous world of influencers in Seoul.",
+   "episodes": 12,
+   "firstAir": "2023-06-30",
+   "lastAir": "2023-06-30",
+   "cast": [
+    "Park Gyu-young",
+    "Kang Min-hyuk",
+    "Lee Chung-ah",
+    "Lee Dong-gun",
+    "Jun Hyo-seong",
+    "Han Eu-ddeum"
+   ],
+   "roles": [
+    "Seo A-ri",
+    "Han Jun-kyoung",
+    "Yoon Si-hyeon",
+    "Jin Tae-jeon",
+    "Oh Min-hye",
+    "Angela"
+   ],
+   "crew": [
+    {
+     "name": "Kim Yi-young",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Cheol-kyu",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/celebrity-1793200270137-zim4.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=OIboeCkVKJk",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
   },
   {
    "id": "my-dearest",
@@ -11584,6 +11629,19 @@
   },
   "Choi Yoon-Kyo": {
    "p": "/dXjinkjkVdlQrW6yZxOfZRIkto7.jpg"
+  },
+  "Kang Min-hyuk": {
+   "p": "/fVSeudiTzbK13DYW2BcgdT0qJKJ.jpg"
+  },
+  "Jun Hyo-seong": {
+   "p": "/f9s0y70NyRLxhzfqA46hREqBfVX.jpg"
+  },
+  "Han Eu-ddeum": {
+   "p": "/xAb2qpwNAB6l2oQG9hwRV3irkvw.jpg"
+  },
+  "Kim Yi-young": {},
+  "Kim Cheol-kyu": {
+   "p": "/eLa7sXsRRGzb9RdVJVSFaGuDcpE.jpg"
   }
  }
 }
