@@ -488,7 +488,45 @@
    "network": "OCN",
    "genres": "Suspense, Action",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 61700,
+   "summary": "To combat rising violent crimes, the Police Chief asks Detective Oh Goo Tak to form a team consisting of criminals. He is currently suspended from the police force for using excessive force. He then gathers team members: Park Woong Chul who is a gangster, Lee Jung Moon who is the youngest serial killer with extraordinary intelligence and Jung Tae Soo who is a contract killer. Police Inspector Yoo Mi Young also joins the team and she tries to have these guys work as a team by dealing with them rationally and sometimes emotionally.",
+   "episodes": 11,
+   "firstAir": "2014-10-04",
+   "lastAir": "2014-12-13",
+   "cast": [
+    "Kim Sang-joong",
+    "Park Hae-jin",
+    "Don Lee",
+    "Kang Ye-won",
+    "Cho Dong-hyuk",
+    "Hwang Seung-eon"
+   ],
+   "roles": [
+    "Oh Gu-tak",
+    "Lee Jung-moon",
+    "Park Woong-cheol",
+    "Yoo Mi-young",
+    "Jung Tae-soo",
+    "Yang Yoo-jin"
+   ],
+   "crew": [
+    {
+     "name": "Han Jung-hoon",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Jung-min",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/bad-guys-1793200131898-1kdo.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=RKVDcPjCpLc",
+     "title": "Bad Guys 2 City of Evil   Official Trailer  나쁜 놈들 : 악의 도시"
+    }
+   ]
   },
   {
    "id": "pinocchio",
@@ -10949,6 +10987,25 @@
   },
   "Kim Hyung-suk": {
    "p": "/mUv2zCY6YgDrhnbxU8uDS05NX5P.jpg"
+  },
+  "Kim Sang-joong": {
+   "p": "/udcxh8bqXLy9rGpqE9S994JdQEP.jpg"
+  },
+  "Don Lee": {
+   "p": "/xqnARIEzfyr3BalhFBWHmCusLKH.jpg"
+  },
+  "Kang Ye-won": {
+   "p": "/sGFYYeV2WeM1wHZFFJCrXDfq014.jpg"
+  },
+  "Cho Dong-hyuk": {
+   "p": "/kS6Wu70u5wrzLvCaWgSJI8cfWPM.jpg"
+  },
+  "Hwang Seung-eon": {
+   "p": "/k5CsSiv1RROVKrS4ySxGcLnBK4C.jpg"
+  },
+  "Han Jung-hoon": {},
+  "Kim Jung-min": {
+   "p": "/iVDz9uECCh2RO2KlutLIfyT5oFF.jpg"
   }
  }
 }
