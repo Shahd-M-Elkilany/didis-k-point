@@ -888,7 +888,64 @@
    "network": "tvN",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 64548,
+   "summary": "Hong Seol and Yoo Jung attend the same college, but they couldn't be more different. Hong Seol is a poor, unpopular student with no money, while Yoo Jung is rich, well-liked, extremely smart, and popular. Hong Seol just wants to get through her college career quietly, but finds herself getting caught up in whatever Yoo Jung drags her into. Can Hong Seol break away, or will she continue to be the only person who sees Yoo Jung's true self?",
+   "episodes": 16,
+   "firstAir": "2016-01-04",
+   "lastAir": "2016-03-01",
+   "cast": [
+    "Park Hae-jin",
+    "Kim Go-eun",
+    "Seo Kang-joon",
+    "Park Min-ji",
+    "Nam Joo-hyuk",
+    "Lee Sung-kyung"
+   ],
+   "roles": [
+    "Yoo Jeong",
+    "Hong Seol",
+    "Baek In-ho",
+    "Jang Bo-ra",
+    "Kwon Eun-taek",
+    "Baek In-ha"
+   ],
+   "crew": [
+    {
+     "name": "Lee Yoon-jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Nam-hee",
+     "job": "Writer"
+    },
+    {
+     "name": "Soonkki",
+     "job": "Novel"
+    },
+    {
+     "name": "Go Sun-hee",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Yoon-jung",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/cheese-in-the-trap-1793201087206-182m.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=t32L06_mjKM",
+     "title": "Cheese In The Trap Trailer"
+    }
+   ],
+   "scores": [
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5
+   ]
   },
   {
    "id": "descendants-of-the-sun",
@@ -13056,6 +13113,15 @@
   },
   "Kim Ji-seok": {
    "p": "/qMKyA4CJvBNhLRBbjV6s6khlf5e.jpg"
-  }
+  },
+  "Park Min-ji": {
+   "p": "/mf4egNOcBl3ov9RvgR147aoKUKf.jpg"
+  },
+  "Lee Yoon-jung": {
+   "p": "/vumqxz41XZKv2OkkVJLe1wY6e3M.jpg"
+  },
+  "Kim Nam-hee": {},
+  "Soonkki": {},
+  "Go Sun-hee": {}
  }
 }
