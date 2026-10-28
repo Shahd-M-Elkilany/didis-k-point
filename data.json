@@ -5,6 +5,49 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "doctor-on-the-edge",
+   "title": "doctor on the edge",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 287009,
+   "summary": "In South Korea, military service is mandatory for all men. But a select few—like privileged medical students—can serve as public health doctors instead. This is the story of those privileged few. Do Ji-ui, a plastic surgeon, is assigned to Pyeondong-do, an isolated island no one wants to go to. From the very first day, ominous signs begin to appear. Can he survive a full year on this hellish island and make it out alive—or will the island break him before he can hold the line?",
+   "episodes": 12,
+   "firstAir": "2026-06-01",
+   "lastAir": "2026-07-07",
+   "country": "KR",
+   "network": "ENA",
+   "cast": [
+    "Lee Jae-wook",
+    "Shin Ye-eun",
+    "Hong Min-gi",
+    "Lee Soo-kyung",
+    "Kim Yoon-woo",
+    "Joo In-young"
+   ],
+   "roles": [
+    "Do Ji-ui",
+    "Yuk Ha-ri",
+    "Hyeon Chi-yeon",
+    "Um Jung-seon",
+    "Yong Ju-cheon",
+    "Hwang Shin-hye"
+   ],
+   "crew": [
+    {
+     "name": "Kim Ji-soo",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/doctor-on-the-edge-1793203067787-yxwl.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=z0KOkYokloM",
+     "title": "Main Trailer"
+    }
+   ],
+   "touched": "2026-10-28"
+  },
+  {
    "id": "doctor-x",
    "title": "doctor x",
    "year": 2026,
@@ -13535,6 +13578,15 @@
   "Lee Jae-woo": {},
   "Hong Sung-chang": {
    "p": "/nTH5dkbrO98l6xtmCm1YD5Q7af2.jpg"
+  },
+  "Hong Min-gi": {
+   "p": "/dzVsNHfyq0iBEYVRIJqHKx466yA.jpg"
+  },
+  "Lee Soo-kyung": {
+   "p": "/5an5tKfx3U2UUEN5uck2W1KfZS.jpg"
+  },
+  "Joo In-young": {
+   "p": "/p3H4MdWh49zcqFd2Skvtme9O7c.jpg"
   }
  }
 }
