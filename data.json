@@ -2104,7 +2104,64 @@
    "network": "tvN",
    "genres": "Suspense, Comedy, Drama, Romance, Action",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 94796,
+   "summary": "A paragliding mishap drops a South Korean heiress in North Korea -- and into the life of an army officer, who decides he will help her hide.",
+   "episodes": 16,
+   "firstAir": "2019-12-14",
+   "lastAir": "2020-02-16",
+   "cast": [
+    "Hyun Bin",
+    "Son Ye-jin",
+    "Seo Ji-hye",
+    "Kim Jung-hyun",
+    "Yang Kyung-won",
+    "Yoo Su-bin"
+   ],
+   "roles": [
+    "Ri Jeong-hyeok",
+    "Yoon Se-ri",
+    "Seo Dan",
+    "Goo Seung-joon",
+    "Pyo Chi-soo",
+    "Kim Joo-meok"
+   ],
+   "crew": [
+    {
+     "name": "Lee Jung-hyo",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Ji-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Nam Hye-seung",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Jang Young-woo",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Kim Hee-won",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/crash-landing-on-you-1793200794206-zu1s.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=K58Z1RORRaI",
+     "title": "Crash Landing on You | Official Trailer #2 | Netflix [ENG SUB]"
+    }
+   ],
+   "scores": [
+    4.1,
+    4.1,
+    4.1,
+    4.1,
+    4.1
+   ]
   },
   {
    "id": "itaewon-class",
@@ -12287,6 +12344,12 @@
   },
   "Jung Jin-young": {
    "p": "/8NHVBNi1Jb7f0RujRLtjD2i05tc.jpg"
+  },
+  "Hyun Bin": {
+   "p": "/JQFzhO9j8HRiyr7leGPj6cqhvM.jpg"
+  },
+  "Lee Jung-hyo": {
+   "p": "/cEo12JTBw7hHAS8x4720sg69bvM.jpg"
   }
  }
 }
