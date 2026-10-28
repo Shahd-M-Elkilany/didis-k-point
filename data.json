@@ -369,7 +369,58 @@
    "network": "KBS",
    "genres": "School, Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 37722,
+   "summary": "Six dedicated students at Kirin Art High School work to achieve their dreams of becoming stars in the Korean music industry.",
+   "episodes": 32,
+   "seasons": 2,
+   "firstAir": "2011-01-03",
+   "lastAir": "2012-03-20",
+   "cast": [
+    "Suzy",
+    "Kim Soo-hyun",
+    "TAECYEON",
+    "WOOYOUNG",
+    "IU",
+    "Ahn Sun-young"
+   ],
+   "roles": [
+    "Ko Hye-mi",
+    "Song Sam-dong",
+    "Jin Guk",
+    "Jason",
+    "Kim Pil-sook",
+    "Kang Oh-seon"
+   ],
+   "crew": [
+    {
+     "name": "Kim Seong-yoon",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Eung-bok",
+     "job": "Creator"
+    },
+    {
+     "name": "Bae Yong-jun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Hye-ryun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Jin-young",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/dream-high-1793201357697-irll.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Dh8t8tdwAiA",
+     "title": "[Drama Trailer] Dream High (드림 하이)"
+    }
+   ]
   },
   {
    "id": "city-hunter",
@@ -13823,6 +13874,19 @@
   "Hwang Kwang-hee": {
    "p": "/573WnrjL7YlnR5WrUAdG8Jdzn42.jpg"
   },
-  "Jeon Gi-Sang": {}
+  "Jeon Gi-Sang": {},
+  "TAECYEON": {
+   "p": "/zVOzETmSY8weWgvyh5KCfSyDSA7.jpg"
+  },
+  "WOOYOUNG": {
+   "p": "/bgk8fLL0wS3wSL0p8SpiJflxbJI.jpg"
+  },
+  "Ahn Sun-young": {},
+  "Bae Yong-jun": {
+   "p": "/d3NZRKhnh3rqWQyUioMmXufbnqR.jpg"
+  },
+  "Park Jin-young": {
+   "p": "/3npyaqH93cCgeY9JX8FVY2Uzfj4.jpg"
+  }
  }
 }
