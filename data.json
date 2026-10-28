@@ -1612,7 +1612,64 @@
    "network": "tvN",
    "genres": "Comedy, Horror, Fantasy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 75123,
+   "summary": "A self-serving mythical creature's bid for invincibility backfires when he finds himself at the mercy of a woman who can see otherworldly beings.",
+   "episodes": 20,
+   "firstAir": "2017-12-23",
+   "lastAir": "2018-03-04",
+   "cast": [
+    "Lee Seung-gi",
+    "Cha Seung-won",
+    "Oh Yeon-seo",
+    "Lee Hong-gi",
+    "Jang Kwang",
+    "EL"
+   ],
+   "roles": [
+    "Son O-gong",
+    "Devil King Woo / Woo Hwi",
+    "Jin Seon-mi / Samjang",
+    "Jeo Pal-kye / PK",
+    "Sa O-jeong / Yun Dae-shik",
+    "Ms. Ma Ji-young"
+   ],
+   "crew": [
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Hong-kyun",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Byeong-su",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Mi-ran",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/a-korean-odyssey-1793200964079-zj56.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=vf0HtEMlQCU",
+     "title": "A Korean Odyssey (2017) HD Trailer (English Subtitled)"
+    }
+   ],
+   "scores": [
+    3.9,
+    3.9,
+    3.9,
+    3.9,
+    3.9
+   ]
   },
   {
    "id": "radio-romance",
@@ -12745,6 +12802,17 @@
    "p": "/crbbaw0GyquWmVwA6cSGerIxpne.jpg"
   },
   "Choi Seong-beom": {},
-  "Choi Soo-young": {}
+  "Choi Soo-young": {},
+  "Oh Yeon-seo": {
+   "p": "/dmXIeZ3ARlB6z52MXuc8VpLoWut.jpg"
+  },
+  "Lee Hong-gi": {
+   "p": "/7XLhranbxfksAp7SkLp9JD4h0ws.jpg"
+  },
+  "Jang Kwang": {
+   "p": "/t8xMsqeIe3YzdFNeeh43TPs7c1Y.jpg"
+  },
+  "Park Hong-kyun": {},
+  "Kim Byeong-su": {}
  }
 }
