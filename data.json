@@ -560,7 +560,39 @@
    "network": "MBC",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 62266,
+   "summary": "A billionaire struggles with dissociative identity disorder after a traumatic childhood – can a newbie psychiatrist help him unite his alters?",
+   "episodes": 20,
+   "firstAir": "2015-01-07",
+   "lastAir": "2015-03-12",
+   "cast": [
+    "Ji Sung",
+    "Hwang Jung-eum",
+    "Park Seo-jun",
+    "Oh Min-suk",
+    "Kim Yoo-ri",
+    "Kim Young-ae"
+   ],
+   "roles": [
+    "Cha Do-hyun / Shin Se-gi",
+    "Oh Ri-jin",
+    "Oh Ri-on",
+    "Cha Ki-joon",
+    "Han Chae-yeon",
+    "Seo Tae-im"
+   ],
+   "crew": [
+    {
+     "name": "Han Hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Hee-yeol",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/kill-me-heal-me-1793200111816-z2bt.jpg"
   },
   {
    "id": "exo-next-door",
@@ -672,7 +704,57 @@
    "network": "KBS",
    "genres": "Comedy, Drama, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 64320,
+   "summary": "Dumped by her boyfriend of 15 years for gaining weight, a lawyer gets help from a hotshot personal trainer to get in shape and turn her life around.",
+   "episodes": 16,
+   "firstAir": "2015-11-16",
+   "lastAir": "2016-01-05",
+   "cast": [
+    "So Ji-sub",
+    "Shin Min-a",
+    "Jung Gyu-woon",
+    "Yoo In-young",
+    "Sung Hoon",
+    "Henry Lau"
+   ],
+   "roles": [
+    "Kim Young-ho / John Kim",
+    "Kang Ju-eun",
+    "Im U-sik",
+    "Oh Su-jin",
+    "Jang Jun-seong",
+    "Kim Ji-ung"
+   ],
+   "crew": [
+    {
+     "name": "Kim Hyung-suk",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Seong-yoon",
+     "job": "Producer"
+    },
+    {
+     "name": "Kim Hyung-suk",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Na-jeong",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Eun-ji",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/oh-my-venus-1793200119867-i7m9.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=6Ug6U9vcXwQ",
+     "title": "Oh My Venus | 오 마이 비너스  [Trailer]"
+    }
+   ]
   },
   {
    "id": "cheese-in-the-trap",
@@ -10843,6 +10925,30 @@
   "Yang Hui-seung": {
    "p": "/vW1RbpxmoWLuyD6oTzYQqtlJupl.jpg"
   },
-  "Han Hee": {}
+  "Han Hee": {},
+  "Oh Min-suk": {
+   "p": "/14gxqx1Wq6lx9c2u5czh9buLdGl.jpg"
+  },
+  "Kim Yoo-ri": {
+   "p": "/cv3PKMqASre6qGXMefHELaYyG1h.jpg"
+  },
+  "Kim Young-ae": {
+   "p": "/hxXVhuYkjneV4UCGazlYgNz5OU3.jpg"
+  },
+  "So Ji-sub": {
+   "p": "/bj8YIJd7kXnIoemM0GDqelon3kX.jpg"
+  },
+  "Jung Gyu-woon": {
+   "p": "/6S0kUQj5HFFbihI64JcmknEmjaJ.jpg"
+  },
+  "Yoo In-young": {
+   "p": "/x0vOHmoA04xhImosJ2o4UOXxJxh.jpg"
+  },
+  "Henry Lau": {
+   "p": "/apbaSap49dGzaE6TcmUshTWN25q.jpg"
+  },
+  "Kim Hyung-suk": {
+   "p": "/mUv2zCY6YgDrhnbxU8uDS05NX5P.jpg"
+  }
  }
 }
