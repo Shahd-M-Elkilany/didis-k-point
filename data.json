@@ -5,6 +5,65 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "love-in-disguise",
+   "title": "love in disguise",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 303745,
+   "summary": "Taekang Group's successor, Yoon Yi-jun, is the prime suspect of a shocking murder. To uncover the truth, Kang Jae-hee goes undercover as a male secretary to keep an eye on Yi-jun. The closer they get to what really happened, the closer Yi-jun and Jae-hee become. Will Jae-hee, who is hiding her identity, and Yi-jun, who is hiding a secret, be able to let their true feelings be known to one another?",
+   "episodes": 12,
+   "firstAir": "2026-10-19",
+   "lastAir": "2026-10-27",
+   "country": "KR",
+   "network": "tvN",
+   "cast": [
+    "Yim Si-wan",
+    "Seorina",
+    "Kim Jung-hyun",
+    "Yeon Woo",
+    "Ryu Seung-soo",
+    "Park Jun-myun"
+   ],
+   "roles": [
+    "Yoon Yi-jun",
+    "Kang Jae-hee",
+    "Kim Si-hyeon",
+    "Lee Hye-jung",
+    "Kang Seok-goo",
+    "Jo Sook-ja"
+   ],
+   "crew": [
+    {
+     "name": "Moon Soo-jeong",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Dan-hee",
+     "job": "Director"
+    },
+    {
+     "name": "Moon Soo-jeong",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Ah-hyun",
+     "job": "Novel"
+    },
+    {
+     "name": "Ryu Do-ha",
+     "job": "Novel"
+    }
+   ],
+   "poster": "images/love-in-disguise-1793202595949-yusf.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Q7Xj7sASXSU",
+     "title": "Teaser [Subtitled]"
+    }
+   ],
+   "touched": "2026-10-28"
+  },
+  {
    "id": "scandel",
    "title": "scandal",
    "year": 2026,
@@ -13195,6 +13254,15 @@
   "Shin Rin-a": {
    "p": "/MHYUqgSAn7sSuBWTukBoC5Nof8.jpg"
   },
-  "Jong Byeong Bae": {}
+  "Jong Byeong Bae": {},
+  "Ryu Seung-soo": {
+   "p": "/x9XcfwqcXNpk2hIrP6qeR0DDkOs.jpg"
+  },
+  "Park Jun-myun": {
+   "p": "/gz5080pQXOKm9TKJEWXRrR1JTui.jpg"
+  },
+  "Moon Soo-jeong": {},
+  "Lee Ah-hyun": {},
+  "Ryu Do-ha": {}
  }
 }
