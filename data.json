@@ -2975,7 +2975,58 @@
    "network": "Wavve",
    "genres": "Drama, Suspense, Action",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 200709,
+   "summary": "With the aid of unexpected friends, a gifted but introverted student confronts bullies and violent foes — unaware of how dangerous his world will become.",
+   "episodes": 16,
+   "seasons": 2,
+   "firstAir": "2022-11-18",
+   "lastAir": "2025-04-25",
+   "cast": [
+    "Park Ji-hoon",
+    "Choi Hyun-wook",
+    "Hong Kyung",
+    "Ryeoun",
+    "Choi Min-yeong",
+    "Yoo Su-bin"
+   ],
+   "roles": [
+    "Yeon Si-eun",
+    "Ahn Su-ho",
+    "Oh Beom-seok",
+    "Park Hu-min",
+    "Seo Jun-tae",
+    "Choi Hyo-man"
+   ],
+   "crew": [
+    {
+     "name": "Han Jun-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo Soo-min",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Dan-hee",
+     "job": "Director"
+    },
+    {
+     "name": "Yoo Soo-min",
+     "job": "Director"
+    },
+    {
+     "name": "Yoo Soo-min",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/hS9VVF5ffTVWNoC9B48QNsZFGy9.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=GDTz8sLK3_Q",
+     "title": "Trailer | BIFF2022 약한영웅 Class 1 Weak Hero Class 1 | 온 스크린"
+    }
+   ]
   },
   {
    "id": "reborn-rich",
@@ -9679,6 +9730,20 @@
   "Yoon Eun-kyung": {
    "p": "/kvgXHaHNZX94gcs41aoTfUsCmKM.jpg"
   },
-  "Kim Seon-soo": {}
+  "Kim Seon-soo": {},
+  "Park Ji-hoon": {
+   "p": "/zbNZZ8o6qF3gaDndsq76h19Pe33.jpg"
+  },
+  "Choi Min-yeong": {
+   "p": "/pPtfIxmzGOlIpls6atxaoTBxDiR.jpg"
+  },
+  "Yoo Su-bin": {
+   "p": "/vulO1ngz0s3jUBXQbW2ADuyK3Fa.jpg"
+  },
+  "Han Jun-hee": {
+   "p": "/m6anJPIzwQoSHv84JOQRWMKADB6.jpg"
+  },
+  "Yoo Soo-min": {},
+  "Park Dan-hee": {}
  }
 }
