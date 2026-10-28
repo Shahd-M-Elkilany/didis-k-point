@@ -2343,7 +2343,47 @@
    "network": "SBS",
    "genres": "Drama, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 129887,
+   "summary": "Will tell stories of emotional love and breakups. Ha Young-eun, a manager of the design team at a fashion label who is a trendy and intelligent realist. Yoon Jae-guk, a wealthy and popular freelancer photographer who also has the brains and looks. Hwang Chi-sook is a director of the fashion label’s design team who attended high school with Ha Young-eun and Seok Do-hoon is a skilled PR company CEO.",
+   "episodes": 16,
+   "firstAir": "2021-11-12",
+   "lastAir": "2022-01-08",
+   "cast": [
+    "Song Hye-kyo",
+    "Jang Ki-yong",
+    "Moon Choi",
+    "Kim Ju-hun",
+    "Park Hyo-joo",
+    "Yoon Na-moo"
+   ],
+   "roles": [
+    "Ha Youg-eun",
+    "Yoon Jae-guk",
+    "Hwang Chi-sook",
+    "Seok Do-hoon",
+    "Jeon Mi-sook",
+    "Kwak Soo-ho"
+   ],
+   "crew": [
+    {
+     "name": "Kang Eun-kyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Je-in",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Gil-bok",
+     "job": "Director"
+    },
+    {
+     "name": "Je-in",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/now-we-are-breaking-up-1793199963017-35em.jpg"
   },
   {
    "id": "school-2021",
@@ -9988,6 +10028,21 @@
   },
   "Oh Hwan-min": {
    "p": "/goDyxLIG7QWDShPRT7yG9JYhgY1.jpg"
+  },
+  "Moon Choi": {
+   "p": "/7IXoF4A7hhUgKCtXf1V4Ro4WytV.jpg"
+  },
+  "Park Hyo-joo": {
+   "p": "/gD3tfx1uy6TfoIHdBxhVIzIDcy4.jpg"
+  },
+  "Yoon Na-moo": {
+   "p": "/vXQA20pwMw0TwDB3GlW1WBcucJm.jpg"
+  },
+  "Je-in": {
+   "p": "/h2qZAyD6dxs6jcIYF0bAh2aGcO1.jpg"
+  },
+  "Lee Gil-bok": {
+   "p": "/3giW7jr74QFqJLDGMTioJDP0FpB.jpg"
   }
  }
 }
