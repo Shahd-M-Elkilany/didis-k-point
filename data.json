@@ -1180,7 +1180,64 @@
    "network": "MBC",
    "genres": "Suspense, Drama, Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 66330,
+   "summary": "After being pulled into the webtoon world created by her father, a surgical resident gets entangled in a murder mystery involving the story's hero.",
+   "episodes": 16,
+   "firstAir": "2016-07-20",
+   "lastAir": "2016-09-14",
+   "cast": [
+    "Lee Jong-suk",
+    "Han Hyo-joo",
+    "Eugene Jung",
+    "Lee Tae-hwan",
+    "Lee Si-eon",
+    "Park Won-sang"
+   ],
+   "roles": [
+    "Kang Cheol",
+    "Oh Yeon-joo",
+    "Yoon So-hee",
+    "Seo Do-yoon",
+    "Park Soo-bong",
+    "Han Cheol-ho"
+   ],
+   "crew": [
+    {
+     "name": "Song Jae-jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Song Jae-jung",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Son Hyung-suk",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Kim Sang-hun",
+     "job": "Producer"
+    },
+    {
+     "name": "Jung Dae-yoon",
+     "job": "Director"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/rBuCoS0VB9M6zkEUCvnVrfeF0J.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=iFyxffHNwvE",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ],
+   "scores": [
+    4.2,
+    4.2,
+    4.2,
+    4.2,
+    4.2
+   ]
   },
   {
    "id": "moon-lovers",
@@ -13193,6 +13250,17 @@
   "Shin Rin-a": {
    "p": "/MHYUqgSAn7sSuBWTukBoC5Nof8.jpg"
   },
-  "Jong Byeong Bae": {}
+  "Jong Byeong Bae": {},
+  "Lee Tae-hwan": {
+   "p": "/j63Ts7rk4VrCURnWPtGLn2h2ij3.jpg"
+  },
+  "Lee Si-eon": {
+   "p": "/4jcRr3q8pq3e8AFx9flvvoKVeVc.jpg"
+  },
+  "Park Won-sang": {
+   "p": "/1BUaoK9hmgayqrXUzbRezKLoyZQ.jpg"
+  },
+  "Son Hyung-suk": {},
+  "Kim Sang-hun": {}
  }
 }
