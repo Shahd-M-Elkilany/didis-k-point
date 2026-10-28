@@ -928,7 +928,57 @@
    "network": "KBS",
    "genres": "Drama, Comedy, Action, Romance, Historical",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 66496,
+   "summary": "An elite group of young warriors trained in morals and martial arts finds love and friendship in Silla during Korea’s ancient Three Kingdoms period.",
+   "episodes": 20,
+   "firstAir": "2016-12-19",
+   "lastAir": "2017-02-21",
+   "cast": [
+    "Park Seo-jun",
+    "Go Ara",
+    "Park Hyung-sik",
+    "Do Ji-han",
+    "Minho",
+    "Jo Yoon-woo"
+   ],
+   "roles": [
+    "Moo Myung / Sun Woo-Rang",
+    "Ah-Ro",
+    "Sam Maek-Jong / Ji Dwi-Rang",
+    "Ban-Ryu",
+    "Soo-Ho",
+    "Yeo-Wool"
+   ],
+   "crew": [
+    {
+     "name": "Yun Seong-sik",
+     "job": "Creator"
+    },
+    {
+     "name": "Yun Seong-sik",
+     "job": "Director"
+    },
+    {
+     "name": "Jung Hae-Ryong",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Kim Young-jo",
+     "job": "Director"
+    },
+    {
+     "name": "Park Eun-young",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/sXEiMRfG2IiSpa7gVWY401L6n21.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Sd8zd9SmFXk",
+     "title": "Hwarang: The Poet Warrior Youth | 화랑 [Trailer]"
+    }
+   ]
   },
   {
    "id": "defendant",
@@ -10597,6 +10647,23 @@
   },
   "Shin Jae-ha": {
    "p": "/dPCaPnaL0GrqRvHnwITQqDmoNQc.jpg"
-  }
+  },
+  "Go Ara": {
+   "p": "/cmURlYsKDnrcgER6chh16kbRegM.jpg"
+  },
+  "Do Ji-han": {
+   "p": "/lPBvEto0zu6GhMLufhGfshCcEjt.jpg"
+  },
+  "Minho": {
+   "p": "/vTeGWQubmMbFozpp4uf3N6t33pV.jpg"
+  },
+  "Jo Yoon-woo": {
+   "p": "/udV2dT8vy3pn408Sxka6L13n20d.jpg"
+  },
+  "Jung Hae-Ryong": {},
+  "Kim Young-jo": {
+   "p": "/bgtdffMxTRssk2aKq8QMiFEHaeB.jpg"
+  },
+  "Park Eun-young": {}
  }
 }
