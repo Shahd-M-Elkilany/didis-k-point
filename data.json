@@ -2949,7 +2949,57 @@
    "network": "JTBC",
    "genres": "Drama, Romance, Fantasy",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 153496,
+   "summary": "After ten years, a loyal employee is framed for embezzlement, then murdered by his employers, only to be reborn as their youngest son, with a yearn for revenge guiding his hostile takeover.",
+   "episodes": 16,
+   "firstAir": "2022-11-18",
+   "lastAir": "2022-12-25",
+   "cast": [
+    "Song Joong-ki",
+    "Lee Sung-min",
+    "Shin Hyun-been",
+    "Yoon Je-moon",
+    "Kim Shin-rock",
+    "Cho Han-chul"
+   ],
+   "roles": [
+    "Yoon Hyun-woo / Jin Do-jun",
+    "Jin Yang-chul",
+    "Seo Min-young",
+    "Jin Young-ki",
+    "Jin Hwa-young",
+    "Jin Dong-ki"
+   ],
+   "crew": [
+    {
+     "name": "San Kyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Dae-yoon",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Tae-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Dae-yoon",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Tae-hee",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/reborn-rich-1793199908116-fpmn.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=6lGImvjI_Sw",
+     "title": "Reborn Rich | Trailer | Viu Original"
+    }
+   ]
   },
   {
    "id": "the-glory",
@@ -9569,6 +9619,14 @@
   },
   "Noh Hee-kyung": {
    "p": "/v6qLAo1gKHmApQip1ZyyvQMfd4r.jpg"
-  }
+  },
+  "Yoon Je-moon": {
+   "p": "/ay4bL3m71dEPterBKxWzCmPpLNS.jpg"
+  },
+  "San Kyung": {},
+  "Jung Dae-yoon": {
+   "p": "/65J58uFy5zsBbrxMjjpxBVGJjBX.jpg"
+  },
+  "Kim Tae-hee": {}
  }
 }
