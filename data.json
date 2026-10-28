@@ -2539,7 +2539,45 @@
    "network": "tvN",
    "genres": "Drama, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 135840,
+   "summary": "Romance is sweet and bitter — and life riddled with ups and downs — in multiple stories about people who live and work on bustling Jeju island.",
+   "episodes": 20,
+   "firstAir": "2022-04-09",
+   "lastAir": "2022-06-12",
+   "cast": [
+    "Lee Byung-hun",
+    "Shin Min-a",
+    "Cha Seung-won",
+    "Lee Jung-eun",
+    "Han Ji-min",
+    "Kim Woo-bin"
+   ],
+   "roles": [
+    "Lee Dong-seok",
+    "Min Seon-a",
+    "Choi Han-su",
+    "Jung Eun-hui",
+    "Lee Yeong-ok",
+    "Park Jeong-jun"
+   ],
+   "crew": [
+    {
+     "name": "Noh Hee-kyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Jang Jung-do",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/our-blues-1793199901611-7j0n.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=vSBIJQOLKoY",
+     "title": "Our Blues | Official Trailer | Netflix"
+    }
+   ]
   },
   {
    "id": "my-liberation-notes",
@@ -9516,6 +9554,21 @@
   },
   "Kim Tae-seong": {
    "p": "/xhgqPP53RXquNeqcZA3CcfhZsn9.jpg"
+  },
+  "Lee Byung-hun": {
+   "p": "/5p5LDbZtnKhXDZL5227ExukbnRo.jpg"
+  },
+  "Cha Seung-won": {
+   "p": "/zT9SINDaQylXoRTWMb9OdBjLjLt.jpg"
+  },
+  "Han Ji-min": {
+   "p": "/v2c6JPiW2REiElPz5Tlb5LmrLKV.jpg"
+  },
+  "Kim Woo-bin": {
+   "p": "/AjMMxxWbTNdafyWuY41xAHFPVou.jpg"
+  },
+  "Noh Hee-kyung": {
+   "p": "/v6qLAo1gKHmApQip1ZyyvQMfd4r.jpg"
   }
  }
 }
