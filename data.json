@@ -2445,7 +2445,56 @@
    "network": "tvN",
    "genres": "Suspense, Crime, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 99494,
+   "summary": "Hiding a twisted past, a man maintains his facade as the perfect husband to his detective wife — until she begins investigating a series of murders.",
+   "episodes": 16,
+   "firstAir": "2020-07-29",
+   "lastAir": "2020-09-23",
+   "cast": [
+    "Lee Joon-gi",
+    "Moon Chae-won",
+    "Jang Hee-jin",
+    "Seo Hyun-woo",
+    "Jung Seo-yeon",
+    "Nam Gi-ae"
+   ],
+   "roles": [
+    "Baek Hee-sung / Do Hyun-soo",
+    "Cha Ji-won",
+    "Do Hae-soo",
+    "Kim Moo-jin",
+    "Baek Eun-ha",
+    "Gong Mi-ja"
+   ],
+   "crew": [
+    {
+     "name": "Kim Cheol-kyu",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo Jung-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Jun-seok",
+     "job": "Original Music Composer"
+    }
+   ],
+   "poster": "images/flower-of-evil-1793200688537-b3qm.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=QSmDCxfdiAA",
+     "title": "FLOWER OF EVIL Trailer | Lee Joon Gi, Moon Chae Won | Coming to Viu"
+    }
+   ],
+   "scores": [
+    4.4,
+    4.4,
+    4.4,
+    4.4,
+    4.4
+   ]
   },
   {
    "id": "tale-of-the-nine-tailed",
@@ -12045,6 +12094,23 @@
   "Kim Min-gyeong": {},
   "Goo Sung-joon": {
    "p": "/gT4QTSsJaytKPIAq4D1mI9FKLTi.jpg"
-  }
+  },
+  "Moon Chae-won": {
+   "p": "/x8kARXMszobY1YRcc3nbWczqyeZ.jpg"
+  },
+  "Jang Hee-jin": {
+   "p": "/kHoM8wW7IDpTfyfB0ohXCBgzobi.jpg"
+  },
+  "Seo Hyun-woo": {
+   "p": "/i5HP0n06Y5GIZfpsbibFQWAcUjV.jpg"
+  },
+  "Jung Seo-yeon": {
+   "p": "/x7mY7M3zn4de65AGY2qXxkeVi5v.jpg"
+  },
+  "Nam Gi-ae": {
+   "p": "/5sDZDAAxgJVAi4fxfgKVKD6owaw.jpg"
+  },
+  "Yoo Jung-hee": {},
+  "Kim Jun-seok": {}
  }
 }
