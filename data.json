@@ -2211,7 +2211,57 @@
    "network": "tvN",
    "genres": "Suspense, Zombie, Survival, Action",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 292318,
+   "summary": "In a post-COVID world, a mysterious drug called “Next” sparks a terrifying outbreak of madness. As violent deaths rise, detective Prap reveals a chilling link between the chaos and the drug—uncovering a conspiracy far darker than expected.",
+   "episodes": 12,
+   "firstAir": "2025-05-30",
+   "lastAir": "2025-07-05",
+   "cast": [
+    "Patchanan Jiajirachote",
+    "Suppapong Udomkaewkanjana",
+    "Dom Hetrakul",
+    "Thana Chatborirak",
+    "Paopetch Charoensook",
+    "Aissaree Tharakoolphipat"
+   ],
+   "roles": [
+    "Run",
+    "Prat",
+    "Yutthasak",
+    "Thatthep",
+    "Beam",
+    "Fah"
+   ],
+   "crew": [
+    {
+     "name": "Han Sang-un",
+     "job": "Creator"
+    },
+    {
+     "name": "Birathon Kasemsri Na Ayudhaya",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Suphachai Chearavanont",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Ari Arijitsatien",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Michael Jung",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/happiness-1793199945984-0oay.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=OeREUQ2yGFo",
+     "title": "[OFFICIAL TRAILER] #HAPPINESSTH | เริ่ม 30 พฤษภาคม นี้ ทาง TrueID"
+    }
+   ]
   },
   {
    "id": "now-we-are-breaking-up",
@@ -9805,6 +9855,31 @@
    "p": "/sbtcXMrHoFVyX2Mw5s5NDryaUaM.jpg"
   },
   "Kim Soo-jin": {},
-  "Park Seong-eun": {}
+  "Park Seong-eun": {},
+  "Patchanan Jiajirachote": {
+   "p": "/mQR7V86Tigud3CiZeuuQPRuLMP9.jpg"
+  },
+  "Suppapong Udomkaewkanjana": {
+   "p": "/oL26dtOA90AZIbQacs52mOPBxU7.jpg"
+  },
+  "Dom Hetrakul": {
+   "p": "/3yjEcnMGeigyjyfDa1znycBhvkh.jpg"
+  },
+  "Thana Chatborirak": {
+   "p": "/xN60KGRXQGbWcpA0lXO4e0Fxa4t.jpg"
+  },
+  "Paopetch Charoensook": {
+   "p": "/3KwN0qvXwGj0H9c9OvIskbVQa7K.jpg"
+  },
+  "Aissaree Tharakoolphipat": {
+   "p": "/cHuG98ULm62M6EPyP9pvusjaREU.jpg"
+  },
+  "Han Sang-un": {
+   "p": "/bjS7uYmudw2BnlSqSVej4yD9qPY.jpg"
+  },
+  "Birathon Kasemsri Na Ayudhaya": {},
+  "Suphachai Chearavanont": {},
+  "Ari Arijitsatien": {},
+  "Michael Jung": {}
  }
 }
