@@ -1850,7 +1850,49 @@
    "network": "KBS",
    "genres": "Comedy, Drama, Romance, Fantasy",
    "country": "KR",
-   "status": "S"
+   "status": "S",
+   "tmdbId": 88974,
+   "summary": "To regain his place in Heaven, a mischievous angel must find love for a cold-hearted ballerina – but he ends up falling for her.",
+   "episodes": 32,
+   "firstAir": "2019-05-22",
+   "lastAir": "2019-07-11",
+   "cast": [
+    "Shin Hae-sun",
+    "L",
+    "Lee Dong-gun",
+    "Kim Bo-mi",
+    "Do Ji-won",
+    "Kim In-kwon"
+   ],
+   "roles": [
+    "Lee Yeon-Seo",
+    "Kim Dan",
+    "Ji Kang-Woo",
+    "Geum Ni-Na",
+    "Choi Young-Ja",
+    "Angel Hoo"
+   ],
+   "crew": [
+    {
+     "name": "Choi Yoon-Kyo",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Jung-sub",
+     "job": "Director"
+    },
+    {
+     "name": "Choi Yoon-Kyo",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/angels-last-mission-1793200245778-rfuh.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=SmgTBpQ_eQQ",
+     "title": "Angel's Last Mission : Love I 단, 하나의 사랑 [Teaser-Ver.4]"
+    }
+   ]
   },
   {
    "id": "hotel-del-luna",
@@ -11530,6 +11572,18 @@
   "Seo Yea-ji": {
    "p": "/a9moiE8WWuygU02m4KE3M2Nrrkp.jpg"
   },
-  "Jo Yong": {}
+  "Jo Yong": {},
+  "L": {
+   "p": "/yRGyUlcIuGkjedE2TLheKuyCVOG.jpg"
+  },
+  "Lee Dong-gun": {
+   "p": "/55TYoEXAusUOSnZYh8Qy8MN6dPa.jpg"
+  },
+  "Kim Bo-mi": {
+   "p": "/ceRi6eQFiz2zWgO1YC5kIvcIALH.jpg"
+  },
+  "Choi Yoon-Kyo": {
+   "p": "/dXjinkjkVdlQrW6yZxOfZRIkto7.jpg"
+  }
  }
 }
