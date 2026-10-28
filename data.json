@@ -1761,7 +1761,57 @@
    "network": "tvN",
    "genres": "Comedy, Romance, Fantasy, Historical",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 108261,
+   "summary": "A modern chef suddenly becomes trapped inside the body of a queen from the Joseon era, which causes chaos for everyone involved.",
+   "episodes": 20,
+   "firstAir": "2020-12-12",
+   "lastAir": "2021-02-14",
+   "cast": [
+    "Shin Hae-sun",
+    "Kim Jung-hyun",
+    "Bae Jong-ok",
+    "Kim Tae-woo",
+    "Seorina",
+    "Na In-woo"
+   ],
+   "roles": [
+    "Queen Cheo-rin",
+    "King Cheol-jong",
+    "Queen Sunwon",
+    "Kim Jwa-geun",
+    "Jo Hwa-jin",
+    "Kim Byeong-in"
+   ],
+   "crew": [
+    {
+     "name": "Choi A-il",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Kye-ok",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Kye-ok",
+     "job": "Writer"
+    },
+    {
+     "name": "Yun Seong-sik",
+     "job": "Director"
+    },
+    {
+     "name": "Choi A-il",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/mr-queen-1793199981820-xwya.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=dImREPX_Pbk",
+     "title": "MR  QUEEN Official Trailer Full Trailer ENG SUB"
+    }
+   ]
   },
   {
    "id": "sweet-home",
@@ -10043,6 +10093,17 @@
   },
   "Lee Gil-bok": {
    "p": "/3giW7jr74QFqJLDGMTioJDP0FpB.jpg"
+  },
+  "Kim Tae-woo": {
+   "p": "/wbuNQxRUdykKZgCiwchZYmPQMmJ.jpg"
+  },
+  "Na In-woo": {
+   "p": "/A0ibLEz3mwzUljcIzLoadxhcDOd.jpg"
+  },
+  "Choi A-il": {},
+  "Park Kye-ok": {},
+  "Yun Seong-sik": {
+   "p": "/yzCCsFkqgFLhcUgfDFWlTd7enKv.jpg"
   }
  }
 }
