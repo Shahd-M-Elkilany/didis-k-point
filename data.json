@@ -3220,7 +3220,45 @@
    "network": "tvN",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 128883,
+   "summary": "A big-city dentist opens up a practice in a close-knit seaside village, home to a charming jack-of-all-trades who is her polar opposite in every way.",
+   "episodes": 16,
+   "firstAir": "2021-08-28",
+   "lastAir": "2021-10-17",
+   "cast": [
+    "Shin Min-a",
+    "Kim Seon-ho",
+    "Lee Sang-yi",
+    "Gong Min-jeung",
+    "Kim Yeong-ok",
+    "Cho Han-chul"
+   ],
+   "roles": [
+    "Yoon Hye-jin",
+    "Hong Du-sik",
+    "Ji Sung-hyun",
+    "Pyo Mi-seon",
+    "Kim Gam-ri",
+    "Oh Chae-jun"
+   ],
+   "crew": [
+    {
+     "name": "Shin Ha-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo Je-won",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/hometown-cha-cha-cha-1793200462352-pj6h.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=z66fazyp3-M",
+     "title": "Hometown Cha-Cha-Cha | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "squid-game",
@@ -11714,6 +11752,15 @@
    "p": "/oERaJUfWmhGuic8PpvdHuLmUk44.jpg"
   },
   "Ahn Sae-bom": {},
-  "Yoo Hong-goo": {}
+  "Yoo Hong-goo": {},
+  "Kim Yeong-ok": {
+   "p": "/vBk5QGcAFl8rlbkOoV898pa5GAi.jpg"
+  },
+  "Shin Ha-eun": {
+   "p": "/mkAnOUJKoyZz5GdGe166YT79u1O.jpg"
+  },
+  "Yoo Je-won": {
+   "p": "/swttyVOTvYv08CeLbhHyKS6cGGm.jpg"
+  }
  }
 }
