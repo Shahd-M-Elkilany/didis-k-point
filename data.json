@@ -2174,7 +2174,57 @@
    "network": "Netflix",
    "genres": "Drama, Romance, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 96160,
+   "summary": "Unexpected love finds a lonely woman when she forms a connection with a humanlike hologram who looks exactly like his prickly creator.",
+   "episodes": 12,
+   "firstAir": "2020-02-07",
+   "lastAir": "2020-02-07",
+   "cast": [
+    "Yoon Hyun-min",
+    "Ko Sung-hee",
+    "Choi Yeo-jin",
+    "CHANSUNG",
+    "Lee Jung-eun",
+    "Kang Seung-hyun"
+   ],
+   "roles": [
+    "Ko Nan-do / Holo",
+    "Han So-yeon",
+    "Ko Yoo-jin",
+    "Baek Chan-sung",
+    "So-yeon's mother",
+    "Yoo Ram"
+   ],
+   "crew": [
+    {
+     "name": "Ryu Yong-jae",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Sang-yeop",
+     "job": "Creator"
+    },
+    {
+     "name": "Ryu Yong-jae",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Sang-yeob",
+     "job": "Director"
+    },
+    {
+     "name": "Jinnie Choi",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/my-holo-love-1793200733162-cuaf.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=iBnc0x3t-hs",
+     "title": "My Holo Love | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "when-the-weather-is-fine",
@@ -12167,6 +12217,25 @@
   "Kim Jun-seok": {},
   "Jung Hyun-jung": {
    "p": "/sURAlEglbcthQIFf7Ce3Lnp4itz.jpg"
-  }
+  },
+  "Yoon Hyun-min": {
+   "p": "/mH5JOQWFy5XyR0AX61Pqz8dfGVl.jpg"
+  },
+  "Ko Sung-hee": {
+   "p": "/25SZEv7gv3FvipAFgcqrHaIYCKp.jpg"
+  },
+  "Choi Yeo-jin": {
+   "p": "/igCkz4OmkTeS2tSeYSHX9bMNMw8.jpg"
+  },
+  "CHANSUNG": {
+   "p": "/4tc3O5ewRk0Z4eQuaiJhl0ppzAR.jpg"
+  },
+  "Kang Seung-hyun": {
+   "p": "/7p27sw1tTMjrkwtqIEWNxyIS5oM.jpg"
+  },
+  "Ryu Yong-jae": {
+   "p": "/mjCDnQBrApizi1yaN0rMZDNYi7h.jpg"
+  },
+  "Lee Sang-yeop": {}
  }
 }
