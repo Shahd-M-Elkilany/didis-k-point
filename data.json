@@ -5,6 +5,65 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "100-days-of-deception",
+   "title": "100 days of deception",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 293607,
+   "summary": "Hoping for freedom, Gyeongseong's top pickpocket infiltrates the Japanese colonial government to steal secrets — only to fall for her target's son.",
+   "episodes": 16,
+   "firstAir": "2026-10-10",
+   "lastAir": "2026-10-25",
+   "country": "KR",
+   "network": "tvN",
+   "cast": [
+    "Kim You-jung",
+    "Jinyoung",
+    "Kim Hyun-joo",
+    "Lee Mu-saeng",
+    "Jin Sun-kyu",
+    "Seo Jeong-yeon"
+   ],
+   "roles": [
+    "Lee Ga-kyung / Keum Seo-Hee",
+    "Kim Tae-ung / Hideo Sato",
+    "Yoo So-ran",
+    "Yoo Philip",
+    "Shinichi Sato",
+    "Ryu Gwan-sil / Yanagi"
+   ],
+   "crew": [
+    {
+     "name": "Kim Yoon-jin",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo In-sik",
+     "job": "Creator"
+    },
+    {
+     "name": "Ryu Bo-ri",
+     "job": "Creator"
+    },
+    {
+     "name": "Yoo In-sik",
+     "job": "Director"
+    },
+    {
+     "name": "Ryu Bo-ri",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/100-days-of-deception-1793202855730-b9pq.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=P0ElxnFyfXY",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "touched": "2026-10-28"
+  },
+  {
    "id": "take-charge-over-my-heart",
    "title": "take charge of my heart",
    "year": 2026,
@@ -13315,6 +13374,19 @@
   "Lee Ah-hyun": {},
   "Ryu Do-ha": {},
   "Park Soo-won": {},
-  "Song You-chae": {}
+  "Song You-chae": {},
+  "Kim Hyun-joo": {
+   "p": "/AeYZSlVauG1BMJdzfyaw3u5jcyA.jpg"
+  },
+  "Lee Mu-saeng": {
+   "p": "/xokzuuLDfVzassk0bmje2fvdMcM.jpg"
+  },
+  "Jin Sun-kyu": {
+   "p": "/toFCyPac5rSpN58p0fsZ7lbogYc.jpg"
+  },
+  "Seo Jeong-yeon": {
+   "p": "/za1tTtSULKsZPN0u1oTs2Iival0.jpg"
+  },
+  "Ryu Bo-ri": {}
  }
 }
