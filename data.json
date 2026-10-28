@@ -482,7 +482,58 @@
    "network": "SBS",
    "genres": "Drama, Comedy, Romance, School",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 48462,
+   "summary": "After a chance encounter in LA, two teens from different social backgrounds reunite at an exclusive high school attended by Korea's über rich.",
+   "episodes": 20,
+   "firstAir": "2013-10-09",
+   "lastAir": "2013-12-12",
+   "cast": [
+    "Park Shin-hye",
+    "Lee Min-ho",
+    "Kim Woo-bin",
+    "Kim Ji-won",
+    "Kang Min-hyuk",
+    "Choi Jin-hyuk"
+   ],
+   "roles": [
+    "Cha Eun-sang",
+    "Kim Tan",
+    "Choe Yeong-do",
+    "Yu Rachel",
+    "Yoon Chan-young",
+    "Kim Won"
+   ],
+   "crew": [
+    {
+     "name": "Kim Eun-sook",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Eun-sook",
+     "job": "Writer"
+    },
+    {
+     "name": "Boo Seong-cheol",
+     "job": "Director"
+    },
+    {
+     "name": "Kang Shin-hyo",
+     "job": "Director"
+    },
+    {
+     "name": "Yoon Ha-lim",
+     "job": "Producer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/n4RX9QVXjHbMB31TDWqqRLjshgu.jpg",
+   "scores": [
+    3.9,
+    3.9,
+    3.9,
+    3.9,
+    3.9
+   ]
   },
   {
    "id": "my-love-from-the-star",
@@ -13548,6 +13599,12 @@
   "Lee Eun-mi": {
    "p": "/jpXPRA05xlXxxltrq5sEV7vbaNS.jpg"
   },
-  "Sung Joon-hae": {}
+  "Sung Joon-hae": {},
+  "Choi Jin-hyuk": {
+   "p": "/lb8NIxnrczxN24i82wsZ5zOxsi.jpg"
+  },
+  "Boo Seong-cheol": {
+   "p": "/epMvRmlvhXGarB4e51GbtNtOzlU.jpg"
+  }
  }
 }
