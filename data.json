@@ -2663,7 +2663,49 @@
    "network": "JTBC",
    "genres": "Drama, Action, Romance, Fantasy",
    "country": "KR",
-   "status": "S"
+   "status": "S",
+   "tmdbId": 113622,
+   "summary": "An unfathomable incident introduces a genius engineer to dangerous secrets of the world — and to a woman from the future who's come looking for him.",
+   "episodes": 16,
+   "firstAir": "2021-02-17",
+   "lastAir": "2021-04-08",
+   "cast": [
+    "Cho Seung-woo",
+    "Park Shin-hye",
+    "Chae Jong-hyeop",
+    "Sung Dong-il",
+    "Tae In-ho",
+    "Tae Won-seok"
+   ],
+   "roles": [
+    "Han Tae-sul",
+    "Gang Seo-hae",
+    "Choi Jae-sun",
+    "Park Hyeong-do",
+    "Eddie Kim",
+    "Yeo Bong-sun"
+   ],
+   "crew": [
+    {
+     "name": "Jin Hyuk",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Je-in",
+     "job": "Writer"
+    },
+    {
+     "name": "Jeon Chan-ho",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/xjnBtoMa9JNNL3adNTprAPVLWph.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=-qMlwHnQmGM",
+     "title": "Sisyphus | Official Trailer | Netflix"
+    }
+   ]
   },
   {
    "id": "beyond-evil",
@@ -11324,6 +11366,14 @@
   },
   "Kim Hong-sun": {
    "p": "/kjehP5zlFejz4ApseX4NM4JLtx5.jpg"
-  }
+  },
+  "Tae In-ho": {
+   "p": "/tQJuRcrWe9QUsHikSO6Ga2XIKcS.jpg"
+  },
+  "Jin Hyuk": {
+   "p": "/mubwhoMoQQBy8uun7oC3PKM2RbM.jpg"
+  },
+  "Lee Je-in": {},
+  "Jeon Chan-ho": {}
  }
 }
