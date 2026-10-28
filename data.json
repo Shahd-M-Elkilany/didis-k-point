@@ -3115,7 +3115,54 @@
    "genres": "Comedy, Romance, Drama, Fantasy",
    "country": "KR",
    "status": "S",
-   "progress": "ep 5"
+   "progress": "ep 5",
+   "tmdbId": 128995,
+   "summary": "Yumi is a 30-year old, ordinary woman who struggles with expressing her feelings. Told from the perspective of the many brain cells in her head, she experiences growth in both her love life, her career, and finds happiness in the small joys of everyday life.",
+   "episodes": 36,
+   "seasons": 3,
+   "firstAir": "2021-09-17",
+   "lastAir": "2026-05-04",
+   "cast": [
+    "Kim Go-eun",
+    "Kim Jae-won",
+    "Jun Seok-ho",
+    "Lee Yu-bi",
+    "Mi Ram",
+    "Choi Daniel"
+   ],
+   "roles": [
+    "Kim Yu-mi",
+    "Shin Soon-rok",
+    "Ahn Dae-yong",
+    "Lee Ruby",
+    "Kang Yi-da",
+    "Kim Ju-ho"
+   ],
+   "crew": [
+    {
+     "name": "Kim Yoon-joo",
+     "job": "Creator"
+    },
+    {
+     "name": "Song Jae-jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Yoon-joo",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Jay J Yang",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/yumis-cells-1793200224274-bnu9.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=2ry_KtDPbvc",
+     "title": "Yumi's Cells | Official Trailer | CJ ENM"
+    }
+   ]
   },
   {
    "id": "my-name",
@@ -11374,6 +11421,15 @@
    "p": "/mubwhoMoQQBy8uun7oC3PKM2RbM.jpg"
   },
   "Lee Je-in": {},
-  "Jeon Chan-ho": {}
+  "Jeon Chan-ho": {},
+  "Mi Ram": {
+   "p": "/kzRIe35yukgawa7ILePn1mrFpOK.jpg"
+  },
+  "Choi Daniel": {
+   "p": "/gv9qWPVRid5ij0Fkv3qYzEbZ9lh.jpg"
+  },
+  "Kim Yoon-joo": {},
+  "Song Jae-jung": {},
+  "Jay J Yang": {}
  }
 }
