@@ -472,7 +472,58 @@
    "network": "SBS",
    "genres": "Comedy, Horror, Fantasy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 57646,
+   "summary": "Joo Joong-won is the arrogant, greedy CEO of Kingdom, a  conglomerate that includes a supermall and a hotel. \"Ghost whisperer”  Tae Gong-shil, is a misunderstood outcast who can't keep a  boyfriend or a job since a near death experience left her seeing needy  ghosts. She feels compelled to help them resolve their earthly issues so  they can move on to the afterlife... and he feels compelled to think  she's crazy. Soon their lives merge into a complicated web of hijinx,  misunderstandings, and... yes, love.",
+   "episodes": 17,
+   "firstAir": "2013-08-07",
+   "lastAir": "2013-10-03",
+   "cast": [
+    "So Ji-sub",
+    "Gong Hyo-jin",
+    "Seo In-guk",
+    "Kim Yoo-ri",
+    "Hwang Sun-hee",
+    "Han Bo-reum"
+   ],
+   "roles": [
+    "Joo Jоong-won / \"Master\"",
+    "Tae Gong-sil / \"Sun\"",
+    "Kang-woo",
+    "Tae Yi-ryung",
+    "Cha Hee-joo / \"Hanna Brown\"",
+    "Hanna Brown (Young) / \"Cha Hee-joo\""
+   ],
+   "crew": [
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Mi-ran",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Mi-ran",
+     "job": "Writer"
+    },
+    {
+     "name": "Jin Hyuk",
+     "job": "Director"
+    },
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/yuw1l5s4ha57ZdKKGJV2LDyN1S7.jpg",
+   "scores": [
+    3.9,
+    3.9,
+    3.9,
+    3.9,
+    3.9
+   ]
   },
   {
    "id": "the-heirs",
@@ -13605,6 +13656,12 @@
   },
   "Boo Seong-cheol": {
    "p": "/epMvRmlvhXGarB4e51GbtNtOzlU.jpg"
+  },
+  "Gong Hyo-jin": {
+   "p": "/u2ZDHJOHRkgzY0dpaORitoZjF4F.jpg"
+  },
+  "Hwang Sun-hee": {
+   "p": "/ttqcVmlAvvI8jTAidZ4pHCgWG6a.jpg"
   }
  }
 }
