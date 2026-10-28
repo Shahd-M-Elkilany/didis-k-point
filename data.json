@@ -1098,7 +1098,53 @@
    "network": "tvN",
    "genres": "Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 70452,
+   "summary": "Yoon So Ah is a pragmatic neuropsychiatrist who carries a tremendous financial burden to run her own practice. Her family has been tasked with serving Ha Baek, a reincarnated water god, for many generations, and So Ah is forced to do the same. Ha Baek starts to develop feelings for So Ah, but he has competition for her heart from Hoo Ye, the CEO of a resort company, who clashes with So Ah over a piece of land but then falls in love with her. Can a relationship between a mortal female and a god have a future?",
+   "episodes": 16,
+   "firstAir": "2017-07-03",
+   "lastAir": "2017-08-22",
+   "cast": [
+    "Nam Joo-hyuk",
+    "Shin Sae-kyeong",
+    "Lim Ju-hwan",
+    "Krystal Jung",
+    "Gong Myoung",
+    "Choi Woo-ri"
+   ],
+   "roles": [
+    "Ha Baek",
+    "Yoon So-A",
+    "Shin Hoo-ye",
+    "Mu Ra / He Ra",
+    "Bi Ryum / Ahn Bin",
+    "Jo Yeom-Mi"
+   ],
+   "crew": [
+    {
+     "name": "Yoon Mi-Kyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Yoon-jung",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Byung-soo",
+     "job": "Director"
+    },
+    {
+     "name": "Nam Hye-seung",
+     "job": "Original Music Composer"
+    }
+   ],
+   "poster": "images/the-bride-of-habaek-1793200056220-jj2z.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=S8_29aC_Wf8",
+     "title": "THE BRIDE OF HABAEK (2017) - TRAILER"
+    }
+   ]
   },
   {
    "id": "school-2017",
@@ -10487,6 +10533,26 @@
   "Song Won-sub": {},
   "Park In-sun": {},
   "Lee Jin-suk": {},
-  "Ra Sung-shik": {}
+  "Ra Sung-shik": {},
+  "Shin Sae-kyeong": {
+   "p": "/t94qZHTY6yYMKC9SOijUYjRczpI.jpg"
+  },
+  "Lim Ju-hwan": {
+   "p": "/5aMAmPrQUGE5HaWrFsR3AXaFGL5.jpg"
+  },
+  "Krystal Jung": {
+   "p": "/v9wIdTLI5IR60xLMZKFCKw98wpP.jpg"
+  },
+  "Gong Myoung": {
+   "p": "/4c4eiMCgzw6gr4TDzOiODmmTRmG.jpg"
+  },
+  "Choi Woo-ri": {
+   "p": "/p25yt5IvCYodegkLDf7hSIrntb.jpg"
+  },
+  "Yoon Mi-Kyung": {},
+  "Jung Yoon-jung": {
+   "p": "/rfbW1OgOWwttAU7dKMvi2o3dvMB.jpg"
+  },
+  "Kim Byung-soo": {}
  }
 }
