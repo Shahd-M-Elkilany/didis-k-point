@@ -1100,7 +1100,57 @@
    "network": "tvN",
    "genres": "Drama, Romance, Action, Historical",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 75820,
+   "summary": "Set in the early 1900s, this drama tells the story of a young man from Korea who grows up in the United States. When he returns to Korea as a US Marine Corps officer, he meets and falls in love with a noblewoman who is fighting for Korean independence. Their romance is complicated by social class and political ideology.",
+   "episodes": 24,
+   "firstAir": "2018-07-07",
+   "lastAir": "2018-09-30",
+   "cast": [
+    "Lee Byung-hun",
+    "Kim Tae-ri",
+    "Yoo Yeon-seok",
+    "Kim Min-joung",
+    "Byun Yo-han",
+    "Kim Kap-soo"
+   ],
+   "roles": [
+    "Eugene Choi / Choi Yu-jin",
+    "Go Ae-shin",
+    "Gu Dong-mae",
+    "Kudo Hina",
+    "Kim Hui-seong",
+    "Hwang Eun-san"
+   ],
+   "crew": [
+    {
+     "name": "Kim Eun-sook",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Eung-bok",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Eung-bok",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Eun-sook",
+     "job": "Writer"
+    },
+    {
+     "name": "Jung Jae-il",
+     "job": "Original Music Composer"
+    }
+   ],
+   "poster": "images/mr-sunshine-1793200020563-w8u5.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=rPJSo4fhtRU",
+     "title": "Mr. Sunshine | Official Trailer [HD] | Netflix"
+    }
+   ]
   },
   {
    "id": "my-id-is-gangnam-beauty",
@@ -8520,7 +8570,9 @@
   "Kang Shin-il": {
    "p": "/iQhXXV8Wsv2ZHifZqaIm1fJsW7F.jpg"
   },
-  "Lee Eung-bok": {},
+  "Lee Eung-bok": {
+   "p": "/yRySD1M8VfWLrR23QeX4ozAsq2f.jpg"
+  },
   "Baek Sang-hoon": {},
   "Kim Eun-sook": {
    "p": "/iRI1bowXqsZ4BLrQ4A6RXuqlFUd.jpg"
@@ -10269,6 +10321,12 @@
    "p": "/z4qlXrpz5EWUDrjf3yaN3hoiN4T.jpg"
   },
   "Kim Yong-ki": {},
-  "Jung Yi-do": {}
+  "Jung Yi-do": {},
+  "Byun Yo-han": {
+   "p": "/5kOBQYbgBTAf8nVzgx0ecCsJ1pW.jpg"
+  },
+  "Jung Jae-il": {
+   "p": "/a1q0hsgTTUJwaq0T3W02mi1b6Q6.jpg"
+  }
  }
 }
