@@ -379,7 +379,51 @@
    "network": "SBS",
    "genres": "Suspense, Action, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 39346,
+   "summary": "The story takes place in Seoul, 2011. Lee Yoon-sung is a talented MIT-graduate who's working on the international communications team at the Blue House. He encounters dangerous situations while solving a variety of cases, both big and small, for people who need his help, and eventually becomes a \"city hunter.\"",
+   "episodes": 20,
+   "firstAir": "2011-05-25",
+   "lastAir": "2011-07-28",
+   "cast": [
+    "Lee Min-ho",
+    "Park Min-young",
+    "Lee Jun-hyuk",
+    "Kim Sang-joong",
+    "Cheon Ho-jin",
+    "Yang Jin-sung"
+   ],
+   "roles": [
+    "Lee Yun Seong",
+    "Kim Na Na",
+    "Kim Young Joo",
+    "Lee Jin Pyo",
+    "President Choi Eung-chan",
+    "Shin Eun-ah"
+   ],
+   "crew": [
+    {
+     "name": "Hong Jong-chan",
+     "job": "Producer"
+    },
+    {
+     "name": "Lee Young Joon",
+     "job": "Producer"
+    },
+    {
+     "name": "Sebastian Lee",
+     "job": "Producer"
+    },
+    {
+     "name": "Choi Soo-jin",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Young Sup",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/city-hunter-1793200148814-c5gs.jpg"
   },
   {
    "id": "dream-high-2",
@@ -11057,6 +11101,17 @@
   },
   "Jo Soo-won": {
    "p": "/6QFNfSjWqvMpJW6WVH9EJNOethC.jpg"
+  },
+  "Yang Jin-sung": {
+   "p": "/jZfPJjPWLAq9tXQ8qU5ExZHYNIz.jpg"
+  },
+  "Lee Young Joon": {},
+  "Sebastian Lee": {
+   "p": "/pPokpQl0kTUF1siFPljIrY35zHG.jpg"
+  },
+  "Choi Soo-jin": {},
+  "Kim Young Sup": {
+   "p": "/6Hz21IVIrJ5ZFimZDwIVd4Nvd6m.jpg"
   }
  }
 }
