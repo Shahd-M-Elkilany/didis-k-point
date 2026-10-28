@@ -512,7 +512,45 @@
    "network": "KBS",
    "genres": "Comedy, Romance, School, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 61738,
+   "summary": "High school may be tough, but Woo Hyun has a guardian angel looking over him — literally. Disguised as a naive high schooler, Lee Seul Bi descends from the heavens to protect Woo Hyun's life, but discovers she's got a thing or two to learn about life as a teenager, including the pains of falling in love. Can this cherubic guardian protect the apple of her eye and also manage to survive high school?",
+   "episodes": 20,
+   "firstAir": "2014-07-11",
+   "lastAir": "2014-12-19",
+   "cast": [
+    "Kim Sae-ron",
+    "Nam Woo-hyun",
+    "Lee Sung-yeol",
+    "Kim Min-seok",
+    "Baek Seung-Heon",
+    "Han Soo-yeon"
+   ],
+   "roles": [
+    "Lee Seul-bi",
+    "Shin Woo-hyun",
+    "Hwang Sung-yeol",
+    "Park Byung-wook",
+    "Tae-ho",
+    "Choi So-jin"
+   ],
+   "crew": [
+    {
+     "name": "Lee Eun-mi",
+     "job": "Director"
+    },
+    {
+     "name": "Sung Joon-hae",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/hi-school-love-on-1793201250439-j30u.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=izYB8yM9mZQ",
+     "title": "Hi! School - Love On | 하이스쿨 - 러브온 [Preview - Ver.1]"
+    }
+   ]
   },
   {
    "id": "its-okay-thats-love",
@@ -13491,6 +13529,25 @@
   "Jeon No-min": {
    "p": "/b3GzIYGEvUg3fQGygjo41xcQoq8.jpg"
   },
-  "Kim Hyun-jung": {}
+  "Kim Hyun-jung": {},
+  "Kim Sae-ron": {
+   "p": "/jPWTS9hyezN2jqTeWFN3iUxszHc.jpg"
+  },
+  "Nam Woo-hyun": {
+   "p": "/qbvkyvsDzWXULcvlfkIcwo97AdE.jpg"
+  },
+  "Lee Sung-yeol": {
+   "p": "/12EcjmGsuj3dEI1oSy03zdLjiOC.jpg"
+  },
+  "Baek Seung-Heon": {
+   "p": "/jroUykyVM7rwrdrcPglmc5qgHF4.jpg"
+  },
+  "Han Soo-yeon": {
+   "p": "/bYDwpJ6qkWLSAhNgKQD63nO19zS.jpg"
+  },
+  "Lee Eun-mi": {
+   "p": "/jpXPRA05xlXxxltrq5sEV7vbaNS.jpg"
+  },
+  "Sung Joon-hae": {}
  }
 }
