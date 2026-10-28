@@ -495,7 +495,35 @@
    "network": "SBS",
    "genres": "Comedy, School, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 47007,
+   "summary": "Goo Jae-hee lives in the United States and one day sees a track and field competition on TV, and becomes attracted to one of the high jump competitors, Kang Tae-joon. She begins to idolize the young athlete and eventually transfers to Korea to attend the same school that Tae-joon attends after he suffers an accident that could potentially end his career. There is a catch, however: Tae-joon attends an all-boys high school and Jae-hee must disguise herself as a boy to enter.",
+   "episodes": 16,
+   "firstAir": "2012-08-15",
+   "lastAir": "2012-10-04",
+   "cast": [
+    "Sulli",
+    "Minho",
+    "Lee Hyun-woo",
+    "Kang Ha-neul",
+    "Kim Ji-won",
+    "Hwang Kwang-hee"
+   ],
+   "roles": [
+    "Goo Jae-hee",
+    "Kang Tae-joon",
+    "Cha Eun-gyeol",
+    "Min Hyeon-jae",
+    "Seol Han Na",
+    "Song Jong Min"
+   ],
+   "crew": [
+    {
+     "name": "Jeon Gi-Sang",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/to-the-beautiful-you-1793201349761-i4k4.jpg"
   },
   {
    "id": "school-2013",
@@ -13785,6 +13813,16 @@
   },
   "Lee Min-hong": {},
   "Lee Hyun-joo": {},
-  "Go Jung-won": {}
+  "Go Jung-won": {},
+  "Sulli": {
+   "p": "/dLt9az94QKTOPnhs3OlXkSzi1G8.jpg"
+  },
+  "Lee Hyun-woo": {
+   "p": "/MYEHfwtJUVR021g9mxZcETmqMI.jpg"
+  },
+  "Hwang Kwang-hee": {
+   "p": "/573WnrjL7YlnR5WrUAdG8Jdzn42.jpg"
+  },
+  "Jeon Gi-Sang": {}
  }
 }
