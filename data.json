@@ -536,7 +536,49 @@
    "network": "SBS",
    "genres": "Suspense, Drama, Comedy, Romance",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 61611,
+   "summary": "In-ha and Ha-myeong become reporters for different reasons: one aspires to follow in her mother's footsteps and the other seeks to do honest news.",
+   "episodes": 20,
+   "firstAir": "2014-11-12",
+   "lastAir": "2015-01-15",
+   "cast": [
+    "Park Shin-hye",
+    "Lee Jong-suk",
+    "Kim Young-kwang",
+    "Lee Yu-bi",
+    "Jin Kyung",
+    "Lee Pil-mo"
+   ],
+   "roles": [
+    "Choe In-ha",
+    "Gi Ha-myeong / Choe Dal-po",
+    "Seo Beom-jo",
+    "Yun Yu-rae",
+    "Song Cha-ok",
+    "Hwang Gyo-dong"
+   ],
+   "crew": [
+    {
+     "name": "Jo Soo-won",
+     "job": "Creator"
+    },
+    {
+     "name": "Jo Soo-won",
+     "job": "Director"
+    },
+    {
+     "name": "Park Hye-ryun",
+     "job": "Screenplay"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/zVdHTEYEruxU8lis7OdY5tRg0UF.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=U6VAU-PD3cg",
+     "title": "[Kdrama] Pinocchio Trailer"
+    }
+   ]
   },
   {
    "id": "healer",
@@ -11006,6 +11048,15 @@
   "Han Jung-hoon": {},
   "Kim Jung-min": {
    "p": "/iVDz9uECCh2RO2KlutLIfyT5oFF.jpg"
+  },
+  "Kim Young-kwang": {
+   "p": "/z7tQSbWHEfXeWMYHNNDGXW9Idfl.jpg"
+  },
+  "Jin Kyung": {
+   "p": "/eKw4YbLw0LWkTCn6wbTiKkRltc2.jpg"
+  },
+  "Jo Soo-won": {
+   "p": "/6QFNfSjWqvMpJW6WVH9EJNOethC.jpg"
   }
  }
 }
