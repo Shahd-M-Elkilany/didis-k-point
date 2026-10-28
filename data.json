@@ -1,7 +1,7 @@
 {
  "name": "Didi's K-point",
  "tagline": "A drama journal",
- "updated": "2026-10-13",
+ "updated": "2026-10-28",
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
@@ -2667,7 +2667,57 @@
    "network": "MBC",
    "genres": "Drama, Suspense, Action, Crime",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 155226,
+   "summary": "A lawyer with a ten-percent winning rate is caught up in a murder case and becomes the notorious and genius con artist, Big Mouse, overnight. In order to survive and protect his family, he tries to reveal the true colors of the privileged people involved in a huge conspiracy.",
+   "episodes": 16,
+   "firstAir": "2022-07-29",
+   "lastAir": "2022-09-17",
+   "cast": [
+    "Lee Jong-suk",
+    "Yoona",
+    "Kim Ju-hun",
+    "Kwak Dong-yeon",
+    "Yang Kyung-won",
+    "Ok Ja-yeon"
+   ],
+   "roles": [
+    "Park Changho",
+    "Go Miho",
+    "Choi Doha",
+    "Jerry",
+    "Gong Jihoon",
+    "Hyeon Joohee"
+   ],
+   "crew": [
+    {
+     "name": "Jung Gyeong-sun",
+     "job": "Creator"
+    },
+    {
+     "name": "Jang Young-cheol",
+     "job": "Creator"
+    },
+    {
+     "name": "Oh Choong-hwan",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Sang-baek",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Kim Young-kyu",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/big-mouth-1793199882099-s9gg.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=q2bDXqjyxSk",
+     "title": "Streaming 29 July [Subtitled]"
+    }
+   ]
   },
   {
    "id": "little-women",
@@ -9388,6 +9438,19 @@
    "p": "/wkUiwCHq2Z2h4A7JDlhjrVGQiCk.jpg"
   },
   "Namgung Do-young": {},
-  "Kim A-young": {}
+  "Kim A-young": {},
+  "Lee Jong-suk": {
+   "p": "/eW73DbmKQrqb6xDC52oMbVehw6G.jpg"
+  },
+  "Kim Ju-hun": {
+   "p": "/xkj3d7zNoHW2veJboV11WemxMbi.jpg"
+  },
+  "Yang Kyung-won": {
+   "p": "/yWecuhTOp0b6zF2PdqmiUsrusTL.jpg"
+  },
+  "Ok Ja-yeon": {
+   "p": "/6yWwOkFMXYBJAC2z8sfN54DRAwj.jpg"
+  },
+  "Lee Sang-baek": {}
  }
 }
