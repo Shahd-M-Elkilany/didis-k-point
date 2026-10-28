@@ -958,7 +958,49 @@
    "network": "tvN",
    "genres": "Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 66082,
+   "summary": "Two women working in the same industry with the exact same name keep getting their lives entangled both professionally and personally.",
+   "episodes": 18,
+   "firstAir": "2016-05-02",
+   "lastAir": "2016-06-28",
+   "cast": [
+    "Eric Mun",
+    "Seo Hyun-jin",
+    "Jeon Hye-bin",
+    "Ye Ji-won",
+    "Kim Ji-seok",
+    "Lee Jae-yoon"
+   ],
+   "roles": [
+    "Park Do-Kyung",
+    "Oh Hae-Young",
+    "Oh Hae-Young",
+    "Park Soo-Kyung",
+    "Lee Jin-Sang",
+    "Han Tae-Jin"
+   ],
+   "crew": [
+    {
+     "name": "Park Hae-young",
+     "job": "Creator"
+    },
+    {
+     "name": "Song Hyun-wook",
+     "job": "Director"
+    },
+    {
+     "name": "Park Hae-young",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/another-miss-oh-1793201081508-pull.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=TfRcS_5Dhks",
+     "title": "Another, Miss Oh (Scripted Trailer) | CJ ENM"
+    }
+   ]
   },
   {
    "id": "doctors",
@@ -13002,6 +13044,18 @@
   },
   "Jung Chan-mi": {},
   "Kim Seung-Won": {},
-  "Hwang Chang-woo": {}
+  "Hwang Chang-woo": {},
+  "Eric Mun": {
+   "p": "/3n3Q0E7o6ZOPdPe6dzzus0b5BYT.jpg"
+  },
+  "Seo Hyun-jin": {
+   "p": "/pevSdOgAhz9a75ixFqbf420vK7J.jpg"
+  },
+  "Jeon Hye-bin": {
+   "p": "/Ar9Ol7gk1YQdQqdNaYEgzcIEstY.jpg"
+  },
+  "Kim Ji-seok": {
+   "p": "/qMKyA4CJvBNhLRBbjV6s6khlf5e.jpg"
+  }
  }
 }
