@@ -1821,7 +1821,57 @@
    "network": "JTBC",
    "genres": "Drama, Suspense, Psychological",
    "country": "KR",
-   "status": "L"
+   "status": "L",
+   "tmdbId": 116612,
+   "summary": "As a killing resembling a cold case resurfaces in a small town, the chase for the truth falls on two policemen who each harbor secrets of their own.",
+   "episodes": 16,
+   "firstAir": "2021-02-19",
+   "lastAir": "2021-04-10",
+   "cast": [
+    "Shin Ha-kyun",
+    "Yeo Jin-goo",
+    "Choi Dae-hoon",
+    "Choi Sung-eun",
+    "Kim Shin-rock",
+    "Cheon Ho-jin"
+   ],
+   "roles": [
+    "Lee Dong-sik",
+    "Han Joo-won",
+    "Park Jung-je",
+    "Yoo Jae-yi",
+    "Oh Ji-hwa",
+    "Nam Sang-bae"
+   ],
+   "crew": [
+    {
+     "name": "Kim Soo-jin",
+     "job": "Creator"
+    },
+    {
+     "name": "Sim Na-yeon",
+     "job": "Creator"
+    },
+    {
+     "name": "Sim Na-yeon",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Soo-jin",
+     "job": "Writer"
+    },
+    {
+     "name": "Park Seong-eun",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/beyond-evil-1793199935108-8i4z.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=zQCOdcBAWtU",
+     "title": "Beyond Evil | Official Trailer | Netflix [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "the-penthouse-2",
@@ -9744,6 +9794,17 @@
    "p": "/m6anJPIzwQoSHv84JOQRWMKADB6.jpg"
   },
   "Yoo Soo-min": {},
-  "Park Dan-hee": {}
+  "Park Dan-hee": {},
+  "Shin Ha-kyun": {
+   "p": "/4UF7bfqwWUt8gZPH8t7fWuoGQVX.jpg"
+  },
+  "Choi Dae-hoon": {
+   "p": "/lxNU9yOR8C9ovqilVMQrXStoc96.jpg"
+  },
+  "Choi Sung-eun": {
+   "p": "/sbtcXMrHoFVyX2Mw5s5NDryaUaM.jpg"
+  },
+  "Kim Soo-jin": {},
+  "Park Seong-eun": {}
  }
 }
