@@ -1587,7 +1587,64 @@
    "network": "KBS",
    "genres": "Suspense, Comedy, School, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 72374,
+   "summary": "A coming-of-age story about the lives of 18-year-old high school students who are valued according to their ranking in school. Despite their frustrations, they find out how to make their own way in this world that seems to be a stagnant cycle of school and home.",
+   "episodes": 16,
+   "firstAir": "2017-07-17",
+   "lastAir": "2017-09-05",
+   "cast": [
+    "Kim Se-jeong",
+    "Kim Jung-hyun",
+    "Jang Dong-yoon",
+    "Seorina",
+    "Rowoon",
+    "Z.HERA"
+   ],
+   "roles": [
+    "Ra Eun-ho",
+    "Hyun Tae-woon",
+    "Song Dae-whee",
+    "Hong Nam-joo",
+    "Kang Hyun-il",
+    "Yoo Bit-na"
+   ],
+   "crew": [
+    {
+     "name": "Park Jin-seok",
+     "job": "Director"
+    },
+    {
+     "name": "Jung Chan-mi",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Seung-Won",
+     "job": "Writer"
+    },
+    {
+     "name": "Song Min-yeop",
+     "job": "Director"
+    },
+    {
+     "name": "Hwang Chang-woo",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/school-2017-1793201021077-wvdm.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Qsg-WbzinUA",
+     "title": "School 2017 | 학교 2017 [Teaser - ver.2]"
+    }
+   ],
+   "scores": [
+    3.8,
+    3.8,
+    3.8,
+    3.8,
+    3.8
+   ]
   },
   {
    "id": "while-you-were-sleeping",
@@ -12929,6 +12986,15 @@
   "Kang Cheol-woo": {
    "p": "/d45nLUlyf4dRiNmzuWm07ySTWP0.jpg"
   },
-  "Kim Young-yoon": {}
+  "Kim Young-yoon": {},
+  "Z.HERA": {
+   "p": "/alJdfroZqWMS7iR3YSKYzC5Y2ZC.jpg"
+  },
+  "Park Jin-seok": {
+   "p": "/wPUv9RsRPuAS6hBfR0lRv2ugQjS.jpg"
+  },
+  "Jung Chan-mi": {},
+  "Kim Seung-Won": {},
+  "Hwang Chang-woo": {}
  }
 }
