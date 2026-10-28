@@ -1789,7 +1789,52 @@
    "network": "JTBC",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 80737,
+   "summary": "Bullied for her looks, Mi-rae gets plastic surgery hoping for a better kind of life but faces new challenges in college. Based on a hit Korean webtoon.",
+   "episodes": 16,
+   "firstAir": "2018-07-27",
+   "lastAir": "2018-09-15",
+   "cast": [
+    "Im Soo-hyang",
+    "Cha Eun-woo",
+    "Shin Jun-seop",
+    "Jo Woo-ri",
+    "Kwak Dong-yeon",
+    "Park Joo-mi"
+   ],
+   "roles": [
+    "Kang Mi-rae",
+    "Do Kyeong-seok",
+    "Young Do Kyeong-seok",
+    "Hyeon Su-a",
+    "Yeon U-yeong",
+    "Na Hye-seong"
+   ],
+   "crew": [
+    {
+     "name": "Choi Seong-beom",
+     "job": "Director"
+    },
+    {
+     "name": "Choi Soo-young",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/my-id-is-gangnam-beauty-1793200942994-tzsl.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=pBwTLwHzV8I",
+     "title": "My ID Is Gangnam Beauty | Official Trailer | Netflix"
+    }
+   ],
+   "scores": [
+    2.7,
+    2.7,
+    2.7,
+    2.7,
+    2.7
+   ]
   },
   {
    "id": "clean-with-passion",
@@ -12686,6 +12731,20 @@
   "Han Bo-reum": {
    "p": "/8lVwU8kgJfDSfuhKTB3lXZ7VTNq.jpg"
   },
-  "An Gil-ho": {}
+  "An Gil-ho": {},
+  "Im Soo-hyang": {
+   "p": "/cj7d9lpRtXdo3udHBOQayGgygfP.jpg"
+  },
+  "Shin Jun-seop": {
+   "p": "/jitXiUMKwexUYYbtRPOn4vgGWMA.jpg"
+  },
+  "Jo Woo-ri": {
+   "p": "/xHSiSPZhTTu21xGsm7MZY6YxKm0.jpg"
+  },
+  "Park Joo-mi": {
+   "p": "/crbbaw0GyquWmVwA6cSGerIxpne.jpg"
+  },
+  "Choi Seong-beom": {},
+  "Choi Soo-young": {}
  }
 }
