@@ -1602,7 +1602,52 @@
    "network": "MBC",
    "genres": "Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 74682,
+   "summary": "Kim Min Gyu has wealth and success, but lives an isolated life due to his allergy of people. He then meets and falls in love with a girl who is pretending to be a robot for her ex-boyfriend, a genius robots professor.",
+   "episodes": 32,
+   "firstAir": "2017-12-06",
+   "lastAir": "2018-01-25",
+   "cast": [
+    "Yoo Seung-ho",
+    "Chae Soo-bin",
+    "Uhm Ki-joon",
+    "Park Se-wan",
+    "Song Jae-ryong",
+    "Ko Gun-han"
+   ],
+   "roles": [
+    "Kim Min-gyu",
+    "Jo Ji-a / Aji 3",
+    "Hong Baek-gyeon",
+    "Pi",
+    "Hoktal",
+    "Ssanip"
+   ],
+   "crew": [
+    {
+     "name": "Han Hee",
+     "job": "Producer"
+    },
+    {
+     "name": "Jung Dae-yoon",
+     "job": "Director"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/2l1KTliFU7SjNT1OpTojbvjEnZe.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=gGumnmOarco",
+     "title": "I'm Not a Robot 我不是机器人 Official Trailer"
+    }
+   ],
+   "scores": [
+    3.7,
+    3.7,
+    3.7,
+    3.7,
+    3.7
+   ]
   },
   {
    "id": "a-korean-odyssey",
@@ -12813,6 +12858,18 @@
    "p": "/t8xMsqeIe3YzdFNeeh43TPs7c1Y.jpg"
   },
   "Park Hong-kyun": {},
-  "Kim Byeong-su": {}
+  "Kim Byeong-su": {},
+  "Yoo Seung-ho": {
+   "p": "/cDkIwmfjChprlO7qaoDQl1Em54P.jpg"
+  },
+  "Park Se-wan": {
+   "p": "/yRaB00ZVVQ6DMjJmictDEaNf6t8.jpg"
+  },
+  "Song Jae-ryong": {
+   "p": "/2c8DAqn1B19X9IsLx3EGkeTaQL1.jpg"
+  },
+  "Ko Gun-han": {
+   "p": "/x9wPSUH71He1brPS4dsrcfN9flo.jpg"
+  }
  }
 }
