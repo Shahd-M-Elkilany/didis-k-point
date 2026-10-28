@@ -5,6 +5,65 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "merry-berry-love",
+   "title": "merry berry love",
+   "year": 2026,
+   "status": "L",
+   "tmdbId": 305551,
+   "summary": "When star Korean spatial designer Lee Yubin loses everything, he heads off to a Japanese island. There, he meets Karin, a resilient strawberry farmer. Hailing from different worlds, their lives collide in a big misunderstanding. Buckle up for \"Merry Berry Love,\" a sweet and sour Korea-Japan rom-com.",
+   "episodes": 10,
+   "firstAir": "2026-10-07",
+   "lastAir": "2026-10-21",
+   "country": "JP",
+   "network": "Nippon TV",
+   "cast": [
+    "Ji Chang-wook",
+    "Mio Imada",
+    "Nam Yoon-su",
+    "Rinka Kumada",
+    "Jung Soon-won",
+    "Kangnam"
+   ],
+   "roles": [
+    "Lee Yu-bin",
+    "Shirahama Karin",
+    "Park Ku-nam",
+    "Mizuno Mari",
+    "Kim Bong-su",
+    "Rage"
+   ],
+   "crew": [
+    {
+     "name": "Lee Jae-yun",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Jae-yun",
+     "job": "Writer"
+    },
+    {
+     "name": "Shinji Enari",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Kim Soo-jung",
+     "job": "Director"
+    },
+    {
+     "name": "Roh Young-sub",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/merry-berry-love-1793202881848-yxpb.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=3c68oabNkJs",
+     "title": "Main Trailer [Subtitled]"
+    }
+   ],
+   "touched": "2026-10-28"
+  },
+  {
    "id": "100-days-of-deception",
    "title": "100 days of deception",
    "year": 2026,
@@ -13387,6 +13446,25 @@
   "Seo Jeong-yeon": {
    "p": "/za1tTtSULKsZPN0u1oTs2Iival0.jpg"
   },
-  "Ryu Bo-ri": {}
+  "Ryu Bo-ri": {},
+  "Mio Imada": {
+   "p": "/1RiNJI6v9rBvATZ59m0CAZCFOpI.jpg"
+  },
+  "Nam Yoon-su": {
+   "p": "/lPOTG0iwINk1N1w7N0Xv2ndKqm0.jpg"
+  },
+  "Rinka Kumada": {
+   "p": "/1WkAsP86ZvE1QwS3sbUb7Rx84QF.jpg"
+  },
+  "Jung Soon-won": {
+   "p": "/E80fMLgKBeOASTnHLEi4jSuCqo.jpg"
+  },
+  "Kangnam": {
+   "p": "/shblOzUqimAh65WxzD8UKx7fMG5.jpg"
+  },
+  "Lee Jae-yun": {},
+  "Shinji Enari": {},
+  "Kim Soo-jung": {},
+  "Roh Young-sub": {}
  }
 }
