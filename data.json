@@ -443,7 +443,50 @@
    "network": "SBS",
    "genres": "Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 43152,
+   "summary": "Crown Prince Yi Gak finds that he has been transported from the Chosun Dynasty to modern-day Seoul. He meets Hong Se Na, who bears a striking resemblance to his dead wife, and is determined to solve the 300-year-old mystery of her death. With his own resemblance to the CEO’s grandson at the company where Se Na works, Gak assumes the identity of the young man to stay close to her. Can the Crown Prince navigate a modern corporation to find clues to his own time period?",
+   "episodes": 20,
+   "firstAir": "2012-03-21",
+   "lastAir": "2012-05-24",
+   "cast": [
+    "Park Yoo-chun",
+    "Han Ji-min",
+    "Jeong Yu-mi",
+    "Kim So-hyun",
+    "Lee Tae-sung",
+    "Jung Suk-won"
+   ],
+   "roles": [
+    "Prince Lee Gak / Yong Tae-yong",
+    "Park-ha / Hong Bu-yong",
+    "Hong Se-na / Hong Hwa-yong",
+    "Hong Se-na (young) / Hong Hwa-yong (young)",
+    "Yong Tae-mu",
+    "Woo Yong-sool"
+   ],
+   "crew": [
+    {
+     "name": "Shin Yoon-sub",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Hee-myung",
+     "job": "Writer"
+    },
+    {
+     "name": "An Gil-ho",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/rooftop-prince-1793201317301-u5y4.jpg",
+   "scores": [
+    3.7,
+    3.7,
+    3.7,
+    3.7,
+    3.7
+   ]
   },
   {
    "id": "to-the-beautiful-you",
@@ -462,7 +505,57 @@
    "network": "KBS",
    "genres": "Comedy, Romance, School",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 46596,
+   "summary": "Go Nam-soon, a young boy, constantly gets bullied by a group in his class. Later, one of his old rivals joins his school. Eventually, they are able to sort out their differences.",
+   "episodes": 16,
+   "firstAir": "2012-12-03",
+   "lastAir": "2013-01-28",
+   "cast": [
+    "Lee Jong-suk",
+    "Kim Woo-bin",
+    "Jang Na-ra",
+    "Choi Daniel",
+    "Park Se-young",
+    "Jeon Soo-jin"
+   ],
+   "roles": [
+    "Go Nam-soon",
+    "Park Heung-soo",
+    "Jung In-jae",
+    "Kang Se-chan",
+    "Song Ha-kyung",
+    "Kye Na-ri"
+   ],
+   "crew": [
+    {
+     "name": "Lee Eung-bok",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Eung-bok",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Min-hong",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Hyun-joo",
+     "job": "Writer"
+    },
+    {
+     "name": "Go Jung-won",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/school-2013-1793201337069-b79v.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=kwBydCH1VB8",
+     "title": "[Trailer] School 2013 (학교 2013)"
+    }
+   ]
   },
   {
    "id": "the-masters-sun",
@@ -13662,6 +13755,36 @@
   },
   "Hwang Sun-hee": {
    "p": "/ttqcVmlAvvI8jTAidZ4pHCgWG6a.jpg"
-  }
+  },
+  "Park Yoo-chun": {
+   "p": "/rT0riaDypX3P3Viq0QKoFPejrwU.jpg"
+  },
+  "Jeong Yu-mi": {
+   "p": "/yJoKxOiL1euHkvKRXn2L6rEAckC.jpg"
+  },
+  "Lee Tae-sung": {
+   "p": "/qmR1OOzRna1gUdPqJ5k6m03xgNB.jpg"
+  },
+  "Jung Suk-won": {
+   "p": "/s7jAL3X6wF3ciq5FpKa8QXHUlqd.jpg"
+  },
+  "Shin Yoon-sub": {
+   "p": "/w9D7zmer3MQ4OJcxrj3brG1Eftk.jpg"
+  },
+  "Lee Hee-myung": {
+   "p": "/4kDhMxYIpKLWjeE7JeAibSIGmZ7.jpg"
+  },
+  "Jang Na-ra": {
+   "p": "/uIIShNFO8torFMbPqbjs6VXVqD8.jpg"
+  },
+  "Park Se-young": {
+   "p": "/2PefaowfnJYgEcGj3afolLlXpeg.jpg"
+  },
+  "Jeon Soo-jin": {
+   "p": "/6YJ6ytaBdXUrHqcoEq0f7mUW4ZO.jpg"
+  },
+  "Lee Min-hong": {},
+  "Lee Hyun-joo": {},
+  "Go Jung-won": {}
  }
 }
