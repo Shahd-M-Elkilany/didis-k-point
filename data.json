@@ -2823,7 +2823,42 @@
    "network": "Netflix",
    "genres": "Suspense, Horror, Fantasy, Survival, Zombie",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 96648,
+   "summary": "As humans turn into savage monsters and the world plunges into terror, a handful of survivors fight for their lives — and to hold on to their humanity.",
+   "episodes": 26,
+   "seasons": 3,
+   "firstAir": "2020-12-18",
+   "lastAir": "2024-07-19",
+   "cast": [
+    "Song Kang",
+    "Lee Jin-uk",
+    "Lee Si-young",
+    "Jung Jin-young",
+    "Lee Do-hyun",
+    "Go Min-si"
+   ],
+   "roles": [
+    "Cha Hyun-su",
+    "Pyeon Sang-wook",
+    "Seo Yi-kyung",
+    "Park Chan-young",
+    "Lee Eun-hyeok",
+    "Lee Eun-yu"
+   ],
+   "crew": [
+    {
+     "name": "Lee Eung-bok",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/sweet-home-1793200749792-16u9.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=7rI56NmD33Y",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
   },
   {
    "id": "lovestruck-in-the-city",
@@ -12236,6 +12271,15 @@
   "Ryu Yong-jae": {
    "p": "/mjCDnQBrApizi1yaN0rMZDNYi7h.jpg"
   },
-  "Lee Sang-yeop": {}
+  "Lee Sang-yeop": {},
+  "Lee Jin-uk": {
+   "p": "/uqzreNzDqiiSFCMv8bhzfSttHyk.jpg"
+  },
+  "Lee Si-young": {
+   "p": "/dPdd6o587UaGuDRlAN4XqdXWbGy.jpg"
+  },
+  "Jung Jin-young": {
+   "p": "/8NHVBNi1Jb7f0RujRLtjD2i05tc.jpg"
+  }
  }
 }
