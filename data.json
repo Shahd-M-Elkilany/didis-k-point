@@ -1962,7 +1962,61 @@
    "network": "Netflix",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 89641,
+   "summary": "Love Alarm is an app that tells you if someone within a 10-meter radius has a crush on you. It quickly becomes a social phenomenon. While everyone talks about it and uses it to test their love and popularity, Jojo is one of the few people who have yet to download the app. However, she soon faces a love triangle situation between Sun-oh whom she starts to have feelings for, and Hye-young, who has had a huge crush on her.",
+   "episodes": 14,
+   "seasons": 2,
+   "firstAir": "2019-08-22",
+   "lastAir": "2021-03-12",
+   "cast": [
+    "Kim So-hyun",
+    "Jung Ga-ram",
+    "Song Kang",
+    "Go Min-si",
+    "Lee Jae-eung",
+    "Park Ji-hoon"
+   ],
+   "roles": [
+    "Kim Jojo",
+    "Lee Hye-yeong",
+    "Hwang Sun-oh",
+    "Park Gul-mi",
+    "Chon Duk-gu",
+    "Ji-Hoon"
+   ],
+   "crew": [
+    {
+     "name": "Yu Bo-ra",
+     "job": "Creator"
+    },
+    {
+     "name": "Cha Yeon-su",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Seo-hee",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Jin-woo",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/love-alarm-1793200846168-34u2.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=FW3rw0XQ-r4",
+     "title": "Love Alarm | Main Trailer | Netflix"
+    }
+   ],
+   "scores": [
+    2.7,
+    2.7,
+    2.7,
+    2.7,
+    2.7
+   ]
   },
   {
    "id": "strangers-from-hell",
@@ -12417,6 +12471,15 @@
   "In Ji-hye": {
    "p": "/7YtQOQDAvZERHSyOWIjLxozZXhj.jpg"
   },
-  "Song Ha-young": {}
+  "Song Ha-young": {},
+  "Jung Ga-ram": {
+   "p": "/uZh233j4OTrBf3v4feIvwBePSd6.jpg"
+  },
+  "Lee Jae-eung": {
+   "p": "/eXet0PJzTzYZkmI6yyfVVfOFmzC.jpg"
+  },
+  "Yu Bo-ra": {},
+  "Cha Yeon-su": {},
+  "Kim Seo-hee": {}
  }
 }
