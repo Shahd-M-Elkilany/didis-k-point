@@ -2621,7 +2621,39 @@
    "network": "tvN",
    "genres": "Suspense, Action, Fantasy",
    "country": "KR",
-   "status": "S"
+   "status": "S",
+   "tmdbId": 116043,
+   "summary": "Ji-O has a special power and a secret, but he doesn't know who he really is. He is chased by mysterious figures, while he tries to find answers to numerous questions that surround him. Goo-Reum is a detective. When she decides on a course of action, she won't change no matter what. Her parents disappeared when she was only a young child. Goo-Reum chases after the truth behind her parents' disappearance. She meets Ji-O and her life changes.",
+   "episodes": 12,
+   "firstAir": "2021-02-01",
+   "lastAir": "2021-03-09",
+   "cast": [
+    "Kim Rae-won",
+    "Lee Da-hee",
+    "Kim Seung-oh",
+    "Kim Sang-ho",
+    "Jin Kyung",
+    "Park Hyuk-kwon"
+   ],
+   "roles": [
+    "Ji-O",
+    "Ha Neul Ae Gu-Reum",
+    "Yi-Son",
+    "Choi Jin-Hwan",
+    "Hwang Jung-A",
+    "Kim Cheol-Soo"
+   ],
+   "crew": [
+    {
+     "name": "Kim Hong-sun",
+     "job": "Director"
+    },
+    {
+     "name": "Chun Sung-il",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/luca-the-beginning-1793200205993-doh8.jpg"
   },
   {
    "id": "sisyphus-the-myth",
@@ -3395,7 +3427,49 @@
    "genres": "Drama, Romance, Fantasy",
    "country": "KR",
    "status": "S",
-   "progress": "ep 6"
+   "progress": "ep 6",
+   "tmdbId": 116386,
+   "summary": "A woman with only a short time to live and a man with the supernatural power to bring the world to an end discover the true meaning of life and love.",
+   "episodes": 16,
+   "firstAir": "2021-05-10",
+   "lastAir": "2021-06-29",
+   "cast": [
+    "Park Bo-young",
+    "Seo In-guk",
+    "Lee Soo-hyuk",
+    "Kang Tae-oh",
+    "Shin Do-hyun",
+    "Dawon"
+   ],
+   "roles": [
+    "Tak Dong-kyung",
+    "Myul Mang / Kim Sa-ram",
+    "Cha Joo-ik",
+    "Lee Hyun-gyu",
+    "Na Ji-na",
+    "Tak Seon-kyung"
+   ],
+   "crew": [
+    {
+     "name": "Im Mea-ri",
+     "job": "Creator"
+    },
+    {
+     "name": "Kwon Young-il",
+     "job": "Director"
+    },
+    {
+     "name": "Im Mea-ri",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/doom-at-your-service-1793200200167-s5ko.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=I4E-o1zmqQo",
+     "title": "DOOM AT YOUR SERVICE - Trailer 2 (English Subs)"
+    }
+   ]
   },
   {
    "id": "all-of-us-are-dead",
@@ -11228,6 +11302,28 @@
   "Kim Dae-gon": {
    "p": "/zchl2U5HsmP964TB1Hm18HuNH5O.jpg"
   },
-  "Kim Sae-bom": {}
+  "Kim Sae-bom": {},
+  "Kang Tae-oh": {
+   "p": "/aMenmaLlcK6YMZnN7NBvvaVuq4O.jpg"
+  },
+  "Shin Do-hyun": {
+   "p": "/sysicgtUyGre7xnwBpLrSel6QRf.jpg"
+  },
+  "Dawon": {
+   "p": "/nAdqwJHroJ4lsy7h9HDIGKpe0ns.jpg"
+  },
+  "Im Mea-ri": {},
+  "Kwon Young-il": {
+   "p": "/6Ze5uut7eTZoWFM3nb4JUL83TYj.jpg"
+  },
+  "Lee Da-hee": {
+   "p": "/uaZ0kMQOEKxxtfH9IWecBZ8c4DI.jpg"
+  },
+  "Kim Seung-oh": {
+   "p": "/bvwsF0l3f2qs19GCUyHtAqGDL5P.jpg"
+  },
+  "Kim Hong-sun": {
+   "p": "/kjehP5zlFejz4ApseX4NM4JLtx5.jpg"
+  }
  }
 }
