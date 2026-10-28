@@ -5,6 +5,56 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "take-charge-over-my-heart",
+   "title": "take charge of my heart",
+   "year": 2026,
+   "status": "W",
+   "tmdbId": 289423,
+   "summary": "A corporate heir with an artificial heart meets a woman who's literally electric. They strike a deal that makes his heart beat — in more ways than one.",
+   "episodes": 10,
+   "firstAir": "2026-10-09",
+   "lastAir": "2026-10-09",
+   "country": "KR",
+   "network": "Netflix",
+   "cast": [
+    "Kim Young-kwang",
+    "Chae Soo-bin",
+    "Cha Woo-min"
+   ],
+   "roles": [
+    "Baek Ho-rang",
+    "Na Bo-bae",
+    "Ji Eun-ho"
+   ],
+   "crew": [
+    {
+     "name": "Park Soo-won",
+     "job": "Creator"
+    },
+    {
+     "name": "Song You-chae",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/take-charge-over-my-heart-1793202730598-usvp.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=z_D5uXaDsVU",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "scores": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "touched": "2026-10-28",
+   "watched": "2026-10",
+   "review": "Sooooo fun and the couple are super adorable"
+  },
+  {
    "id": "love-in-disguise",
    "title": "love in disguise",
    "year": 2026,
@@ -13263,6 +13313,8 @@
   },
   "Moon Soo-jeong": {},
   "Lee Ah-hyun": {},
-  "Ryu Do-ha": {}
+  "Ryu Do-ha": {},
+  "Park Soo-won": {},
+  "Song You-chae": {}
  }
 }
