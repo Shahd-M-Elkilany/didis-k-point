@@ -1670,7 +1670,46 @@
    "network": "tvN",
    "genres": "Drama, Romance, Comedy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 78060,
+   "summary": "Story follows a group of physical therapists, nurses, radiological technologists and trainees.\n\nYe Jae-Wook works as a physical therapist and also teaches in the same field. He begins to work as a team leader at a hospital.\n\nWoo Bo-Young has been working as a physical therapist for 3 years. She wanted to become a poet, but due to her poor family background she studied to become a physical therapist.\n\nShin Min-Ho is a trainee, but he isn't interested in physical therapy. His grades weren't good enough for medical school and his parents, who are both doctors, made him study physical therapy.",
+   "episodes": 16,
+   "firstAir": "2018-03-26",
+   "lastAir": "2018-05-15",
+   "cast": [
+    "Lee Yu-bi",
+    "Lee Jun-hyuk",
+    "Jang Dong-yoon",
+    "Shin Jae-ha",
+    "Lee Chae-young",
+    "Kim Jae-beom"
+   ],
+   "roles": [
+    "Woo Bo-Young",
+    "Ye Jae-Wook",
+    "Shin Min-Ho",
+    "Kim Nam-Woo",
+    "Kim Yoon-Joo",
+    "Park Shi-Won"
+   ],
+   "crew": [
+    {
+     "name": "Han Sang-jae",
+     "job": "Director"
+    },
+    {
+     "name": "Kim A-young",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/a-poem-a-day-1793200907533-iv44.jpg",
+   "scores": [
+    3.8,
+    3.8,
+    3.8,
+    3.8,
+    3.8
+   ]
   },
   {
    "id": "secretary-kim",
@@ -12586,6 +12625,15 @@
   },
   "Eugene Jung": {
    "p": "/iiY8UUU93EjutlfRrTZTPm566d6.jpg"
+  },
+  "Lee Chae-young": {
+   "p": "/xwHPMSKQHo9iRBDDgdINDYBd9kb.jpg"
+  },
+  "Kim Jae-beom": {
+   "p": "/qiL8oRmCM6DjEdfePdnUuXguumj.jpg"
+  },
+  "Han Sang-jae": {
+   "p": "/fCigWxHVvmjqLtsh4vydHPnqqNc.jpg"
   }
  }
 }
