@@ -8,7 +8,7 @@
    "id": "latent-of-autumn",
    "title": "the lament of autumn",
    "year": 2026,
-   "status": "L",
+   "status": "S",
    "tmdbId": 304452,
    "summary": "In the turbulent era of the Republic of China, student Ye Pingjun takes a job at a Western Hunan meeting house to fund her mother’s medical care. However, she's unexpectedly caught in the crossfire of an assassination attempt against the powerful Yu family’s fifth son, Yu Changxuan, and ends up accused of a crime she didn’t commit. Pingjun strikes a bold bargain: if Changxuan cannot identify the true culprit within ten days, he must clear her name. What begins as a high-stakes investigation quickly evolves into a calculated courtship as Changxuan maneuvers to win her heart while hiding a complex web of secrets. Will their blossoming romance survive the encroaching shadows of war, or will the secrets of their past pull them apart?",
    "episodes": 40,
@@ -49,7 +49,8 @@
      "title": "OFFICIAL TRAILER [Subtitled]"
     }
    ],
-   "touched": "2026-10-28"
+   "touched": "2026-11-06",
+   "progress": "ep 11"
   },
   {
    "id": "doctor-on-the-edge",
