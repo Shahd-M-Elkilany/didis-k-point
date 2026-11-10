@@ -5,6 +5,64 @@
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
+   "id": "dead-end-job",
+   "title": "DEAD END JOB",
+   "year": 2026,
+   "status": "W",
+   "tmdbId": 289517,
+   "summary": "Drowning in debt, a young man takes lucrative part-time jobs from a mysterious agency — only to find his hustle for more money turning nightmarish.",
+   "episodes": 8,
+   "firstAir": "2026-10-30",
+   "lastAir": "2026-10-30",
+   "country": "KR",
+   "network": "Netflix",
+   "cast": [
+    "Lee Jae-wook",
+    "Go Min-si",
+    "Kim Min-ha",
+    "Lee Hee-jun"
+   ],
+   "roles": [
+    "Byeon Hyeok-jun",
+    "Eum Yeon-joo",
+    "Byeon Ji-yoon",
+    "Head of Spider Staffing Agency"
+   ],
+   "crew": [
+    {
+     "name": "Han Jun-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Da-min",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Sin-ji",
+     "job": "Writer"
+    },
+    {
+     "name": "Gyeong Min-seon",
+     "job": "Writer"
+    },
+    {
+     "name": "Han Jun-hee",
+     "job": "Executive Producer"
+    }
+   ],
+   "poster": "images/dead-end-job-1794316708681-al90.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Sn2ZCxOxsN0",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ],
+   "touched": "2026-11-10",
+   "watched": "2026-11",
+   "myRate": 3.5,
+   "review": "Bingeable, not horror but easy to watch"
+  },
+  {
    "id": "latent-of-autumn",
    "title": "the lament of autumn",
    "year": 2026,
@@ -11962,7 +12020,9 @@
   "Kwon Da-ham": {
    "p": "/ulInuoKvagzuCPmuRNQiFyHLFLv.jpg"
   },
-  "Kim Da-min": {},
+  "Kim Da-min": {
+   "p": "/zs8BgrHeZusL28bALBJOnShSquf.jpg"
+  },
   "Lee Chang-hee": {
    "p": "/6d1j13WsqUV39yfY8QB6MUbycV9.jpg"
   },
@@ -13660,6 +13720,13 @@
   },
   "Quan Ying": {},
   "Ye Yang": {},
-  "Wang Hui": {}
+  "Wang Hui": {},
+  "Kim Min-ha": {
+   "p": "/zPNNamrJLWoXADXALQmuTdo6zBS.jpg"
+  },
+  "Lee Sin-ji": {},
+  "Gyeong Min-seon": {
+   "p": "/ry18BLMbtC4ycFltYTtNqN6hKBj.jpg"
+  }
  }
 }
