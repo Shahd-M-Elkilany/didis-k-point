@@ -3949,7 +3949,8 @@
    "tmdbId": 334382,
    "episodes": 1,
    "firstAir": "2020-10-26",
-   "lastAir": "2020-10-26"
+   "lastAir": "2020-10-26",
+   "pick": true
   },
   {
    "id": "the-uncanny-counter",
