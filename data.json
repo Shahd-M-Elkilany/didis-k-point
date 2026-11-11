@@ -10348,7 +10348,8 @@
      "job": "Creator"
     }
    ],
-   "poster": "images/the-art-of-sarah-1789783187353-o11z.jpg"
+   "poster": "images/the-art-of-sarah-1789783187353-o11z.jpg",
+   "pick": true
   },
   {
    "id": "undercover-miss-hong",
