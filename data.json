@@ -10666,7 +10666,8 @@
      "job": "Screenplay"
     }
    ],
-   "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg"
+   "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
+   "pick": true
   },
   {
    "id": "dream-to-you",
