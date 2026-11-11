@@ -10289,7 +10289,8 @@
      "job": "Writer"
     }
    ],
-   "poster": "images/can-this-love-be-translated-1789783314325-q80m.jpg"
+   "poster": "images/can-this-love-be-translated-1789783314325-q80m.jpg",
+   "pick": true
   },
   {
    "id": "the-art-of-sarah",
