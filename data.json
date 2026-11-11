@@ -10950,7 +10950,8 @@
      "job": "Novel"
     }
    ],
-   "poster": "https://image.tmdb.org/t/p/w500/lGFngmJWMO4HTPcI0sUGKBAFqMe.jpg"
+   "poster": "https://image.tmdb.org/t/p/w500/lGFngmJWMO4HTPcI0sUGKBAFqMe.jpg",
+   "pick": true
   },
   {
    "id": "my-boss-my-bias",
