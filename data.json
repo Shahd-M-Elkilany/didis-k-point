@@ -818,7 +818,58 @@
    "network": "KBS",
    "genres": "School, Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 37722,
+   "summary": "Six dedicated students at Kirin Art High School work to achieve their dreams of becoming stars in the Korean music industry.",
+   "episodes": 32,
+   "seasons": 2,
+   "firstAir": "2011-01-03",
+   "lastAir": "2012-03-20",
+   "cast": [
+    "Suzy",
+    "Kim Soo-hyun",
+    "TAECYEON",
+    "WOOYOUNG",
+    "IU",
+    "Ahn Sun-young"
+   ],
+   "roles": [
+    "Ko Hye-mi",
+    "Song Sam-dong",
+    "Jin Guk",
+    "Jason",
+    "Kim Pil-sook",
+    "Kang Oh-seon"
+   ],
+   "crew": [
+    {
+     "name": "Kim Seong-yoon",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Eung-bok",
+     "job": "Creator"
+    },
+    {
+     "name": "Bae Yong-jun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Hye-ryun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Jin-young",
+     "job": "Creator"
+    }
+   ],
+   "poster": "images/dream-high-1794473760853-rc4q.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=Dh8t8tdwAiA",
+     "title": "[Drama Trailer] Dream High (드림 하이)"
+    }
+   ]
   },
   {
    "id": "city-hunter",
@@ -892,7 +943,43 @@
    "network": "SBS",
    "genres": "Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 43152,
+   "summary": "Crown Prince Yi Gak finds that he has been transported from the Chosun Dynasty to modern-day Seoul. He meets Hong Se Na, who bears a striking resemblance to his dead wife, and is determined to solve the 300-year-old mystery of her death. With his own resemblance to the CEO’s grandson at the company where Se Na works, Gak assumes the identity of the young man to stay close to her. Can the Crown Prince navigate a modern corporation to find clues to his own time period?",
+   "episodes": 20,
+   "firstAir": "2012-03-21",
+   "lastAir": "2012-05-24",
+   "cast": [
+    "Park Yoo-chun",
+    "Han Ji-min",
+    "Jeong Yu-mi",
+    "Kim So-hyun",
+    "Lee Tae-sung",
+    "Jung Suk-won"
+   ],
+   "roles": [
+    "Prince Lee Gak / Yong Tae-yong",
+    "Park-ha / Hong Bu-yong",
+    "Hong Se-na / Hong Hwa-yong",
+    "Hong Se-na (young) / Hong Hwa-yong (young)",
+    "Yong Tae-mu",
+    "Woo Yong-sool"
+   ],
+   "crew": [
+    {
+     "name": "Shin Yoon-sub",
+     "job": "Director"
+    },
+    {
+     "name": "An Gil-ho",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Hee-myung",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/rooftop-prince-1794473749337-6dm3.jpg"
   },
   {
    "id": "to-the-beautiful-you",
@@ -901,7 +988,35 @@
    "network": "SBS",
    "genres": "Comedy, School, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 47007,
+   "summary": "Goo Jae-hee lives in the United States and one day sees a track and field competition on TV, and becomes attracted to one of the high jump competitors, Kang Tae-joon. She begins to idolize the young athlete and eventually transfers to Korea to attend the same school that Tae-joon attends after he suffers an accident that could potentially end his career. There is a catch, however: Tae-joon attends an all-boys high school and Jae-hee must disguise herself as a boy to enter.",
+   "episodes": 16,
+   "firstAir": "2012-08-15",
+   "lastAir": "2012-10-04",
+   "cast": [
+    "Sulli",
+    "Minho",
+    "Lee Hyun-woo",
+    "Kang Ha-neul",
+    "Kim Ji-won",
+    "Hwang Kwang-hee"
+   ],
+   "roles": [
+    "Goo Jae-hee",
+    "Kang Tae-joon",
+    "Cha Eun-gyeol",
+    "Min Hyeon-jae",
+    "Seol Han Na",
+    "Song Jong Min"
+   ],
+   "crew": [
+    {
+     "name": "Jeon Gi-Sang",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/to-the-beautiful-you-1794473756842-wn92.jpg"
   },
   {
    "id": "school-2013",
@@ -911,7 +1026,57 @@
    "network": "KBS",
    "genres": "Comedy, Romance, School",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 46596,
+   "summary": "Go Nam-soon, a young boy, constantly gets bullied by a group in his class. Later, one of his old rivals joins his school. Eventually, they are able to sort out their differences.",
+   "episodes": 16,
+   "firstAir": "2012-12-03",
+   "lastAir": "2013-01-28",
+   "cast": [
+    "Lee Jong-suk",
+    "Kim Woo-bin",
+    "Jang Na-ra",
+    "Daniel Choi",
+    "Park Se-young",
+    "Jeon Soo-jin"
+   ],
+   "roles": [
+    "Go Nam-soon",
+    "Park Heung-soo",
+    "Jung In-jae",
+    "Kang Se-chan",
+    "Song Ha-kyung",
+    "Kye Na-ri"
+   ],
+   "crew": [
+    {
+     "name": "Lee Eung-bok",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Hyun-joo",
+     "job": "Writer"
+    },
+    {
+     "name": "Go Jung-won",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Eung-bok",
+     "job": "Director"
+    },
+    {
+     "name": "Lee Min-hong",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/school-2013-1794473753485-p9em.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=kwBydCH1VB8",
+     "title": "[Trailer] School 2013 (학교 2013)"
+    }
+   ]
   },
   {
    "id": "the-masters-sun",
@@ -921,7 +1086,51 @@
    "network": "SBS",
    "genres": "Comedy, Horror, Fantasy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 57646,
+   "summary": "Joo Joong-won is the arrogant, greedy CEO of Kingdom, a  conglomerate that includes a supermall and a hotel. \"Ghost whisperer”  Tae Gong-shil, is a misunderstood outcast who can't keep a  boyfriend or a job since a near death experience left her seeing needy  ghosts. She feels compelled to help them resolve their earthly issues so  they can move on to the afterlife... and he feels compelled to think  she's crazy. Soon their lives merge into a complicated web of hijinx,  misunderstandings, and... yes, love.",
+   "episodes": 17,
+   "firstAir": "2013-08-07",
+   "lastAir": "2013-10-03",
+   "cast": [
+    "So Ji-sub",
+    "Gong Hyo-jin",
+    "Seo In-guk",
+    "Kim Yoo-ri",
+    "Hwang Sun-hee",
+    "Han Bo-reum"
+   ],
+   "roles": [
+    "Joo Jоong-won / \"Master\"",
+    "Tae Gong-sil / \"Sun\"",
+    "Kang-woo",
+    "Tae Yi-ryung",
+    "Cha Hee-joo / \"Hanna Brown\"",
+    "Hanna Brown (Young) / \"Cha Hee-joo\""
+   ],
+   "crew": [
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Mi-ran",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Mi-ran",
+     "job": "Writer"
+    },
+    {
+     "name": "Jin Hyuk",
+     "job": "Director"
+    },
+    {
+     "name": "Hong Jeong-eun",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/yuw1l5s4ha57ZdKKGJV2LDyN1S7.jpg"
   },
   {
    "id": "the-heirs",
@@ -931,7 +1140,51 @@
    "network": "SBS",
    "genres": "Drama, Comedy, Romance, School",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 48462,
+   "summary": "After a chance encounter in LA, two teens from different social backgrounds reunite at an exclusive high school attended by Korea's über rich.",
+   "episodes": 20,
+   "firstAir": "2013-10-09",
+   "lastAir": "2013-12-12",
+   "cast": [
+    "Park Shin-hye",
+    "Lee Min-ho",
+    "Kim Woo-bin",
+    "Kim Ji-won",
+    "Kang Min-hyuk",
+    "Choi Jin-hyuk"
+   ],
+   "roles": [
+    "Cha Eun-sang",
+    "Kim Tan",
+    "Choe Yeong-do",
+    "Yu Rachel",
+    "Yoon Chan-young",
+    "Kim Won"
+   ],
+   "crew": [
+    {
+     "name": "Kim Eun-sook",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Eun-sook",
+     "job": "Writer"
+    },
+    {
+     "name": "Boo Seong-cheol",
+     "job": "Director"
+    },
+    {
+     "name": "Kang Shin-hyo",
+     "job": "Director"
+    },
+    {
+     "name": "Yoon Ha-lim",
+     "job": "Producer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/n4RX9QVXjHbMB31TDWqqRLjshgu.jpg"
   },
   {
    "id": "my-love-from-the-star",
@@ -941,7 +1194,57 @@
    "network": "SBS",
    "genres": "Drama, Comedy, Romance, Fantasy",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 60957,
+   "summary": "An alien who came to Earth 400 years ago is almost able to return to his own planet, but when he meets a famous actress, he doesn't want to go home.",
+   "episodes": 21,
+   "firstAir": "2013-12-18",
+   "lastAir": "2014-02-27",
+   "cast": [
+    "Gianna Jun",
+    "Kim Soo-hyun",
+    "Park Hae-jin",
+    "Yoo In-na",
+    "Shin Sung-rok",
+    "Lee Jeong-kil"
+   ],
+   "roles": [
+    "Chun Song-yi",
+    "Do Min-joon",
+    "Lee Hwi-kyung",
+    "Yoo Se-mi",
+    "Lee Jae-kyung",
+    "Lee Bum-joong"
+   ],
+   "crew": [
+    {
+     "name": "Jang Tae-yoo",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Ji-eun",
+     "job": "Creator"
+    },
+    {
+     "name": "Park Ji-eun",
+     "job": "Writer"
+    },
+    {
+     "name": "Choi Moon-su",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Yoon Bo-mi",
+     "job": "Producer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/o5EYVYCVtDUdajP4rWfv6q0BTmm.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=8452AW5GIjM",
+     "title": "SBS [별에서온그대] - Coming soon Teaser 5차"
+    }
+   ]
   },
   {
    "id": "doctor-stranger",
@@ -951,7 +1254,39 @@
    "network": "SBS",
    "genres": "Action, Romance, Drama, Medical",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 60956,
+   "summary": "As a child, Park Hoon and his dad were kidnapped and taken to North Korea. He grew up there, learning to be a doctor just like his father. When Park Hoon escapes back to South Korea and begins work at a prestigious hospital, he makes it his goal to earn enough money to go back to North Korea to rescue his true love. He'll do anything to find her, but then he meets and falls for a mysterious woman who looks exactly like her.",
+   "episodes": 20,
+   "firstAir": "2014-05-05",
+   "lastAir": "2014-07-08",
+   "cast": [
+    "Lee Jong-suk",
+    "Park Hae-jin",
+    "Jin Se-yeon",
+    "Kang So-ra",
+    "Jeon Kuk-hwan",
+    "Lee Il-hwa"
+   ],
+   "roles": [
+    "Park Hoon",
+    "Han Jae-joon",
+    "Song Jae-hee / Han Seung-hee",
+    "Oh Soo-hyun",
+    "Oh Joon-gyu",
+    "Park Hoon's Mother"
+   ],
+   "crew": [
+    {
+     "name": "Jin Hyuk",
+     "job": "Director"
+    },
+    {
+     "name": "Park Jin-woo",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/doctor-stranger-1794473722290-gdzn.jpg"
   },
   {
    "id": "hi-school-love-on",
@@ -961,7 +1296,45 @@
    "network": "KBS",
    "genres": "Comedy, Romance, School, Fantasy",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 61738,
+   "summary": "High school may be tough, but Woo Hyun has a guardian angel looking over him — literally. Disguised as a naive high schooler, Lee Seul Bi descends from the heavens to protect Woo Hyun's life, but discovers she's got a thing or two to learn about life as a teenager, including the pains of falling in love. Can this cherubic guardian protect the apple of her eye and also manage to survive high school?",
+   "episodes": 20,
+   "firstAir": "2014-07-11",
+   "lastAir": "2014-12-19",
+   "cast": [
+    "Kim Sae-ron",
+    "Nam Woo-hyun",
+    "Lee Sung-yeol",
+    "Kim Min-seok",
+    "Baek Seung-heon",
+    "Han Soo-yeon"
+   ],
+   "roles": [
+    "Lee Seul-bi",
+    "Shin Woo-hyun",
+    "Hwang Sung-yeol",
+    "Park Byung-wook",
+    "Tae-ho",
+    "Choi So-jin"
+   ],
+   "crew": [
+    {
+     "name": "Lee Eun-mi",
+     "job": "Director"
+    },
+    {
+     "name": "Sung Joon-hae",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/hi-school-love-on-1794473724358-s5wa.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=izYB8yM9mZQ",
+     "title": "Hi! School - Love On | 하이스쿨 - 러브온 [Preview - Ver.1]"
+    }
+   ]
   },
   {
    "id": "its-okay-thats-love",
@@ -971,7 +1344,57 @@
    "network": "SBS",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 62763,
+   "summary": "From mere co-talkshow guests to being off-screen roommates? Things get steamier and awkward between a psychologist and novelist in their entanglement.",
+   "episodes": 16,
+   "firstAir": "2014-07-23",
+   "lastAir": "2014-09-11",
+   "cast": [
+    "Zo In-sung",
+    "Gong Hyo-jin",
+    "Sung Dong-il",
+    "Lee Kwang-soo",
+    "Jin Kyung",
+    "Lee Sung-kyung"
+   ],
+   "roles": [
+    "Jang Jae Yeol",
+    "Ji Hae Soo",
+    "Jo Dong Min",
+    "Park Soo Gwang",
+    "Lee Young Jin",
+    "Oh Son Yeo"
+   ],
+   "crew": [
+    {
+     "name": "Kim Kyu-tae",
+     "job": "Creator"
+    },
+    {
+     "name": "Noh Hee-kyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Kyu-tae",
+     "job": "Director"
+    },
+    {
+     "name": "Noh Hee-kyung",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Kim Kyu-tae",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/its-okay-thats-love-1794473726587-wlxl.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=evF6CTbHeXk",
+     "title": "It's Alright, This Is Love Trailer"
+    }
+   ]
   },
   {
    "id": "bad-guys",
@@ -1175,7 +1598,41 @@
    "network": "Naver TV Cast",
    "genres": "Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 64127,
+   "summary": "Ji Yeon-hee is an extremely shy, introverted 23-year-old girl with zero dating experience and a tendency to blush when talking to someone she likes. One day, four young men move into the house right next door to Yeon-hee's home, and to her surprise, they turn out to be Chanyeol, D.O, Baekhyun, and Sehun from her favorite boy band EXO, who are looking to lay low for a while. They hire her to clean their house part-time during the winter vacation and that's when Yeon-hee found out that Chanyeol was her long lost childhood friend and crush \"Chan\" and is the grandson of the house owner. As the story goes on, Yeon-hee soon becomes involved in a love triangle with Chanyeol and D.O.",
+   "episodes": 16,
+   "firstAir": "2015-04-09",
+   "lastAir": "2015-05-28",
+   "cast": [
+    "Chanyeol",
+    "Mun Ka-young",
+    "Doh Kyung-soo",
+    "Baekhyun",
+    "Sehun",
+    "Jang Yoo-sang"
+   ],
+   "roles": [
+    "Chanyeol",
+    "Ji Yeon-hee",
+    "D.O",
+    "Baekhyun",
+    "Sehun",
+    "Ji Gwang-soo"
+   ],
+   "crew": [
+    {
+     "name": "Lee Kwon",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/exo-next-door-1794473710131-rkzh.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=qMWXVc3WAYs",
+     "title": "BAEKHYUN 백현 '두근거려 (Beautiful)' (From Drama 'EXO NEXT DOOR') MV"
+    }
+   ]
   },
   {
    "id": "who-are-you-school-2015",
@@ -1185,7 +1642,57 @@
    "network": "KBS",
    "genres": "Suspense, Drama, School, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 62511,
+   "summary": "After losing her memory in an accident, a bullied high school orphan finds herself in the place of an identical-looking girl who's gone missing.",
+   "episodes": 16,
+   "firstAir": "2015-04-27",
+   "lastAir": "2015-06-16",
+   "cast": [
+    "Kim So-hyun",
+    "Nam Joo-hyuk",
+    "Yook Sung-jae",
+    "Lee Cho-hee",
+    "Jeon No-min",
+    "David Lee"
+   ],
+   "roles": [
+    "Lee Eun-bi / Go Eun-byul",
+    "Han Yi-ahn",
+    "Gong Tae-kwang",
+    "Lee Shi-jin",
+    "Gong Jae-ho",
+    "Park Min-joon"
+   ],
+   "crew": [
+    {
+     "name": "Kim Seong-yoon",
+     "job": "Creator"
+    },
+    {
+     "name": "Baek Sang-hoon",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Seong-yoon",
+     "job": "Director"
+    },
+    {
+     "name": "Kim Min-jung",
+     "job": "Writer"
+    },
+    {
+     "name": "Kim Hyun-jung",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/who-are-you-school-2015-1794473720332-6qqj.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=WG6ZkwNriGg",
+     "title": "Who Are You | 후아유 - 학교 2015 [Preview - Ver.2]"
+    }
+   ]
   },
   {
    "id": "orange-marmalade",
@@ -1195,7 +1702,43 @@
    "network": "KBS",
    "genres": "Fantasy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 62669,
+   "summary": "Despite a 200-year-old treaty between humans and vampires, both races still don't get along. Amidst the looming tension, Jung Jae Min, a posh yet kindhearted high school student, quickly falls for the mysterious new girl Baek Ma Ri. But can Ma Ri conceal her true vampire identity and give love an honest chance? If these star-crossed lovers can find the courage to make the leap, Jae Min and Ma Ri may just be the key to a final resolution between humans and vampires...",
+   "episodes": 12,
+   "firstAir": "2015-05-15",
+   "lastAir": "2015-07-24",
+   "cast": [
+    "Yeo Jin-goo",
+    "Kim Seol-hyun",
+    "Lee Jong-hyun",
+    "Song Jong-ho",
+    "Lee Il-hwa",
+    "Gil Eun-hye"
+   ],
+   "roles": [
+    "Jung Jae-min",
+    "Baek Ma-ri",
+    "Han Shi-hoo",
+    "Han Yoon-jae",
+    "Kang Min-ha",
+    "Jo Ah-ra"
+   ],
+   "crew": [
+    {
+     "name": "Seok Woo",
+     "job": "Creator"
+    },
+    {
+     "name": "Lee Hyung-min",
+     "job": "Director"
+    },
+    {
+     "name": "Choi Seong-beom",
+     "job": "Director"
+    }
+   ],
+   "poster": "images/orange-marmalade-1794473716348-9arg.jpg"
   },
   {
    "id": "she-was-pretty",
@@ -1205,7 +1748,49 @@
    "network": "MBC",
    "genres": "Comedy, Romance",
    "country": "KR",
-   "status": "W"
+   "status": "W",
+   "tmdbId": 63767,
+   "summary": "A former ugly duckling tries to track down his childhood first love. But what will happen when a case of false identities backfires?",
+   "episodes": 16,
+   "firstAir": "2015-09-16",
+   "lastAir": "2015-11-11",
+   "cast": [
+    "Hwang Jung-eum",
+    "Park Seo-jun",
+    "Choi Si-won",
+    "Go Joon-hee",
+    "Shin Dong-mi",
+    "Ahn Se-ha"
+   ],
+   "roles": [
+    "Kim Hye-jin",
+    "Ji Sung-joon",
+    "Kim Shin-hyuk",
+    "Min Ha-ri",
+    "Cha Joo-young",
+    "Kim Poong-ho"
+   ],
+   "crew": [
+    {
+     "name": "Jo Sung-hee",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Dae-yoon",
+     "job": "Director"
+    },
+    {
+     "name": "Jo Sung-hee",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/she-was-pretty-1794473718389-qlvz.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=m01e07jGzl0",
+     "title": "[Teaser] 황정음, 박서준, 고준희, 최시원의 '그녀는 예뻤다' 9월 16일 첫 방송"
+    }
+   ]
   },
   {
    "id": "reply-1988",
@@ -1267,7 +1852,39 @@
    "network": "MBN",
    "genres": "Comedy, Romance",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 64529,
+   "summary": "Romantic comedy depicting the heartfelt and pure love story by a man, a successful CEO with everything in his hands, who falls in love for the first time in his life with a woman, who has been living in completely opposite circumstances from his and is a rising artist in his own company.",
+   "episodes": 20,
+   "firstAir": "2015-11-14",
+   "lastAir": "2016-01-17",
+   "cast": [
+    "Jung Il-woo",
+    "Jin Se-yeon",
+    "Lee Si-eon",
+    "Yoon Bo-ra",
+    "JOOHONEY",
+    "HYUNGWON"
+   ],
+   "roles": [
+    "Choi Se Hoon",
+    "Yoo Yi Ryeong",
+    "Section Chief Heo",
+    "Kang Min Joo",
+    "himself",
+    "himself"
+   ],
+   "crew": [
+    {
+     "name": "Ji Young-soo",
+     "job": "Director"
+    },
+    {
+     "name": "Shin Yoo-dam",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/high-end-crush-1794473713871-9p36.jpg"
   },
   {
    "id": "oh-my-venus",
@@ -1631,7 +2248,57 @@
    "genres": "Suspense, Drama, Comedy, Romance, Fantasy",
    "country": "KR",
    "status": "W",
-   "pick": true
+   "pick": true,
+   "tmdbId": 66330,
+   "summary": "After being pulled into the webtoon world created by her father, a surgical resident gets entangled in a murder mystery involving the story's hero.",
+   "episodes": 16,
+   "firstAir": "2016-07-20",
+   "lastAir": "2016-09-14",
+   "cast": [
+    "Lee Jong-suk",
+    "Han Hyo-joo",
+    "Eugene Jung",
+    "Lee Tae-hwan",
+    "Lee Si-eon",
+    "Park Won-sang"
+   ],
+   "roles": [
+    "Kang Cheol",
+    "Oh Yeon-joo",
+    "Yoon So-hee",
+    "Seo Do-yoon",
+    "Park Soo-bong",
+    "Han Cheol-ho"
+   ],
+   "crew": [
+    {
+     "name": "Song Jae-jung",
+     "job": "Creator"
+    },
+    {
+     "name": "Song Jae-jung",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Son Hyung-suk",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Kim Sang-hun",
+     "job": "Producer"
+    },
+    {
+     "name": "Jung Dae-yoon",
+     "job": "Director"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/rBuCoS0VB9M6zkEUCvnVrfeF0J.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=iFyxffHNwvE",
+     "title": "Official Trailer [ENG SUB]"
+    }
+   ]
   },
   {
    "id": "moon-lovers",
@@ -2542,7 +3209,57 @@
    "network": "tvN",
    "genres": "Comedy, Romance",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 79434,
+   "summary": "When his secretary unexpectedly quits, an arrogant executive will do anything to bring her back.",
+   "episodes": 16,
+   "firstAir": "2018-06-06",
+   "lastAir": "2018-07-26",
+   "cast": [
+    "Park Seo-jun",
+    "Park Min-young",
+    "Lee Tae-hwan",
+    "Pyo Ye-jin",
+    "Kim Hye-ok",
+    "Kim Byeong-ok"
+   ],
+   "roles": [
+    "Lee Young-joon",
+    "Kim Mi-so",
+    "Lee Sung-yeon",
+    "Kim Ji-a",
+    "Madame Choi",
+    "CEO Lee"
+   ],
+   "crew": [
+    {
+     "name": "Park Joon-hwa",
+     "job": "Creator"
+    },
+    {
+     "name": "Jung Eun-young",
+     "job": "Screenplay"
+    },
+    {
+     "name": "Park Joon-hwa",
+     "job": "Director"
+    },
+    {
+     "name": "Yoo Jong-sun",
+     "job": "Director"
+    },
+    {
+     "name": "Paek Sun-woo",
+     "job": "Writer"
+    }
+   ],
+   "poster": "https://image.tmdb.org/t/p/w500/w6muIYgrx1XZFombs3N8owfgLwf.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=1xh8cujxUGs",
+     "title": "WHAT'S WRONG WITH SECRETARY KIM - OFFICIAL TRAILER [Eng Sub] | Park Seo Joon, Park Min Young"
+    }
+   ]
   },
   {
    "id": "mr-sunshine",
@@ -2837,7 +3554,57 @@
    "network": "tvN",
    "genres": "Drama, Comedy, Romance",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 87553,
+   "summary": "An art curator's life unravels, as she tries to keep her pastime as a die-hard K-pop fan secret from her gallery's new director.",
+   "episodes": 16,
+   "firstAir": "2019-04-10",
+   "lastAir": "2019-05-30",
+   "cast": [
+    "Park Min-young",
+    "Kim Jae-uck",
+    "Ahn Bo-hyun",
+    "One",
+    "Kim Bo-ra",
+    "Park Jin-joo"
+   ],
+   "roles": [
+    "Sung Deok-mi",
+    "Ryan Gold / Heo Yoon-jae",
+    "Nam Eun-gi",
+    "Cha Shi-an",
+    "Cindy / Kim Hyo-jin",
+    "Lee Sun-joo"
+   ],
+   "crew": [
+    {
+     "name": "hong jong-chan",
+     "job": "Creator"
+    },
+    {
+     "name": "Kim Hye-young",
+     "job": "Creator"
+    },
+    {
+     "name": "Hong Jong-chan",
+     "job": "Director"
+    },
+    {
+     "name": "Jinnie Choi",
+     "job": "Executive Producer"
+    },
+    {
+     "name": "Kim Hye-young",
+     "job": "Writer"
+    }
+   ],
+   "poster": "images/her-private-life-1794473668612-1noc.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=V_QJ0jLKWFo",
+     "title": "HER PRIVATE LIFE - OFFICIAL TRAILER | Kim Jae Wook, Park Min Young, Ahn Bo Hyun, Park Jin Joo"
+    }
+   ]
   },
   {
    "id": "angels-last-mission",
@@ -5392,7 +6159,58 @@
    "network": "Netflix",
    "genres": "Suspense, School, Survival, Zombie",
    "country": "KR",
-   "status": "U"
+   "status": "U",
+   "tmdbId": 99966,
+   "summary": "A high school becomes ground zero for a zombie virus outbreak. Trapped students must fight their way out — or turn into one of the rabid infected.",
+   "episodes": 12,
+   "seasons": 2,
+   "firstAir": "2022-01-28",
+   "lastAir": "2022-01-28",
+   "cast": [
+    "Park Ji-hu",
+    "Yoon Chan-young",
+    "Cho Yi-hyun",
+    "Lomon",
+    "Yoo In-soo",
+    "Lee You-mi"
+   ],
+   "roles": [
+    "Nam On-jo",
+    "Lee Cheong-san",
+    "Choi Nam-ra",
+    "Lee Su-hyeok",
+    "Yoon Gwi-nam",
+    "Lee Na-yeon"
+   ],
+   "crew": [
+    {
+     "name": "Kim Nam-su",
+     "job": "Creator"
+    },
+    {
+     "name": "JQ Lee",
+     "job": "Creator"
+    },
+    {
+     "name": "Chun Sung-il",
+     "job": "Creator"
+    },
+    {
+     "name": "Mowg",
+     "job": "Original Music Composer"
+    },
+    {
+     "name": "Park Cheol-su",
+     "job": "Producer"
+    }
+   ],
+   "poster": "images/all-of-us-are-dead-1794473654473-l759.jpg",
+   "videos": [
+    {
+     "url": "https://www.youtube.com/watch?v=IN5TD4VRcSM",
+     "title": "Official Trailer [Subtitled]"
+    }
+   ]
   },
   {
    "id": "twenty-five-twenty-one",
@@ -13767,6 +14585,231 @@
   "Lee Sin-ji": {},
   "Gyeong Min-seon": {
    "p": "/ry18BLMbtC4ycFltYTtNqN6hKBj.jpg"
+  },
+  "Lomon": {
+   "p": "/2MrtBPoE4hKrBMohQ1rxOYl2ABX.jpg"
+  },
+  "Lee You-mi": {
+   "p": "/jZgjJqr6pGEegyziY10b4SklqbD.jpg"
+  },
+  "Kim Nam-su": {
+   "p": "/h1UwbgQXYAIisKjXFbCisM0QEHX.jpg"
+  },
+  "JQ Lee": {
+   "p": "/ZPQFYDOujAIu5luJWG02mCHSzP.jpg"
+  },
+  "Mowg": {
+   "p": "/jdQiBwQR9a93b6QCli79AR2gpNI.jpg"
+  },
+  "Park Cheol-su": {
+   "p": "/xB1JsarSr6gaeleWE2M6o2Ambe9.jpg"
+  },
+  "One": {
+   "p": "/lbFAzfXmjosrPpoFvczn3COqPc1.jpg"
+  },
+  "Park Jin-joo": {
+   "p": "/2loUUZGfslGkGComTUMp6ON2Kuc.jpg"
+  },
+  "hong jong-chan": {},
+  "Lee Tae-hwan": {
+   "p": "/j63Ts7rk4VrCURnWPtGLn2h2ij3.jpg"
+  },
+  "Pyo Ye-jin": {
+   "p": "/kgJP15cNNslxFT0kaI8MCra5lr8.jpg"
+  },
+  "Kim Hye-ok": {
+   "p": "/e6TtMyr2PQbW6JNAWW7bZoaVhPt.jpg"
+  },
+  "Kim Byeong-ok": {
+   "p": "/9A4pQUNIJsm1JbbamKNqz8ryOVM.jpg"
+  },
+  "Jung Eun-young": {},
+  "Yoo Jong-sun": {
+   "p": "/btKGBQ4qrvtnFb5gW6WrAomf2Md.jpg"
+  },
+  "Paek Sun-woo": {
+   "p": "/mZBndYBF1SHYpxgf7L8g52bRSxF.jpg"
+  },
+  "Lee Si-eon": {
+   "p": "/4jcRr3q8pq3e8AFx9flvvoKVeVc.jpg"
+  },
+  "Park Won-sang": {
+   "p": "/1BUaoK9hmgayqrXUzbRezKLoyZQ.jpg"
+  },
+  "Son Hyung-suk": {},
+  "Kim Sang-hun": {},
+  "Mun Ka-young": {
+   "p": "/sHOzgv3dvHZSDi5ijj5vbYYJwZ4.jpg"
+  },
+  "Doh Kyung-soo": {
+   "p": "/fYjYGWxYydmVxPle1h6QoeRk2b0.jpg"
+  },
+  "Sehun": {
+   "p": "/hgs0LEGNE5aMZ3pYoT0NzPapFaZ.jpg"
+  },
+  "Jang Yoo-sang": {
+   "p": "/ljYAPcYaEHULhUwVS51mIsNafWd.jpg"
+  },
+  "Lee Kwon": {
+   "p": "/iFuKriMZ8koGUZCLsFOkAIPftW1.jpg"
+  },
+  "Jung Il-woo": {
+   "p": "/znYZO1v1oJr48YXA3UNY62h3ZFp.jpg"
+  },
+  "Jin Se-yeon": {
+   "p": "/tKeeLzPt47OkccfvbUxNwhNYbTW.jpg"
+  },
+  "Yoon Bo-ra": {
+   "p": "/rJLZ3Acn9RwgCCKuQbsWSAxIygQ.jpg"
+  },
+  "JOOHONEY": {
+   "p": "/ph6SPDTBLPwoKHq7IKOP7cnR0Zl.jpg"
+  },
+  "HYUNGWON": {
+   "p": "/mvOjAZQmGVnq0FbCQeftCYFHyTv.jpg"
+  },
+  "Ji Young-soo": {
+   "p": "/pAxuWWVJmh69riIEKEXTy1vUfpb.jpg"
+  },
+  "Shin Yoo-dam": {},
+  "Lee Jong-hyun": {
+   "p": "/plMraKGccUZeAfcGelw34gN0rdf.jpg"
+  },
+  "Song Jong-ho": {
+   "p": "/1XTHUwFZtHG1BMp36e0Clb2FE7V.jpg"
+  },
+  "Lee Il-hwa": {
+   "p": "/7xRYe23aiFhLd094wv1syDiFzai.jpg"
+  },
+  "Gil Eun-hye": {
+   "p": "/5azq1FI3kMBYbJXH3Z7meuCHpDc.jpg"
+  },
+  "Seok Woo": {},
+  "Lee Hyung-min": {
+   "p": "/fbZs9CwH8hPiBOK3ciKK9U43lOa.jpg"
+  },
+  "Choi Si-won": {
+   "p": "/9NWbnMRKDa6HV2OeoNw0wTeyl6t.jpg"
+  },
+  "Go Joon-hee": {
+   "p": "/ksilFsztYt9Ojp2cbMk75nxumOS.jpg"
+  },
+  "Shin Dong-mi": {
+   "p": "/xqdLnXuECfvhd4CHQJFhlyi032V.jpg"
+  },
+  "Lee Cho-hee": {
+   "p": "/17vIKn6bLaDt29q5DEdjabbOjId.jpg"
+  },
+  "Jeon No-min": {
+   "p": "/b3GzIYGEvUg3fQGygjo41xcQoq8.jpg"
+  },
+  "Kim Hyun-jung": {},
+  "Kang So-ra": {
+   "p": "/hGIvcS0fqrmXwTXhU9yIi9WdfhS.jpg"
+  },
+  "Jeon Kuk-hwan": {
+   "p": "/tsL8mYfFRiv8Fh49lQ7PFopVnjT.jpg"
+  },
+  "Park Jin-woo": {},
+  "Kim Sae-ron": {
+   "p": "/jPWTS9hyezN2jqTeWFN3iUxszHc.jpg"
+  },
+  "Nam Woo-hyun": {
+   "p": "/qbvkyvsDzWXULcvlfkIcwo97AdE.jpg"
+  },
+  "Lee Sung-yeol": {
+   "p": "/12EcjmGsuj3dEI1oSy03zdLjiOC.jpg"
+  },
+  "Baek Seung-heon": {
+   "p": "/jroUykyVM7rwrdrcPglmc5qgHF4.jpg"
+  },
+  "Han Soo-yeon": {
+   "p": "/bYDwpJ6qkWLSAhNgKQD63nO19zS.jpg"
+  },
+  "Lee Eun-mi": {
+   "p": "/jpXPRA05xlXxxltrq5sEV7vbaNS.jpg"
+  },
+  "Sung Joon-hae": {},
+  "Gong Hyo-jin": {
+   "p": "/u2ZDHJOHRkgzY0dpaORitoZjF4F.jpg"
+  },
+  "Lee Kwang-soo": {
+   "p": "/eqjZXCV4EutnoVxZwOveK6Nl5W9.jpg"
+  },
+  "Lee Jeong-kil": {
+   "p": "/hhwmyHq1c1LEK61Mwkk3AnZKITT.jpg"
+  },
+  "Jang Tae-yoo": {
+   "p": "/hq7Xi0Z0RCH7ZGvnC9Vh2enbKZa.jpg"
+  },
+  "Choi Moon-su": {},
+  "Yoon Bo-mi": {
+   "p": "/aKAh22ZATJn4uFTaAVoqpcjjM6L.jpg"
+  },
+  "Choi Jin-hyuk": {
+   "p": "/lb8NIxnrczxN24i82wsZ5zOxsi.jpg"
+  },
+  "Boo Seong-cheol": {
+   "p": "/epMvRmlvhXGarB4e51GbtNtOzlU.jpg"
+  },
+  "Hwang Sun-hee": {
+   "p": "/ttqcVmlAvvI8jTAidZ4pHCgWG6a.jpg"
+  },
+  "Park Yoo-chun": {
+   "p": "/rT0riaDypX3P3Viq0QKoFPejrwU.jpg"
+  },
+  "Jeong Yu-mi": {
+   "p": "/yJoKxOiL1euHkvKRXn2L6rEAckC.jpg"
+  },
+  "Lee Tae-sung": {
+   "p": "/qmR1OOzRna1gUdPqJ5k6m03xgNB.jpg"
+  },
+  "Jung Suk-won": {
+   "p": "/s7jAL3X6wF3ciq5FpKa8QXHUlqd.jpg"
+  },
+  "Shin Yoon-sub": {
+   "p": "/w9D7zmer3MQ4OJcxrj3brG1Eftk.jpg"
+  },
+  "Lee Hee-myung": {
+   "p": "/4kDhMxYIpKLWjeE7JeAibSIGmZ7.jpg"
+  },
+  "Jang Na-ra": {
+   "p": "/uIIShNFO8torFMbPqbjs6VXVqD8.jpg"
+  },
+  "Daniel Choi": {
+   "p": "/gv9qWPVRid5ij0Fkv3qYzEbZ9lh.jpg"
+  },
+  "Park Se-young": {
+   "p": "/2PefaowfnJYgEcGj3afolLlXpeg.jpg"
+  },
+  "Jeon Soo-jin": {
+   "p": "/6YJ6ytaBdXUrHqcoEq0f7mUW4ZO.jpg"
+  },
+  "Lee Hyun-joo": {},
+  "Go Jung-won": {},
+  "Lee Min-hong": {},
+  "Sulli": {
+   "p": "/dLt9az94QKTOPnhs3OlXkSzi1G8.jpg"
+  },
+  "Lee Hyun-woo": {
+   "p": "/MYEHfwtJUVR021g9mxZcETmqMI.jpg"
+  },
+  "Hwang Kwang-hee": {
+   "p": "/573WnrjL7YlnR5WrUAdG8Jdzn42.jpg"
+  },
+  "Jeon Gi-Sang": {},
+  "TAECYEON": {
+   "p": "/zVOzETmSY8weWgvyh5KCfSyDSA7.jpg"
+  },
+  "WOOYOUNG": {
+   "p": "/bgk8fLL0wS3wSL0p8SpiJflxbJI.jpg"
+  },
+  "Ahn Sun-young": {},
+  "Bae Yong-jun": {
+   "p": "/d3NZRKhnh3rqWQyUioMmXufbnqR.jpg"
+  },
+  "Park Jin-young": {
+   "p": "/3npyaqH93cCgeY9JX8FVY2Uzfj4.jpg"
   }
  }
 }
