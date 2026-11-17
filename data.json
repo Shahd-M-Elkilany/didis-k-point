@@ -8320,6 +8320,26 @@
      "url": "https://www.youtube.com/watch?v=V5YbzU3aGDE",
      "title": "Official Trailer [ENG SUB]"
     }
+   ],
+   "cast": [
+    "Park Seo-jun",
+    "Han So-hee",
+    "Lee Chan-yang"
+   ],
+   "roles": [
+    "Jang Ho-jae",
+    "Yoon Chae-ok",
+    "Young Korean Man"
+   ],
+   "crew": [
+    {
+     "name": "Kang Eun-kyung",
+     "job": "Creator"
+    },
+    {
+     "name": "Kang Eun-kyung",
+     "job": "Writer"
+    }
    ]
   },
   {
@@ -14878,6 +14898,9 @@
   "Noh Gyoo-yeob": {
    "p": "/2OvvGLzmMWyB35ozeIS3KkISrSr.jpg"
   },
-  "Ji Ho-jin": {}
+  "Ji Ho-jin": {},
+  "Lee Chan-yang": {
+   "p": "/myYb08yxlgMC2H032XfSAGB1BeO.jpg"
+  }
  }
 }
