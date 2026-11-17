@@ -1,7 +1,7 @@
 {
  "name": "Didi's K-point",
  "tagline": "A drama journal",
- "updated": "2026-11-12",
+ "updated": "2026-11-17",
  "_fields": "id, title, year (released), imdb, network, genres, country (KR/CN/JP, blank = untagged), status (W watched / S watching / L watchlist / U unsure), scores [plot, sequence, characters, chemistry, impact], myRate (when there is no breakdown), watched (YYYY-MM or YYYY), progress, comment, review, layout, poster, gallery, videos",
  "shows": [
   {
@@ -8368,7 +8368,45 @@
      "title": "Official Trailer [ENG SUB]"
     }
    ],
-   "pick": true
+   "pick": true,
+   "cast": [
+    "Lee Dong-wook",
+    "Kim Hye-jun",
+    "Geum Hannah",
+    "Min Kim",
+    "Lee Tae-young",
+    "Jo Han-sun"
+   ],
+   "roles": [
+    "Jeong Jin-man",
+    "Jeong Ji-an",
+    "So Min-hye",
+    "Pasin Kradek",
+    "Brother",
+    "Bale"
+   ],
+   "crew": [
+    {
+     "name": "Lee Kwon",
+     "job": "Creator"
+    },
+    {
+     "name": "E.oni",
+     "job": "Creator"
+    },
+    {
+     "name": "Noh Gyoo-yeob",
+     "job": "Director"
+    },
+    {
+     "name": "Ji Ho-jin",
+     "job": "Writer"
+    },
+    {
+     "name": "Lee Kwon",
+     "job": "Writer"
+    }
+   ]
   },
   {
    "id": "destined-with-you",
@@ -14818,6 +14856,25 @@
   },
   "Park Jin-young": {
    "p": "/3npyaqH93cCgeY9JX8FVY2Uzfj4.jpg"
-  }
+  },
+  "Geum Hannah": {
+   "p": "/lqV410EQPkWAxM23oUCjCBXQKF.jpg"
+  },
+  "Min Kim": {
+   "p": "/pvNgh5koYxNG9NQcSa60XNzoFgE.jpg"
+  },
+  "Lee Tae-young": {
+   "p": "/hP0zpkLklF3UdSZtmvDfOjPBsse.jpg"
+  },
+  "Jo Han-sun": {
+   "p": "/pO08oBXmnQCCOrHLoRZKOcTWs1s.jpg"
+  },
+  "E.oni": {
+   "p": "/3VN0hXvY9XsWlKDfFe9mmup84lf.jpg"
+  },
+  "Noh Gyoo-yeob": {
+   "p": "/2OvvGLzmMWyB35ozeIS3KkISrSr.jpg"
+  },
+  "Ji Ho-jin": {}
  }
 }
