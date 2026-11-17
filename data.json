@@ -8353,7 +8353,7 @@
    "network": "Disney+",
    "genres": "Drama, Revenge, Suspense, Action, Tragedy",
    "country": "KR",
-   "status": "W",
+   "status": "S",
    "myRate": 4.5,
    "tmdbId": 215072,
    "summary": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
@@ -8406,7 +8406,10 @@
      "name": "Lee Kwon",
      "job": "Writer"
     }
-   ]
+   ],
+   "progress": "ep 1",
+   "touched": "2026-11-17",
+   "watched": "2026-11"
   },
   {
    "id": "destined-with-you",
